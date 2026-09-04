@@ -1,0 +1,2339 @@
+Job started at Sun Dec  7 09:18:30 IST 2025
+Conda environment: mamba_paca
+Python path: /export/home/achyut/miniconda3/envs/mamba_paca/bin/python
+Installing compatible PyTorch version...
+Found existing installation: torchvision 0.14.0+cu117
+Uninstalling torchvision-0.14.0+cu117:
+  Successfully uninstalled torchvision-0.14.0+cu117
+Found existing installation: torchaudio 0.13.0+cu117
+Uninstalling torchaudio-0.13.0+cu117:
+  Successfully uninstalled torchaudio-0.13.0+cu117
+Defaulting to user installation because normal site-packages is not writeable
+Looking in indexes: https://download.pytorch.org/whl/cu121
+Collecting torch==2.4.0
+  Downloading https://download.pytorch.org/whl/cu121/torch-2.4.0%2Bcu121-cp310-cp310-linux_x86_64.whl (799.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 799.1/799.1 MB 2.8 MB/s eta 0:00:00
+Collecting torchvision==0.19.0
+  Downloading https://download.pytorch.org/whl/cu121/torchvision-0.19.0%2Bcu121-cp310-cp310-linux_x86_64.whl (7.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 44.0 MB/s eta 0:00:00
+Collecting torchaudio==2.4.0
+  Downloading https://download.pytorch.org/whl/cu121/torchaudio-2.4.0%2Bcu121-cp310-cp310-linux_x86_64.whl (3.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 55.2 MB/s eta 0:00:00
+Requirement already satisfied: jinja2 in /export/home/achyut/.local/lib/python3.10/site-packages (from torch==2.4.0) (3.1.6)
+Requirement already satisfied: fsspec in /export/home/achyut/.local/lib/python3.10/site-packages (from torch==2.4.0) (2025.9.0)
+Requirement already satisfied: networkx in /export/home/achyut/.local/lib/python3.10/site-packages (from torch==2.4.0) (3.4.2)
+Collecting nvidia-cudnn-cu12==9.1.0.70
+  Downloading https://download.pytorch.org/whl/cu121/nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl (664.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 664.8/664.8 MB 3.2 MB/s eta 0:00:00
+Collecting nvidia-cufft-cu12==11.0.2.54
+  Downloading https://download.pytorch.org/whl/cu121/nvidia_cufft_cu12-11.0.2.54-py3-none-manylinux1_x86_64.whl (121.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.6/121.6 MB 14.2 MB/s eta 0:00:00
+Collecting triton==3.0.0
+  Downloading https://download.pytorch.org/whl/triton-3.0.0-1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (209.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 209.4/209.4 MB 8.9 MB/s eta 0:00:00
+Requirement already satisfied: filelock in /export/home/achyut/.local/lib/python3.10/site-packages (from torch==2.4.0) (3.19.1)
+Requirement already satisfied: sympy in /export/home/achyut/.local/lib/python3.10/site-packages (from torch==2.4.0) (1.14.0)
+Collecting nvidia-cuda-runtime-cu12==12.1.105
+  Downloading https://download.pytorch.org/whl/cu121/nvidia_cuda_runtime_cu12-12.1.105-py3-none-manylinux1_x86_64.whl (823 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 823.6/823.6 KB 40.9 MB/s eta 0:00:00
+Collecting nvidia-cublas-cu12==12.1.3.1
+  Downloading https://download.pytorch.org/whl/cu121/nvidia_cublas_cu12-12.1.3.1-py3-none-manylinux1_x86_64.whl (410.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 410.6/410.6 MB 5.0 MB/s eta 0:00:00
+Collecting nvidia-curand-cu12==10.3.2.106
+  Downloading https://download.pytorch.org/whl/cu121/nvidia_curand_cu12-10.3.2.106-py3-none-manylinux1_x86_64.whl (56.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.5/56.5 MB 24.0 MB/s eta 0:00:00
+Collecting nvidia-cusolver-cu12==11.4.5.107
+  Downloading https://download.pytorch.org/whl/cu121/nvidia_cusolver_cu12-11.4.5.107-py3-none-manylinux1_x86_64.whl (124.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.2/124.2 MB 12.7 MB/s eta 0:00:00
+Collecting nvidia-cusparse-cu12==12.1.0.106
+  Downloading https://download.pytorch.org/whl/cu121/nvidia_cusparse_cu12-12.1.0.106-py3-none-manylinux1_x86_64.whl (196.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.0/196.0 MB 9.3 MB/s eta 0:00:00
+Collecting nvidia-cuda-nvrtc-cu12==12.1.105
+  Downloading https://download.pytorch.org/whl/cu121/nvidia_cuda_nvrtc_cu12-12.1.105-py3-none-manylinux1_x86_64.whl (23.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.7/23.7 MB 41.1 MB/s eta 0:00:00
+Collecting nvidia-cuda-cupti-cu12==12.1.105
+  Downloading https://download.pytorch.org/whl/cu121/nvidia_cuda_cupti_cu12-12.1.105-py3-none-manylinux1_x86_64.whl (14.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.1/14.1 MB 54.9 MB/s eta 0:00:00
+Requirement already satisfied: typing-extensions>=4.8.0 in /export/home/achyut/.local/lib/python3.10/site-packages (from torch==2.4.0) (4.15.0)
+Collecting nvidia-nccl-cu12==2.20.5
+  Downloading https://download.pytorch.org/whl/cu121/nvidia_nccl_cu12-2.20.5-py3-none-manylinux2014_x86_64.whl (176.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 176.2/176.2 MB 10.6 MB/s eta 0:00:00
+Collecting nvidia-nvtx-cu12==12.1.105
+  Downloading https://download.pytorch.org/whl/cu121/nvidia_nvtx_cu12-12.1.105-py3-none-manylinux1_x86_64.whl (99 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.1/99.1 KB 12.8 MB/s eta 0:00:00
+Requirement already satisfied: numpy in /export/home/achyut/.local/lib/python3.10/site-packages (from torchvision==0.19.0) (2.2.6)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in /export/home/achyut/.local/lib/python3.10/site-packages (from torchvision==0.19.0) (11.3.0)
+Requirement already satisfied: nvidia-nvjitlink-cu12 in /export/home/achyut/.local/lib/python3.10/site-packages (from nvidia-cusolver-cu12==11.4.5.107->torch==2.4.0) (12.8.93)
+Requirement already satisfied: MarkupSafe>=2.0 in /export/home/achyut/.local/lib/python3.10/site-packages (from jinja2->torch==2.4.0) (3.0.2)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /export/home/achyut/.local/lib/python3.10/site-packages (from sympy->torch==2.4.0) (1.3.0)
+Installing collected packages: triton, nvidia-nvtx-cu12, nvidia-nccl-cu12, nvidia-cusparse-cu12, nvidia-curand-cu12, nvidia-cufft-cu12, nvidia-cuda-runtime-cu12, nvidia-cuda-nvrtc-cu12, nvidia-cuda-cupti-cu12, nvidia-cublas-cu12, nvidia-cusolver-cu12, nvidia-cudnn-cu12, torch, torchvision, torchaudio
+Successfully installed nvidia-cublas-cu12-12.1.3.1 nvidia-cuda-cupti-cu12-12.1.105 nvidia-cuda-nvrtc-cu12-12.1.105 nvidia-cuda-runtime-cu12-12.1.105 nvidia-cudnn-cu12-9.1.0.70 nvidia-cufft-cu12-11.0.2.54 nvidia-curand-cu12-10.3.2.106 nvidia-cusolver-cu12-11.4.5.107 nvidia-cusparse-cu12-12.1.0.106 nvidia-nccl-cu12-2.20.5 nvidia-nvtx-cu12-12.1.105 torch-2.4.0+cu121 torchaudio-2.4.0+cu121 torchvision-0.19.0+cu121 triton-3.0.0
+PyTorch: 2.4.0+cu121
+CUDA available: True
+Torchvision: 0.19.0+cu121
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on Caltech-101
+Using Gradient Chain Selection
+============================================================
+Using random seed: 6252
+
+Loading dataset...
+Extracting ./data/caltech-101/caltech-101/101_ObjectCategories.tar.gz ...
+Images extracted to ./data/caltech-101/caltech-101/101_ObjectCategories
+Dataset loaded: 7315 train samples, 1829 val samples
+Number of classes: 102
+
+Creating ViT model for 102 classes...
+
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'mlp.3', 'out_proj', 'mlp.0'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=115, arm_distribution='gradient_chain', num_arms=3, num_arms_to_select=1, ucb_alpha=0.5, use_fixed_indices=False, arm_selection_method='thompson', thompson_distribution='gaussian', thompson_alpha_prior=1.0, thompson_beta_prior=1.0, thompson_gaussian_prior_mean=0.0, thompson_gaussian_prior_std=10.0, thompson_gaussian_noise_std=5.0, gradient_chain_warmup_epochs=2, gradient_chain_num_samples=5)
+Total parameters: 149,656,524
+Trainable parameters: 2,757,324 (1.84%)
+Frozen parameters: 146,899,200 (98.16%)
+
+============================================================
+Fine-tuning ViT using Gradient Chain Selection:
+============================================================
+Calculating initial validation accuracy...
+Initial Val Acc: 1.64%
+
+Reward: 0.00% (normalized: 0.00)
+Gradient chain warmup: 1/2
+
+Epoch 1/100 | LR: 0.000100 | Time: 27.50s
+Train Loss: 4.6821 | Train Acc: 1.72%
+Val Loss: 4.6897 | Val Acc: 1.64%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: False
+  Number of Chains: 0
+  Current Epoch: 0
+  Arm Means: [0.0, 0.0, 0.0]
+  Arm Stds: [10.0, 10.0, 10.0]
+  Arm Observation Counts: [0, 0, 0]
+------------------------------------------------------------
+
+Reward: 36.85% (normalized: 3.69)
+
+============================================================
+Building Gradient Chains...
+============================================================
+Sampling 5 batches to estimate gradients...
+  Batch 1/5 processed
+  Batch 2/5 processed
+  Batch 3/5 processed
+  Batch 4/5 processed
+  Batch 5/5 processed
+
+Averaging gradients across batches...
+
+Building 3 gradient chains...
+
+Chain 0: Starting from neuron 26
+  Layer 0 (encoder.layers.encoder_layer_0.mlp.0): input_col=26 -> output_neuron=1213 (grad=0.0006)
+  Layer 1 (encoder.layers.encoder_layer_0.mlp.3): input_col=13 -> output_neuron=298 (grad=0.0003)
+  Warning: No gradients for layer encoder.layers.encoder_layer_1.self_attention.out_proj, skipping
+  Layer 3 (encoder.layers.encoder_layer_1.mlp.0): input_col=10 -> output_neuron=3007 (grad=0.0002)
+  Layer 4 (encoder.layers.encoder_layer_1.mlp.3): input_col=31 -> output_neuron=121 (grad=0.0010)
+  Warning: No gradients for layer encoder.layers.encoder_layer_2.self_attention.out_proj, skipping
+  Layer 6 (encoder.layers.encoder_layer_2.mlp.0): input_col=25 -> output_neuron=2698 (grad=0.0006)
+  Layer 7 (encoder.layers.encoder_layer_2.mlp.3): input_col=10 -> output_neuron=100 (grad=0.0008)
+  Warning: No gradients for layer encoder.layers.encoder_layer_3.self_attention.out_proj, skipping
+  Layer 9 (encoder.layers.encoder_layer_3.mlp.0): input_col=4 -> output_neuron=1144 (grad=0.0007)
+  Layer 10 (encoder.layers.encoder_layer_3.mlp.3): input_col=40 -> output_neuron=70 (grad=0.0001)
+  Warning: No gradients for layer encoder.layers.encoder_layer_4.self_attention.out_proj, skipping
+  Layer 12 (encoder.layers.encoder_layer_4.mlp.0): input_col=22 -> output_neuron=989 (grad=0.0012)
+  Layer 13 (encoder.layers.encoder_layer_4.mlp.3): input_col=29 -> output_neuron=514 (grad=0.0010)
+  Warning: No gradients for layer encoder.layers.encoder_layer_5.self_attention.out_proj, skipping
+  Layer 15 (encoder.layers.encoder_layer_5.mlp.0): input_col=34 -> output_neuron=2726 (grad=0.0001)
+  Layer 16 (encoder.layers.encoder_layer_5.mlp.3): input_col=38 -> output_neuron=279 (grad=0.0012)
+  Warning: No gradients for layer encoder.layers.encoder_layer_6.self_attention.out_proj, skipping
+  Layer 18 (encoder.layers.encoder_layer_6.mlp.0): input_col=39 -> output_neuron=411 (grad=0.0040)
+  Layer 19 (encoder.layers.encoder_layer_6.mlp.3): input_col=27 -> output_neuron=490 (grad=0.0008)
+  Warning: No gradients for layer encoder.layers.encoder_layer_7.self_attention.out_proj, skipping
+  Layer 21 (encoder.layers.encoder_layer_7.mlp.0): input_col=10 -> output_neuron=125 (grad=0.0005)
+  Layer 22 (encoder.layers.encoder_layer_7.mlp.3): input_col=29 -> output_neuron=100 (grad=0.0005)
+  Warning: No gradients for layer encoder.layers.encoder_layer_8.self_attention.out_proj, skipping
+  Layer 24 (encoder.layers.encoder_layer_8.mlp.0): input_col=4 -> output_neuron=291 (grad=0.0004)
+  Layer 25 (encoder.layers.encoder_layer_8.mlp.3): input_col=3 -> output_neuron=587 (grad=0.0009)
+  Warning: No gradients for layer encoder.layers.encoder_layer_9.self_attention.out_proj, skipping
+  Layer 27 (encoder.layers.encoder_layer_9.mlp.0): input_col=11 -> output_neuron=2266 (grad=0.0039)
+  Layer 28 (encoder.layers.encoder_layer_9.mlp.3): input_col=10 -> output_neuron=44 (grad=0.0025)
+  Warning: No gradients for layer encoder.layers.encoder_layer_10.self_attention.out_proj, skipping
+  Layer 30 (encoder.layers.encoder_layer_10.mlp.0): input_col=44 -> output_neuron=1997 (grad=0.0053)
+  Layer 31 (encoder.layers.encoder_layer_10.mlp.3): input_col=29 -> output_neuron=70 (grad=0.0083)
+  Warning: No gradients for layer encoder.layers.encoder_layer_11.self_attention.out_proj, skipping
+  Layer 33 (encoder.layers.encoder_layer_11.mlp.0): input_col=22 -> output_neuron=2973 (grad=0.0054)
+  Layer 34 (encoder.layers.encoder_layer_11.mlp.3): input_col=45 -> output_neuron=493 (grad=0.0041)
+
+Chain 1: Starting from neuron 9
+  Layer 0 (encoder.layers.encoder_layer_0.mlp.0): input_col=9 -> output_neuron=2437 (grad=0.0006)
+  Layer 1 (encoder.layers.encoder_layer_0.mlp.3): input_col=37 -> output_neuron=279 (grad=0.0014)
+  Warning: No gradients for layer encoder.layers.encoder_layer_1.self_attention.out_proj, skipping
+  Layer 3 (encoder.layers.encoder_layer_1.mlp.0): input_col=39 -> output_neuron=2494 (grad=0.0000)
+  Layer 4 (encoder.layers.encoder_layer_1.mlp.3): input_col=46 -> output_neuron=279 (grad=0.0011)
+  Warning: No gradients for layer encoder.layers.encoder_layer_2.self_attention.out_proj, skipping
+  Layer 6 (encoder.layers.encoder_layer_2.mlp.0): input_col=39 -> output_neuron=2698 (grad=0.0000)
+  Layer 7 (encoder.layers.encoder_layer_2.mlp.3): input_col=10 -> output_neuron=100 (grad=0.0008)
+  Warning: No gradients for layer encoder.layers.encoder_layer_3.self_attention.out_proj, skipping
+  Layer 9 (encoder.layers.encoder_layer_3.mlp.0): input_col=4 -> output_neuron=1144 (grad=0.0007)
+  Layer 10 (encoder.layers.encoder_layer_3.mlp.3): input_col=40 -> output_neuron=70 (grad=0.0001)
+  Warning: No gradients for layer encoder.layers.encoder_layer_4.self_attention.out_proj, skipping
+  Layer 12 (encoder.layers.encoder_layer_4.mlp.0): input_col=22 -> output_neuron=989 (grad=0.0012)
+  Layer 13 (encoder.layers.encoder_layer_4.mlp.3): input_col=29 -> output_neuron=514 (grad=0.0010)
+  Warning: No gradients for layer encoder.layers.encoder_layer_5.self_attention.out_proj, skipping
+  Layer 15 (encoder.layers.encoder_layer_5.mlp.0): input_col=34 -> output_neuron=2726 (grad=0.0001)
+  Layer 16 (encoder.layers.encoder_layer_5.mlp.3): input_col=38 -> output_neuron=279 (grad=0.0012)
+  Warning: No gradients for layer encoder.layers.encoder_layer_6.self_attention.out_proj, skipping
+  Layer 18 (encoder.layers.encoder_layer_6.mlp.0): input_col=39 -> output_neuron=411 (grad=0.0040)
+  Layer 19 (encoder.layers.encoder_layer_6.mlp.3): input_col=27 -> output_neuron=490 (grad=0.0008)
+  Warning: No gradients for layer encoder.layers.encoder_layer_7.self_attention.out_proj, skipping
+  Layer 21 (encoder.layers.encoder_layer_7.mlp.0): input_col=10 -> output_neuron=125 (grad=0.0005)
+  Layer 22 (encoder.layers.encoder_layer_7.mlp.3): input_col=29 -> output_neuron=100 (grad=0.0005)
+  Warning: No gradients for layer encoder.layers.encoder_layer_8.self_attention.out_proj, skipping
+  Layer 24 (encoder.layers.encoder_layer_8.mlp.0): input_col=4 -> output_neuron=291 (grad=0.0004)
+  Layer 25 (encoder.layers.encoder_layer_8.mlp.3): input_col=3 -> output_neuron=587 (grad=0.0009)
+  Warning: No gradients for layer encoder.layers.encoder_layer_9.self_attention.out_proj, skipping
+  Layer 27 (encoder.layers.encoder_layer_9.mlp.0): input_col=11 -> output_neuron=2266 (grad=0.0039)
+  Layer 28 (encoder.layers.encoder_layer_9.mlp.3): input_col=10 -> output_neuron=44 (grad=0.0025)
+  Warning: No gradients for layer encoder.layers.encoder_layer_10.self_attention.out_proj, skipping
+  Layer 30 (encoder.layers.encoder_layer_10.mlp.0): input_col=44 -> output_neuron=1997 (grad=0.0053)
+  Layer 31 (encoder.layers.encoder_layer_10.mlp.3): input_col=29 -> output_neuron=70 (grad=0.0083)
+  Warning: No gradients for layer encoder.layers.encoder_layer_11.self_attention.out_proj, skipping
+  Layer 33 (encoder.layers.encoder_layer_11.mlp.0): input_col=22 -> output_neuron=2973 (grad=0.0054)
+  Layer 34 (encoder.layers.encoder_layer_11.mlp.3): input_col=45 -> output_neuron=493 (grad=0.0041)
+
+Chain 2: Starting from neuron 39
+  Layer 0 (encoder.layers.encoder_layer_0.mlp.0): input_col=39 -> output_neuron=1213 (grad=0.0007)
+  Layer 1 (encoder.layers.encoder_layer_0.mlp.3): input_col=13 -> output_neuron=298 (grad=0.0003)
+  Warning: No gradients for layer encoder.layers.encoder_layer_1.self_attention.out_proj, skipping
+  Layer 3 (encoder.layers.encoder_layer_1.mlp.0): input_col=10 -> output_neuron=3007 (grad=0.0002)
+  Layer 4 (encoder.layers.encoder_layer_1.mlp.3): input_col=31 -> output_neuron=121 (grad=0.0010)
+  Warning: No gradients for layer encoder.layers.encoder_layer_2.self_attention.out_proj, skipping
+  Layer 6 (encoder.layers.encoder_layer_2.mlp.0): input_col=25 -> output_neuron=2698 (grad=0.0006)
+  Layer 7 (encoder.layers.encoder_layer_2.mlp.3): input_col=10 -> output_neuron=100 (grad=0.0008)
+  Warning: No gradients for layer encoder.layers.encoder_layer_3.self_attention.out_proj, skipping
+  Layer 9 (encoder.layers.encoder_layer_3.mlp.0): input_col=4 -> output_neuron=1144 (grad=0.0007)
+  Layer 10 (encoder.layers.encoder_layer_3.mlp.3): input_col=40 -> output_neuron=70 (grad=0.0001)
+  Warning: No gradients for layer encoder.layers.encoder_layer_4.self_attention.out_proj, skipping
+  Layer 12 (encoder.layers.encoder_layer_4.mlp.0): input_col=22 -> output_neuron=989 (grad=0.0012)
+  Layer 13 (encoder.layers.encoder_layer_4.mlp.3): input_col=29 -> output_neuron=514 (grad=0.0010)
+  Warning: No gradients for layer encoder.layers.encoder_layer_5.self_attention.out_proj, skipping
+  Layer 15 (encoder.layers.encoder_layer_5.mlp.0): input_col=34 -> output_neuron=2726 (grad=0.0001)
+  Layer 16 (encoder.layers.encoder_layer_5.mlp.3): input_col=38 -> output_neuron=279 (grad=0.0012)
+  Warning: No gradients for layer encoder.layers.encoder_layer_6.self_attention.out_proj, skipping
+  Layer 18 (encoder.layers.encoder_layer_6.mlp.0): input_col=39 -> output_neuron=411 (grad=0.0040)
+  Layer 19 (encoder.layers.encoder_layer_6.mlp.3): input_col=27 -> output_neuron=490 (grad=0.0008)
+  Warning: No gradients for layer encoder.layers.encoder_layer_7.self_attention.out_proj, skipping
+  Layer 21 (encoder.layers.encoder_layer_7.mlp.0): input_col=10 -> output_neuron=125 (grad=0.0005)
+  Layer 22 (encoder.layers.encoder_layer_7.mlp.3): input_col=29 -> output_neuron=100 (grad=0.0005)
+  Warning: No gradients for layer encoder.layers.encoder_layer_8.self_attention.out_proj, skipping
+  Layer 24 (encoder.layers.encoder_layer_8.mlp.0): input_col=4 -> output_neuron=291 (grad=0.0004)
+  Layer 25 (encoder.layers.encoder_layer_8.mlp.3): input_col=3 -> output_neuron=587 (grad=0.0009)
+  Warning: No gradients for layer encoder.layers.encoder_layer_9.self_attention.out_proj, skipping
+  Layer 27 (encoder.layers.encoder_layer_9.mlp.0): input_col=11 -> output_neuron=2266 (grad=0.0039)
+  Layer 28 (encoder.layers.encoder_layer_9.mlp.3): input_col=10 -> output_neuron=44 (grad=0.0025)
+  Warning: No gradients for layer encoder.layers.encoder_layer_10.self_attention.out_proj, skipping
+  Layer 30 (encoder.layers.encoder_layer_10.mlp.0): input_col=44 -> output_neuron=1997 (grad=0.0053)
+  Layer 31 (encoder.layers.encoder_layer_10.mlp.3): input_col=29 -> output_neuron=70 (grad=0.0083)
+  Warning: No gradients for layer encoder.layers.encoder_layer_11.self_attention.out_proj, skipping
+  Layer 33 (encoder.layers.encoder_layer_11.mlp.0): input_col=22 -> output_neuron=2973 (grad=0.0054)
+  Layer 34 (encoder.layers.encoder_layer_11.mlp.3): input_col=45 -> output_neuron=493 (grad=0.0041)
+
+============================================================
+✓ Successfully built 3 gradient chains
+============================================================
+
+Epoch 2/100 | LR: 0.000200 | Time: 29.33s
+Train Loss: 3.6776 | Train Acc: 25.19%
+Val Loss: 2.9865 | Val Acc: 38.49%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 1
+  Selected Arms: [1]
+  Arm Means: [0.0, 0.0, 0.0]
+  Arm Stds: [10.0, 10.0, 10.0]
+  Arm Observation Counts: [0, 0, 0]
+  Last Sampled Values: [-1.9319639205932617, 0.6394175291061401, -7.899341106414795]
+------------------------------------------------------------
+
+Reward: 40.51% (normalized: 4.05)
+
+Epoch 3/100 | LR: 0.000300 | Time: 28.17s
+Train Loss: 2.0916 | Train Acc: 62.41%
+Val Loss: 1.4112 | Val Acc: 79.00%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 2
+  Selected Arms: [2]
+  Arm Means: [0.0, 3.2411153316497803, 0.0]
+  Arm Stds: [10.0, 4.4721360206604, 10.0]
+  Arm Observation Counts: [0, 1, 0]
+  Last Sampled Values: [0.033535707741975784, 7.6962432861328125, 9.483593940734863]
+------------------------------------------------------------
+
+Reward: 9.08% (normalized: 0.91)
+
+Epoch 4/100 | LR: 0.000400 | Time: 28.34s
+Train Loss: 0.9668 | Train Acc: 87.08%
+Val Loss: 0.7501 | Val Acc: 88.08%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 3
+  Selected Arms: [0]
+  Arm Means: [0.0, 3.2411153316497803, 0.7260798215866089]
+  Arm Stds: [10.0, 4.4721360206604, 4.4721360206604]
+  Arm Observation Counts: [0, 1, 1]
+  Last Sampled Values: [3.363694190979004, 1.6984957456588745, 2.147275924682617]
+------------------------------------------------------------
+
+Reward: 5.19% (normalized: 0.52)
+
+Epoch 5/100 | LR: 0.000500 | Time: 28.18s
+Train Loss: 0.4905 | Train Acc: 95.23%
+Val Loss: 0.4848 | Val Acc: 93.28%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 4
+  Selected Arms: [2]
+  Arm Means: [0.4155276119709015, 3.2411153316497803, 0.7260798215866089]
+  Arm Stds: [4.4721360206604, 4.4721360206604, 4.4721360206604]
+  Arm Observation Counts: [1, 1, 1]
+  Last Sampled Values: [-6.993326187133789, -0.2687382698059082, 5.559741497039795]
+------------------------------------------------------------
+
+Reward: 2.08% (normalized: 0.21)
+
+Epoch 6/100 | LR: 0.000600 | Time: 28.26s
+Train Loss: 0.2658 | Train Acc: 98.10%
+Val Loss: 0.3706 | Val Acc: 95.35%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 5
+  Selected Arms: [1]
+  Arm Means: [0.4155276119709015, 3.2411153316497803, 0.4957171380519867]
+  Arm Stds: [4.4721360206604, 4.4721360206604, 3.3333334922790527]
+  Arm Observation Counts: [1, 1, 2]
+  Last Sampled Values: [0.8845948576927185, 1.9102379083633423, 1.1658450365066528]
+------------------------------------------------------------
+
+Reward: 0.00% (normalized: 0.00)
+
+Epoch 7/100 | LR: 0.000700 | Time: 28.33s
+Train Loss: 0.1519 | Train Acc: 99.07%
+Val Loss: 0.2976 | Val Acc: 95.35%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 6
+  Selected Arms: [1]
+  Arm Means: [0.4155276119709015, 1.8006196022033691, 0.4957171380519867]
+  Arm Stds: [4.4721360206604, 3.3333334922790527, 3.3333334922790527]
+  Arm Observation Counts: [1, 2, 2]
+  Last Sampled Values: [-3.7264163494110107, 2.120943546295166, -6.624170780181885]
+------------------------------------------------------------
+
+Reward: -0.38% (normalized: -0.04)
+
+Epoch 8/100 | LR: 0.000800 | Time: 28.36s
+Train Loss: 0.1023 | Train Acc: 99.47%
+Val Loss: 0.2711 | Val Acc: 94.97%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 7
+  Selected Arms: [2]
+  Arm Means: [0.4155276119709015, 1.2348066568374634, 0.4957171380519867]
+  Arm Stds: [4.4721360206604, 2.77350115776062, 3.3333334922790527]
+  Arm Observation Counts: [1, 3, 2]
+  Last Sampled Values: [0.6699627637863159, -1.055686593055725, 5.230848789215088]
+------------------------------------------------------------
+
+Reward: -1.48% (normalized: -0.15)
+
+Epoch 9/100 | LR: 0.000900 | Time: 28.40s
+Train Loss: 0.0965 | Train Acc: 99.25%
+Val Loss: 0.3206 | Val Acc: 93.49%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 8
+  Selected Arms: [1]
+  Arm Means: [0.4155276119709015, 1.2348066568374634, 0.29776671528816223]
+  Arm Stds: [4.4721360206604, 2.77350115776062, 2.77350115776062]
+  Arm Observation Counts: [1, 3, 3]
+  Last Sampled Values: [-0.050474345684051514, 1.9068892002105713, 1.2933152914047241]
+------------------------------------------------------------
+No improvement for 1 epoch(s)
+
+Reward: 1.09% (normalized: 0.11)
+
+Epoch 10/100 | LR: 0.001000 | Time: 28.32s
+Train Loss: 0.0663 | Train Acc: 99.48%
+Val Loss: 0.2516 | Val Acc: 94.59%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 9
+  Selected Arms: [1]
+  Arm Means: [0.4155276119709015, 0.9699931740760803, 0.29776671528816223]
+  Arm Stds: [4.4721360206604, 2.425356388092041, 2.77350115776062]
+  Arm Observation Counts: [1, 4, 3]
+  Last Sampled Values: [-0.7709275484085083, 3.9401021003723145, 0.7324598431587219]
+------------------------------------------------------------
+
+Reward: -2.73% (normalized: -0.27)
+
+Epoch 11/100 | LR: 0.001000 | Time: 28.40s
+Train Loss: 0.0816 | Train Acc: 99.17%
+Val Loss: 0.3759 | Val Acc: 91.85%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 10
+  Selected Arms: [0]
+  Arm Means: [0.4155276119709015, 0.7331613898277283, 0.29776671528816223]
+  Arm Stds: [4.4721360206604, 2.1821789741516113, 2.77350115776062]
+  Arm Observation Counts: [1, 5, 3]
+  Last Sampled Values: [9.805933952331543, 6.969170093536377, 1.9095954895019531]
+------------------------------------------------------------
+No improvement for 1 epoch(s)
+
+Reward: 1.31% (normalized: 0.13)
+
+Epoch 12/100 | LR: 0.000999 | Time: 28.36s
+Train Loss: 0.1124 | Train Acc: 98.78%
+Val Loss: 0.3190 | Val Acc: 93.17%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 11
+  Selected Arms: [2]
+  Arm Means: [0.2891683280467987, 0.7331613898277283, 0.29776671528816223]
+  Arm Stds: [3.3333334922790527, 2.1821789741516113, 2.77350115776062]
+  Arm Observation Counts: [2, 5, 3]
+  Last Sampled Values: [-0.4242117702960968, 0.10854309797286987, 1.3547033071517944]
+------------------------------------------------------------
+No improvement for 2 epoch(s)
+
+Reward: 0.82% (normalized: 0.08)
+
+Epoch 13/100 | LR: 0.000997 | Time: 28.41s
+Train Loss: 0.1035 | Train Acc: 98.81%
+Val Loss: 0.2583 | Val Acc: 93.99%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 12
+  Selected Arms: [1]
+  Arm Means: [0.2891683280467987, 0.7331613898277283, 0.24700090289115906]
+  Arm Stds: [3.3333334922790527, 2.1821789741516113, 2.425356388092041]
+  Arm Observation Counts: [2, 5, 4]
+  Last Sampled Values: [-4.03062629699707, 2.716334581375122, -3.4345877170562744]
+------------------------------------------------------------
+No improvement for 3 epoch(s)
+
+Reward: -1.91% (normalized: -0.19)
+
+Epoch 14/100 | LR: 0.000995 | Time: 28.33s
+Train Loss: 0.0700 | Train Acc: 99.10%
+Val Loss: 0.3387 | Val Acc: 92.07%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 13
+  Selected Arms: [1]
+  Arm Means: [0.2891683280467987, 0.5852377414703369, 0.24700090289115906]
+  Arm Stds: [3.3333334922790527, 2.0, 2.425356388092041]
+  Arm Observation Counts: [2, 6, 4]
+  Last Sampled Values: [1.5555672645568848, 2.946138858795166, 0.2602170705795288]
+------------------------------------------------------------
+No improvement for 4 epoch(s)
+
+Reward: 2.08% (normalized: 0.21)
+
+Epoch 15/100 | LR: 0.000992 | Time: 28.39s
+Train Loss: 0.0536 | Train Acc: 99.41%
+Val Loss: 0.2807 | Val Acc: 94.15%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 14
+  Selected Arms: [2]
+  Arm Means: [0.2891683280467987, 0.5331723690032959, 0.24700090289115906]
+  Arm Stds: [3.3333334922790527, 1.8569533824920654, 2.425356388092041]
+  Arm Observation Counts: [2, 7, 4]
+  Last Sampled Values: [0.6712019443511963, -1.5711965560913086, 1.6025564670562744]
+------------------------------------------------------------
+No improvement for 5 epoch(s)
+
+Reward: -0.44% (normalized: -0.04)
+
+Epoch 16/100 | LR: 0.000989 | Time: 28.40s
+Train Loss: 0.0563 | Train Acc: 99.29%
+Val Loss: 0.2788 | Val Acc: 93.71%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 15
+  Selected Arms: [1]
+  Arm Means: [0.2891683280467987, 0.5331723690032959, 0.19162172079086304]
+  Arm Stds: [3.3333334922790527, 1.8569533824920654, 2.1821789741516113]
+  Arm Observation Counts: [2, 7, 5]
+  Last Sampled Values: [-4.369807243347168, 4.020815849304199, 2.2516696453094482]
+------------------------------------------------------------
+No improvement for 6 epoch(s)
+
+Reward: -0.77% (normalized: -0.08)
+
+Epoch 17/100 | LR: 0.000985 | Time: 28.41s
+Train Loss: 0.0754 | Train Acc: 98.88%
+Val Loss: 0.3240 | Val Acc: 92.95%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 16
+  Selected Arms: [2]
+  Arm Means: [0.2891683280467987, 0.4592672884464264, 0.19162172079086304]
+  Arm Stds: [3.3333334922790527, 1.740776538848877, 2.1821789741516113]
+  Arm Observation Counts: [2, 8, 5]
+  Last Sampled Values: [1.0066176652908325, 0.7176418304443359, 1.2437376976013184]
+------------------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 17 epochs.
+Total training time: 481.90 seconds
+Average time per epoch: 28.35 seconds
+
+============================================================
+Training completed!
+============================================================
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on Flowers-102
+Using Gradient Chain Selection
+============================================================
+Using random seed: 9354
+
+Loading dataset...
+--- Flowers-102 Dataset (Custom 80/20 Split) ---
+Total images from all splits: 8189
+Custom training set size (80%): 6551
+Custom testing set size (20%): 1638
+
+Creating ViT model for 102 classes...
+
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'mlp.0', 'mlp.3', 'out_proj'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=103, arm_distribution='gradient_chain', num_arms=3, num_arms_to_select=1, ucb_alpha=0.5, use_fixed_indices=False, arm_selection_method='thompson', thompson_distribution='gaussian', thompson_alpha_prior=1.0, thompson_beta_prior=1.0, thompson_gaussian_prior_mean=0.0, thompson_gaussian_prior_std=10.0, thompson_gaussian_noise_std=5.0, gradient_chain_warmup_epochs=2, gradient_chain_num_samples=5)
+Total parameters: 149,656,524
+Trainable parameters: 2,757,324 (1.84%)
+Frozen parameters: 146,899,200 (98.16%)
+
+============================================================
+Fine-tuning ViT using Gradient Chain Selection:
+============================================================
+Calculating initial validation accuracy...
+Initial Val Acc: 0.73%
+
+Reward: 0.00% (normalized: 0.00)
+Gradient chain warmup: 1/2
+
+Epoch 1/100 | LR: 0.000100 | Time: 25.73s
+Train Loss: 4.7177 | Train Acc: 0.52%
+Val Loss: 4.7083 | Val Acc: 0.73%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: False
+  Number of Chains: 0
+  Current Epoch: 0
+  Arm Means: [0.0, 0.0, 0.0]
+  Arm Stds: [10.0, 10.0, 10.0]
+  Arm Observation Counts: [0, 0, 0]
+------------------------------------------------------------
+
+Reward: 33.21% (normalized: 3.32)
+
+============================================================
+Building Gradient Chains...
+============================================================
+Sampling 5 batches to estimate gradients...
+  Batch 1/5 processed
+  Batch 2/5 processed
+  Batch 3/5 processed
+  Batch 4/5 processed
+  Batch 5/5 processed
+
+Averaging gradients across batches...
+
+Building 3 gradient chains...
+
+Chain 0: Starting from neuron 6
+  Layer 0 (encoder.layers.encoder_layer_0.mlp.0): input_col=6 -> output_neuron=2437 (grad=0.0051)
+  Layer 1 (encoder.layers.encoder_layer_0.mlp.3): input_col=37 -> output_neuron=488 (grad=0.0001)
+  Warning: No gradients for layer encoder.layers.encoder_layer_1.self_attention.out_proj, skipping
+  Layer 3 (encoder.layers.encoder_layer_1.mlp.0): input_col=8 -> output_neuron=2440 (grad=0.0004)
+  Layer 4 (encoder.layers.encoder_layer_1.mlp.3): input_col=40 -> output_neuron=488 (grad=0.0011)
+  Warning: No gradients for layer encoder.layers.encoder_layer_2.self_attention.out_proj, skipping
+  Layer 6 (encoder.layers.encoder_layer_2.mlp.0): input_col=8 -> output_neuron=2499 (grad=0.0001)
+  Layer 7 (encoder.layers.encoder_layer_2.mlp.3): input_col=3 -> output_neuron=9 (grad=0.0000)
+  Warning: No gradients for layer encoder.layers.encoder_layer_3.self_attention.out_proj, skipping
+  Layer 9 (encoder.layers.encoder_layer_3.mlp.0): input_col=9 -> output_neuron=1012 (grad=0.0010)
+  Layer 10 (encoder.layers.encoder_layer_3.mlp.3): input_col=4 -> output_neuron=318 (grad=0.0001)
+  Warning: No gradients for layer encoder.layers.encoder_layer_4.self_attention.out_proj, skipping
+  Layer 12 (encoder.layers.encoder_layer_4.mlp.0): input_col=30 -> output_neuron=1862 (grad=0.0022)
+  Layer 13 (encoder.layers.encoder_layer_4.mlp.3): input_col=38 -> output_neuron=390 (grad=0.0009)
+  Warning: No gradients for layer encoder.layers.encoder_layer_5.self_attention.out_proj, skipping
+  Layer 15 (encoder.layers.encoder_layer_5.mlp.0): input_col=6 -> output_neuron=877 (grad=0.0019)
+  Layer 16 (encoder.layers.encoder_layer_5.mlp.3): input_col=13 -> output_neuron=390 (grad=0.0077)
+  Warning: No gradients for layer encoder.layers.encoder_layer_6.self_attention.out_proj, skipping
+  Layer 18 (encoder.layers.encoder_layer_6.mlp.0): input_col=6 -> output_neuron=1639 (grad=0.0001)
+  Layer 19 (encoder.layers.encoder_layer_6.mlp.3): input_col=7 -> output_neuron=665 (grad=0.0014)
+  Warning: No gradients for layer encoder.layers.encoder_layer_7.self_attention.out_proj, skipping
+  Layer 21 (encoder.layers.encoder_layer_7.mlp.0): input_col=41 -> output_neuron=2769 (grad=0.0024)
+  Layer 22 (encoder.layers.encoder_layer_7.mlp.3): input_col=33 -> output_neuron=173 (grad=0.0009)
+  Warning: No gradients for layer encoder.layers.encoder_layer_8.self_attention.out_proj, skipping
+  Layer 24 (encoder.layers.encoder_layer_8.mlp.0): input_col=29 -> output_neuron=760 (grad=0.0062)
+  Layer 25 (encoder.layers.encoder_layer_8.mlp.3): input_col=40 -> output_neuron=535 (grad=0.0000)
+  Warning: No gradients for layer encoder.layers.encoder_layer_9.self_attention.out_proj, skipping
+  Layer 27 (encoder.layers.encoder_layer_9.mlp.0): input_col=7 -> output_neuron=2198 (grad=0.0026)
+  Layer 28 (encoder.layers.encoder_layer_9.mlp.3): input_col=38 -> output_neuron=48 (grad=0.0024)
+  Warning: No gradients for layer encoder.layers.encoder_layer_10.self_attention.out_proj, skipping
+  Layer 30 (encoder.layers.encoder_layer_10.mlp.0): input_col=0 -> output_neuron=190 (grad=0.0065)
+  Layer 31 (encoder.layers.encoder_layer_10.mlp.3): input_col=46 -> output_neuron=621 (grad=0.0026)
+  Warning: No gradients for layer encoder.layers.encoder_layer_11.self_attention.out_proj, skipping
+  Layer 33 (encoder.layers.encoder_layer_11.mlp.0): input_col=45 -> output_neuron=2091 (grad=0.0030)
+  Layer 34 (encoder.layers.encoder_layer_11.mlp.3): input_col=27 -> output_neuron=356 (grad=0.0015)
+
+Chain 1: Starting from neuron 3
+  Layer 0 (encoder.layers.encoder_layer_0.mlp.0): input_col=3 -> output_neuron=1762 (grad=0.0010)
+  Layer 1 (encoder.layers.encoder_layer_0.mlp.3): input_col=34 -> output_neuron=72 (grad=0.0012)
+  Warning: No gradients for layer encoder.layers.encoder_layer_1.self_attention.out_proj, skipping
+  Layer 3 (encoder.layers.encoder_layer_1.mlp.0): input_col=24 -> output_neuron=2440 (grad=0.0000)
+  Layer 4 (encoder.layers.encoder_layer_1.mlp.3): input_col=40 -> output_neuron=488 (grad=0.0011)
+  Warning: No gradients for layer encoder.layers.encoder_layer_2.self_attention.out_proj, skipping
+  Layer 6 (encoder.layers.encoder_layer_2.mlp.0): input_col=8 -> output_neuron=2499 (grad=0.0001)
+  Layer 7 (encoder.layers.encoder_layer_2.mlp.3): input_col=3 -> output_neuron=9 (grad=0.0000)
+  Warning: No gradients for layer encoder.layers.encoder_layer_3.self_attention.out_proj, skipping
+  Layer 9 (encoder.layers.encoder_layer_3.mlp.0): input_col=9 -> output_neuron=1012 (grad=0.0010)
+  Layer 10 (encoder.layers.encoder_layer_3.mlp.3): input_col=4 -> output_neuron=318 (grad=0.0001)
+  Warning: No gradients for layer encoder.layers.encoder_layer_4.self_attention.out_proj, skipping
+  Layer 12 (encoder.layers.encoder_layer_4.mlp.0): input_col=30 -> output_neuron=1862 (grad=0.0022)
+  Layer 13 (encoder.layers.encoder_layer_4.mlp.3): input_col=38 -> output_neuron=390 (grad=0.0009)
+  Warning: No gradients for layer encoder.layers.encoder_layer_5.self_attention.out_proj, skipping
+  Layer 15 (encoder.layers.encoder_layer_5.mlp.0): input_col=6 -> output_neuron=877 (grad=0.0019)
+  Layer 16 (encoder.layers.encoder_layer_5.mlp.3): input_col=13 -> output_neuron=390 (grad=0.0077)
+  Warning: No gradients for layer encoder.layers.encoder_layer_6.self_attention.out_proj, skipping
+  Layer 18 (encoder.layers.encoder_layer_6.mlp.0): input_col=6 -> output_neuron=1639 (grad=0.0001)
+  Layer 19 (encoder.layers.encoder_layer_6.mlp.3): input_col=7 -> output_neuron=665 (grad=0.0014)
+  Warning: No gradients for layer encoder.layers.encoder_layer_7.self_attention.out_proj, skipping
+  Layer 21 (encoder.layers.encoder_layer_7.mlp.0): input_col=41 -> output_neuron=2769 (grad=0.0024)
+  Layer 22 (encoder.layers.encoder_layer_7.mlp.3): input_col=33 -> output_neuron=173 (grad=0.0009)
+  Warning: No gradients for layer encoder.layers.encoder_layer_8.self_attention.out_proj, skipping
+  Layer 24 (encoder.layers.encoder_layer_8.mlp.0): input_col=29 -> output_neuron=760 (grad=0.0062)
+  Layer 25 (encoder.layers.encoder_layer_8.mlp.3): input_col=40 -> output_neuron=535 (grad=0.0000)
+  Warning: No gradients for layer encoder.layers.encoder_layer_9.self_attention.out_proj, skipping
+  Layer 27 (encoder.layers.encoder_layer_9.mlp.0): input_col=7 -> output_neuron=2198 (grad=0.0026)
+  Layer 28 (encoder.layers.encoder_layer_9.mlp.3): input_col=38 -> output_neuron=48 (grad=0.0024)
+  Warning: No gradients for layer encoder.layers.encoder_layer_10.self_attention.out_proj, skipping
+  Layer 30 (encoder.layers.encoder_layer_10.mlp.0): input_col=0 -> output_neuron=190 (grad=0.0065)
+  Layer 31 (encoder.layers.encoder_layer_10.mlp.3): input_col=46 -> output_neuron=621 (grad=0.0026)
+  Warning: No gradients for layer encoder.layers.encoder_layer_11.self_attention.out_proj, skipping
+  Layer 33 (encoder.layers.encoder_layer_11.mlp.0): input_col=45 -> output_neuron=2091 (grad=0.0030)
+  Layer 34 (encoder.layers.encoder_layer_11.mlp.3): input_col=27 -> output_neuron=356 (grad=0.0015)
+
+Chain 2: Starting from neuron 0
+  Layer 0 (encoder.layers.encoder_layer_0.mlp.0): input_col=0 -> output_neuron=2437 (grad=0.0006)
+  Layer 1 (encoder.layers.encoder_layer_0.mlp.3): input_col=37 -> output_neuron=488 (grad=0.0001)
+  Warning: No gradients for layer encoder.layers.encoder_layer_1.self_attention.out_proj, skipping
+  Layer 3 (encoder.layers.encoder_layer_1.mlp.0): input_col=8 -> output_neuron=2440 (grad=0.0004)
+  Layer 4 (encoder.layers.encoder_layer_1.mlp.3): input_col=40 -> output_neuron=488 (grad=0.0011)
+  Warning: No gradients for layer encoder.layers.encoder_layer_2.self_attention.out_proj, skipping
+  Layer 6 (encoder.layers.encoder_layer_2.mlp.0): input_col=8 -> output_neuron=2499 (grad=0.0001)
+  Layer 7 (encoder.layers.encoder_layer_2.mlp.3): input_col=3 -> output_neuron=9 (grad=0.0000)
+  Warning: No gradients for layer encoder.layers.encoder_layer_3.self_attention.out_proj, skipping
+  Layer 9 (encoder.layers.encoder_layer_3.mlp.0): input_col=9 -> output_neuron=1012 (grad=0.0010)
+  Layer 10 (encoder.layers.encoder_layer_3.mlp.3): input_col=4 -> output_neuron=318 (grad=0.0001)
+  Warning: No gradients for layer encoder.layers.encoder_layer_4.self_attention.out_proj, skipping
+  Layer 12 (encoder.layers.encoder_layer_4.mlp.0): input_col=30 -> output_neuron=1862 (grad=0.0022)
+  Layer 13 (encoder.layers.encoder_layer_4.mlp.3): input_col=38 -> output_neuron=390 (grad=0.0009)
+  Warning: No gradients for layer encoder.layers.encoder_layer_5.self_attention.out_proj, skipping
+  Layer 15 (encoder.layers.encoder_layer_5.mlp.0): input_col=6 -> output_neuron=877 (grad=0.0019)
+  Layer 16 (encoder.layers.encoder_layer_5.mlp.3): input_col=13 -> output_neuron=390 (grad=0.0077)
+  Warning: No gradients for layer encoder.layers.encoder_layer_6.self_attention.out_proj, skipping
+  Layer 18 (encoder.layers.encoder_layer_6.mlp.0): input_col=6 -> output_neuron=1639 (grad=0.0001)
+  Layer 19 (encoder.layers.encoder_layer_6.mlp.3): input_col=7 -> output_neuron=665 (grad=0.0014)
+  Warning: No gradients for layer encoder.layers.encoder_layer_7.self_attention.out_proj, skipping
+  Layer 21 (encoder.layers.encoder_layer_7.mlp.0): input_col=41 -> output_neuron=2769 (grad=0.0024)
+  Layer 22 (encoder.layers.encoder_layer_7.mlp.3): input_col=33 -> output_neuron=173 (grad=0.0009)
+  Warning: No gradients for layer encoder.layers.encoder_layer_8.self_attention.out_proj, skipping
+  Layer 24 (encoder.layers.encoder_layer_8.mlp.0): input_col=29 -> output_neuron=760 (grad=0.0062)
+  Layer 25 (encoder.layers.encoder_layer_8.mlp.3): input_col=40 -> output_neuron=535 (grad=0.0000)
+  Warning: No gradients for layer encoder.layers.encoder_layer_9.self_attention.out_proj, skipping
+  Layer 27 (encoder.layers.encoder_layer_9.mlp.0): input_col=7 -> output_neuron=2198 (grad=0.0026)
+  Layer 28 (encoder.layers.encoder_layer_9.mlp.3): input_col=38 -> output_neuron=48 (grad=0.0024)
+  Warning: No gradients for layer encoder.layers.encoder_layer_10.self_attention.out_proj, skipping
+  Layer 30 (encoder.layers.encoder_layer_10.mlp.0): input_col=0 -> output_neuron=190 (grad=0.0065)
+  Layer 31 (encoder.layers.encoder_layer_10.mlp.3): input_col=46 -> output_neuron=621 (grad=0.0026)
+  Warning: No gradients for layer encoder.layers.encoder_layer_11.self_attention.out_proj, skipping
+  Layer 33 (encoder.layers.encoder_layer_11.mlp.0): input_col=45 -> output_neuron=2091 (grad=0.0030)
+  Layer 34 (encoder.layers.encoder_layer_11.mlp.3): input_col=27 -> output_neuron=356 (grad=0.0015)
+
+============================================================
+✓ Successfully built 3 gradient chains
+============================================================
+
+Epoch 2/100 | LR: 0.000200 | Time: 27.29s
+Train Loss: 4.2140 | Train Acc: 12.00%
+Val Loss: 3.6033 | Val Acc: 33.94%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 1
+  Selected Arms: [2]
+  Arm Means: [0.0, 0.0, 0.0]
+  Arm Stds: [10.0, 10.0, 10.0]
+  Arm Observation Counts: [0, 0, 0]
+  Last Sampled Values: [3.997760772705078, -0.8389114141464233, 11.53758430480957]
+------------------------------------------------------------
+
+Reward: 38.46% (normalized: 3.85)
+
+Epoch 3/100 | LR: 0.000300 | Time: 25.65s
+Train Loss: 2.6372 | Train Acc: 54.98%
+Val Loss: 1.9719 | Val Acc: 72.41%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 2
+  Selected Arms: [1]
+  Arm Means: [0.0, 0.0, 3.076923131942749]
+  Arm Stds: [10.0, 10.0, 4.4721360206604]
+  Arm Observation Counts: [0, 0, 1]
+  Last Sampled Values: [8.807842254638672, 9.284215927124023, 0.6335017681121826]
+------------------------------------------------------------
+
+Reward: 18.80% (normalized: 1.88)
+
+Epoch 4/100 | LR: 0.000400 | Time: 25.55s
+Train Loss: 1.3984 | Train Acc: 85.09%
+Val Loss: 1.0516 | Val Acc: 91.21%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 3
+  Selected Arms: [1]
+  Arm Means: [0.0, 1.504273533821106, 3.076923131942749]
+  Arm Stds: [10.0, 4.4721360206604, 4.4721360206604]
+  Arm Observation Counts: [0, 1, 1]
+  Last Sampled Values: [-2.4921092987060547, -2.0834083557128906, -7.178600311279297]
+------------------------------------------------------------
+
+Reward: 3.79% (normalized: 0.38)
+
+Epoch 5/100 | LR: 0.000500 | Time: 25.52s
+Train Loss: 0.7256 | Train Acc: 95.50%
+Val Loss: 0.6208 | Val Acc: 94.99%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 4
+  Selected Arms: [2]
+  Arm Means: [0.0, 1.003934383392334, 3.076923131942749]
+  Arm Stds: [10.0, 3.3333334922790527, 4.4721360206604]
+  Arm Observation Counts: [0, 2, 1]
+  Last Sampled Values: [-11.839838027954102, 3.571078062057495, 4.971772193908691]
+------------------------------------------------------------
+
+Reward: 1.47% (normalized: 0.15)
+
+Epoch 6/100 | LR: 0.000600 | Time: 25.57s
+Train Loss: 0.3766 | Train Acc: 98.47%
+Val Loss: 0.4130 | Val Acc: 96.46%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 5
+  Selected Arms: [2]
+  Arm Means: [0.0, 1.003934383392334, 1.774521827697754]
+  Arm Stds: [10.0, 3.3333334922790527, 3.3333334922790527]
+  Arm Observation Counts: [0, 2, 2]
+  Last Sampled Values: [-17.122915267944336, 3.0777785778045654, 6.793369293212891]
+------------------------------------------------------------
+
+Reward: 0.37% (normalized: 0.04)
+
+Epoch 7/100 | LR: 0.000700 | Time: 25.48s
+Train Loss: 0.2282 | Train Acc: 99.40%
+Val Loss: 0.3063 | Val Acc: 96.83%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 6
+  Selected Arms: [1]
+  Arm Means: [0.0, 1.003934383392334, 1.23978590965271]
+  Arm Stds: [10.0, 3.3333334922790527, 2.77350115776062]
+  Arm Observation Counts: [0, 2, 3]
+  Last Sampled Values: [3.5718154907226562, 4.735060691833496, 2.68099308013916]
+------------------------------------------------------------
+
+Reward: 0.24% (normalized: 0.02)
+
+Epoch 8/100 | LR: 0.000800 | Time: 25.52s
+Train Loss: 0.1170 | Train Acc: 99.77%
+Val Loss: 0.2566 | Val Acc: 97.07%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 7
+  Selected Arms: [0]
+  Arm Means: [0.0, 0.7025453448295593, 1.23978590965271]
+  Arm Stds: [10.0, 2.77350115776062, 2.77350115776062]
+  Arm Observation Counts: [0, 3, 3]
+  Last Sampled Values: [9.123987197875977, -2.486342668533325, 1.6328186988830566]
+------------------------------------------------------------
+
+Reward: 0.79% (normalized: 0.08)
+
+Epoch 9/100 | LR: 0.000900 | Time: 25.55s
+Train Loss: 0.0727 | Train Acc: 99.95%
+Val Loss: 0.2107 | Val Acc: 97.86%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 8
+  Selected Arms: [2]
+  Arm Means: [0.0634920671582222, 0.7025453448295593, 1.23978590965271]
+  Arm Stds: [4.4721360206604, 2.77350115776062, 2.77350115776062]
+  Arm Observation Counts: [1, 3, 3]
+  Last Sampled Values: [-0.2889212369918823, 2.6359703540802, 7.958524703979492]
+------------------------------------------------------------
+
+Reward: -0.06% (normalized: -0.01)
+
+Epoch 10/100 | LR: 0.001000 | Time: 25.65s
+Train Loss: 0.0439 | Train Acc: 99.97%
+Val Loss: 0.1836 | Val Acc: 97.80%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 9
+  Selected Arms: [1]
+  Arm Means: [0.0634920671582222, 0.7025453448295593, 0.9466350674629211]
+  Arm Stds: [4.4721360206604, 2.77350115776062, 2.425356388092041]
+  Arm Observation Counts: [1, 3, 4]
+  Last Sampled Values: [0.11102993786334991, 3.999699354171753, -0.2779412865638733]
+------------------------------------------------------------
+
+Reward: -0.37% (normalized: -0.04)
+
+Epoch 11/100 | LR: 0.001000 | Time: 25.79s
+Train Loss: 0.0311 | Train Acc: 99.98%
+Val Loss: 0.1738 | Val Acc: 97.44%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 10
+  Selected Arms: [1]
+  Arm Means: [0.0634920671582222, 0.5286217331886292, 0.9466350674629211]
+  Arm Stds: [4.4721360206604, 2.425356388092041, 2.425356388092041]
+  Arm Observation Counts: [1, 4, 4]
+  Last Sampled Values: [-4.403258323669434, 1.8132781982421875, -0.9532715678215027]
+------------------------------------------------------------
+
+Reward: 0.18% (normalized: 0.02)
+
+Epoch 12/100 | LR: 0.000999 | Time: 25.79s
+Train Loss: 0.0231 | Train Acc: 99.98%
+Val Loss: 0.1520 | Val Acc: 97.62%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 11
+  Selected Arms: [2]
+  Arm Means: [0.0634920671582222, 0.4314204454421997, 0.9466350674629211]
+  Arm Stds: [4.4721360206604, 2.1821789741516113, 2.425356388092041]
+  Arm Observation Counts: [1, 5, 4]
+  Last Sampled Values: [-4.353036403656006, 3.235355854034424, 3.4255809783935547]
+------------------------------------------------------------
+
+Reward: 0.06% (normalized: 0.01)
+
+Epoch 13/100 | LR: 0.000997 | Time: 25.79s
+Train Loss: 0.0194 | Train Acc: 99.98%
+Val Loss: 0.1473 | Val Acc: 97.68%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 12
+  Selected Arms: [2]
+  Arm Means: [0.0634920671582222, 0.4314204454421997, 0.7674864530563354]
+  Arm Stds: [4.4721360206604, 2.1821789741516113, 2.1821789741516113]
+  Arm Observation Counts: [1, 5, 5]
+  Last Sampled Values: [-2.0484530925750732, 0.12776494026184082, 1.2168424129486084]
+------------------------------------------------------------
+
+Reward: -0.12% (normalized: -0.01)
+
+Epoch 14/100 | LR: 0.000995 | Time: 25.76s
+Train Loss: 0.0182 | Train Acc: 99.97%
+Val Loss: 0.1511 | Val Acc: 97.56%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 13
+  Selected Arms: [0]
+  Arm Means: [0.0634920671582222, 0.4314204454421997, 0.6427350044250488]
+  Arm Stds: [4.4721360206604, 2.1821789741516113, 2.0]
+  Arm Observation Counts: [1, 5, 6]
+  Last Sampled Values: [7.969341278076172, 0.9941107630729675, 1.9139902591705322]
+------------------------------------------------------------
+No improvement for 1 epoch(s)
+
+Reward: 0.18% (normalized: 0.02)
+
+Epoch 15/100 | LR: 0.000992 | Time: 25.75s
+Train Loss: 0.0181 | Train Acc: 99.98%
+Val Loss: 0.1414 | Val Acc: 97.74%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 14
+  Selected Arms: [1]
+  Arm Means: [0.04341337829828262, 0.4314204454421997, 0.6427350044250488]
+  Arm Stds: [3.3333334922790527, 2.1821789741516113, 2.0]
+  Arm Observation Counts: [2, 5, 6]
+  Last Sampled Values: [-3.4473185539245605, -1.9544132947921753, -2.6771740913391113]
+------------------------------------------------------------
+
+Reward: -2.08% (normalized: -0.21)
+
+Epoch 16/100 | LR: 0.000989 | Time: 25.72s
+Train Loss: 0.0865 | Train Acc: 99.60%
+Val Loss: 0.2397 | Val Acc: 95.67%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 15
+  Selected Arms: [2]
+  Arm Means: [0.04341337829828262, 0.3291819393634796, 0.6427350044250488]
+  Arm Stds: [3.3333334922790527, 2.0, 2.0]
+  Arm Observation Counts: [2, 6, 6]
+  Last Sampled Values: [-6.948603630065918, -0.5782120227813721, 0.45056623220443726]
+------------------------------------------------------------
+No improvement for 1 epoch(s)
+
+Reward: 0.73% (normalized: 0.07)
+
+Epoch 17/100 | LR: 0.000985 | Time: 25.73s
+Train Loss: 0.0662 | Train Acc: 99.65%
+Val Loss: 0.1890 | Val Acc: 96.40%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 16
+  Selected Arms: [2]
+  Arm Means: [0.04341337829828262, 0.3291819393634796, 0.5641867518424988]
+  Arm Stds: [3.3333334922790527, 2.0, 1.8569533824920654]
+  Arm Observation Counts: [2, 6, 7]
+  Last Sampled Values: [-2.9782919883728027, 0.22350704669952393, 3.1811368465423584]
+------------------------------------------------------------
+No improvement for 2 epoch(s)
+
+Reward: -0.37% (normalized: -0.04)
+
+Epoch 18/100 | LR: 0.000981 | Time: 25.75s
+Train Loss: 0.0576 | Train Acc: 99.68%
+Val Loss: 0.2173 | Val Acc: 96.03%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 17
+  Selected Arms: [0]
+  Arm Means: [0.04341337829828262, 0.3291819393634796, 0.49136048555374146]
+  Arm Stds: [3.3333334922790527, 2.0, 1.740776538848877]
+  Arm Observation Counts: [2, 6, 8]
+  Last Sampled Values: [2.0813074111938477, -1.7087910175323486, 1.056044101715088]
+------------------------------------------------------------
+No improvement for 3 epoch(s)
+
+Reward: -0.24% (normalized: -0.02)
+
+Epoch 19/100 | LR: 0.000976 | Time: 25.69s
+Train Loss: 0.0440 | Train Acc: 99.80%
+Val Loss: 0.2041 | Val Acc: 95.79%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 18
+  Selected Arms: [2]
+  Arm Means: [0.022541560232639313, 0.3291819393634796, 0.49136048555374146]
+  Arm Stds: [2.77350115776062, 2.0, 1.740776538848877]
+  Arm Observation Counts: [3, 6, 8]
+  Last Sampled Values: [-3.4363207817077637, 2.326052188873291, 4.484910488128662]
+------------------------------------------------------------
+No improvement for 4 epoch(s)
+
+Reward: 2.01% (normalized: 0.20)
+
+Epoch 20/100 | LR: 0.000970 | Time: 25.68s
+Train Loss: 0.0176 | Train Acc: 99.98%
+Val Loss: 0.1241 | Val Acc: 97.80%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 19
+  Selected Arms: [0]
+  Arm Means: [0.022541560232639313, 0.3291819393634796, 0.4600204527378082]
+  Arm Stds: [2.77350115776062, 2.0, 1.64398992061615]
+  Arm Observation Counts: [3, 6, 9]
+  Last Sampled Values: [5.985491752624512, -1.960669755935669, -0.7730615139007568]
+------------------------------------------------------------
+
+Reward: -0.37% (normalized: -0.04)
+
+Epoch 21/100 | LR: 0.000964 | Time: 25.67s
+Train Loss: 0.0108 | Train Acc: 99.98%
+Val Loss: 0.1241 | Val Acc: 97.44%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 20
+  Selected Arms: [1]
+  Arm Means: [0.008618829771876335, 0.3291819393634796, 0.4600204527378082]
+  Arm Stds: [2.425356388092041, 2.0, 1.64398992061615]
+  Arm Observation Counts: [4, 6, 9]
+  Last Sampled Values: [-0.629503607749939, 0.5220022201538086, 0.3696446120738983]
+------------------------------------------------------------
+No improvement for 1 epoch(s)
+
+Reward: 0.06% (normalized: 0.01)
+
+Epoch 22/100 | LR: 0.000957 | Time: 25.71s
+Train Loss: 0.0090 | Train Acc: 99.98%
+Val Loss: 0.1141 | Val Acc: 97.50%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 21
+  Selected Arms: [1]
+  Arm Means: [0.008618829771876335, 0.28461959958076477, 0.4600204527378082]
+  Arm Stds: [2.425356388092041, 1.8569533824920654, 1.64398992061615]
+  Arm Observation Counts: [4, 7, 9]
+  Last Sampled Values: [0.5005143284797668, 2.9820406436920166, 2.358363628387451]
+------------------------------------------------------------
+
+Reward: 0.06% (normalized: 0.01)
+
+Epoch 23/100 | LR: 0.000949 | Time: 25.71s
+Train Loss: 0.0086 | Train Acc: 99.97%
+Val Loss: 0.1199 | Val Acc: 97.56%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 22
+  Selected Arms: [0]
+  Arm Means: [0.008618829771876335, 0.2508602440357208, 0.4600204527378082]
+  Arm Stds: [2.425356388092041, 1.740776538848877, 1.64398992061615]
+  Arm Observation Counts: [4, 8, 9]
+  Last Sampled Values: [1.9203191995620728, 1.1868358850479126, -0.27953633666038513]
+------------------------------------------------------------
+No improvement for 1 epoch(s)
+
+Reward: 0.06% (normalized: 0.01)
+
+Epoch 24/100 | LR: 0.000941 | Time: 25.71s
+Train Loss: 0.0077 | Train Acc: 99.98%
+Val Loss: 0.1124 | Val Acc: 97.62%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 23
+  Selected Arms: [2]
+  Arm Means: [0.008140006102621555, 0.2508602440357208, 0.4600204527378082]
+  Arm Stds: [2.1821789741516113, 1.740776538848877, 1.64398992061615]
+  Arm Observation Counts: [5, 8, 9]
+  Last Sampled Values: [-3.364995002746582, -1.4080791473388672, 1.5166003704071045]
+------------------------------------------------------------
+
+Reward: 0.18% (normalized: 0.02)
+
+Epoch 25/100 | LR: 0.000933 | Time: 25.74s
+Train Loss: 0.0078 | Train Acc: 99.97%
+Val Loss: 0.1115 | Val Acc: 97.80%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 24
+  Selected Arms: [1]
+  Arm Means: [0.008140006102621555, 0.2508602440357208, 0.4169272482395172]
+  Arm Stds: [2.1821789741516113, 1.740776538848877, 1.5617376565933228]
+  Arm Observation Counts: [5, 8, 10]
+  Last Sampled Values: [2.496009588241577, 3.3225455284118652, -0.8553787469863892]
+------------------------------------------------------------
+
+Reward: 0.06% (normalized: 0.01)
+
+Epoch 26/100 | LR: 0.000924 | Time: 25.69s
+Train Loss: 0.0071 | Train Acc: 99.98%
+Val Loss: 0.1112 | Val Acc: 97.86%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 25
+  Selected Arms: [1]
+  Arm Means: [0.008140006102621555, 0.22440022230148315, 0.4169272482395172]
+  Arm Stds: [2.1821789741516113, 1.64398992061615, 1.5617376565933228]
+  Arm Observation Counts: [5, 9, 10]
+  Last Sampled Values: [0.8875852227210999, 3.1904900074005127, -0.022767215967178345]
+------------------------------------------------------------
+
+Reward: 0.00% (normalized: 0.00)
+
+Epoch 27/100 | LR: 0.000915 | Time: 25.67s
+Train Loss: 0.0066 | Train Acc: 99.98%
+Val Loss: 0.1117 | Val Acc: 97.86%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 26
+  Selected Arms: [0]
+  Arm Means: [0.008140006102621555, 0.20250751078128815, 0.4169272482395172]
+  Arm Stds: [2.1821789741516113, 1.5617376565933228, 1.5617376565933228]
+  Arm Observation Counts: [5, 10, 10]
+  Last Sampled Values: [2.2080862522125244, -2.565556526184082, -1.123708724975586]
+------------------------------------------------------------
+No improvement for 1 epoch(s)
+
+Reward: -0.12% (normalized: -0.01)
+
+Epoch 28/100 | LR: 0.000905 | Time: 25.72s
+Train Loss: 0.0064 | Train Acc: 99.97%
+Val Loss: 0.1096 | Val Acc: 97.74%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 27
+  Selected Arms: [1]
+  Arm Means: [0.004884003195911646, 0.20250751078128815, 0.4169272482395172]
+  Arm Stds: [2.0, 1.5617376565933228, 1.5617376565933228]
+  Arm Observation Counts: [6, 10, 10]
+  Last Sampled Values: [-2.6084210872650146, 3.001255512237549, -3.4071953296661377]
+------------------------------------------------------------
+
+Reward: 0.18% (normalized: 0.02)
+
+Epoch 29/100 | LR: 0.000894 | Time: 25.67s
+Train Loss: 0.0060 | Train Acc: 99.97%
+Val Loss: 0.1111 | Val Acc: 97.92%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 28
+  Selected Arms: [0]
+  Arm Means: [0.004884003195911646, 0.18613484501838684, 0.4169272482395172]
+  Arm Stds: [2.0, 1.49071204662323, 1.5617376565933228]
+  Arm Observation Counts: [6, 11, 10]
+  Last Sampled Values: [2.3257153034210205, -1.3112883567810059, -1.177062749862671]
+------------------------------------------------------------
+No improvement for 1 epoch(s)
+
+Reward: -0.18% (normalized: -0.02)
+
+Epoch 30/100 | LR: 0.000883 | Time: 25.68s
+Train Loss: 0.0057 | Train Acc: 99.97%
+Val Loss: 0.1094 | Val Acc: 97.74%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 29
+  Selected Arms: [2]
+  Arm Means: [0.0016841382021084428, 0.18613484501838684, 0.4169272482395172]
+  Arm Stds: [1.8569533824920654, 1.49071204662323, 1.5617376565933228]
+  Arm Observation Counts: [7, 11, 10]
+  Last Sampled Values: [-0.21161767840385437, 0.07830797135829926, 0.24691994488239288]
+------------------------------------------------------------
+
+Reward: -0.37% (normalized: -0.04)
+
+Epoch 31/100 | LR: 0.000872 | Time: 25.67s
+Train Loss: 0.0058 | Train Acc: 99.98%
+Val Loss: 0.1206 | Val Acc: 97.37%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 30
+  Selected Arms: [1]
+  Arm Means: [0.0016841382021084428, 0.18613484501838684, 0.37661105394363403]
+  Arm Stds: [1.8569533824920654, 1.49071204662323, 1.49071204662323]
+  Arm Observation Counts: [7, 11, 11]
+  Last Sampled Values: [0.499423623085022, 2.3931734561920166, 2.0608885288238525]
+------------------------------------------------------------
+No improvement for 1 epoch(s)
+
+Reward: 0.61% (normalized: 0.06)
+
+Epoch 32/100 | LR: 0.000860 | Time: 25.68s
+Train Loss: 0.0054 | Train Acc: 99.97%
+Val Loss: 0.1100 | Val Acc: 97.99%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 31
+  Selected Arms: [0]
+  Arm Means: [0.0016841382021084428, 0.17592383921146393, 0.37661105394363403]
+  Arm Stds: [1.8569533824920654, 1.4285714626312256, 1.49071204662323]
+  Arm Observation Counts: [7, 12, 11]
+  Last Sampled Values: [1.9536082744598389, 0.14478211104869843, -0.2969774007797241]
+------------------------------------------------------------
+No improvement for 2 epoch(s)
+
+Reward: -0.18% (normalized: -0.02)
+
+Epoch 33/100 | LR: 0.000847 | Time: 25.65s
+Train Loss: 0.0050 | Train Acc: 99.98%
+Val Loss: 0.1095 | Val Acc: 97.80%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 32
+  Selected Arms: [1]
+  Arm Means: [-0.0007400019676424563, 0.17592383921146393, 0.37661105394363403]
+  Arm Stds: [1.740776538848877, 1.4285714626312256, 1.49071204662323]
+  Arm Observation Counts: [8, 12, 11]
+  Last Sampled Values: [0.6653982996940613, 1.3292350769042969, -0.44604426622390747]
+------------------------------------------------------------
+No improvement for 3 epoch(s)
+
+Reward: -0.12% (normalized: -0.01)
+
+Epoch 34/100 | LR: 0.000835 | Time: 25.68s
+Train Loss: 0.0052 | Train Acc: 99.97%
+Val Loss: 0.1079 | Val Acc: 97.68%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 33
+  Selected Arms: [1]
+  Arm Means: [-0.0007400019676424563, 0.16172505915164948, 0.37661105394363403]
+  Arm Stds: [1.740776538848877, 1.373605728149414, 1.49071204662323]
+  Arm Observation Counts: [8, 13, 11]
+  Last Sampled Values: [-1.2082525491714478, 0.08925842493772507, -0.7402889132499695]
+------------------------------------------------------------
+
+Reward: 0.06% (normalized: 0.01)
+
+Epoch 35/100 | LR: 0.000821 | Time: 25.64s
+Train Loss: 0.0047 | Train Acc: 99.98%
+Val Loss: 0.1090 | Val Acc: 97.74%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 34
+  Selected Arms: [2]
+  Arm Means: [-0.0007400019676424563, 0.15080435574054718, 0.37661105394363403]
+  Arm Stds: [1.740776538848877, 1.324532389640808, 1.49071204662323]
+  Arm Observation Counts: [8, 14, 11]
+  Last Sampled Values: [0.3642447590827942, 2.441904306411743, 2.815613269805908]
+------------------------------------------------------------
+No improvement for 1 epoch(s)
+
+Reward: -0.06% (normalized: -0.01)
+
+Epoch 36/100 | LR: 0.000808 | Time: 25.68s
+Train Loss: 0.0045 | Train Acc: 99.98%
+Val Loss: 0.1086 | Val Acc: 97.68%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 35
+  Selected Arms: [0]
+  Arm Means: [-0.0007400019676424563, 0.15080435574054718, 0.3453689217567444]
+  Arm Stds: [1.740776538848877, 1.324532389640808, 1.4285714626312256]
+  Arm Observation Counts: [8, 14, 12]
+  Last Sampled Values: [1.3413933515548706, 1.023882269859314, 1.3009166717529297]
+------------------------------------------------------------
+No improvement for 2 epoch(s)
+
+Reward: -0.06% (normalized: -0.01)
+
+Epoch 37/100 | LR: 0.000794 | Time: 25.65s
+Train Loss: 0.0045 | Train Acc: 99.98%
+Val Loss: 0.1090 | Val Acc: 97.62%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 36
+  Selected Arms: [1]
+  Arm Means: [-0.001320002367720008, 0.15080435574054718, 0.3453689217567444]
+  Arm Stds: [1.64398992061615, 1.324532389640808, 1.4285714626312256]
+  Arm Observation Counts: [9, 14, 12]
+  Last Sampled Values: [1.2538539171218872, 1.4649391174316406, -1.0849111080169678]
+------------------------------------------------------------
+No improvement for 3 epoch(s)
+
+Reward: 0.00% (normalized: 0.00)
+
+Epoch 38/100 | LR: 0.000780 | Time: 25.67s
+Train Loss: 0.0042 | Train Acc: 99.98%
+Val Loss: 0.1116 | Val Acc: 97.62%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 37
+  Selected Arms: [0]
+  Arm Means: [-0.001320002367720008, 0.14091554284095764, 0.3453689217567444]
+  Arm Stds: [1.64398992061615, 1.2803688049316406, 1.4285714626312256]
+  Arm Observation Counts: [9, 15, 12]
+  Last Sampled Values: [0.3117338716983795, -0.938811182975769, -0.06084516644477844]
+------------------------------------------------------------
+No improvement for 4 epoch(s)
+
+Reward: 0.12% (normalized: 0.01)
+
+Epoch 39/100 | LR: 0.000765 | Time: 25.69s
+Train Loss: 0.0042 | Train Acc: 99.98%
+Val Loss: 0.1096 | Val Acc: 97.74%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 38
+  Selected Arms: [0]
+  Arm Means: [-8.765753678474653e-10, 0.14091554284095764, 0.3453689217567444]
+  Arm Stds: [1.5617376565933228, 1.2803688049316406, 1.4285714626312256]
+  Arm Observation Counts: [10, 15, 12]
+  Last Sampled Values: [1.9660732746124268, -0.1170075535774231, -0.4064338207244873]
+------------------------------------------------------------
+No improvement for 5 epoch(s)
+
+Reward: -0.06% (normalized: -0.01)
+
+Epoch 40/100 | LR: 0.000750 | Time: 25.67s
+Train Loss: 0.0041 | Train Acc: 99.98%
+Val Loss: 0.1091 | Val Acc: 97.68%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 39
+  Selected Arms: [2]
+  Arm Means: [-0.0005426680436357856, 0.14091554284095764, 0.3453689217567444]
+  Arm Stds: [1.49071204662323, 1.2803688049316406, 1.4285714626312256]
+  Arm Observation Counts: [11, 15, 12]
+  Last Sampled Values: [0.23913607001304626, 0.5163946747779846, 2.5501515865325928]
+------------------------------------------------------------
+No improvement for 6 epoch(s)
+
+Reward: 0.00% (normalized: 0.00)
+
+Epoch 41/100 | LR: 0.000735 | Time: 25.73s
+Train Loss: 0.0041 | Train Acc: 99.97%
+Val Loss: 0.1128 | Val Acc: 97.68%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 40
+  Selected Arms: [2]
+  Arm Means: [-0.0005426680436357856, 0.14091554284095764, 0.31930333375930786]
+  Arm Stds: [1.49071204662323, 1.2803688049316406, 1.373605728149414]
+  Arm Observation Counts: [11, 15, 13]
+  Last Sampled Values: [-1.3739213943481445, 0.4171331524848938, 0.9420283436775208]
+------------------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 41 epochs.
+Total training time: 1054.34 seconds
+Average time per epoch: 25.72 seconds
+
+============================================================
+Training completed!
+============================================================
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on Oxford-IIIT Pets
+Using Gradient Chain Selection
+============================================================
+Using random seed: 2382
+
+Loading dataset...
+Dataset loaded: 3680 train samples, 3669 val samples
+Number of classes: 37
+
+Creating ViT model for 37 classes...
+
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'out_proj', 'mlp.3', 'mlp.0'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=58, arm_distribution='gradient_chain', num_arms=3, num_arms_to_select=1, ucb_alpha=0.5, use_fixed_indices=False, arm_selection_method='thompson', thompson_distribution='gaussian', thompson_alpha_prior=1.0, thompson_beta_prior=1.0, thompson_gaussian_prior_mean=0.0, thompson_gaussian_prior_std=10.0, thompson_gaussian_noise_std=5.0, gradient_chain_warmup_epochs=2, gradient_chain_num_samples=5)
+Total parameters: 149,556,554
+Trainable parameters: 2,757,194 (1.84%)
+Frozen parameters: 146,799,360 (98.16%)
+
+============================================================
+Fine-tuning ViT using Gradient Chain Selection:
+============================================================
+Calculating initial validation accuracy...
+Initial Val Acc: 1.53%
+
+Reward: 0.00% (normalized: 0.00)
+Gradient chain warmup: 1/2
+
+Epoch 1/100 | LR: 0.000100 | Time: 18.65s
+Train Loss: 3.6989 | Train Acc: 2.04%
+Val Loss: 3.6924 | Val Acc: 1.53%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: False
+  Number of Chains: 0
+  Current Epoch: 0
+  Arm Means: [0.0, 0.0, 0.0]
+  Arm Stds: [10.0, 10.0, 10.0]
+  Arm Observation Counts: [0, 0, 0]
+------------------------------------------------------------
+
+Reward: 20.36% (normalized: 2.04)
+
+============================================================
+Building Gradient Chains...
+============================================================
+Sampling 5 batches to estimate gradients...
+  Batch 1/5 processed
+  Batch 2/5 processed
+  Batch 3/5 processed
+  Batch 4/5 processed
+  Batch 5/5 processed
+
+Averaging gradients across batches...
+
+Building 3 gradient chains...
+
+Chain 0: Starting from neuron 16
+  Layer 0 (encoder.layers.encoder_layer_0.mlp.0): input_col=16 -> output_neuron=2437 (grad=0.0006)
+  Layer 1 (encoder.layers.encoder_layer_0.mlp.3): input_col=37 -> output_neuron=520 (grad=0.0012)
+  Warning: No gradients for layer encoder.layers.encoder_layer_1.self_attention.out_proj, skipping
+  Layer 3 (encoder.layers.encoder_layer_1.mlp.0): input_col=40 -> output_neuron=2272 (grad=0.0000)
+  Layer 4 (encoder.layers.encoder_layer_1.mlp.3): input_col=16 -> output_neuron=69 (grad=0.0001)
+  Warning: No gradients for layer encoder.layers.encoder_layer_2.self_attention.out_proj, skipping
+  Layer 6 (encoder.layers.encoder_layer_2.mlp.0): input_col=21 -> output_neuron=1124 (grad=0.0016)
+  Layer 7 (encoder.layers.encoder_layer_2.mlp.3): input_col=20 -> output_neuron=520 (grad=0.0013)
+  Warning: No gradients for layer encoder.layers.encoder_layer_3.self_attention.out_proj, skipping
+  Layer 9 (encoder.layers.encoder_layer_3.mlp.0): input_col=40 -> output_neuron=184 (grad=0.0003)
+  Layer 10 (encoder.layers.encoder_layer_3.mlp.3): input_col=40 -> output_neuron=56 (grad=0.0013)
+  Warning: No gradients for layer encoder.layers.encoder_layer_4.self_attention.out_proj, skipping
+  Layer 12 (encoder.layers.encoder_layer_4.mlp.0): input_col=8 -> output_neuron=1915 (grad=0.0018)
+  Layer 13 (encoder.layers.encoder_layer_4.mlp.3): input_col=43 -> output_neuron=397 (grad=0.0010)
+  Warning: No gradients for layer encoder.layers.encoder_layer_5.self_attention.out_proj, skipping
+  Layer 15 (encoder.layers.encoder_layer_5.mlp.0): input_col=13 -> output_neuron=877 (grad=0.0015)
+  Layer 16 (encoder.layers.encoder_layer_5.mlp.3): input_col=13 -> output_neuron=88 (grad=0.0021)
+  Warning: No gradients for layer encoder.layers.encoder_layer_6.self_attention.out_proj, skipping
+  Layer 18 (encoder.layers.encoder_layer_6.mlp.0): input_col=40 -> output_neuron=411 (grad=0.0000)
+  Layer 19 (encoder.layers.encoder_layer_6.mlp.3): input_col=27 -> output_neuron=218 (grad=0.0011)
+  Warning: No gradients for layer encoder.layers.encoder_layer_7.self_attention.out_proj, skipping
+  Layer 21 (encoder.layers.encoder_layer_7.mlp.0): input_col=26 -> output_neuron=104 (grad=0.0002)
+  Layer 22 (encoder.layers.encoder_layer_7.mlp.3): input_col=8 -> output_neuron=594 (grad=0.0005)
+  Warning: No gradients for layer encoder.layers.encoder_layer_8.self_attention.out_proj, skipping
+  Layer 24 (encoder.layers.encoder_layer_8.mlp.0): input_col=18 -> output_neuron=1740 (grad=0.0005)
+  Layer 25 (encoder.layers.encoder_layer_8.mlp.3): input_col=12 -> output_neuron=277 (grad=0.0021)
+  Warning: No gradients for layer encoder.layers.encoder_layer_9.self_attention.out_proj, skipping
+  Layer 27 (encoder.layers.encoder_layer_9.mlp.0): input_col=37 -> output_neuron=1802 (grad=0.0010)
+  Layer 28 (encoder.layers.encoder_layer_9.mlp.3): input_col=26 -> output_neuron=88 (grad=0.0017)
+  Warning: No gradients for layer encoder.layers.encoder_layer_10.self_attention.out_proj, skipping
+  Layer 30 (encoder.layers.encoder_layer_10.mlp.0): input_col=40 -> output_neuron=2168 (grad=0.0027)
+  Layer 31 (encoder.layers.encoder_layer_10.mlp.3): input_col=8 -> output_neuron=655 (grad=0.0023)
+  Warning: No gradients for layer encoder.layers.encoder_layer_11.self_attention.out_proj, skipping
+  Layer 33 (encoder.layers.encoder_layer_11.mlp.0): input_col=31 -> output_neuron=2973 (grad=0.0021)
+  Layer 34 (encoder.layers.encoder_layer_11.mlp.3): input_col=45 -> output_neuron=520 (grad=0.0043)
+
+Chain 1: Starting from neuron 23
+  Layer 0 (encoder.layers.encoder_layer_0.mlp.0): input_col=23 -> output_neuron=1762 (grad=0.0000)
+  Layer 1 (encoder.layers.encoder_layer_0.mlp.3): input_col=34 -> output_neuron=520 (grad=0.0018)
+  Warning: No gradients for layer encoder.layers.encoder_layer_1.self_attention.out_proj, skipping
+  Layer 3 (encoder.layers.encoder_layer_1.mlp.0): input_col=40 -> output_neuron=2272 (grad=0.0000)
+  Layer 4 (encoder.layers.encoder_layer_1.mlp.3): input_col=16 -> output_neuron=69 (grad=0.0001)
+  Warning: No gradients for layer encoder.layers.encoder_layer_2.self_attention.out_proj, skipping
+  Layer 6 (encoder.layers.encoder_layer_2.mlp.0): input_col=21 -> output_neuron=1124 (grad=0.0016)
+  Layer 7 (encoder.layers.encoder_layer_2.mlp.3): input_col=20 -> output_neuron=520 (grad=0.0013)
+  Warning: No gradients for layer encoder.layers.encoder_layer_3.self_attention.out_proj, skipping
+  Layer 9 (encoder.layers.encoder_layer_3.mlp.0): input_col=40 -> output_neuron=184 (grad=0.0003)
+  Layer 10 (encoder.layers.encoder_layer_3.mlp.3): input_col=40 -> output_neuron=56 (grad=0.0013)
+  Warning: No gradients for layer encoder.layers.encoder_layer_4.self_attention.out_proj, skipping
+  Layer 12 (encoder.layers.encoder_layer_4.mlp.0): input_col=8 -> output_neuron=1915 (grad=0.0018)
+  Layer 13 (encoder.layers.encoder_layer_4.mlp.3): input_col=43 -> output_neuron=397 (grad=0.0010)
+  Warning: No gradients for layer encoder.layers.encoder_layer_5.self_attention.out_proj, skipping
+  Layer 15 (encoder.layers.encoder_layer_5.mlp.0): input_col=13 -> output_neuron=877 (grad=0.0015)
+  Layer 16 (encoder.layers.encoder_layer_5.mlp.3): input_col=13 -> output_neuron=88 (grad=0.0021)
+  Warning: No gradients for layer encoder.layers.encoder_layer_6.self_attention.out_proj, skipping
+  Layer 18 (encoder.layers.encoder_layer_6.mlp.0): input_col=40 -> output_neuron=411 (grad=0.0000)
+  Layer 19 (encoder.layers.encoder_layer_6.mlp.3): input_col=27 -> output_neuron=218 (grad=0.0011)
+  Warning: No gradients for layer encoder.layers.encoder_layer_7.self_attention.out_proj, skipping
+  Layer 21 (encoder.layers.encoder_layer_7.mlp.0): input_col=26 -> output_neuron=104 (grad=0.0002)
+  Layer 22 (encoder.layers.encoder_layer_7.mlp.3): input_col=8 -> output_neuron=594 (grad=0.0005)
+  Warning: No gradients for layer encoder.layers.encoder_layer_8.self_attention.out_proj, skipping
+  Layer 24 (encoder.layers.encoder_layer_8.mlp.0): input_col=18 -> output_neuron=1740 (grad=0.0005)
+  Layer 25 (encoder.layers.encoder_layer_8.mlp.3): input_col=12 -> output_neuron=277 (grad=0.0021)
+  Warning: No gradients for layer encoder.layers.encoder_layer_9.self_attention.out_proj, skipping
+  Layer 27 (encoder.layers.encoder_layer_9.mlp.0): input_col=37 -> output_neuron=1802 (grad=0.0010)
+  Layer 28 (encoder.layers.encoder_layer_9.mlp.3): input_col=26 -> output_neuron=88 (grad=0.0017)
+  Warning: No gradients for layer encoder.layers.encoder_layer_10.self_attention.out_proj, skipping
+  Layer 30 (encoder.layers.encoder_layer_10.mlp.0): input_col=40 -> output_neuron=2168 (grad=0.0027)
+  Layer 31 (encoder.layers.encoder_layer_10.mlp.3): input_col=8 -> output_neuron=655 (grad=0.0023)
+  Warning: No gradients for layer encoder.layers.encoder_layer_11.self_attention.out_proj, skipping
+  Layer 33 (encoder.layers.encoder_layer_11.mlp.0): input_col=31 -> output_neuron=2973 (grad=0.0021)
+  Layer 34 (encoder.layers.encoder_layer_11.mlp.3): input_col=45 -> output_neuron=520 (grad=0.0043)
+
+Chain 2: Starting from neuron 13
+  Layer 0 (encoder.layers.encoder_layer_0.mlp.0): input_col=13 -> output_neuron=283 (grad=0.0011)
+  Layer 1 (encoder.layers.encoder_layer_0.mlp.3): input_col=43 -> output_neuron=69 (grad=0.0039)
+  Warning: No gradients for layer encoder.layers.encoder_layer_1.self_attention.out_proj, skipping
+  Layer 3 (encoder.layers.encoder_layer_1.mlp.0): input_col=21 -> output_neuron=878 (grad=0.0003)
+  Layer 4 (encoder.layers.encoder_layer_1.mlp.3): input_col=14 -> output_neuron=69 (grad=0.0012)
+  Warning: No gradients for layer encoder.layers.encoder_layer_2.self_attention.out_proj, skipping
+  Layer 6 (encoder.layers.encoder_layer_2.mlp.0): input_col=21 -> output_neuron=1124 (grad=0.0016)
+  Layer 7 (encoder.layers.encoder_layer_2.mlp.3): input_col=20 -> output_neuron=520 (grad=0.0013)
+  Warning: No gradients for layer encoder.layers.encoder_layer_3.self_attention.out_proj, skipping
+  Layer 9 (encoder.layers.encoder_layer_3.mlp.0): input_col=40 -> output_neuron=184 (grad=0.0003)
+  Layer 10 (encoder.layers.encoder_layer_3.mlp.3): input_col=40 -> output_neuron=56 (grad=0.0013)
+  Warning: No gradients for layer encoder.layers.encoder_layer_4.self_attention.out_proj, skipping
+  Layer 12 (encoder.layers.encoder_layer_4.mlp.0): input_col=8 -> output_neuron=1915 (grad=0.0018)
+  Layer 13 (encoder.layers.encoder_layer_4.mlp.3): input_col=43 -> output_neuron=397 (grad=0.0010)
+  Warning: No gradients for layer encoder.layers.encoder_layer_5.self_attention.out_proj, skipping
+  Layer 15 (encoder.layers.encoder_layer_5.mlp.0): input_col=13 -> output_neuron=877 (grad=0.0015)
+  Layer 16 (encoder.layers.encoder_layer_5.mlp.3): input_col=13 -> output_neuron=88 (grad=0.0021)
+  Warning: No gradients for layer encoder.layers.encoder_layer_6.self_attention.out_proj, skipping
+  Layer 18 (encoder.layers.encoder_layer_6.mlp.0): input_col=40 -> output_neuron=411 (grad=0.0000)
+  Layer 19 (encoder.layers.encoder_layer_6.mlp.3): input_col=27 -> output_neuron=218 (grad=0.0011)
+  Warning: No gradients for layer encoder.layers.encoder_layer_7.self_attention.out_proj, skipping
+  Layer 21 (encoder.layers.encoder_layer_7.mlp.0): input_col=26 -> output_neuron=104 (grad=0.0002)
+  Layer 22 (encoder.layers.encoder_layer_7.mlp.3): input_col=8 -> output_neuron=594 (grad=0.0005)
+  Warning: No gradients for layer encoder.layers.encoder_layer_8.self_attention.out_proj, skipping
+  Layer 24 (encoder.layers.encoder_layer_8.mlp.0): input_col=18 -> output_neuron=1740 (grad=0.0005)
+  Layer 25 (encoder.layers.encoder_layer_8.mlp.3): input_col=12 -> output_neuron=277 (grad=0.0021)
+  Warning: No gradients for layer encoder.layers.encoder_layer_9.self_attention.out_proj, skipping
+  Layer 27 (encoder.layers.encoder_layer_9.mlp.0): input_col=37 -> output_neuron=1802 (grad=0.0010)
+  Layer 28 (encoder.layers.encoder_layer_9.mlp.3): input_col=26 -> output_neuron=88 (grad=0.0017)
+  Warning: No gradients for layer encoder.layers.encoder_layer_10.self_attention.out_proj, skipping
+  Layer 30 (encoder.layers.encoder_layer_10.mlp.0): input_col=40 -> output_neuron=2168 (grad=0.0027)
+  Layer 31 (encoder.layers.encoder_layer_10.mlp.3): input_col=8 -> output_neuron=655 (grad=0.0023)
+  Warning: No gradients for layer encoder.layers.encoder_layer_11.self_attention.out_proj, skipping
+  Layer 33 (encoder.layers.encoder_layer_11.mlp.0): input_col=31 -> output_neuron=2973 (grad=0.0021)
+  Layer 34 (encoder.layers.encoder_layer_11.mlp.3): input_col=45 -> output_neuron=520 (grad=0.0043)
+
+============================================================
+✓ Successfully built 3 gradient chains
+============================================================
+
+Epoch 2/100 | LR: 0.000200 | Time: 20.37s
+Train Loss: 3.4554 | Train Acc: 9.76%
+Val Loss: 3.1702 | Val Acc: 21.89%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 1
+  Selected Arms: [0]
+  Arm Means: [0.0, 0.0, 0.0]
+  Arm Stds: [10.0, 10.0, 10.0]
+  Arm Observation Counts: [0, 0, 0]
+  Last Sampled Values: [5.152125358581543, 2.800964117050171, 2.9615163803100586]
+------------------------------------------------------------
+
+Reward: 57.75% (normalized: 5.78)
+
+Epoch 3/100 | LR: 0.000300 | Time: 18.73s
+Train Loss: 2.3122 | Train Acc: 61.44%
+Val Loss: 1.4613 | Val Acc: 79.64%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 2
+  Selected Arms: [2]
+  Arm Means: [4.620332717895508, 0.0, 0.0]
+  Arm Stds: [4.4721360206604, 10.0, 10.0]
+  Arm Observation Counts: [1, 0, 0]
+  Last Sampled Values: [5.957681655883789, 1.3446104526519775, 6.7532057762146]
+------------------------------------------------------------
+
+Reward: 8.94% (normalized: 0.89)
+
+Epoch 4/100 | LR: 0.000400 | Time: 18.81s
+Train Loss: 0.8674 | Train Acc: 90.38%
+Val Loss: 0.6514 | Val Acc: 88.58%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 3
+  Selected Arms: [1]
+  Arm Means: [4.620332717895508, 0.0, 0.7151812314987183]
+  Arm Stds: [4.4721360206604, 10.0, 4.4721360206604]
+  Arm Observation Counts: [1, 0, 1]
+  Last Sampled Values: [-1.9401073455810547, 14.051966667175293, -2.399803638458252]
+------------------------------------------------------------
+
+Reward: 1.85% (normalized: 0.19)
+
+Epoch 5/100 | LR: 0.000500 | Time: 18.67s
+Train Loss: 0.3590 | Train Acc: 95.84%
+Val Loss: 0.4706 | Val Acc: 90.43%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 4
+  Selected Arms: [0]
+  Arm Means: [4.620332717895508, 0.14826928079128265, 0.7151812314987183]
+  Arm Stds: [4.4721360206604, 4.4721360206604, 4.4721360206604]
+  Arm Observation Counts: [1, 1, 1]
+  Last Sampled Values: [6.475752830505371, 0.059871502220630646, -8.84885025024414]
+------------------------------------------------------------
+
+Reward: 0.79% (normalized: 0.08)
+
+Epoch 6/100 | LR: 0.000600 | Time: 18.68s
+Train Loss: 0.2123 | Train Acc: 97.55%
+Val Loss: 0.4225 | Val Acc: 91.22%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 5
+  Selected Arms: [2]
+  Arm Means: [2.601980686187744, 0.14826928079128265, 0.7151812314987183]
+  Arm Stds: [3.3333334922790527, 4.4721360206604, 4.4721360206604]
+  Arm Observation Counts: [2, 1, 1]
+  Last Sampled Values: [2.0719594955444336, -2.531980514526367, 4.655224323272705]
+------------------------------------------------------------
+
+Reward: -0.44% (normalized: -0.04)
+
+Epoch 7/100 | LR: 0.000700 | Time: 18.62s
+Train Loss: 0.1408 | Train Acc: 98.53%
+Val Loss: 0.3601 | Val Acc: 90.79%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 6
+  Selected Arms: [1]
+  Arm Means: [2.601980686187744, 0.14826928079128265, 0.3779412806034088]
+  Arm Stds: [3.3333334922790527, 4.4721360206604, 3.3333334922790527]
+  Arm Observation Counts: [2, 1, 2]
+  Last Sampled Values: [4.0705437660217285, 5.462550640106201, 2.3214776515960693]
+------------------------------------------------------------
+
+Reward: 0.60% (normalized: 0.06)
+
+Epoch 8/100 | LR: 0.000800 | Time: 18.59s
+Train Loss: 0.0697 | Train Acc: 99.62%
+Val Loss: 0.3204 | Val Acc: 91.39%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 7
+  Selected Arms: [2]
+  Arm Means: [2.601980686187744, 0.10902152955532074, 0.3779412806034088]
+  Arm Stds: [3.3333334922790527, 3.3333334922790527, 3.3333334922790527]
+  Arm Observation Counts: [2, 2, 2]
+  Last Sampled Values: [1.894835352897644, 0.5118300914764404, 2.9250364303588867]
+------------------------------------------------------------
+
+Reward: -1.42% (normalized: -0.14)
+
+Epoch 9/100 | LR: 0.000900 | Time: 18.55s
+Train Loss: 0.0388 | Train Acc: 99.92%
+Val Loss: 0.3654 | Val Acc: 89.97%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 8
+  Selected Arms: [2]
+  Arm Means: [2.601980686187744, 0.10902152955532074, 0.2180430293083191]
+  Arm Stds: [3.3333334922790527, 3.3333334922790527, 2.77350115776062]
+  Arm Observation Counts: [2, 2, 3]
+  Last Sampled Values: [-1.410754680633545, -1.3442506790161133, 2.6447317600250244]
+------------------------------------------------------------
+No improvement for 1 epoch(s)
+
+Reward: -1.83% (normalized: -0.18)
+
+Epoch 10/100 | LR: 0.001000 | Time: 18.58s
+Train Loss: 0.0414 | Train Acc: 99.73%
+Val Loss: 0.4571 | Val Acc: 88.14%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 9
+  Selected Arms: [0]
+  Arm Means: [2.601980686187744, 0.10902152955532074, 0.12377146631479263]
+  Arm Stds: [3.3333334922790527, 3.3333334922790527, 2.425356388092041]
+  Arm Observation Counts: [2, 2, 4]
+  Last Sampled Values: [4.724588394165039, 2.156703233718872, -1.0521687269210815]
+------------------------------------------------------------
+No improvement for 2 epoch(s)
+
+Reward: 0.35% (normalized: 0.04)
+
+Epoch 11/100 | LR: 0.001000 | Time: 18.79s
+Train Loss: 0.0788 | Train Acc: 99.08%
+Val Loss: 0.4224 | Val Acc: 88.50%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 10
+  Selected Arms: [1]
+  Arm Means: [1.812273383140564, 0.10902152955532074, 0.12377146631479263]
+  Arm Stds: [2.77350115776062, 3.3333334922790527, 2.425356388092041]
+  Arm Observation Counts: [3, 2, 4]
+  Last Sampled Values: [-0.7763339281082153, 1.2948023080825806, -2.154212713241577]
+------------------------------------------------------------
+No improvement for 3 epoch(s)
+
+Reward: -0.52% (normalized: -0.05)
+
+Epoch 12/100 | LR: 0.000999 | Time: 18.72s
+Train Loss: 0.0760 | Train Acc: 98.80%
+Val Loss: 0.4576 | Val Acc: 87.98%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 11
+  Selected Arms: [0]
+  Arm Means: [1.812273383140564, 0.05954252555966377, 0.12377146631479263]
+  Arm Stds: [2.77350115776062, 2.77350115776062, 2.425356388092041]
+  Arm Observation Counts: [3, 3, 4]
+  Last Sampled Values: [4.8269944190979, 2.8162384033203125, -2.20780611038208]
+------------------------------------------------------------
+No improvement for 4 epoch(s)
+
+Reward: -3.79% (normalized: -0.38)
+
+Epoch 13/100 | LR: 0.000997 | Time: 18.74s
+Train Loss: 0.1102 | Train Acc: 98.10%
+Val Loss: 0.5666 | Val Acc: 84.19%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 12
+  Selected Arms: [1]
+  Arm Means: [1.2967149019241333, 0.05954252555966377, 0.12377146631479263]
+  Arm Stds: [2.425356388092041, 2.77350115776062, 2.425356388092041]
+  Arm Observation Counts: [4, 3, 4]
+  Last Sampled Values: [-1.0399435758590698, 5.889890193939209, 0.3733614981174469]
+------------------------------------------------------------
+No improvement for 5 epoch(s)
+
+Reward: 1.74% (normalized: 0.17)
+
+Epoch 14/100 | LR: 0.000995 | Time: 18.66s
+Train Loss: 0.1381 | Train Acc: 97.20%
+Val Loss: 0.5170 | Val Acc: 85.94%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 13
+  Selected Arms: [0]
+  Arm Means: [1.2967149019241333, 0.08657592535018921, 0.12377146631479263]
+  Arm Stds: [2.425356388092041, 2.425356388092041, 2.425356388092041]
+  Arm Observation Counts: [4, 4, 4]
+  Last Sampled Values: [2.333780288696289, 1.9571025371551514, 1.0173702239990234]
+------------------------------------------------------------
+No improvement for 6 epoch(s)
+
+Reward: 0.90% (normalized: 0.09)
+
+Epoch 15/100 | LR: 0.000992 | Time: 18.69s
+Train Loss: 0.1059 | Train Acc: 97.88%
+Val Loss: 0.4726 | Val Acc: 86.84%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 14
+  Selected Arms: [2]
+  Arm Means: [1.0668535232543945, 0.08657592535018921, 0.12377146631479263]
+  Arm Stds: [2.1821789741516113, 2.425356388092041, 2.425356388092041]
+  Arm Observation Counts: [5, 4, 4]
+  Last Sampled Values: [0.2123470902442932, -0.17924445867538452, 2.31768536567688]
+------------------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 15 epochs.
+Total training time: 281.83 seconds
+Average time per epoch: 18.79 seconds
+
+============================================================
+Training completed!
+============================================================
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on SVHN
+Using Gradient Chain Selection
+============================================================
+Using random seed: 2356
+
+Loading dataset...
+Using downloaded and verified file: ./data/train_32x32.mat
+Using downloaded and verified file: ./data/test_32x32.mat
+Dataset loaded: 73257 train samples, 26032 val samples
+Number of classes: 10
+
+Creating ViT model for 10 classes...
+
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'out_proj', 'mlp.0', 'mlp.3'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=1145, arm_distribution='gradient_chain', num_arms=3, num_arms_to_select=1, ucb_alpha=0.5, use_fixed_indices=False, arm_selection_method='thompson', thompson_distribution='gaussian', thompson_alpha_prior=1.0, thompson_beta_prior=1.0, thompson_gaussian_prior_mean=0.0, thompson_gaussian_prior_std=10.0, thompson_gaussian_noise_std=5.0, gradient_chain_warmup_epochs=2, gradient_chain_num_samples=5)
+Total parameters: 149,515,028
+Trainable parameters: 2,757,140 (1.84%)
+Frozen parameters: 146,757,888 (98.16%)
+
+============================================================
+Fine-tuning ViT using Gradient Chain Selection:
+============================================================
+Calculating initial validation accuracy...
+Initial Val Acc: 7.55%
+
+Reward: 0.00% (normalized: 0.00)
+Gradient chain warmup: 1/2
+
+Epoch 1/100 | LR: 0.000100 | Time: 288.13s
+Train Loss: 2.4173 | Train Acc: 7.89%
+Val Loss: 2.4286 | Val Acc: 7.55%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: False
+  Number of Chains: 0
+  Current Epoch: 0
+  Arm Means: [0.0, 0.0, 0.0]
+  Arm Stds: [10.0, 10.0, 10.0]
+  Arm Observation Counts: [0, 0, 0]
+------------------------------------------------------------
+
+Reward: 85.65% (normalized: 8.56)
+
+============================================================
+Building Gradient Chains...
+============================================================
+Sampling 5 batches to estimate gradients...
+  Batch 1/5 processed
+  Batch 2/5 processed
+  Batch 3/5 processed
+  Batch 4/5 processed
+  Batch 5/5 processed
+
+Averaging gradients across batches...
+
+Building 3 gradient chains...
+
+Chain 0: Starting from neuron 8
+  Layer 0 (encoder.layers.encoder_layer_0.mlp.0): input_col=8 -> output_neuron=1026 (grad=0.0014)
+  Layer 1 (encoder.layers.encoder_layer_0.mlp.3): input_col=18 -> output_neuron=679 (grad=0.0008)
+  Warning: No gradients for layer encoder.layers.encoder_layer_1.self_attention.out_proj, skipping
+  Layer 3 (encoder.layers.encoder_layer_1.mlp.0): input_col=7 -> output_neuron=2547 (grad=0.0056)
+  Layer 4 (encoder.layers.encoder_layer_1.mlp.3): input_col=3 -> output_neuron=679 (grad=0.0067)
+  Warning: No gradients for layer encoder.layers.encoder_layer_2.self_attention.out_proj, skipping
+  Layer 6 (encoder.layers.encoder_layer_2.mlp.0): input_col=7 -> output_neuron=645 (grad=0.0005)
+  Layer 7 (encoder.layers.encoder_layer_2.mlp.3): input_col=21 -> output_neuron=164 (grad=0.0042)
+  Warning: No gradients for layer encoder.layers.encoder_layer_3.self_attention.out_proj, skipping
+  Layer 9 (encoder.layers.encoder_layer_3.mlp.0): input_col=20 -> output_neuron=1560 (grad=0.0193)
+  Layer 10 (encoder.layers.encoder_layer_3.mlp.3): input_col=24 -> output_neuron=519 (grad=0.0046)
+  Warning: No gradients for layer encoder.layers.encoder_layer_4.self_attention.out_proj, skipping
+  Layer 12 (encoder.layers.encoder_layer_4.mlp.0): input_col=39 -> output_neuron=718 (grad=0.0019)
+  Layer 13 (encoder.layers.encoder_layer_4.mlp.3): input_col=46 -> output_neuron=0 (grad=0.0033)
+  Warning: No gradients for layer encoder.layers.encoder_layer_5.self_attention.out_proj, skipping
+  Layer 15 (encoder.layers.encoder_layer_5.mlp.0): input_col=0 -> output_neuron=2270 (grad=0.0131)
+  Layer 16 (encoder.layers.encoder_layer_5.mlp.3): input_col=14 -> output_neuron=93 (grad=0.0084)
+  Warning: No gradients for layer encoder.layers.encoder_layer_6.self_attention.out_proj, skipping
+  Layer 18 (encoder.layers.encoder_layer_6.mlp.0): input_col=45 -> output_neuron=108 (grad=0.0031)
+  Layer 19 (encoder.layers.encoder_layer_6.mlp.3): input_col=12 -> output_neuron=498 (grad=0.0039)
+  Warning: No gradients for layer encoder.layers.encoder_layer_7.self_attention.out_proj, skipping
+  Layer 21 (encoder.layers.encoder_layer_7.mlp.0): input_col=18 -> output_neuron=1361 (grad=0.0047)
+  Layer 22 (encoder.layers.encoder_layer_7.mlp.3): input_col=17 -> output_neuron=656 (grad=0.0029)
+  Warning: No gradients for layer encoder.layers.encoder_layer_8.self_attention.out_proj, skipping
+  Layer 24 (encoder.layers.encoder_layer_8.mlp.0): input_col=32 -> output_neuron=1443 (grad=0.0110)
+  Layer 25 (encoder.layers.encoder_layer_8.mlp.3): input_col=3 -> output_neuron=498 (grad=0.0049)
+  Warning: No gradients for layer encoder.layers.encoder_layer_9.self_attention.out_proj, skipping
+  Layer 27 (encoder.layers.encoder_layer_9.mlp.0): input_col=18 -> output_neuron=2920 (grad=0.0181)
+  Layer 28 (encoder.layers.encoder_layer_9.mlp.3): input_col=40 -> output_neuron=442 (grad=0.0051)
+  Warning: No gradients for layer encoder.layers.encoder_layer_10.self_attention.out_proj, skipping
+  Layer 30 (encoder.layers.encoder_layer_10.mlp.0): input_col=10 -> output_neuron=1239 (grad=0.0112)
+  Layer 31 (encoder.layers.encoder_layer_10.mlp.3): input_col=39 -> output_neuron=58 (grad=0.0062)
+  Warning: No gradients for layer encoder.layers.encoder_layer_11.self_attention.out_proj, skipping
+  Layer 33 (encoder.layers.encoder_layer_11.mlp.0): input_col=10 -> output_neuron=421 (grad=0.0254)
+  Layer 34 (encoder.layers.encoder_layer_11.mlp.3): input_col=37 -> output_neuron=103 (grad=0.0054)
+
+Chain 1: Starting from neuron 6
+  Layer 0 (encoder.layers.encoder_layer_0.mlp.0): input_col=6 -> output_neuron=1026 (grad=0.0024)
+  Layer 1 (encoder.layers.encoder_layer_0.mlp.3): input_col=18 -> output_neuron=679 (grad=0.0008)
+  Warning: No gradients for layer encoder.layers.encoder_layer_1.self_attention.out_proj, skipping
+  Layer 3 (encoder.layers.encoder_layer_1.mlp.0): input_col=7 -> output_neuron=2547 (grad=0.0056)
+  Layer 4 (encoder.layers.encoder_layer_1.mlp.3): input_col=3 -> output_neuron=679 (grad=0.0067)
+  Warning: No gradients for layer encoder.layers.encoder_layer_2.self_attention.out_proj, skipping
+  Layer 6 (encoder.layers.encoder_layer_2.mlp.0): input_col=7 -> output_neuron=645 (grad=0.0005)
+  Layer 7 (encoder.layers.encoder_layer_2.mlp.3): input_col=21 -> output_neuron=164 (grad=0.0042)
+  Warning: No gradients for layer encoder.layers.encoder_layer_3.self_attention.out_proj, skipping
+  Layer 9 (encoder.layers.encoder_layer_3.mlp.0): input_col=20 -> output_neuron=1560 (grad=0.0193)
+  Layer 10 (encoder.layers.encoder_layer_3.mlp.3): input_col=24 -> output_neuron=519 (grad=0.0046)
+  Warning: No gradients for layer encoder.layers.encoder_layer_4.self_attention.out_proj, skipping
+  Layer 12 (encoder.layers.encoder_layer_4.mlp.0): input_col=39 -> output_neuron=718 (grad=0.0019)
+  Layer 13 (encoder.layers.encoder_layer_4.mlp.3): input_col=46 -> output_neuron=0 (grad=0.0033)
+  Warning: No gradients for layer encoder.layers.encoder_layer_5.self_attention.out_proj, skipping
+  Layer 15 (encoder.layers.encoder_layer_5.mlp.0): input_col=0 -> output_neuron=2270 (grad=0.0131)
+  Layer 16 (encoder.layers.encoder_layer_5.mlp.3): input_col=14 -> output_neuron=93 (grad=0.0084)
+  Warning: No gradients for layer encoder.layers.encoder_layer_6.self_attention.out_proj, skipping
+  Layer 18 (encoder.layers.encoder_layer_6.mlp.0): input_col=45 -> output_neuron=108 (grad=0.0031)
+  Layer 19 (encoder.layers.encoder_layer_6.mlp.3): input_col=12 -> output_neuron=498 (grad=0.0039)
+  Warning: No gradients for layer encoder.layers.encoder_layer_7.self_attention.out_proj, skipping
+  Layer 21 (encoder.layers.encoder_layer_7.mlp.0): input_col=18 -> output_neuron=1361 (grad=0.0047)
+  Layer 22 (encoder.layers.encoder_layer_7.mlp.3): input_col=17 -> output_neuron=656 (grad=0.0029)
+  Warning: No gradients for layer encoder.layers.encoder_layer_8.self_attention.out_proj, skipping
+  Layer 24 (encoder.layers.encoder_layer_8.mlp.0): input_col=32 -> output_neuron=1443 (grad=0.0110)
+  Layer 25 (encoder.layers.encoder_layer_8.mlp.3): input_col=3 -> output_neuron=498 (grad=0.0049)
+  Warning: No gradients for layer encoder.layers.encoder_layer_9.self_attention.out_proj, skipping
+  Layer 27 (encoder.layers.encoder_layer_9.mlp.0): input_col=18 -> output_neuron=2920 (grad=0.0181)
+  Layer 28 (encoder.layers.encoder_layer_9.mlp.3): input_col=40 -> output_neuron=442 (grad=0.0051)
+  Warning: No gradients for layer encoder.layers.encoder_layer_10.self_attention.out_proj, skipping
+  Layer 30 (encoder.layers.encoder_layer_10.mlp.0): input_col=10 -> output_neuron=1239 (grad=0.0112)
+  Layer 31 (encoder.layers.encoder_layer_10.mlp.3): input_col=39 -> output_neuron=58 (grad=0.0062)
+  Warning: No gradients for layer encoder.layers.encoder_layer_11.self_attention.out_proj, skipping
+  Layer 33 (encoder.layers.encoder_layer_11.mlp.0): input_col=10 -> output_neuron=421 (grad=0.0254)
+  Layer 34 (encoder.layers.encoder_layer_11.mlp.3): input_col=37 -> output_neuron=103 (grad=0.0054)
+
+Chain 2: Starting from neuron 25
+  Layer 0 (encoder.layers.encoder_layer_0.mlp.0): input_col=25 -> output_neuron=2437 (grad=0.0113)
+  Layer 1 (encoder.layers.encoder_layer_0.mlp.3): input_col=37 -> output_neuron=679 (grad=0.0019)
+  Warning: No gradients for layer encoder.layers.encoder_layer_1.self_attention.out_proj, skipping
+  Layer 3 (encoder.layers.encoder_layer_1.mlp.0): input_col=7 -> output_neuron=2547 (grad=0.0056)
+  Layer 4 (encoder.layers.encoder_layer_1.mlp.3): input_col=3 -> output_neuron=679 (grad=0.0067)
+  Warning: No gradients for layer encoder.layers.encoder_layer_2.self_attention.out_proj, skipping
+  Layer 6 (encoder.layers.encoder_layer_2.mlp.0): input_col=7 -> output_neuron=645 (grad=0.0005)
+  Layer 7 (encoder.layers.encoder_layer_2.mlp.3): input_col=21 -> output_neuron=164 (grad=0.0042)
+  Warning: No gradients for layer encoder.layers.encoder_layer_3.self_attention.out_proj, skipping
+  Layer 9 (encoder.layers.encoder_layer_3.mlp.0): input_col=20 -> output_neuron=1560 (grad=0.0193)
+  Layer 10 (encoder.layers.encoder_layer_3.mlp.3): input_col=24 -> output_neuron=519 (grad=0.0046)
+  Warning: No gradients for layer encoder.layers.encoder_layer_4.self_attention.out_proj, skipping
+  Layer 12 (encoder.layers.encoder_layer_4.mlp.0): input_col=39 -> output_neuron=718 (grad=0.0019)
+  Layer 13 (encoder.layers.encoder_layer_4.mlp.3): input_col=46 -> output_neuron=0 (grad=0.0033)
+  Warning: No gradients for layer encoder.layers.encoder_layer_5.self_attention.out_proj, skipping
+  Layer 15 (encoder.layers.encoder_layer_5.mlp.0): input_col=0 -> output_neuron=2270 (grad=0.0131)
+  Layer 16 (encoder.layers.encoder_layer_5.mlp.3): input_col=14 -> output_neuron=93 (grad=0.0084)
+  Warning: No gradients for layer encoder.layers.encoder_layer_6.self_attention.out_proj, skipping
+  Layer 18 (encoder.layers.encoder_layer_6.mlp.0): input_col=45 -> output_neuron=108 (grad=0.0031)
+  Layer 19 (encoder.layers.encoder_layer_6.mlp.3): input_col=12 -> output_neuron=498 (grad=0.0039)
+  Warning: No gradients for layer encoder.layers.encoder_layer_7.self_attention.out_proj, skipping
+  Layer 21 (encoder.layers.encoder_layer_7.mlp.0): input_col=18 -> output_neuron=1361 (grad=0.0047)
+  Layer 22 (encoder.layers.encoder_layer_7.mlp.3): input_col=17 -> output_neuron=656 (grad=0.0029)
+  Warning: No gradients for layer encoder.layers.encoder_layer_8.self_attention.out_proj, skipping
+  Layer 24 (encoder.layers.encoder_layer_8.mlp.0): input_col=32 -> output_neuron=1443 (grad=0.0110)
+  Layer 25 (encoder.layers.encoder_layer_8.mlp.3): input_col=3 -> output_neuron=498 (grad=0.0049)
+  Warning: No gradients for layer encoder.layers.encoder_layer_9.self_attention.out_proj, skipping
+  Layer 27 (encoder.layers.encoder_layer_9.mlp.0): input_col=18 -> output_neuron=2920 (grad=0.0181)
+  Layer 28 (encoder.layers.encoder_layer_9.mlp.3): input_col=40 -> output_neuron=442 (grad=0.0051)
+  Warning: No gradients for layer encoder.layers.encoder_layer_10.self_attention.out_proj, skipping
+  Layer 30 (encoder.layers.encoder_layer_10.mlp.0): input_col=10 -> output_neuron=1239 (grad=0.0112)
+  Layer 31 (encoder.layers.encoder_layer_10.mlp.3): input_col=39 -> output_neuron=58 (grad=0.0062)
+  Warning: No gradients for layer encoder.layers.encoder_layer_11.self_attention.out_proj, skipping
+  Layer 33 (encoder.layers.encoder_layer_11.mlp.0): input_col=10 -> output_neuron=421 (grad=0.0254)
+  Layer 34 (encoder.layers.encoder_layer_11.mlp.3): input_col=37 -> output_neuron=103 (grad=0.0054)
+
+============================================================
+✓ Successfully built 3 gradient chains
+============================================================
+
+Epoch 2/100 | LR: 0.000200 | Time: 289.20s
+Train Loss: 0.5500 | Train Acc: 82.35%
+Val Loss: 0.2330 | Val Acc: 93.20%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 1
+  Selected Arms: [1]
+  Arm Means: [0.0, 0.0, 0.0]
+  Arm Stds: [10.0, 10.0, 10.0]
+  Arm Observation Counts: [0, 0, 0]
+  Last Sampled Values: [-4.186025142669678, 15.02017879486084, -7.996191024780273]
+------------------------------------------------------------
+
+Reward: 2.05% (normalized: 0.21)
+
+Epoch 3/100 | LR: 0.000300 | Time: 289.09s
+Train Loss: 0.2218 | Train Acc: 93.46%
+Val Loss: 0.1696 | Val Acc: 95.25%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 2
+  Selected Arms: [0]
+  Arm Means: [0.0, 0.16410571336746216, 0.0]
+  Arm Stds: [10.0, 4.4721360206604, 10.0]
+  Arm Observation Counts: [0, 1, 0]
+  Last Sampled Values: [5.591435432434082, -1.6491107940673828, -11.91689395904541]
+------------------------------------------------------------
+
+Reward: -0.40% (normalized: -0.04)
+
+Epoch 4/100 | LR: 0.000400 | Time: 289.65s
+Train Loss: 0.1844 | Train Acc: 94.74%
+Val Loss: 0.1784 | Val Acc: 94.84%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 3
+  Selected Arms: [2]
+  Arm Means: [-0.032267976552248, 0.16410571336746216, 0.0]
+  Arm Stds: [4.4721360206604, 4.4721360206604, 10.0]
+  Arm Observation Counts: [1, 1, 0]
+  Last Sampled Values: [0.2424127608537674, -4.60426664352417, 5.770261287689209]
+------------------------------------------------------------
+No improvement for 1 epoch(s)
+
+Reward: 0.61% (normalized: 0.06)
+
+Epoch 5/100 | LR: 0.000500 | Time: 289.65s
+Train Loss: 0.1551 | Train Acc: 95.58%
+Val Loss: 0.1608 | Val Acc: 95.46%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 4
+  Selected Arms: [1]
+  Arm Means: [-0.032267976552248, 0.16410571336746216, 0.049170251935720444]
+  Arm Stds: [4.4721360206604, 4.4721360206604, 4.4721360206604]
+  Arm Observation Counts: [1, 1, 1]
+  Last Sampled Values: [-4.475481033325195, 0.7288956642150879, -1.5780441761016846]
+------------------------------------------------------------
+
+Reward: 0.11% (normalized: 0.01)
+
+Epoch 6/100 | LR: 0.000600 | Time: 289.67s
+Train Loss: 0.1465 | Train Acc: 95.76%
+Val Loss: 0.1571 | Val Acc: 95.57%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 5
+  Selected Arms: [2]
+  Arm Means: [-0.032267976552248, 0.09612101316452026, 0.049170251935720444]
+  Arm Stds: [4.4721360206604, 3.3333334922790527, 4.4721360206604]
+  Arm Observation Counts: [1, 2, 1]
+  Last Sampled Values: [-2.117058038711548, -1.3822643756866455, 6.446710586547852]
+------------------------------------------------------------
+
+Reward: 0.10% (normalized: 0.01)
+
+Epoch 7/100 | LR: 0.000700 | Time: 289.63s
+Train Loss: 0.1320 | Train Acc: 96.22%
+Val Loss: 0.1590 | Val Acc: 95.67%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 6
+  Selected Arms: [2]
+  Arm Means: [-0.032267976552248, 0.09612101316452026, 0.03175578638911247]
+  Arm Stds: [4.4721360206604, 3.3333334922790527, 3.3333334922790527]
+  Arm Observation Counts: [1, 2, 2]
+  Last Sampled Values: [-1.6889896392822266, -3.0336050987243652, 1.9573743343353271]
+------------------------------------------------------------
+No improvement for 1 epoch(s)
+
+Reward: 0.34% (normalized: 0.03)
+
+Epoch 8/100 | LR: 0.000800 | Time: 289.61s
+Train Loss: 0.1291 | Train Acc: 96.27%
+Val Loss: 0.1445 | Val Acc: 96.01%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 7
+  Selected Arms: [0]
+  Arm Means: [-0.032267976552248, 0.09612101316452026, 0.0325043722987175]
+  Arm Stds: [4.4721360206604, 3.3333334922790527, 2.77350115776062]
+  Arm Observation Counts: [1, 2, 3]
+  Last Sampled Values: [7.1086554527282715, 1.9710509777069092, -0.6265249252319336]
+------------------------------------------------------------
+
+Reward: -0.34% (normalized: -0.03)
+
+Epoch 9/100 | LR: 0.000900 | Time: 289.63s
+Train Loss: 0.1329 | Train Acc: 96.17%
+Val Loss: 0.1611 | Val Acc: 95.67%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 8
+  Selected Arms: [0]
+  Arm Means: [-0.03312162682414055, 0.09612101316452026, 0.0325043722987175]
+  Arm Stds: [3.3333334922790527, 3.3333334922790527, 2.77350115776062]
+  Arm Observation Counts: [2, 2, 3]
+  Last Sampled Values: [0.4238361716270447, -1.1183838844299316, -3.0504956245422363]
+------------------------------------------------------------
+No improvement for 1 epoch(s)
+
+Reward: 0.22% (normalized: 0.02)
+
+Epoch 10/100 | LR: 0.001000 | Time: 289.66s
+Train Loss: 0.1305 | Train Acc: 96.27%
+Val Loss: 0.1477 | Val Acc: 95.89%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 9
+  Selected Arms: [0]
+  Arm Means: [-0.0161930862814188, 0.09612101316452026, 0.0325043722987175]
+  Arm Stds: [2.77350115776062, 3.3333334922790527, 2.77350115776062]
+  Arm Observation Counts: [3, 2, 3]
+  Last Sampled Values: [-0.4118387699127197, -1.1045458316802979, -2.88789439201355]
+------------------------------------------------------------
+No improvement for 2 epoch(s)
+
+Reward: -0.03% (normalized: -0.00)
+
+Epoch 11/100 | LR: 0.001000 | Time: 289.65s
+Train Loss: 0.1252 | Train Acc: 96.33%
+Val Loss: 0.1518 | Val Acc: 95.86%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 10
+  Selected Arms: [2]
+  Arm Means: [-0.013196426443755627, 0.09612101316452026, 0.0325043722987175]
+  Arm Stds: [2.425356388092041, 3.3333334922790527, 2.77350115776062]
+  Arm Observation Counts: [4, 2, 3]
+  Last Sampled Values: [-1.2062244415283203, 1.6154475212097168, 2.2295308113098145]
+------------------------------------------------------------
+No improvement for 3 epoch(s)
+
+Reward: -0.07% (normalized: -0.01)
+
+Epoch 12/100 | LR: 0.000999 | Time: 289.62s
+Train Loss: 0.1234 | Train Acc: 96.44%
+Val Loss: 0.1564 | Val Acc: 95.79%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 11
+  Selected Arms: [0]
+  Arm Means: [-0.013196426443755627, 0.09612101316452026, 0.02322932705283165]
+  Arm Stds: [2.425356388092041, 3.3333334922790527, 2.425356388092041]
+  Arm Observation Counts: [4, 2, 4]
+  Last Sampled Values: [0.6378426551818848, -1.2851850986480713, -6.397220611572266]
+------------------------------------------------------------
+No improvement for 4 epoch(s)
+
+Reward: 0.23% (normalized: 0.02)
+
+Epoch 13/100 | LR: 0.000997 | Time: 289.68s
+Train Loss: 0.1207 | Train Acc: 96.53%
+Val Loss: 0.1483 | Val Acc: 96.02%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 12
+  Selected Arms: [2]
+  Arm Means: [-0.006292619742453098, 0.09612101316452026, 0.02322932705283165]
+  Arm Stds: [2.1821789741516113, 3.3333334922790527, 2.425356388092041]
+  Arm Observation Counts: [5, 2, 4]
+  Last Sampled Values: [0.9943721890449524, -0.5722464919090271, 1.3200591802597046]
+------------------------------------------------------------
+No improvement for 5 epoch(s)
+
+Reward: -0.99% (normalized: -0.10)
+
+Epoch 14/100 | LR: 0.000995 | Time: 289.67s
+Train Loss: 0.1139 | Train Acc: 96.70%
+Val Loss: 0.1765 | Val Acc: 95.02%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 13
+  Selected Arms: [2]
+  Arm Means: [-0.006292619742453098, 0.09612101316452026, -0.00014634344552177936]
+  Arm Stds: [2.1821789741516113, 3.3333334922790527, 2.1821789741516113]
+  Arm Observation Counts: [5, 2, 5]
+  Last Sampled Values: [1.2259093523025513, -3.5517311096191406, 2.6082444190979004]
+------------------------------------------------------------
+No improvement for 6 epoch(s)
+
+Reward: 0.46% (normalized: 0.05)
+
+Epoch 15/100 | LR: 0.000992 | Time: 289.64s
+Train Loss: 0.1098 | Train Acc: 96.77%
+Val Loss: 0.1655 | Val Acc: 95.48%
+
+Gradient Chain Statistics:
+[PacaGradientChainManager - Gradient Chain Logs]
+  Chains Built: True
+  Number of Chains: 3
+  Current Epoch: 14
+  Selected Arms: [2]
+  Arm Means: [-0.006292619742453098, 0.09612101316452026, 0.007252609822899103]
+  Arm Stds: [2.1821789741516113, 3.3333334922790527, 2.0]
+  Arm Observation Counts: [5, 2, 6]
+  Last Sampled Values: [-2.008213996887207, 1.5953419208526611, 2.450850009918213]
+------------------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 15 epochs.
+Total training time: 4342.18 seconds
+Average time per epoch: 289.48 seconds
+
+============================================================
+Training completed!
+============================================================
+Job completed at Sun Dec  7 11:05:15 IST 2025

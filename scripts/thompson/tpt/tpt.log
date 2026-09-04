@@ -1,0 +1,103 @@
+Job started at Fri Dec 26 20:39:15 IST 2025
+Conda environment: mamba_paca
+Python path: /export/home/achyut/miniconda3/envs/mamba_paca/bin/python
+PyTorch: 2.4.0+cu121
+CUDA available: True
+Torchvision: 0.19.0+cu121
+Using device: cuda
+============================================================
+Starting Throughput Analysis for ViT on Caltech-101
+Using Thompson Sampling
+============================================================
+
+--- Testing Method: LoRA ---
+  > Trying Batch Size: 16  |  Throughput: 171.41 images/sec
+  > Trying Batch Size: 32  |  Throughput: 235.95 images/sec
+  > Trying Batch Size: 64  |  Throughput: 257.69 images/sec
+
+--- Testing Method: PaCA ---
+  > Trying Batch Size: 16  |  Throughput: 169.33 images/sec
+  > Trying Batch Size: 32  |  Throughput: 245.29 images/sec
+  > Trying Batch Size: 64  |  Throughput: 269.94 images/sec
+
+--- Analysis Complete ---
+Results for LoRA: [{'batch_size': 16, 'throughput': 171.40755911730884}, {'batch_size': 32, 'throughput': 235.9521414416621}, {'batch_size': 64, 'throughput': 257.68575671384446}]
+Results for PaCA: [{'batch_size': 16, 'throughput': 169.33217077111513}, {'batch_size': 32, 'throughput': 245.28726227999041}, {'batch_size': 64, 'throughput': 269.9367179128639}]
+
+📈 Plot saved to throughput_thompson_caltech.png
+Using device: cuda
+============================================================
+Starting Throughput Analysis for ViT on CIFAR-100
+Using Thompson Sampling
+============================================================
+
+--- Testing Method: LoRA ---
+  > Trying Batch Size: 16Files already downloaded and verified
+  |  Throughput: 168.36 images/sec
+  > Trying Batch Size: 32Files already downloaded and verified
+  |  Throughput: 239.12 images/sec
+  > Trying Batch Size: 64Files already downloaded and verified
+  |  Throughput: 261.18 images/sec
+
+--- Testing Method: PaCA ---
+  > Trying Batch Size: 16Files already downloaded and verified
+  |  Throughput: 170.67 images/sec
+  > Trying Batch Size: 32Files already downloaded and verified
+  |  Throughput: 246.97 images/sec
+  > Trying Batch Size: 64Files already downloaded and verified
+  |  Throughput: 271.39 images/sec
+
+--- Analysis Complete ---
+Results for LoRA: [{'batch_size': 16, 'throughput': 168.35589473706375}, {'batch_size': 32, 'throughput': 239.12105289511933}, {'batch_size': 64, 'throughput': 261.1838330546065}]
+Results for PaCA: [{'batch_size': 16, 'throughput': 170.666161807049}, {'batch_size': 32, 'throughput': 246.9687149600626}, {'batch_size': 64, 'throughput': 271.38688538306917}]
+
+📈 Plot saved to throughput_thompson_cifar100.png
+Using device: cuda
+============================================================
+Starting Throughput Analysis for ViT on Flowers-102
+Using Thompson Sampling
+============================================================
+
+--- Testing Method: LoRA ---
+  > Trying Batch Size: 16  |  Throughput: 169.23 images/sec
+  > Trying Batch Size: 32  |  Throughput: 238.74 images/sec
+  > Trying Batch Size: 64  |  Throughput: 258.45 images/sec
+
+--- Testing Method: PaCA ---
+  > Trying Batch Size: 16  |  Throughput: 170.62 images/sec
+  > Trying Batch Size: 32  |  Throughput: 246.30 images/sec
+  > Trying Batch Size: 64  |  Throughput: 269.17 images/sec
+
+--- Analysis Complete ---
+Results for LoRA: [{'batch_size': 16, 'throughput': 169.22578990350897}, {'batch_size': 32, 'throughput': 238.73848019063794}, {'batch_size': 64, 'throughput': 258.4479578937683}]
+Results for PaCA: [{'batch_size': 16, 'throughput': 170.6153903714323}, {'batch_size': 32, 'throughput': 246.30495269208689}, {'batch_size': 64, 'throughput': 269.1737418868645}]
+
+📈 Plot saved to throughput_thompson_flowers.png
+Using device: cuda
+============================================================
+Starting Throughput Analysis for ViT on SVHN
+Using Thompson Sampling
+============================================================
+
+--- Testing Method: LoRA ---
+  > Trying Batch Size: 16Using downloaded and verified file: ./data/train_32x32.mat
+  |  Throughput: 168.04 images/sec
+  > Trying Batch Size: 32Using downloaded and verified file: ./data/train_32x32.mat
+  |  Throughput: 239.24 images/sec
+  > Trying Batch Size: 64Using downloaded and verified file: ./data/train_32x32.mat
+  |  Throughput: 261.50 images/sec
+
+--- Testing Method: PaCA ---
+  > Trying Batch Size: 16Using downloaded and verified file: ./data/train_32x32.mat
+  |  Throughput: 170.46 images/sec
+  > Trying Batch Size: 32Using downloaded and verified file: ./data/train_32x32.mat
+  |  Throughput: 247.05 images/sec
+  > Trying Batch Size: 64Using downloaded and verified file: ./data/train_32x32.mat
+  |  Throughput: 271.67 images/sec
+
+--- Analysis Complete ---
+Results for LoRA: [{'batch_size': 16, 'throughput': 168.04486407802867}, {'batch_size': 32, 'throughput': 239.24063263726836}, {'batch_size': 64, 'throughput': 261.4966953292526}]
+Results for PaCA: [{'batch_size': 16, 'throughput': 170.45752122143162}, {'batch_size': 32, 'throughput': 247.0541273841351}, {'batch_size': 64, 'throughput': 271.6684127761963}]
+
+📈 Plot saved to throughput_thompson_svhn.png
+Job completed at Fri Dec 26 21:45:11 IST 2025

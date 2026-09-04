@@ -1,0 +1,143 @@
+Job started at Thu Jul 17 10:59:46 IST 2025
+1. Doing UCB runs:
+
+============================================================
+Starting Throughput Analysis for ViT on CIFAR-100
+============================================================
+
+--- Testing Method: LoRA ---
+  > Trying Batch Size: 16  |  Throughput: 161.35 images/sec
+  > Trying Batch Size: 32  |  Throughput: 230.97 images/sec
+  > Trying Batch Size: 64  |  Throughput: 251.61 images/sec
+
+--- Testing Method: UCB PaCA ---
+  > Trying Batch Size: 16  |  Throughput: 163.55 images/sec
+  > Trying Batch Size: 32  |  Throughput: 236.52 images/sec
+  > Trying Batch Size: 64  |  Throughput: 259.73 images/sec
+
+
+============================================================
+Starting Throughput Analysis for ViT on Caltech
+============================================================
+
+--- Testing Method: LoRA ---
+  > Trying Batch Size: 16  |  Throughput: 164.21 images/sec
+  > Trying Batch Size: 32  |  Throughput: 229.38 images/sec
+  > Trying Batch Size: 64  |  Throughput: 249.84 images/sec
+
+--- Testing Method: UCB PaCA ---
+  > Trying Batch Size: 16  |  Throughput: 162.08 images/sec
+  > Trying Batch Size: 32  |  Throughput: 236.62 images/sec
+  > Trying Batch Size: 64  |  Throughput: 259.23 images/sec
+
+
+============================================================
+Starting Throughput Analysis for ViT on Flowers
+============================================================
+
+--- Testing Method: LoRA ---
+  > Trying Batch Size: 16  |  Throughput: 164.78 images/sec
+  > Trying Batch Size: 32  |  Throughput: 230.39 images/sec
+  > Trying Batch Size: 64  |  Throughput: 250.37 images/sec
+
+--- Testing Method: UCB PaCA ---
+  > Trying Batch Size: 16  |  Throughput: 162.87 images/sec
+  > Trying Batch Size: 32  |  Throughput: 236.57 images/sec
+  > Trying Batch Size: 64  |  Throughput: 259.38 images/sec
+
+
+============================================================
+Starting Throughput Analysis for ViT on SVHN
+============================================================
+
+--- Testing Method: LoRA ---
+  > Trying Batch Size: 16  |  Throughput: 161.36 images/sec
+  > Trying Batch Size: 32  |  Throughput: 229.54 images/sec
+  > Trying Batch Size: 64  |  Throughput: 250.45 images/sec
+
+--- Testing Method: UCB PaCA ---
+  > Trying Batch Size: 16  |  Throughput: 162.96 images/sec
+  > Trying Batch Size: 32  |  Throughput: 236.22 images/sec
+  > Trying Batch Size: 64  |  Throughput: 259.71 images/sec
+
+
+2. Doing Random run:
+
+============================================================
+Starting Throughput Analysis for ViT on CIFAR-100
+============================================================
+
+--- Testing Method: Random PaCA ---
+  > Trying Batch Size: 16  |  Throughput: 164.73 images/sec
+  > Trying Batch Size: 32  |  Throughput: 237.36 images/sec
+  > Trying Batch Size: 64  |  Throughput: 260.65 images/sec
+
+============================================================
+Starting Throughput Analysis for ViT on Caltech
+============================================================
+
+--- Testing Method: Random PaCA ---
+  > Trying Batch Size: 16  |  Throughput: 167.19 images/sec
+  > Trying Batch Size: 32  |  Throughput: 237.71 images/sec
+  > Trying Batch Size: 64  |  Throughput: 259.35 images/sec
+
+============================================================
+Starting Throughput Analysis for ViT on Flowers
+============================================================
+
+--- Testing Method: Random PaCA ---
+  > Trying Batch Size: 16  |  Throughput: 167.46 images/sec
+  > Trying Batch Size: 32  |  Throughput: 238.25 images/sec
+  > Trying Batch Size: 64  |  Throughput: 259.84 images/sec
+
+
+============================================================
+Starting Throughput Analysis for ViT on SVHN
+============================================================
+
+--- Testing Method: Random PaCA ---
+  > Trying Batch Size: 16  |  Throughput: 164.01 images/sec
+  > Trying Batch Size: 32  |  Throughput: 237.67 images/sec
+  > Trying Batch Size: 64  |  Throughput: 261.40 images/sec
+
+
+3. Doing PACA run:
+============================================================
+Starting Throughput Analysis for ViT on CIFAR-100
+============================================================
+
+--- Testing Method: PaCA ---
+  > Trying Batch Size: 16  |  Throughput: 169.65 images/sec
+  > Trying Batch Size: 32  |  Throughput: 240.94 images/sec
+  > Trying Batch Size: 64  |  Throughput: 263.72 images/sec
+
+============================================================
+Starting Throughput Analysis for ViT on Caltech
+============================================================
+
+--- Testing Method: PaCA ---
+  > Trying Batch Size: 16  |  Throughput: 173.30 images/sec
+  > Trying Batch Size: 32  |  Throughput: 234.66 images/sec
+  > Trying Batch Size: 64  |  Throughput: 259.33 images/sec
+
+Using device: cuda
+============================================================
+Starting Throughput Analysis for ViT on Flowers
+============================================================
+
+--- Testing Method: PaCA ---
+  > Trying Batch Size: 16  |  Throughput: 173.90 images/sec
+  > Trying Batch Size: 32  |  Throughput: 242.25 images/sec
+  > Trying Batch Size: 64  |  Throughput: 262.48 images/sec
+
+
+============================================================
+Starting Throughput Analysis for ViT on SVHN
+============================================================
+
+--- Testing Method: PaCA ---
+  > Trying Batch Size: 16  |  Throughput: 169.05 images/sec
+  > Trying Batch Size: 32  |  Throughput: 240.98 images/sec
+  > Trying Batch Size: 64  |  Throughput: 263.91 images/sec
+
+

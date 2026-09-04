@@ -1,0 +1,10 @@
+# Core (versions per the paper's implementation setup: PyTorch 2.2.1, Adam-W)
+torch==2.2.1
+torchvision
+numpy
+# The modded PEFT is installed from source (see README), not from PyPI.
+# Common transitive deps used by the HF peft tuner code:
+transformers
+accelerate
+safetensors
+tqdm

@@ -1,0 +1,73 @@
+============================================================
+Starting Throughput Analysis for ViT on CIFAR-100
+============================================================
+
+--- Testing Method: PaCA ---
+  > Trying Batch Size: 5  |  Throughput: 77.04 images/sec
+  > Trying Batch Size: 10  |  Throughput: 162.60 images/sec
+  > Trying Batch Size: 15  |  Throughput: 167.02 images/sec
+  > Trying Batch Size: 20  |  Throughput: 224.05 images/sec
+  > Trying Batch Size: 25  |  Throughput: 231.45 images/sec
+  > Trying Batch Size: 30  |  Throughput: 249.05 images/sec
+  > Trying Batch Size: 35  |  Throughput: 238.07 images/sec
+  > Trying Batch Size: 40  |  Throughput: 243.85 images/sec
+  > Trying Batch Size: 45  |  Throughput: 257.50 images/sec
+  > Trying Batch Size: 50  |  Throughput: 254.04 images/sec
+  > Trying Batch Size: 55  |  Throughput: 265.01 images/sec
+  > Trying Batch Size: 60  |  Throughput: 270.79 images/sec
+
+--- Testing Method: Full_FT ---
+  > Trying Batch Size: 5  |  Throughput: 83.23 images/sec
+  > Trying Batch Size: 10  |  Throughput: 164.41 images/sec
+  > Trying Batch Size: 15  |  Throughput: 187.82 images/sec
+  > Trying Batch Size: 20  |  Throughput: 195.62 images/sec
+  > Trying Batch Size: 25  |  Throughput: 189.43 images/sec
+  > Trying Batch Size: 30  |  Throughput: 199.71 images/sec
+  > Trying Batch Size: 35  |  Throughput: 200.00 images/sec
+  > Trying Batch Size: 40  |  Throughput: 201.30 images/sec
+  > Trying Batch Size: 45  |  Throughput: 211.91 images/sec
+  > Trying Batch Size: 50  |  Throughput: 200.95 images/sec
+  > Trying Batch Size: 55  |  Throughput: 209.93 images/sec
+  > Trying Batch Size: 60  |  Throughput: 211.90 images/sec
+
+--- Testing Method: LoRA ---
+  > Trying Batch Size: 5  |  Throughput: 75.70 images/sec
+  > Trying Batch Size: 10  |  Throughput: 165.60 images/sec
+  > Trying Batch Size: 15  |  Throughput: 164.51 images/sec
+  > Trying Batch Size: 20  |  Throughput: 219.44 images/sec
+  > Trying Batch Size: 25  |  Throughput: 221.67 images/sec
+  > Trying Batch Size: 30  |  Throughput: 240.22 images/sec
+  > Trying Batch Size: 35  |  Throughput: 228.68 images/sec
+  > Trying Batch Size: 40  |  Throughput: 234.60 images/sec
+  > Trying Batch Size: 45  |  Throughput: 252.63 images/sec
+  > Trying Batch Size: 50  |  Throughput: 244.60 images/sec
+  > Trying Batch Size: 55  |  Throughput: 259.10 images/sec
+  > Trying Batch Size: 60  |  Throughput: 264.33 images/sec
+
+--- Testing Method: UCB ---
+  > Trying Batch Size: 5  |  Throughput: 73.64 images/sec
+  > Trying Batch Size: 10  |  Throughput: 163.50 images/sec
+  > Trying Batch Size: 15  |  Throughput: 166.65 images/sec
+  > Trying Batch Size: 20  |  Throughput: 223.93 images/sec
+  > Trying Batch Size: 25  |  Throughput: 226.61 images/sec
+  > Trying Batch Size: 30  |  Throughput: 245.89 images/sec
+  > Trying Batch Size: 35  |  Throughput: 234.31 images/sec
+  > Trying Batch Size: 40  |  Throughput: 240.58 images/sec
+  > Trying Batch Size: 45  |  Throughput: 259.38 images/sec
+  > Trying Batch Size: 50  |  Throughput: 250.40 images/sec
+  > Trying Batch Size: 55  |  Throughput: 266.34 images/sec
+  > Trying Batch Size: 60  |  Throughput: 272.57 images/sec
+
+--- Testing Method: Random PaCA ---
+  > Trying Batch Size: 5  |  Throughput: 74.31 images/sec
+  > Trying Batch Size: 10  |  Throughput: 164.79 images/sec
+  > Trying Batch Size: 15  |  Throughput: 167.43 images/sec
+  > Trying Batch Size: 20  |  Throughput: 225.19 images/sec
+  > Trying Batch Size: 25  |  Throughput: 227.90 images/sec
+  > Trying Batch Size: 30  |  Throughput: 247.14 images/sec
+  > Trying Batch Size: 35  |  Throughput: 235.55 images/sec
+  > Trying Batch Size: 40  |  Throughput: 241.93 images/sec
+  > Trying Batch Size: 45  |  Throughput: 260.91 images/sec
+  > Trying Batch Size: 50  |  Throughput: 251.84 images/sec
+  > Trying Batch Size: 55  |  Throughput: 267.69 images/sec
+  > Trying Batch Size: 60  |  Throughput: 273.85 images/sec

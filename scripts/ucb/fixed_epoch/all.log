@@ -1,0 +1,1385 @@
+Job started at Sun Dec  7 15:40:32 IST 2025
+Conda environment: mamba_paca
+Python path: /export/home/achyut/miniconda3/envs/mamba_paca/bin/python
+PyTorch: 2.4.0+cu121
+CUDA available: True
+Torchvision: 0.19.0+cu121
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on CIFAR-100
+Fixed 25 Epochs Training
+============================================================
+Loading dataset...
+Files already downloaded and verified
+Files already downloaded and verified
+Dataset loaded: 50000 train samples, 10000 val samples
+Number of classes: 100
+
+Creating ViT model for 100 classes...
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'mlp.3', 'out_proj', 'mlp.0'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=782, arm_distribution='horizontal', num_arms=3, num_arms_to_select=1, ucb_alpha=6, use_fixed_indices=False, arm_selection_method='ucb', thompson_distribution='beta', thompson_alpha_prior=1.0, thompson_beta_prior=1.0, thompson_gaussian_prior_mean=0.0, thompson_gaussian_prior_std=1.0, thompson_gaussian_noise_std=1.0, gradient_chain_warmup_epochs=3, gradient_chain_num_samples=5)
+Total parameters: 149,653,448
+Trainable parameters: 2,757,320 (1.84%)
+Frozen parameters: 146,896,128 (98.16%)
+Fine tuning ViT using UCB-based PaCA:
+Calculating initial validation accuracy...
+Initial Val Acc: 1.25%
+  Selected Arms: [0]
+  Arm Rewards: [0.0, 0.0, 0.0]
+  UCB Scores: [7.064460277557373, 7.064460277557373, 7.064460277557373]
+  Arm Counts: [2.0, 1.0, 1.0]
+  Value of t: 2
+
+Epoch 1/25 | LR: 0.000200 | Time: 186.61s
+Train Loss: 4.6778 | Train Acc: 1.38%
+Val Loss: 4.6749 | Val Acc: 1.25%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [77.70999908447266, 0.0, 0.0]
+  UCB Scores: [45.143882751464844, 8.89382266998291, 8.89382266998291]
+  Arm Counts: [3.0, 1.0, 1.0]
+  Value of t: 3
+
+Epoch 2/25 | LR: 0.000400 | Time: 186.72s
+Train Loss: 1.9191 | Train Acc: 61.02%
+Val Loss: 0.9681 | Val Acc: 78.96%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [81.54000091552734, 0.0, 0.0]
+  UCB Scores: [32.9481086730957, 9.990654945373535, 9.990654945373535]
+  Arm Counts: [4.0, 1.0, 1.0]
+  Value of t: 4
+
+Epoch 3/25 | LR: 0.000600 | Time: 186.62s
+Train Loss: 0.7369 | Train Acc: 83.07%
+Val Loss: 0.6845 | Val Acc: 82.79%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [82.19000244140625, 0.0, 0.0]
+  UCB Scores: [25.929868698120117, 10.764735221862793, 10.764735221862793]
+  Arm Counts: [5.0, 1.0, 1.0]
+  Value of t: 5
+
+Epoch 4/25 | LR: 0.000800 | Time: 186.59s
+Train Loss: 0.4948 | Train Acc: 88.00%
+Val Loss: 0.6236 | Val Acc: 83.44%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [82.85000610351562, 0.0, 0.0]
+  UCB Scores: [21.649503707885742, 11.358110427856445, 11.358110427856445]
+  Arm Counts: [6.0, 1.0, 1.0]
+  Value of t: 6
+
+Epoch 5/25 | LR: 0.001000 | Time: 186.68s
+Train Loss: 0.3988 | Train Acc: 90.11%
+Val Loss: 0.6130 | Val Acc: 84.10%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [81.31000518798828, 0.0, 0.0]
+  UCB Scores: [18.383947372436523, 11.836618423461914, 11.836618423461914]
+  Arm Counts: [7.0, 1.0, 1.0]
+  Value of t: 7
+
+Epoch 6/25 | LR: 0.000994 | Time: 186.80s
+Train Loss: 0.3694 | Train Acc: 90.70%
+Val Loss: 0.6855 | Val Acc: 82.56%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [79.6100082397461, 0.0, 0.0]
+  UCB Scores: [15.997633934020996, 12.236003875732422, 12.236003875732422]
+  Arm Counts: [8.0, 1.0, 1.0]
+  Value of t: 8
+
+Epoch 7/25 | LR: 0.000976 | Time: 186.76s
+Train Loss: 0.2978 | Train Acc: 92.64%
+Val Loss: 0.7658 | Val Acc: 80.86%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [81.95000457763672, 0.0, 0.0]
+  UCB Scores: [14.690662384033203, 12.577764511108398, 12.577764511108398]
+  Arm Counts: [9.0, 1.0, 1.0]
+  Value of t: 9
+
+Epoch 8/25 | LR: 0.000946 | Time: 186.77s
+Train Loss: 0.2484 | Train Acc: 93.92%
+Val Loss: 0.6489 | Val Acc: 83.20%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [80.49000549316406, 0.0, 0.0]
+  UCB Scores: [13.235265731811523, 12.8757963180542, 12.8757963180542]
+  Arm Counts: [10.0, 1.0, 1.0]
+  Value of t: 10
+
+Epoch 9/25 | LR: 0.000905 | Time: 186.75s
+Train Loss: 0.4759 | Train Acc: 87.68%
+Val Loss: 0.7186 | Val Acc: 81.74%
+--------------------------------------------------
+  Selected Arms: [1]
+  Arm Rewards: [80.96000671386719, 0.0, 0.0]
+  UCB Scores: [12.251099586486816, 13.139575958251953, 13.139575958251953]
+  Arm Counts: [10.0, 2.0, 1.0]
+  Value of t: 11
+
+Epoch 10/25 | LR: 0.000854 | Time: 186.77s
+Train Loss: 0.2525 | Train Acc: 93.40%
+Val Loss: 0.7060 | Val Acc: 82.21%
+--------------------------------------------------
+  Selected Arms: [2]
+  Arm Rewards: [80.96000671386719, -0.25, 0.0]
+  UCB Scores: [12.325815200805664, 9.333151817321777, 13.375846862792969]
+  Arm Counts: [10.0, 2.0, 2.0]
+  Value of t: 12
+
+Epoch 11/25 | LR: 0.000794 | Time: 186.77s
+Train Loss: 0.1848 | Train Acc: 95.34%
+Val Loss: 0.7231 | Val Acc: 81.96%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [80.96000671386719, -0.25, 0.6100000143051147]
+  UCB Scores: [12.393399238586426, 9.484275817871094, 9.914275169372559]
+  Arm Counts: [11.0, 2.0, 2.0]
+  Value of t: 13
+
+Epoch 12/25 | LR: 0.000727 | Time: 186.81s
+Train Loss: 0.1912 | Train Acc: 95.00%
+Val Loss: 0.7133 | Val Acc: 82.57%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [80.94001007080078, -0.25, 0.6100000143051147]
+  UCB Scores: [11.514362335205078, 9.622105598449707, 10.052104949951172]
+  Arm Counts: [12.0, 2.0, 2.0]
+  Value of t: 14
+
+Epoch 13/25 | LR: 0.000655 | Time: 186.72s
+Train Loss: 0.1394 | Train Acc: 96.48%
+Val Loss: 0.7272 | Val Acc: 82.55%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [80.7800064086914, -0.25, 0.6100000143051147]
+  UCB Scores: [10.762585639953613, 9.748692512512207, 10.178692817687988]
+  Arm Counts: [13.0, 2.0, 2.0]
+  Value of t: 15
+
+Epoch 14/25 | LR: 0.000578 | Time: 186.75s
+Train Loss: 0.1041 | Train Acc: 97.45%
+Val Loss: 0.7365 | Val Acc: 82.39%
+--------------------------------------------------
+  Selected Arms: [2]
+  Arm Rewards: [81.15000915527344, -0.25, 0.6100000143051147]
+  UCB Scores: [10.160965919494629, 9.865654945373535, 10.295655250549316]
+  Arm Counts: [13.0, 2.0, 3.0]
+  Value of t: 16
+
+Epoch 15/25 | LR: 0.000500 | Time: 186.79s
+Train Loss: 0.0973 | Train Acc: 97.65%
+Val Loss: 0.7301 | Val Acc: 82.76%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [81.15000915527344, -0.25, 0.6399999856948853]
+  UCB Scores: [10.20357608795166, 9.97429084777832, 8.459369659423828]
+  Arm Counts: [14.0, 2.0, 3.0]
+  Value of t: 17
+
+Epoch 16/25 | LR: 0.000422 | Time: 186.76s
+Train Loss: 0.0617 | Train Acc: 98.64%
+Val Loss: 0.7595 | Val Acc: 82.79%
+--------------------------------------------------
+  Selected Arms: [1]
+  Arm Rewards: [81.57000732421875, -0.25, 0.6399999856948853]
+  UCB Scores: [9.681915283203125, 10.075655937194824, 8.542134284973145]
+  Arm Counts: [14.0, 3.0, 3.0]
+  Value of t: 18
+
+Epoch 17/25 | LR: 0.000345 | Time: 186.80s
+Train Loss: 0.0512 | Train Acc: 98.89%
+Val Loss: 0.7587 | Val Acc: 83.21%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [81.57000732421875, 0.21000000834465027, 0.6399999856948853]
+  UCB Scores: [9.71780776977539, 8.476339340209961, 8.619672775268555]
+  Arm Counts: [15.0, 3.0, 3.0]
+  Value of t: 19
+
+Epoch 18/25 | LR: 0.000273 | Time: 186.78s
+Train Loss: 0.0309 | Train Acc: 99.43%
+Val Loss: 0.7467 | Val Acc: 83.67%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [81.98001098632812, 0.21000000834465027, 0.6399999856948853]
+  UCB Scores: [9.257367134094238, 8.549243927001953, 8.692577362060547]
+  Arm Counts: [16.0, 3.0, 3.0]
+  Value of t: 20
+
+Epoch 19/25 | LR: 0.000206 | Time: 186.76s
+Train Loss: 0.0239 | Train Acc: 99.59%
+Val Loss: 0.7381 | Val Acc: 84.08%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [82.09001159667969, 0.21000000834465027, 0.6399999856948853]
+  UCB Scores: [8.832024574279785, 8.618013381958008, 8.761346817016602]
+  Arm Counts: [17.0, 3.0, 3.0]
+  Value of t: 21
+
+Epoch 20/25 | LR: 0.000146 | Time: 186.75s
+Train Loss: 0.0152 | Train Acc: 99.84%
+Val Loss: 0.7535 | Val Acc: 84.19%
+--------------------------------------------------
+  Selected Arms: [2]
+  Arm Rewards: [82.72000885009766, 0.21000000834465027, 0.6399999856948853]
+  UCB Scores: [8.484097480773926, 8.683072090148926, 8.82640552520752]
+  Arm Counts: [17.0, 3.0, 4.0]
+  Value of t: 22
+
+Epoch 21/25 | LR: 0.000095 | Time: 186.75s
+Train Loss: 0.0117 | Train Acc: 99.92%
+Val Loss: 0.7396 | Val Acc: 84.82%
+--------------------------------------------------
+  Selected Arms: [1]
+  Arm Rewards: [82.72000885009766, 0.21000000834465027, 0.6899999976158142]
+  UCB Scores: [8.51002025604248, 8.744783401489258, 7.68508243560791]
+  Arm Counts: [17.0, 4.0, 4.0]
+  Value of t: 23
+
+Epoch 22/25 | LR: 0.000054 | Time: 186.75s
+Train Loss: 0.0091 | Train Acc: 99.95%
+Val Loss: 0.7424 | Val Acc: 84.87%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [82.72000885009766, 0.17000001668930054, 0.6899999976158142]
+  UCB Scores: [8.534668922424316, 7.605896472930908, 7.735896587371826]
+  Arm Counts: [18.0, 4.0, 4.0]
+  Value of t: 24
+
+Epoch 23/25 | LR: 0.000024 | Time: 186.75s
+Train Loss: 0.0081 | Train Acc: 99.95%
+Val Loss: 0.7389 | Val Acc: 84.83%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [82.75000762939453, 0.17000001668930054, 0.6899999976158142]
+  UCB Scores: [8.185467720031738, 7.654317378997803, 7.784317493438721]
+  Arm Counts: [19.0, 4.0, 4.0]
+  Value of t: 25
+
+Epoch 24/25 | LR: 0.000006 | Time: 186.75s
+Train Loss: 0.0074 | Train Acc: 99.96%
+Val Loss: 0.7443 | Val Acc: 84.86%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [82.84000396728516, 0.17000001668930054, 0.6899999976158142]
+  UCB Scores: [7.873754501342773, 7.700550556182861, 7.830550670623779]
+  Arm Counts: [20.0, 4.0, 4.0]
+  Value of t: 26
+
+Epoch 25/25 | LR: 0.000000 | Time: 186.82s
+Train Loss: 0.0069 | Train Acc: 99.97%
+Val Loss: 0.7438 | Val Acc: 84.95%
+--------------------------------------------------
+
+Training completed!
+Total training time: 4668.58 seconds
+Average time per epoch: 186.74 seconds
+
+============================================================
+Training completed!
+============================================================
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on Caltech-101
+Fixed 25 Epochs Training
+============================================================
+Loading dataset...
+Dataset loaded: 9144 samples across 102 classes
+Classes: ['BACKGROUND_Google', 'Faces', 'Faces_easy', 'Leopards', 'Motorbikes', 'accordion', 'airplanes', 'anchor', 'ant', 'barrel']...
+
+Creating ViT model for 102 classes...
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'mlp.3', 'mlp.0', 'out_proj'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=115, arm_distribution='horizontal', num_arms=3, num_arms_to_select=1, ucb_alpha=6, use_fixed_indices=False, arm_selection_method='ucb', thompson_distribution='beta', thompson_alpha_prior=1.0, thompson_beta_prior=1.0, thompson_gaussian_prior_mean=0.0, thompson_gaussian_prior_std=1.0, thompson_gaussian_noise_std=1.0, gradient_chain_warmup_epochs=3, gradient_chain_num_samples=5)
+Fine tuning ViT using UCB-based PaCA:
+Calculating initial validation accuracy...
+Initial Val Acc: 1.53%
+  Selected Arms: [0]
+  Arm Rewards: [0.0, 0.0, 0.0]
+  UCB Scores: [7.064460277557373, 7.064460277557373, 7.064460277557373]
+  Arm Counts: [2.0, 1.0, 1.0]
+  Value of t: 2
+
+Epoch 1/25 | LR: 0.000200 | Time: 28.39s
+Train Loss: 4.6954 | Train Acc: 1.53%
+Val Loss: 4.7084 | Val Acc: 1.53%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [54.073265075683594, 0.0, 0.0]
+  UCB Scores: [33.32551574707031, 8.89382266998291, 8.89382266998291]
+  Arm Counts: [3.0, 1.0, 1.0]
+  Value of t: 3
+
+Epoch 2/25 | LR: 0.000400 | Time: 28.29s
+Train Loss: 3.2250 | Train Acc: 33.89%
+Val Loss: 2.4106 | Val Acc: 55.60%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [87.09677124023438, 0.0, 0.0]
+  UCB Scores: [34.80036544799805, 9.990654945373535, 9.990654945373535]
+  Arm Counts: [4.0, 1.0, 1.0]
+  Value of t: 4
+
+Epoch 3/25 | LR: 0.000600 | Time: 28.26s
+Train Loss: 1.3979 | Train Acc: 79.34%
+Val Loss: 0.9182 | Val Acc: 88.63%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [92.01749420166016, 0.0, 0.0]
+  UCB Scores: [28.386741638183594, 10.764735221862793, 10.764735221862793]
+  Arm Counts: [5.0, 1.0, 1.0]
+  Value of t: 5
+
+Epoch 4/25 | LR: 0.000800 | Time: 28.31s
+Train Loss: 0.5045 | Train Acc: 94.49%
+Val Loss: 0.4363 | Val Acc: 93.55%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [93.82176208496094, 0.0, 0.0]
+  UCB Scores: [23.843854904174805, 11.358110427856445, 11.358110427856445]
+  Arm Counts: [6.0, 1.0, 1.0]
+  Value of t: 6
+
+Epoch 5/25 | LR: 0.001000 | Time: 28.28s
+Train Loss: 0.2079 | Train Acc: 98.03%
+Val Loss: 0.3033 | Val Acc: 95.35%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [93.11099243164062, 0.0, 0.0]
+  UCB Scores: [20.350778579711914, 11.836618423461914, 11.836618423461914]
+  Arm Counts: [7.0, 1.0, 1.0]
+  Value of t: 7
+
+Epoch 6/25 | LR: 0.000994 | Time: 28.48s
+Train Loss: 0.1160 | Train Acc: 98.96%
+Val Loss: 0.3003 | Val Acc: 94.64%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [91.74412536621094, 0.0, 0.0]
+  UCB Scores: [17.7310791015625, 12.236003875732422, 12.236003875732422]
+  Arm Counts: [8.0, 1.0, 1.0]
+  Value of t: 8
+
+Epoch 7/25 | LR: 0.000976 | Time: 28.47s
+Train Loss: 0.0680 | Train Acc: 99.48%
+Val Loss: 0.2854 | Val Acc: 93.28%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [94.47785949707031, 0.0, 0.0]
+  UCB Scores: [16.256643295288086, 12.577764511108398, 12.577764511108398]
+  Arm Counts: [9.0, 1.0, 1.0]
+  Value of t: 9
+
+Epoch 8/25 | LR: 0.000946 | Time: 28.44s
+Train Loss: 0.0463 | Train Acc: 99.60%
+Val Loss: 0.2031 | Val Acc: 96.01%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [94.805908203125, 0.0, 0.0]
+  UCB Scores: [14.825922012329102, 12.8757963180542, 12.8757963180542]
+  Arm Counts: [10.0, 1.0, 1.0]
+  Value of t: 10
+
+Epoch 9/25 | LR: 0.000905 | Time: 28.47s
+Train Loss: 0.0280 | Train Acc: 99.88%
+Val Loss: 0.1942 | Val Acc: 96.34%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [92.07217407226562, 0.0, 0.0]
+  UCB Scores: [13.362316131591797, 13.139575958251953, 13.139575958251953]
+  Arm Counts: [11.0, 1.0, 1.0]
+  Value of t: 11
+
+Epoch 10/25 | LR: 0.000854 | Time: 28.44s
+Train Loss: 0.0907 | Train Acc: 99.03%
+Val Loss: 0.3119 | Val Acc: 93.60%
+--------------------------------------------------
+  Selected Arms: [1]
+  Arm Rewards: [92.94696807861328, 0.0, 0.0]
+  UCB Scores: [12.482693672180176, 13.375846862792969, 13.375846862792969]
+  Arm Counts: [11.0, 2.0, 1.0]
+  Value of t: 12
+
+Epoch 11/25 | LR: 0.000794 | Time: 28.41s
+Train Loss: 0.0778 | Train Acc: 99.23%
+Val Loss: 0.2661 | Val Acc: 94.48%
+--------------------------------------------------
+  Selected Arms: [2]
+  Arm Rewards: [92.94696807861328, -0.6014215350151062, 0.0]
+  UCB Scores: [12.547133445739746, 9.308565139770508, 13.589568138122559]
+  Arm Counts: [11.0, 2.0, 2.0]
+  Value of t: 13
+
+Epoch 12/25 | LR: 0.000727 | Time: 28.42s
+Train Loss: 0.0770 | Train Acc: 99.08%
+Val Loss: 0.2810 | Val Acc: 93.88%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [92.94696807861328, -0.6014215350151062, 0.929469645023346]
+  UCB Scores: [12.605903625488281, 9.446394920349121, 10.211840629577637]
+  Arm Counts: [12.0, 2.0, 2.0]
+  Value of t: 14
+
+Epoch 13/25 | LR: 0.000655 | Time: 28.50s
+Train Loss: 0.0407 | Train Acc: 99.51%
+Val Loss: 0.2297 | Val Acc: 94.81%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [93.22034454345703, -0.6014215350151062, 0.929469645023346]
+  UCB Scores: [11.799280166625977, 9.572981834411621, 10.338427543640137]
+  Arm Counts: [13.0, 2.0, 2.0]
+  Value of t: 15
+
+Epoch 14/25 | LR: 0.000578 | Time: 28.43s
+Train Loss: 0.0202 | Train Acc: 99.82%
+Val Loss: 0.2235 | Val Acc: 95.08%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [93.38436889648438, -0.6014215350151062, 0.929469645023346]
+  UCB Scores: [11.102070808410645, 9.68994426727295, 10.455389976501465]
+  Arm Counts: [14.0, 2.0, 2.0]
+  Value of t: 16
+
+Epoch 15/25 | LR: 0.000500 | Time: 28.43s
+Train Loss: 0.0175 | Train Acc: 99.86%
+Val Loss: 0.2173 | Val Acc: 95.24%
+--------------------------------------------------
+  Selected Arms: [2]
+  Arm Rewards: [93.8764419555664, -0.6014215350151062, 0.929469645023346]
+  UCB Scores: [10.52263355255127, 9.798580169677734, 10.56402587890625]
+  Arm Counts: [14.0, 2.0, 3.0]
+  Value of t: 17
+
+Epoch 16/25 | LR: 0.000422 | Time: 28.46s
+Train Loss: 0.0146 | Train Acc: 99.90%
+Val Loss: 0.2006 | Val Acc: 95.74%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [93.8764419555664, -0.6014215350151062, 0.9841443300247192]
+  UCB Scores: [10.560946464538574, 9.899945259094238, 8.656848907470703]
+  Arm Counts: [15.0, 2.0, 3.0]
+  Value of t: 18
+
+Epoch 17/25 | LR: 0.000345 | Time: 28.48s
+Train Loss: 0.0113 | Train Acc: 99.93%
+Val Loss: 0.1956 | Val Acc: 95.79%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [93.8764419555664, -0.6014215350151062, 0.9841443300247192]
+  UCB Scores: [10.01785945892334, 9.99491024017334, 8.734387397766113]
+  Arm Counts: [16.0, 2.0, 3.0]
+  Value of t: 19
+
+Epoch 18/25 | LR: 0.000273 | Time: 28.40s
+Train Loss: 0.0099 | Train Acc: 99.92%
+Val Loss: 0.2005 | Val Acc: 95.79%
+--------------------------------------------------
+  Selected Arms: [1]
+  Arm Rewards: [93.76708984375, -0.6014215350151062, 0.9841443300247192]
+  UCB Scores: [9.532063484191895, 10.084199905395508, 8.807291984558105]
+  Arm Counts: [16.0, 3.0, 3.0]
+  Value of t: 20
+
+Epoch 19/25 | LR: 0.000206 | Time: 28.42s
+Train Loss: 0.0090 | Train Acc: 99.96%
+Val Loss: 0.2046 | Val Acc: 95.68%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [93.76708984375, -0.6014215350151062, 0.9841443300247192]
+  UCB Scores: [9.56184196472168, 8.347539901733398, 8.87606143951416]
+  Arm Counts: [17.0, 3.0, 3.0]
+  Value of t: 21
+
+Epoch 20/25 | LR: 0.000146 | Time: 28.46s
+Train Loss: 0.0087 | Train Acc: 99.95%
+Val Loss: 0.2037 | Val Acc: 95.68%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [93.60306549072266, -0.6014215350151062, 0.9841443300247192]
+  UCB Scores: [9.124277114868164, 8.412598609924316, 8.941121101379395]
+  Arm Counts: [18.0, 3.0, 3.0]
+  Value of t: 22
+
+Epoch 21/25 | LR: 0.000095 | Time: 28.48s
+Train Loss: 0.0088 | Train Acc: 99.96%
+Val Loss: 0.2097 | Val Acc: 95.52%
+--------------------------------------------------
+  Selected Arms: [2]
+  Arm Rewards: [93.71241760253906, -0.6014215350151062, 0.9841443300247192]
+  UCB Scores: [8.747711181640625, 8.474308967590332, 9.00283145904541]
+  Arm Counts: [18.0, 3.0, 4.0]
+  Value of t: 23
+
+Epoch 22/25 | LR: 0.000054 | Time: 28.48s
+Train Loss: 0.0096 | Train Acc: 99.92%
+Val Loss: 0.2037 | Val Acc: 95.63%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [93.71241760253906, -0.6014215350151062, 1.0388190746307373]
+  UCB Scores: [8.7716646194458, 8.532984733581543, 7.82310152053833]
+  Arm Counts: [19.0, 3.0, 4.0]
+  Value of t: 24
+
+Epoch 23/25 | LR: 0.000024 | Time: 28.43s
+Train Loss: 0.0089 | Train Acc: 99.93%
+Val Loss: 0.2036 | Val Acc: 95.68%
+--------------------------------------------------
+  Selected Arms: [1]
+  Arm Rewards: [93.76708984375, -0.6014215350151062, 1.0388190746307373]
+  UCB Scores: [8.427651405334473, 8.588895797729492, 7.871522426605225]
+  Arm Counts: [19.0, 4.0, 4.0]
+  Value of t: 25
+
+Epoch 24/25 | LR: 0.000006 | Time: 28.42s
+Train Loss: 0.0086 | Train Acc: 99.92%
+Val Loss: 0.2038 | Val Acc: 95.74%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [93.76708984375, -0.6014215350151062, 1.0388190746307373]
+  UCB Scores: [8.448864936828613, 7.507695198059082, 7.917755126953125]
+  Arm Counts: [20.0, 4.0, 4.0]
+  Value of t: 26
+
+Epoch 25/25 | LR: 0.000000 | Time: 28.48s
+Train Loss: 0.0084 | Train Acc: 99.92%
+Val Loss: 0.2040 | Val Acc: 95.74%
+--------------------------------------------------
+
+Training completed!
+Total training time: 710.51 seconds
+Average time per epoch: 28.42 seconds
+
+============================================================
+Training completed!
+============================================================
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on Flowers-102
+Fixed 25 Epochs Training
+============================================================
+Loading dataset...
+--- Flowers-102 Dataset (Custom 80/20 Split) ---
+Total images from all splits: 8189
+Custom training set size (80%): 6551
+Custom testing set size (20%): 1638
+
+Creating ViT model for 102 classes...
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'mlp.3', 'out_proj', 'mlp.0'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=103, arm_distribution='horizontal', num_arms=3, num_arms_to_select=1, ucb_alpha=3, use_fixed_indices=False, arm_selection_method='ucb', thompson_distribution='beta', thompson_alpha_prior=1.0, thompson_beta_prior=1.0, thompson_gaussian_prior_mean=0.0, thompson_gaussian_prior_std=1.0, thompson_gaussian_noise_std=1.0, gradient_chain_warmup_epochs=3, gradient_chain_num_samples=5)
+Total parameters: 149,656,524
+Trainable parameters: 2,757,324 (1.84%)
+Frozen parameters: 146,899,200 (98.16%)
+Fine tuning ViT using UCB-based PaCA:
+Calculating initial validation accuracy...
+Initial Val Acc: 1.16%
+  Selected Arms: [0]
+  Arm Rewards: [0.0, 0.0, 0.0]
+  UCB Scores: [3.5322301387786865, 3.5322301387786865, 3.5322301387786865]
+  Arm Counts: [2.0, 1.0, 1.0]
+  Value of t: 2
+
+Epoch 1/25 | LR: 0.000200 | Time: 25.69s
+Train Loss: 4.7428 | Train Acc: 1.39%
+Val Loss: 4.7264 | Val Acc: 1.16%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [46.764347076416016, 0.0, 0.0]
+  UCB Scores: [26.526615142822266, 4.446911334991455, 4.446911334991455]
+  Arm Counts: [3.0, 1.0, 1.0]
+  Value of t: 3
+
+Epoch 2/25 | LR: 0.000400 | Time: 25.65s
+Train Loss: 3.8892 | Train Acc: 22.52%
+Val Loss: 2.8668 | Val Acc: 47.92%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [85.47008514404297, 0.0, 0.0]
+  UCB Scores: [31.374082565307617, 4.995327472686768, 4.995327472686768]
+  Arm Counts: [4.0, 1.0, 1.0]
+  Value of t: 4
+
+Epoch 3/25 | LR: 0.000600 | Time: 25.63s
+Train Loss: 1.7223 | Train Acc: 74.61%
+Val Loss: 1.1261 | Val Acc: 86.63%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [92.18559265136719, 0.0, 0.0]
+  UCB Scores: [25.737581253051758, 5.3823676109313965, 5.3823676109313965]
+  Arm Counts: [5.0, 1.0, 1.0]
+  Value of t: 5
+
+Epoch 4/25 | LR: 0.000800 | Time: 25.59s
+Train Loss: 0.6720 | Train Acc: 94.15%
+Val Loss: 0.5702 | Val Acc: 93.35%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [94.20024108886719, 0.0, 0.0]
+  UCB Scores: [21.379798889160156, 5.679055213928223, 5.679055213928223]
+  Arm Counts: [6.0, 1.0, 1.0]
+  Value of t: 6
+
+Epoch 5/25 | LR: 0.001000 | Time: 25.67s
+Train Loss: 0.2699 | Train Acc: 98.43%
+Val Loss: 0.3486 | Val Acc: 95.36%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [94.81074523925781, 0.0, 0.0]
+  UCB Scores: [18.21792984008789, 5.918309211730957, 5.918309211730957]
+  Arm Counts: [7.0, 1.0, 1.0]
+  Value of t: 7
+
+Epoch 6/25 | LR: 0.000994 | Time: 25.85s
+Train Loss: 0.1050 | Train Acc: 99.69%
+Val Loss: 0.2479 | Val Acc: 95.97%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [95.29914855957031, 0.0, 0.0]
+  UCB Scores: [15.926551818847656, 6.118001937866211, 6.118001937866211]
+  Arm Counts: [8.0, 1.0, 1.0]
+  Value of t: 8
+
+Epoch 7/25 | LR: 0.000976 | Time: 25.78s
+Train Loss: 0.0473 | Train Acc: 99.95%
+Val Loss: 0.2010 | Val Acc: 96.46%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [95.4822998046875, 0.0, 0.0]
+  UCB Scores: [14.158742904663086, 6.288882255554199, 6.288882255554199]
+  Arm Counts: [9.0, 1.0, 1.0]
+  Value of t: 9
+
+Epoch 8/25 | LR: 0.000946 | Time: 25.77s
+Train Loss: 0.0353 | Train Acc: 99.89%
+Val Loss: 0.1849 | Val Acc: 96.64%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [95.4822998046875, 0.0, 0.0]
+  UCB Scores: [12.755109786987305, 6.4378981590271, 6.4378981590271]
+  Arm Counts: [10.0, 1.0, 1.0]
+  Value of t: 10
+
+Epoch 9/25 | LR: 0.000905 | Time: 25.74s
+Train Loss: 0.0218 | Train Acc: 99.97%
+Val Loss: 0.1761 | Val Acc: 96.64%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [95.29914855957031, 0.0, 0.0]
+  UCB Scores: [11.607463836669922, 6.569787979125977, 6.569787979125977]
+  Arm Counts: [11.0, 1.0, 1.0]
+  Value of t: 11
+
+Epoch 10/25 | LR: 0.000854 | Time: 25.75s
+Train Loss: 0.0173 | Train Acc: 99.98%
+Val Loss: 0.1694 | Val Acc: 96.46%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [95.29914855957031, 0.0, 0.0]
+  UCB Scores: [10.680044174194336, 6.687923431396484, 6.687923431396484]
+  Arm Counts: [12.0, 1.0, 1.0]
+  Value of t: 12
+
+Epoch 11/25 | LR: 0.000794 | Time: 25.77s
+Train Loss: 0.0148 | Train Acc: 99.98%
+Val Loss: 0.1672 | Val Acc: 96.46%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [95.36019897460938, 0.0, 0.0]
+  UCB Scores: [9.90816879272461, 6.794784069061279, 6.794784069061279]
+  Arm Counts: [13.0, 1.0, 1.0]
+  Value of t: 13
+
+Epoch 12/25 | LR: 0.000727 | Time: 25.75s
+Train Loss: 0.0132 | Train Acc: 99.97%
+Val Loss: 0.1664 | Val Acc: 96.52%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [95.36019897460938, 0.0, 0.0]
+  UCB Scores: [9.246964454650879, 6.892244338989258, 6.892244338989258]
+  Arm Counts: [14.0, 1.0, 1.0]
+  Value of t: 14
+
+Epoch 13/25 | LR: 0.000655 | Time: 25.81s
+Train Loss: 0.0120 | Train Acc: 99.98%
+Val Loss: 0.1604 | Val Acc: 96.52%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [95.29914855957031, 0.0, 0.0]
+  UCB Scores: [8.67303466796875, 6.981755256652832, 6.981755256652832]
+  Arm Counts: [15.0, 1.0, 1.0]
+  Value of t: 15
+
+Epoch 14/25 | LR: 0.000578 | Time: 25.80s
+Train Loss: 0.0110 | Train Acc: 99.97%
+Val Loss: 0.1604 | Val Acc: 96.46%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [95.23809814453125, 0.0, 0.0]
+  UCB Scores: [8.173242568969727, 7.064460277557373, 7.064460277557373]
+  Arm Counts: [16.0, 1.0, 1.0]
+  Value of t: 16
+
+Epoch 15/25 | LR: 0.000500 | Time: 25.79s
+Train Loss: 0.0102 | Train Acc: 99.98%
+Val Loss: 0.1608 | Val Acc: 96.40%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [95.17704772949219, 0.0, 0.0]
+  UCB Scores: [7.733884811401367, 7.141277313232422, 7.141277313232422]
+  Arm Counts: [17.0, 1.0, 1.0]
+  Value of t: 17
+
+Epoch 16/25 | LR: 0.000422 | Time: 25.71s
+Train Loss: 0.0096 | Train Acc: 99.97%
+Val Loss: 0.1598 | Val Acc: 96.34%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [95.23809814453125, 0.0, 0.0]
+  UCB Scores: [7.351639270782471, 7.212953090667725, 7.212953090667725]
+  Arm Counts: [18.0, 1.0, 1.0]
+  Value of t: 18
+
+Epoch 17/25 | LR: 0.000345 | Time: 25.80s
+Train Loss: 0.0091 | Train Acc: 99.98%
+Val Loss: 0.1581 | Val Acc: 96.40%
+--------------------------------------------------
+  Selected Arms: [1]
+  Arm Rewards: [95.29914855957031, 0.0, 0.0]
+  UCB Scores: [7.010334014892578, 7.2801032066345215, 7.2801032066345215]
+  Arm Counts: [18.0, 2.0, 1.0]
+  Value of t: 19
+
+Epoch 18/25 | LR: 0.000273 | Time: 25.82s
+Train Loss: 0.0087 | Train Acc: 99.97%
+Val Loss: 0.1565 | Val Acc: 96.46%
+--------------------------------------------------
+  Selected Arms: [2]
+  Arm Rewards: [95.29914855957031, -0.061050061136484146, 0.0]
+  UCB Scores: [7.0252156257629395, 5.161930084228516, 7.343240261077881]
+  Arm Counts: [18.0, 2.0, 2.0]
+  Value of t: 20
+
+Epoch 19/25 | LR: 0.000206 | Time: 25.79s
+Train Loss: 0.0086 | Train Acc: 99.97%
+Val Loss: 0.1578 | Val Acc: 96.40%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [95.29914855957031, -0.061050061136484146, -0.061050061136484146]
+  UCB Scores: [7.039253234863281, 5.204042911529541, 5.204042911529541]
+  Arm Counts: [19.0, 2.0, 2.0]
+  Value of t: 21
+
+Epoch 20/25 | LR: 0.000146 | Time: 25.78s
+Train Loss: 0.0081 | Train Acc: 99.98%
+Val Loss: 0.1544 | Val Acc: 96.34%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [95.36019897460938, -0.061050061136484146, -0.061050061136484146]
+  UCB Scores: [6.7302021980285645, 5.24388313293457, 5.24388313293457]
+  Arm Counts: [20.0, 2.0, 2.0]
+  Value of t: 22
+
+Epoch 21/25 | LR: 0.000095 | Time: 25.79s
+Train Loss: 0.0081 | Train Acc: 99.97%
+Val Loss: 0.1569 | Val Acc: 96.40%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [95.4822998046875, -0.061050061136484146, -0.061050061136484146]
+  UCB Scores: [6.4539794921875, 5.281672954559326, 5.281672954559326]
+  Arm Counts: [21.0, 2.0, 2.0]
+  Value of t: 23
+
+Epoch 22/25 | LR: 0.000054 | Time: 25.77s
+Train Loss: 0.0078 | Train Acc: 100.00%
+Val Loss: 0.1565 | Val Acc: 96.52%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [95.29914855957031, -0.061050061136484146, -0.061050061136484146]
+  UCB Scores: [6.188523292541504, 5.317604064941406, 5.317604064941406]
+  Arm Counts: [22.0, 2.0, 2.0]
+  Value of t: 24
+
+Epoch 23/25 | LR: 0.000024 | Time: 25.79s
+Train Loss: 0.0078 | Train Acc: 99.98%
+Val Loss: 0.1555 | Val Acc: 96.34%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [95.29914855957031, -0.061050061136484146, -0.061050061136484146]
+  UCB Scores: [5.954624176025391, 5.351842880249023, 5.351842880249023]
+  Arm Counts: [23.0, 2.0, 2.0]
+  Value of t: 25
+
+Epoch 24/25 | LR: 0.000006 | Time: 25.83s
+Train Loss: 0.0078 | Train Acc: 99.97%
+Val Loss: 0.1554 | Val Acc: 96.34%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [95.36019897460938, -0.061050061136484146, -0.061050061136484146]
+  UCB Scores: [5.7429094314575195, 5.3845343589782715, 5.3845343589782715]
+  Arm Counts: [24.0, 2.0, 2.0]
+  Value of t: 26
+
+Epoch 25/25 | LR: 0.000000 | Time: 25.77s
+Train Loss: 0.0081 | Train Acc: 99.97%
+Val Loss: 0.1557 | Val Acc: 96.40%
+--------------------------------------------------
+
+Training completed!
+Total training time: 643.90 seconds
+Average time per epoch: 25.76 seconds
+
+============================================================
+Training completed!
+============================================================
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on Oxford-IIIT Pets
+Fixed 25 Epochs Training
+============================================================
+Loading dataset...
+Dataset loaded: 3680 train samples, 3669 val samples
+Number of classes: 37
+
+Creating ViT model for 37 classes...
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'mlp.3', 'mlp.0', 'out_proj'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=58, arm_distribution='horizontal', num_arms=3, num_arms_to_select=1, ucb_alpha=6, use_fixed_indices=False, arm_selection_method='ucb', thompson_distribution='beta', thompson_alpha_prior=1.0, thompson_beta_prior=1.0, thompson_gaussian_prior_mean=0.0, thompson_gaussian_prior_std=1.0, thompson_gaussian_noise_std=1.0, gradient_chain_warmup_epochs=3, gradient_chain_num_samples=5)
+Total parameters: 149,556,554
+Trainable parameters: 2,757,194 (1.84%)
+Frozen parameters: 146,799,360 (98.16%)
+Fine tuning ViT using UCB-based PaCA:
+Calculating initial validation accuracy...
+Initial Val Acc: 4.25%
+  Selected Arms: [0]
+  Arm Rewards: [0.0, 0.0, 0.0]
+  UCB Scores: [7.064460277557373, 7.064460277557373, 7.064460277557373]
+  Arm Counts: [2.0, 1.0, 1.0]
+  Value of t: 2
+
+Epoch 1/25 | LR: 0.000200 | Time: 18.74s
+Train Loss: 3.6117 | Train Acc: 3.89%
+Val Loss: 3.6080 | Val Acc: 4.25%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [62.605613708496094, 0.0, 0.0]
+  UCB Scores: [37.59169006347656, 8.89382266998291, 8.89382266998291]
+  Arm Counts: [3.0, 1.0, 1.0]
+  Value of t: 3
+
+Epoch 2/25 | LR: 0.000400 | Time: 18.77s
+Train Loss: 3.0515 | Train Acc: 29.70%
+Val Loss: 2.1853 | Val Acc: 66.86%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [85.03679656982422, 0.0, 0.0]
+  UCB Scores: [34.11370849609375, 9.990654945373535, 9.990654945373535]
+  Arm Counts: [4.0, 1.0, 1.0]
+  Value of t: 4
+
+Epoch 3/25 | LR: 0.000600 | Time: 18.66s
+Train Loss: 1.1068 | Train Acc: 84.62%
+Val Loss: 0.6399 | Val Acc: 89.29%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [85.82720184326172, 0.0, 0.0]
+  UCB Scores: [26.839168548583984, 10.764735221862793, 10.764735221862793]
+  Arm Counts: [5.0, 1.0, 1.0]
+  Value of t: 5
+
+Epoch 4/25 | LR: 0.000800 | Time: 18.66s
+Train Loss: 0.3913 | Train Acc: 93.80%
+Val Loss: 0.4386 | Val Acc: 90.08%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [84.40991973876953, 0.0, 0.0]
+  UCB Scores: [21.96148681640625, 11.358110427856445, 11.358110427856445]
+  Arm Counts: [6.0, 1.0, 1.0]
+  Value of t: 6
+
+Epoch 5/25 | LR: 0.001000 | Time: 18.67s
+Train Loss: 0.2071 | Train Acc: 96.55%
+Val Loss: 0.4407 | Val Acc: 88.66%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [86.2632827758789, 0.0, 0.0]
+  UCB Scores: [19.20949363708496, 11.836618423461914, 11.836618423461914]
+  Arm Counts: [7.0, 1.0, 1.0]
+  Value of t: 7
+
+Epoch 6/25 | LR: 0.000994 | Time: 18.81s
+Train Loss: 0.1072 | Train Acc: 98.59%
+Val Loss: 0.3580 | Val Acc: 90.52%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [86.45407104492188, 0.0, 0.0]
+  UCB Scores: [16.975357055664062, 12.236003875732422, 12.236003875732422]
+  Arm Counts: [8.0, 1.0, 1.0]
+  Value of t: 8
+
+Epoch 7/25 | LR: 0.000976 | Time: 18.75s
+Train Loss: 0.0544 | Train Acc: 99.51%
+Val Loss: 0.3385 | Val Acc: 90.71%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [85.17306518554688, 0.0, 0.0]
+  UCB Scores: [15.093544960021973, 12.577764511108398, 12.577764511108398]
+  Arm Counts: [9.0, 1.0, 1.0]
+  Value of t: 9
+
+Epoch 8/25 | LR: 0.000946 | Time: 18.72s
+Train Loss: 0.0271 | Train Acc: 99.95%
+Val Loss: 0.4391 | Val Acc: 89.42%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [86.18151092529297, 0.0, 0.0]
+  UCB Scores: [13.867655754089355, 12.8757963180542, 12.8757963180542]
+  Arm Counts: [10.0, 1.0, 1.0]
+  Value of t: 10
+
+Epoch 9/25 | LR: 0.000905 | Time: 18.68s
+Train Loss: 0.1058 | Train Acc: 98.07%
+Val Loss: 0.3549 | Val Acc: 90.43%
+--------------------------------------------------
+  Selected Arms: [1]
+  Arm Rewards: [85.22756958007812, 0.0, 0.0]
+  UCB Scores: [12.6778564453125, 13.139575958251953, 13.139575958251953]
+  Arm Counts: [10.0, 2.0, 1.0]
+  Value of t: 11
+
+Epoch 10/25 | LR: 0.000854 | Time: 18.75s
+Train Loss: 0.0534 | Train Acc: 99.16%
+Val Loss: 0.3840 | Val Acc: 89.48%
+--------------------------------------------------
+  Selected Arms: [2]
+  Arm Rewards: [85.22756958007812, 1.4990460872650146, 0.0]
+  UCB Scores: [12.752572059631348, 10.207674980163574, 13.375846862792969]
+  Arm Counts: [10.0, 2.0, 2.0]
+  Value of t: 12
+
+Epoch 11/25 | LR: 0.000794 | Time: 18.88s
+Train Loss: 0.0439 | Train Acc: 99.38%
+Val Loss: 0.3398 | Val Acc: 90.98%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [85.22756958007812, 1.4990460872650146, -0.08176615089178085]
+  UCB Scores: [12.82015609741211, 10.35879898071289, 9.568392753601074]
+  Arm Counts: [11.0, 2.0, 2.0]
+  Value of t: 13
+
+Epoch 12/25 | LR: 0.000727 | Time: 18.72s
+Train Loss: 0.0233 | Train Acc: 99.76%
+Val Loss: 0.3588 | Val Acc: 90.90%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [85.60914611816406, 1.4990460872650146, -0.08176615089178085]
+  UCB Scores: [11.93882942199707, 10.496628761291504, 9.706222534179688]
+  Arm Counts: [12.0, 2.0, 2.0]
+  Value of t: 14
+
+Epoch 13/25 | LR: 0.000655 | Time: 18.76s
+Train Loss: 0.0132 | Train Acc: 99.97%
+Val Loss: 0.3216 | Val Acc: 91.28%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [85.71817016601562, 1.4990460872650146, -0.08176615089178085]
+  UCB Scores: [11.17409896850586, 10.623215675354004, 9.832809448242188]
+  Arm Counts: [13.0, 2.0, 2.0]
+  Value of t: 15
+
+Epoch 14/25 | LR: 0.000578 | Time: 18.75s
+Train Loss: 0.0097 | Train Acc: 99.95%
+Val Loss: 0.3381 | Val Acc: 91.39%
+--------------------------------------------------
+  Selected Arms: [1]
+  Arm Rewards: [85.69091796875, 1.4990460872650146, -0.08176615089178085]
+  UCB Scores: [10.51026725769043, 10.740178108215332, 9.949771881103516]
+  Arm Counts: [13.0, 3.0, 2.0]
+  Value of t: 16
+
+Epoch 15/25 | LR: 0.000500 | Time: 18.73s
+Train Loss: 0.0080 | Train Acc: 100.00%
+Val Loss: 0.3318 | Val Acc: 91.36%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [85.69091796875, 1.5535567998886108, -0.08176615089178085]
+  UCB Scores: [10.552877426147461, 8.76388931274414, 10.0584077835083]
+  Arm Counts: [14.0, 3.0, 2.0]
+  Value of t: 17
+
+Epoch 16/25 | LR: 0.000422 | Time: 18.75s
+Train Loss: 0.0066 | Train Acc: 100.00%
+Val Loss: 0.3244 | Val Acc: 91.41%
+--------------------------------------------------
+  Selected Arms: [2]
+  Arm Rewards: [85.7726821899414, 1.5535567998886108, -0.08176615089178085]
+  UCB Scores: [9.98210620880127, 8.84665298461914, 10.159772872924805]
+  Arm Counts: [14.0, 3.0, 3.0]
+  Value of t: 18
+
+Epoch 17/25 | LR: 0.000345 | Time: 18.83s
+Train Loss: 0.0059 | Train Acc: 100.00%
+Val Loss: 0.3263 | Val Acc: 91.50%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [85.7726821899414, 1.5535567998886108, -0.08176615089178085]
+  UCB Scores: [10.017998695373535, 8.92419147491455, 8.379083633422852]
+  Arm Counts: [15.0, 3.0, 3.0]
+  Value of t: 19
+
+Epoch 18/25 | LR: 0.000273 | Time: 18.79s
+Train Loss: 0.0055 | Train Acc: 100.00%
+Val Loss: 0.3286 | Val Acc: 91.50%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [85.85444641113281, 1.5535567998886108, -0.08176615089178085]
+  UCB Scores: [9.515663146972656, 8.997096061706543, 8.451988220214844]
+  Arm Counts: [16.0, 3.0, 3.0]
+  Value of t: 20
+
+Epoch 19/25 | LR: 0.000206 | Time: 18.70s
+Train Loss: 0.0052 | Train Acc: 100.00%
+Val Loss: 0.3283 | Val Acc: 91.58%
+--------------------------------------------------
+  Selected Arms: [1]
+  Arm Rewards: [85.69091033935547, 1.5535567998886108, -0.08176615089178085]
+  UCB Scores: [9.057080268859863, 9.065866470336914, 8.520758628845215]
+  Arm Counts: [16.0, 4.0, 3.0]
+  Value of t: 21
+
+Epoch 20/25 | LR: 0.000146 | Time: 18.69s
+Train Loss: 0.0050 | Train Acc: 100.00%
+Val Loss: 0.3303 | Val Acc: 91.41%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [85.69091033935547, 1.5808122158050537, -0.08176615089178085]
+  UCB Scores: [9.085251808166504, 7.854342460632324, 8.585817337036133]
+  Arm Counts: [17.0, 4.0, 3.0]
+  Value of t: 22
+
+Epoch 21/25 | LR: 0.000095 | Time: 18.77s
+Train Loss: 0.0049 | Train Acc: 100.00%
+Val Loss: 0.3297 | Val Acc: 91.44%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [85.74542236328125, 1.5808122158050537, -0.08176615089178085]
+  UCB Scores: [8.687986373901367, 7.907785415649414, 8.647527694702148]
+  Arm Counts: [18.0, 4.0, 3.0]
+  Value of t: 23
+
+Epoch 22/25 | LR: 0.000054 | Time: 18.71s
+Train Loss: 0.0048 | Train Acc: 100.00%
+Val Loss: 0.3300 | Val Acc: 91.50%
+--------------------------------------------------
+  Selected Arms: [2]
+  Arm Rewards: [85.71817016601562, 1.5808122158050537, -0.08176615089178085]
+  UCB Scores: [8.327540397644043, 7.95859956741333, 8.706202507019043]
+  Arm Counts: [18.0, 4.0, 4.0]
+  Value of t: 24
+
+Epoch 23/25 | LR: 0.000024 | Time: 18.77s
+Train Loss: 0.0047 | Train Acc: 100.00%
+Val Loss: 0.3307 | Val Acc: 91.47%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [85.71817016601562, 1.5808122158050537, -0.08176615089178085]
+  UCB Scores: [8.35036563873291, 8.007020950317383, 7.591375827789307]
+  Arm Counts: [19.0, 4.0, 4.0]
+  Value of t: 25
+
+Epoch 24/25 | LR: 0.000006 | Time: 18.91s
+Train Loss: 0.0047 | Train Acc: 100.00%
+Val Loss: 0.3310 | Val Acc: 91.47%
+--------------------------------------------------
+  Selected Arms: [1]
+  Arm Rewards: [85.71817016601562, 1.5808122158050537, -0.08176615089178085]
+  UCB Scores: [8.025237083435059, 8.053253173828125, 7.637609004974365]
+  Arm Counts: [19.0, 5.0, 4.0]
+  Value of t: 26
+
+Epoch 25/25 | LR: 0.000000 | Time: 18.80s
+Train Loss: 0.0047 | Train Acc: 100.00%
+Val Loss: 0.3310 | Val Acc: 91.47%
+--------------------------------------------------
+
+Training completed!
+Total training time: 468.78 seconds
+Average time per epoch: 18.75 seconds
+
+============================================================
+Training completed!
+============================================================
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on SVHN
+Fixed 25 Epochs Training
+============================================================
+Loading dataset...
+Using downloaded and verified file: ./data/train_32x32.mat
+Using downloaded and verified file: ./data/test_32x32.mat
+Dataset loaded: 73257 train samples, 26032 val samples
+Number of classes: 10
+
+Creating ViT model for 10 classes...
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'mlp.3', 'out_proj', 'mlp.0'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=1145, arm_distribution='horizontal', num_arms=3, num_arms_to_select=1, ucb_alpha=6, use_fixed_indices=False, arm_selection_method='ucb', thompson_distribution='beta', thompson_alpha_prior=1.0, thompson_beta_prior=1.0, thompson_gaussian_prior_mean=0.0, thompson_gaussian_prior_std=1.0, thompson_gaussian_noise_std=1.0, gradient_chain_warmup_epochs=3, gradient_chain_num_samples=5)
+Total parameters: 149,515,028
+Trainable parameters: 2,757,140 (1.84%)
+Frozen parameters: 146,757,888 (98.16%)
+Fine tuning ViT using UCB-based PaCA:
+Calculating initial validation accuracy...
+Initial Val Acc: 13.01%
+  Selected Arms: [0]
+  Arm Rewards: [0.0, 0.0, 0.0]
+  UCB Scores: [7.064460277557373, 7.064460277557373, 7.064460277557373]
+  Arm Counts: [2.0, 1.0, 1.0]
+  Value of t: 2
+
+Epoch 1/25 | LR: 0.000200 | Time: 288.51s
+Train Loss: 2.3220 | Train Acc: 11.95%
+Val Loss: 2.3196 | Val Acc: 13.01%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [81.48816680908203, 0.0, 0.0]
+  UCB Scores: [47.03296661376953, 8.89382266998291, 8.89382266998291]
+  Arm Counts: [3.0, 1.0, 1.0]
+  Value of t: 3
+
+Epoch 2/25 | LR: 0.000400 | Time: 288.59s
+Train Loss: 0.4039 | Train Acc: 87.39%
+Val Loss: 0.1967 | Val Acc: 94.50%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [80.96573638916016, 0.0, 0.0]
+  UCB Scores: [32.75668716430664, 9.990654945373535, 9.990654945373535]
+  Arm Counts: [4.0, 1.0, 1.0]
+  Value of t: 4
+
+Epoch 3/25 | LR: 0.000600 | Time: 288.64s
+Train Loss: 0.2058 | Train Acc: 94.08%
+Val Loss: 0.2054 | Val Acc: 93.98%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [82.7635269165039, 0.0, 0.0]
+  UCB Scores: [26.07324981689453, 10.764735221862793, 10.764735221862793]
+  Arm Counts: [5.0, 1.0, 1.0]
+  Value of t: 5
+
+Epoch 4/25 | LR: 0.000800 | Time: 288.58s
+Train Loss: 0.1763 | Train Acc: 94.90%
+Val Loss: 0.1551 | Val Acc: 95.77%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [82.54456329345703, 0.0, 0.0]
+  UCB Scores: [21.588415145874023, 11.358110427856445, 11.358110427856445]
+  Arm Counts: [6.0, 1.0, 1.0]
+  Value of t: 6
+
+Epoch 5/25 | LR: 0.001000 | Time: 288.67s
+Train Loss: 0.1636 | Train Acc: 95.28%
+Val Loss: 0.1592 | Val Acc: 95.56%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [82.82882690429688, 0.0, 0.0]
+  UCB Scores: [18.637083053588867, 11.836618423461914, 11.836618423461914]
+  Arm Counts: [7.0, 1.0, 1.0]
+  Value of t: 7
+
+Epoch 6/25 | LR: 0.000994 | Time: 289.62s
+Train Loss: 0.1565 | Train Acc: 95.53%
+Val Loss: 0.1513 | Val Acc: 95.84%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [82.91333770751953, 0.0, 0.0]
+  UCB Scores: [16.46953773498535, 12.236003875732422, 12.236003875732422]
+  Arm Counts: [8.0, 1.0, 1.0]
+  Value of t: 8
+
+Epoch 7/25 | LR: 0.000976 | Time: 289.64s
+Train Loss: 0.1353 | Train Acc: 96.15%
+Val Loss: 0.1479 | Val Acc: 95.92%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [82.70205688476562, 0.0, 0.0]
+  UCB Scores: [14.784668922424316, 12.577764511108398, 12.577764511108398]
+  Arm Counts: [9.0, 1.0, 1.0]
+  Value of t: 9
+
+Epoch 8/25 | LR: 0.000946 | Time: 289.64s
+Train Loss: 0.1182 | Train Acc: 96.65%
+Val Loss: 0.1566 | Val Acc: 95.71%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [82.2641372680664, 0.0, 0.0]
+  UCB Scores: [13.432392120361328, 12.8757963180542, 12.8757963180542]
+  Arm Counts: [10.0, 1.0, 1.0]
+  Value of t: 10
+
+Epoch 9/25 | LR: 0.000905 | Time: 289.62s
+Train Loss: 0.1561 | Train Acc: 95.38%
+Val Loss: 0.1736 | Val Acc: 95.28%
+--------------------------------------------------
+  Selected Arms: [1]
+  Arm Rewards: [82.74815368652344, 0.0, 0.0]
+  UCB Scores: [12.429914474487305, 13.139575958251953, 13.139575958251953]
+  Arm Counts: [10.0, 2.0, 1.0]
+  Value of t: 11
+
+Epoch 10/25 | LR: 0.000854 | Time: 289.64s
+Train Loss: 0.1253 | Train Acc: 96.42%
+Val Loss: 0.1552 | Val Acc: 95.76%
+--------------------------------------------------
+  Selected Arms: [2]
+  Arm Rewards: [82.74815368652344, -0.2727412283420563, 0.0]
+  UCB Scores: [12.504630088806152, 9.321781158447266, 13.375846862792969]
+  Arm Counts: [10.0, 2.0, 2.0]
+  Value of t: 12
+
+Epoch 11/25 | LR: 0.000794 | Time: 289.63s
+Train Loss: 0.0985 | Train Acc: 97.16%
+Val Loss: 0.1700 | Val Acc: 95.49%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [82.74815368652344, -0.2727412283420563, -0.6530424356460571]
+  UCB Scores: [12.572214126586914, 9.472905158996582, 9.282753944396973]
+  Arm Counts: [11.0, 2.0, 2.0]
+  Value of t: 13
+
+Epoch 12/25 | LR: 0.000727 | Time: 289.62s
+Train Loss: 0.0968 | Train Acc: 97.22%
+Val Loss: 0.1833 | Val Acc: 94.83%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [83.723876953125, -0.2727412283420563, -0.6530424356460571]
+  UCB Scores: [11.767441749572754, 9.610734939575195, 9.420583724975586]
+  Arm Counts: [12.0, 2.0, 2.0]
+  Value of t: 14
+
+Epoch 13/25 | LR: 0.000655 | Time: 289.68s
+Train Loss: 0.0765 | Train Acc: 97.86%
+Val Loss: 0.1605 | Val Acc: 95.81%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [84.157958984375, -0.2727412283420563, -0.6530424356460571]
+  UCB Scores: [11.044081687927246, 9.737321853637695, 9.547171592712402]
+  Arm Counts: [13.0, 2.0, 2.0]
+  Value of t: 15
+
+Epoch 14/25 | LR: 0.000578 | Time: 289.65s
+Train Loss: 0.0593 | Train Acc: 98.37%
+Val Loss: 0.1481 | Val Acc: 96.24%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [83.99662017822266, -0.2727412283420563, -0.6530424356460571]
+  UCB Scores: [10.379936218261719, 9.854284286499023, 9.66413402557373]
+  Arm Counts: [14.0, 2.0, 2.0]
+  Value of t: 16
+
+Epoch 15/25 | LR: 0.000500 | Time: 289.63s
+Train Loss: 0.0567 | Train Acc: 98.41%
+Val Loss: 0.1546 | Val Acc: 96.08%
+--------------------------------------------------
+  Selected Arms: [1]
+  Arm Rewards: [84.16180419921875, -0.2727412283420563, -0.6530424356460571]
+  UCB Scores: [9.828730583190918, 9.962920188903809, 9.772769927978516]
+  Arm Counts: [14.0, 3.0, 2.0]
+  Value of t: 17
+
+Epoch 16/25 | LR: 0.000422 | Time: 289.66s
+Train Loss: 0.0314 | Train Acc: 99.21%
+Val Loss: 0.1563 | Val Acc: 96.25%
+--------------------------------------------------
+  Selected Arms: [2]
+  Arm Rewards: [84.16180419921875, -0.622310996055603, -0.6530424356460571]
+  UCB Scores: [9.867043495178223, 8.121363639831543, 9.87413501739502]
+  Arm Counts: [14.0, 3.0, 3.0]
+  Value of t: 18
+
+Epoch 17/25 | LR: 0.000345 | Time: 289.64s
+Train Loss: 0.0245 | Train Acc: 99.38%
+Val Loss: 0.1719 | Val Acc: 95.90%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [84.16180419921875, -0.622310996055603, -0.749078094959259]
+  UCB Scores: [9.902935981750488, 8.198902130126953, 8.156646728515625]
+  Arm Counts: [15.0, 3.0, 3.0]
+  Value of t: 19
+
+Epoch 18/25 | LR: 0.000273 | Time: 289.67s
+Train Loss: 0.0170 | Train Acc: 99.58%
+Val Loss: 0.1803 | Val Acc: 95.80%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [84.51905822753906, -0.622310996055603, -0.749078094959259]
+  UCB Scores: [9.426636695861816, 8.271806716918945, 8.229551315307617]
+  Arm Counts: [16.0, 3.0, 3.0]
+  Value of t: 20
+
+Epoch 19/25 | LR: 0.000206 | Time: 289.69s
+Train Loss: 0.0109 | Train Acc: 99.74%
+Val Loss: 0.1713 | Val Acc: 96.16%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [84.48832702636719, -0.622310996055603, -0.749078094959259]
+  UCB Scores: [8.981919288635254, 8.340577125549316, 8.298320770263672]
+  Arm Counts: [17.0, 3.0, 3.0]
+  Value of t: 21
+
+Epoch 20/25 | LR: 0.000146 | Time: 289.67s
+Train Loss: 0.0078 | Train Acc: 99.82%
+Val Loss: 0.1836 | Val Acc: 96.13%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [84.73802185058594, -0.622310996055603, -0.749078094959259]
+  UCB Scores: [8.602804183959961, 8.405635833740234, 8.36337947845459]
+  Arm Counts: [18.0, 3.0, 3.0]
+  Value of t: 22
+
+Epoch 21/25 | LR: 0.000095 | Time: 289.69s
+Train Loss: 0.0035 | Train Acc: 99.93%
+Val Loss: 0.1749 | Val Acc: 96.38%
+--------------------------------------------------
+  Selected Arms: [1]
+  Arm Rewards: [84.8225326538086, -0.622310996055603, -0.749078094959259]
+  UCB Scores: [8.253828048706055, 8.46734619140625, 8.425090789794922]
+  Arm Counts: [18.0, 4.0, 3.0]
+  Value of t: 23
+
+Epoch 22/25 | LR: 0.000054 | Time: 289.68s
+Train Loss: 0.0020 | Train Acc: 99.97%
+Val Loss: 0.1750 | Val Acc: 96.46%
+--------------------------------------------------
+  Selected Arms: [2]
+  Arm Rewards: [84.8225326538086, -0.46865397691726685, -0.749078094959259]
+  UCB Scores: [8.277782440185547, 7.44623327255249, 8.483765602111816]
+  Arm Counts: [18.0, 4.0, 4.0]
+  Value of t: 24
+
+Epoch 23/25 | LR: 0.000024 | Time: 289.67s
+Train Loss: 0.0013 | Train Acc: 99.99%
+Val Loss: 0.1742 | Val Acc: 96.62%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [84.8225326538086, -0.46865397691726685, -0.8066995143890381]
+  UCB Scores: [8.300607681274414, 7.494654178619385, 7.410142421722412]
+  Arm Counts: [19.0, 4.0, 4.0]
+  Value of t: 25
+
+Epoch 24/25 | LR: 0.000006 | Time: 289.67s
+Train Loss: 0.0010 | Train Acc: 99.98%
+Val Loss: 0.1774 | Val Acc: 96.56%
+--------------------------------------------------
+  Selected Arms: [0]
+  Arm Rewards: [84.80716705322266, -0.46865397691726685, -0.8066995143890381]
+  UCB Scores: [7.97728967666626, 7.540886878967285, 7.456375598907471]
+  Arm Counts: [20.0, 4.0, 4.0]
+  Value of t: 26
+
+Epoch 25/25 | LR: 0.000000 | Time: 289.62s
+Train Loss: 0.0009 | Train Acc: 99.99%
+Val Loss: 0.1778 | Val Acc: 96.54%
+--------------------------------------------------
+
+Training completed!
+Total training time: 7236.02 seconds
+Average time per epoch: 289.44 seconds
+
+============================================================
+Training completed!
+============================================================
+Job completed at Sun Dec  7 19:31:22 IST 2025

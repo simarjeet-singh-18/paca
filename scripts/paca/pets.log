@@ -1,0 +1,459 @@
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on Pets
+============================================================
+Loading dataset...
+Downloading https://thor.robots.ox.ac.uk/pets/images.tar.gz to data/oxford-iiit-pet/images.tar.gz
+
+100%|██████████| 791918971/791918971 [02:58<00:00, 4435252.61it/s]
+
+Extracting data/oxford-iiit-pet/images.tar.gz to data/oxford-iiit-pet
+Downloading https://thor.robots.ox.ac.uk/pets/annotations.tar.gz to data/oxford-iiit-pet/annotations.tar.gz
+
+100%|██████████| 19173078/19173078 [00:02<00:00, 6603959.66it/s] 
+
+Extracting data/oxford-iiit-pet/annotations.tar.gz to data/oxford-iiit-pet
+Dataset loaded: 3680 train samples, 3669 val samples
+Number of classes: 37
+
+Creating ViT model for 37 classes...
+
+Downloading: "https://download.pytorch.org/models/vit_b_16-c867db91.pth" to /root/.cache/torch/hub/checkpoints/vit_b_16-c867db91.pth
+100%|██████████| 330M/330M [00:01<00:00, 200MB/s]
+
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=16, target_modules={'out_proj', 'mlp.3', 'mlp.0'}, paca_alpha=32, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1)
+Fine tuning VMamba using Normal PaCA:
+Calculating initial validation accuracy...
+Initial Val Acc: 2.83%
+
+Epoch 1 Summary | LR: 0.000100 | Time: 30.83
+Train Loss: 3.6613 | Train Acc: 3.18%
+Val Loss: 3.6688 | Val Acc: 2.83%
+--------------------------------------------------
+
+Epoch 2 Summary | LR: 0.000200 | Time: 30.74
+Train Loss: 3.5581 | Train Acc: 6.30%
+Val Loss: 3.4625 | Val Acc: 8.72%
+--------------------------------------------------
+
+Epoch 3 Summary | LR: 0.000300 | Time: 30.73
+Train Loss: 3.0488 | Train Acc: 30.05%
+Val Loss: 2.5664 | Val Acc: 51.32%
+--------------------------------------------------
+
+Epoch 4 Summary | LR: 0.000400 | Time: 30.71
+Train Loss: 1.8366 | Train Acc: 73.75%
+Val Loss: 1.3874 | Val Acc: 81.28%
+--------------------------------------------------
+
+Epoch 5 Summary | LR: 0.000500 | Time: 30.72
+Train Loss: 0.9959 | Train Acc: 87.53%
+Val Loss: 0.8339 | Val Acc: 87.19%
+--------------------------------------------------
+
+Epoch 6 Summary | LR: 0.000600 | Time: 30.74
+Train Loss: 0.5844 | Train Acc: 92.77%
+Val Loss: 0.6257 | Val Acc: 88.66%
+--------------------------------------------------
+
+Epoch 7 Summary | LR: 0.000700 | Time: 30.75
+Train Loss: 0.4109 | Train Acc: 94.18%
+Val Loss: 0.5535 | Val Acc: 88.36%
+--------------------------------------------------
+
+Epoch 8 Summary | LR: 0.000800 | Time: 30.72
+Train Loss: 0.2818 | Train Acc: 96.68%
+Val Loss: 0.4552 | Val Acc: 89.67%
+--------------------------------------------------
+
+Epoch 9 Summary | LR: 0.000900 | Time: 30.70
+Train Loss: 0.1793 | Train Acc: 98.29%
+Val Loss: 0.4636 | Val Acc: 88.88%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 10 Summary | LR: 0.001000 | Time: 30.69
+Train Loss: 0.1195 | Train Acc: 98.80%
+Val Loss: 0.4186 | Val Acc: 89.62%
+--------------------------------------------------
+
+Epoch 11 Summary | LR: 0.001000 | Time: 30.98
+Train Loss: 0.1193 | Train Acc: 99.02%
+Val Loss: 0.4046 | Val Acc: 89.67%
+--------------------------------------------------
+
+Epoch 12 Summary | LR: 0.001000 | Time: 30.87
+Train Loss: 0.0914 | Train Acc: 99.18%
+Val Loss: 0.4198 | Val Acc: 88.66%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 13 Summary | LR: 0.001000 | Time: 30.84
+Train Loss: 0.0613 | Train Acc: 99.57%
+Val Loss: 0.4325 | Val Acc: 88.58%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 14 Summary | LR: 0.001000 | Time: 30.86
+Train Loss: 0.0470 | Train Acc: 99.78%
+Val Loss: 0.3816 | Val Acc: 89.78%
+--------------------------------------------------
+
+Epoch 15 Summary | LR: 0.001000 | Time: 30.90
+Train Loss: 0.0354 | Train Acc: 99.81%
+Val Loss: 0.3669 | Val Acc: 89.67%
+--------------------------------------------------
+
+Epoch 16 Summary | LR: 0.001000 | Time: 30.89
+Train Loss: 0.0184 | Train Acc: 100.00%
+Val Loss: 0.3490 | Val Acc: 90.24%
+--------------------------------------------------
+
+Epoch 17 Summary | LR: 0.001000 | Time: 30.95
+Train Loss: 0.0144 | Train Acc: 100.00%
+Val Loss: 0.3422 | Val Acc: 90.32%
+--------------------------------------------------
+
+Epoch 18 Summary | LR: 0.001000 | Time: 30.86
+Train Loss: 0.0124 | Train Acc: 100.00%
+Val Loss: 0.3500 | Val Acc: 90.41%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 19 Summary | LR: 0.001000 | Time: 30.86
+Train Loss: 0.0110 | Train Acc: 100.00%
+Val Loss: 0.3488 | Val Acc: 90.46%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 20 Summary | LR: 0.001000 | Time: 30.83
+Train Loss: 0.0100 | Train Acc: 100.00%
+Val Loss: 0.3513 | Val Acc: 90.43%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 21 Summary | LR: 0.001000 | Time: 30.85
+Train Loss: 0.0092 | Train Acc: 100.00%
+Val Loss: 0.3550 | Val Acc: 90.24%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 22 Summary | LR: 0.001000 | Time: 30.89
+Train Loss: 0.0085 | Train Acc: 100.00%
+Val Loss: 0.3567 | Val Acc: 90.19%
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Epoch 23 Summary | LR: 0.001000 | Time: 30.91
+Train Loss: 0.0079 | Train Acc: 100.00%
+Val Loss: 0.3598 | Val Acc: 90.38%
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Epoch 24 Summary | LR: 0.001000 | Time: 30.97
+Train Loss: 0.0074 | Train Acc: 100.00%
+Val Loss: 0.3593 | Val Acc: 90.19%
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 24 epochs.
+Total training time far: 739.81 seconds
+Average time per epoch: 30.83 seconds
+
+
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on Pets
+============================================================
+Loading dataset...
+Dataset loaded: 3680 train samples, 3669 val samples
+Number of classes: 37
+
+Creating ViT model for 37 classes...
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=16, target_modules={'out_proj', 'mlp.3', 'mlp.0'}, paca_alpha=32, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1)
+Fine tuning VMamba using Normal PaCA:
+Calculating initial validation accuracy...
+Initial Val Acc: 2.83%
+
+Epoch 1 Summary | LR: 0.000100 | Time: 30.89
+Train Loss: 3.6613 | Train Acc: 3.18%
+Val Loss: 3.6688 | Val Acc: 2.83%
+--------------------------------------------------
+
+Epoch 2 Summary | LR: 0.000200 | Time: 30.87
+Train Loss: 3.5581 | Train Acc: 6.30%
+Val Loss: 3.4625 | Val Acc: 8.72%
+--------------------------------------------------
+
+Epoch 3 Summary | LR: 0.000300 | Time: 30.87
+Train Loss: 3.0488 | Train Acc: 30.05%
+Val Loss: 2.5664 | Val Acc: 51.32%
+--------------------------------------------------
+
+Epoch 4 Summary | LR: 0.000400 | Time: 30.84
+Train Loss: 1.8366 | Train Acc: 73.75%
+Val Loss: 1.3874 | Val Acc: 81.28%
+--------------------------------------------------
+
+Epoch 5 Summary | LR: 0.000500 | Time: 30.89
+Train Loss: 0.9959 | Train Acc: 87.53%
+Val Loss: 0.8339 | Val Acc: 87.19%
+--------------------------------------------------
+
+Epoch 6 Summary | LR: 0.000600 | Time: 30.88
+Train Loss: 0.5844 | Train Acc: 92.77%
+Val Loss: 0.6257 | Val Acc: 88.66%
+--------------------------------------------------
+
+Epoch 7 Summary | LR: 0.000700 | Time: 30.89
+Train Loss: 0.4109 | Train Acc: 94.18%
+Val Loss: 0.5535 | Val Acc: 88.36%
+--------------------------------------------------
+
+Epoch 8 Summary | LR: 0.000800 | Time: 30.88
+Train Loss: 0.2818 | Train Acc: 96.68%
+Val Loss: 0.4552 | Val Acc: 89.67%
+--------------------------------------------------
+
+Epoch 9 Summary | LR: 0.000900 | Time: 30.86
+Train Loss: 0.1793 | Train Acc: 98.29%
+Val Loss: 0.4636 | Val Acc: 88.88%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 10 Summary | LR: 0.001000 | Time: 30.85
+Train Loss: 0.1195 | Train Acc: 98.80%
+Val Loss: 0.4186 | Val Acc: 89.62%
+--------------------------------------------------
+
+Epoch 11 Summary | LR: 0.001000 | Time: 31.09
+Train Loss: 0.1193 | Train Acc: 99.02%
+Val Loss: 0.4046 | Val Acc: 89.67%
+--------------------------------------------------
+
+Epoch 12 Summary | LR: 0.001000 | Time: 31.00
+Train Loss: 0.0914 | Train Acc: 99.18%
+Val Loss: 0.4198 | Val Acc: 88.66%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 13 Summary | LR: 0.001000 | Time: 30.99
+Train Loss: 0.0613 | Train Acc: 99.57%
+Val Loss: 0.4325 | Val Acc: 88.58%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 14 Summary | LR: 0.001000 | Time: 31.02
+Train Loss: 0.0470 | Train Acc: 99.78%
+Val Loss: 0.3816 | Val Acc: 89.78%
+--------------------------------------------------
+
+Epoch 15 Summary | LR: 0.001000 | Time: 31.05
+Train Loss: 0.0354 | Train Acc: 99.81%
+Val Loss: 0.3669 | Val Acc: 89.67%
+--------------------------------------------------
+
+Epoch 16 Summary | LR: 0.001000 | Time: 30.98
+Train Loss: 0.0184 | Train Acc: 100.00%
+Val Loss: 0.3490 | Val Acc: 90.24%
+--------------------------------------------------
+
+Epoch 17 Summary | LR: 0.001000 | Time: 31.08
+Train Loss: 0.0144 | Train Acc: 100.00%
+Val Loss: 0.3422 | Val Acc: 90.32%
+--------------------------------------------------
+
+Epoch 18 Summary | LR: 0.001000 | Time: 31.05
+Train Loss: 0.0124 | Train Acc: 100.00%
+Val Loss: 0.3500 | Val Acc: 90.41%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 19 Summary | LR: 0.001000 | Time: 30.98
+Train Loss: 0.0110 | Train Acc: 100.00%
+Val Loss: 0.3488 | Val Acc: 90.46%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 20 Summary | LR: 0.001000 | Time: 31.00
+Train Loss: 0.0100 | Train Acc: 100.00%
+Val Loss: 0.3513 | Val Acc: 90.43%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 21 Summary | LR: 0.001000 | Time: 31.04
+Train Loss: 0.0092 | Train Acc: 100.00%
+Val Loss: 0.3550 | Val Acc: 90.24%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 22 Summary | LR: 0.001000 | Time: 31.06
+Train Loss: 0.0085 | Train Acc: 100.00%
+Val Loss: 0.3567 | Val Acc: 90.19%
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Epoch 23 Summary | LR: 0.001000 | Time: 31.03
+Train Loss: 0.0079 | Train Acc: 100.00%
+Val Loss: 0.3598 | Val Acc: 90.38%
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Epoch 24 Summary | LR: 0.001000 | Time: 31.18
+Train Loss: 0.0074 | Train Acc: 100.00%
+Val Loss: 0.3593 | Val Acc: 90.19%
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 24 epochs.
+Total training time far: 743.25 seconds
+Average time per epoch: 30.97 seconds
+
+
+
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on Pets
+============================================================
+Loading dataset...
+Dataset loaded: 3680 train samples, 3669 val samples
+Number of classes: 37
+
+Creating ViT model for 37 classes...
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=16, target_modules={'out_proj', 'mlp.3', 'mlp.0'}, paca_alpha=32, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1)
+Fine tuning VMamba using Normal PaCA:
+Calculating initial validation accuracy...
+Initial Val Acc: 2.83%
+
+Epoch 1 Summary | LR: 0.000100 | Time: 30.97
+Train Loss: 3.6613 | Train Acc: 3.18%
+Val Loss: 3.6688 | Val Acc: 2.83%
+--------------------------------------------------
+
+Epoch 2 Summary | LR: 0.000200 | Time: 30.93
+Train Loss: 3.5581 | Train Acc: 6.30%
+Val Loss: 3.4625 | Val Acc: 8.72%
+--------------------------------------------------
+
+Epoch 3 Summary | LR: 0.000300 | Time: 30.95
+Train Loss: 3.0488 | Train Acc: 30.05%
+Val Loss: 2.5664 | Val Acc: 51.32%
+--------------------------------------------------
+
+Epoch 4 Summary | LR: 0.000400 | Time: 30.95
+Train Loss: 1.8366 | Train Acc: 73.75%
+Val Loss: 1.3874 | Val Acc: 81.28%
+--------------------------------------------------
+
+Epoch 5 Summary | LR: 0.000500 | Time: 30.93
+Train Loss: 0.9959 | Train Acc: 87.53%
+Val Loss: 0.8339 | Val Acc: 87.19%
+--------------------------------------------------
+
+Epoch 6 Summary | LR: 0.000600 | Time: 30.95
+Train Loss: 0.5844 | Train Acc: 92.77%
+Val Loss: 0.6257 | Val Acc: 88.66%
+--------------------------------------------------
+
+Epoch 7 Summary | LR: 0.000700 | Time: 30.93
+Train Loss: 0.4109 | Train Acc: 94.18%
+Val Loss: 0.5535 | Val Acc: 88.36%
+--------------------------------------------------
+
+Epoch 8 Summary | LR: 0.000800 | Time: 30.91
+Train Loss: 0.2818 | Train Acc: 96.68%
+Val Loss: 0.4552 | Val Acc: 89.67%
+--------------------------------------------------
+
+Epoch 9 Summary | LR: 0.000900 | Time: 30.94
+Train Loss: 0.1793 | Train Acc: 98.29%
+Val Loss: 0.4636 | Val Acc: 88.88%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 10 Summary | LR: 0.001000 | Time: 30.98
+Train Loss: 0.1195 | Train Acc: 98.80%
+Val Loss: 0.4186 | Val Acc: 89.62%
+--------------------------------------------------
+
+Epoch 11 Summary | LR: 0.001000 | Time: 31.16
+Train Loss: 0.1193 | Train Acc: 99.02%
+Val Loss: 0.4046 | Val Acc: 89.67%
+--------------------------------------------------
+
+Epoch 12 Summary | LR: 0.001000 | Time: 31.07
+Train Loss: 0.0914 | Train Acc: 99.18%
+Val Loss: 0.4199 | Val Acc: 88.66%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 13 Summary | LR: 0.001000 | Time: 31.04
+Train Loss: 0.0613 | Train Acc: 99.54%
+Val Loss: 0.4325 | Val Acc: 88.61%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 14 Summary | LR: 0.001000 | Time: 31.03
+Train Loss: 0.0470 | Train Acc: 99.78%
+Val Loss: 0.3819 | Val Acc: 89.83%
+--------------------------------------------------
+
+Epoch 15 Summary | LR: 0.001000 | Time: 31.07
+Train Loss: 0.0356 | Train Acc: 99.81%
+Val Loss: 0.3664 | Val Acc: 89.72%
+--------------------------------------------------
+
+Epoch 16 Summary | LR: 0.001000 | Time: 31.03
+Train Loss: 0.0184 | Train Acc: 100.00%
+Val Loss: 0.3489 | Val Acc: 90.22%
+--------------------------------------------------
+
+Epoch 17 Summary | LR: 0.001000 | Time: 31.23
+Train Loss: 0.0144 | Train Acc: 100.00%
+Val Loss: 0.3422 | Val Acc: 90.35%
+--------------------------------------------------
+
+Epoch 18 Summary | LR: 0.001000 | Time: 31.07
+Train Loss: 0.0124 | Train Acc: 100.00%
+Val Loss: 0.3500 | Val Acc: 90.32%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 19 Summary | LR: 0.001000 | Time: 31.04
+Train Loss: 0.0110 | Train Acc: 100.00%
+Val Loss: 0.3487 | Val Acc: 90.46%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 20 Summary | LR: 0.001000 | Time: 31.02
+Train Loss: 0.0100 | Train Acc: 100.00%
+Val Loss: 0.3513 | Val Acc: 90.41%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 21 Summary | LR: 0.001000 | Time: 31.07
+Train Loss: 0.0092 | Train Acc: 100.00%
+Val Loss: 0.3550 | Val Acc: 90.22%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 22 Summary | LR: 0.001000 | Time: 31.08
+Train Loss: 0.0085 | Train Acc: 100.00%
+Val Loss: 0.3567 | Val Acc: 90.19%
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Epoch 23 Summary | LR: 0.001000 | Time: 31.09
+Train Loss: 0.0079 | Train Acc: 100.00%
+Val Loss: 0.3598 | Val Acc: 90.41%
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Epoch 24 Summary | LR: 0.001000 | Time: 31.23
+Train Loss: 0.0074 | Train Acc: 100.00%
+Val Loss: 0.3593 | Val Acc: 90.24%
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 24 epochs.
+Total training time far: 744.67 seconds
+Average time per epoch: 31.03 seconds
+
+

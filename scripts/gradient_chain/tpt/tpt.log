@@ -1,0 +1,103 @@
+Job started at Sat Dec 27 00:53:54 IST 2025
+Conda environment: mamba_paca
+Python path: /export/home/achyut/miniconda3/envs/mamba_paca/bin/python
+PyTorch: 2.4.0+cu121
+CUDA available: True
+Torchvision: 0.19.0+cu121
+Using device: cuda
+============================================================
+Starting Throughput Analysis for ViT on Caltech-101
+Using Gradient Chain Selection
+============================================================
+
+--- Testing Method: LoRA ---
+  > Trying Batch Size: 16  |  Throughput: 170.06 images/sec
+  > Trying Batch Size: 32  |  Throughput: 234.42 images/sec
+  > Trying Batch Size: 64  |  Throughput: 257.73 images/sec
+
+--- Testing Method: PaCA ---
+  > Trying Batch Size: 16  |  Throughput: 169.44 images/sec
+  > Trying Batch Size: 32  |  Throughput: 246.44 images/sec
+  > Trying Batch Size: 64  |  Throughput: 270.24 images/sec
+
+--- Analysis Complete ---
+Results for LoRA: [{'batch_size': 16, 'throughput': 170.05716440805804}, {'batch_size': 32, 'throughput': 234.421926397742}, {'batch_size': 64, 'throughput': 257.73001414021104}]
+Results for PaCA: [{'batch_size': 16, 'throughput': 169.44453681082712}, {'batch_size': 32, 'throughput': 246.43880042241054}, {'batch_size': 64, 'throughput': 270.24035515819577}]
+
+📈 Plot saved to throughput_gradient_chain_caltech.png
+Using device: cuda
+============================================================
+Starting Throughput Analysis for ViT on CIFAR-100
+Using Gradient Chain Selection
+============================================================
+
+--- Testing Method: LoRA ---
+  > Trying Batch Size: 16Files already downloaded and verified
+  |  Throughput: 168.48 images/sec
+  > Trying Batch Size: 32Files already downloaded and verified
+  |  Throughput: 239.24 images/sec
+  > Trying Batch Size: 64Files already downloaded and verified
+  |  Throughput: 261.47 images/sec
+
+--- Testing Method: PaCA ---
+  > Trying Batch Size: 16Files already downloaded and verified
+  |  Throughput: 170.69 images/sec
+  > Trying Batch Size: 32Files already downloaded and verified
+  |  Throughput: 247.15 images/sec
+  > Trying Batch Size: 64Files already downloaded and verified
+  |  Throughput: 271.76 images/sec
+
+--- Analysis Complete ---
+Results for LoRA: [{'batch_size': 16, 'throughput': 168.47709160327926}, {'batch_size': 32, 'throughput': 239.23595513513615}, {'batch_size': 64, 'throughput': 261.4747400412235}]
+Results for PaCA: [{'batch_size': 16, 'throughput': 170.6892346505332}, {'batch_size': 32, 'throughput': 247.1544420796937}, {'batch_size': 64, 'throughput': 271.7639115086646}]
+
+📈 Plot saved to throughput_gradient_chain_cifar100.png
+Using device: cuda
+============================================================
+Starting Throughput Analysis for ViT on Flowers-102
+Using Gradient Chain Selection
+============================================================
+
+--- Testing Method: LoRA ---
+  > Trying Batch Size: 16  |  Throughput: 169.34 images/sec
+  > Trying Batch Size: 32  |  Throughput: 238.77 images/sec
+  > Trying Batch Size: 64  |  Throughput: 258.80 images/sec
+
+--- Testing Method: PaCA ---
+  > Trying Batch Size: 16  |  Throughput: 170.58 images/sec
+  > Trying Batch Size: 32  |  Throughput: 246.22 images/sec
+  > Trying Batch Size: 64  |  Throughput: 269.32 images/sec
+
+--- Analysis Complete ---
+Results for LoRA: [{'batch_size': 16, 'throughput': 169.340600959054}, {'batch_size': 32, 'throughput': 238.7684927592133}, {'batch_size': 64, 'throughput': 258.8043797818446}]
+Results for PaCA: [{'batch_size': 16, 'throughput': 170.58013354992795}, {'batch_size': 32, 'throughput': 246.21859149911202}, {'batch_size': 64, 'throughput': 269.31693120379646}]
+
+📈 Plot saved to throughput_gradient_chain_flowers.png
+Using device: cuda
+============================================================
+Starting Throughput Analysis for ViT on SVHN
+Using Gradient Chain Selection
+============================================================
+
+--- Testing Method: LoRA ---
+  > Trying Batch Size: 16Using downloaded and verified file: ./data/train_32x32.mat
+  |  Throughput: 168.62 images/sec
+  > Trying Batch Size: 32Using downloaded and verified file: ./data/train_32x32.mat
+  |  Throughput: 239.66 images/sec
+  > Trying Batch Size: 64Using downloaded and verified file: ./data/train_32x32.mat
+  |  Throughput: 261.76 images/sec
+
+--- Testing Method: PaCA ---
+  > Trying Batch Size: 16Using downloaded and verified file: ./data/train_32x32.mat
+  |  Throughput: 170.80 images/sec
+  > Trying Batch Size: 32Using downloaded and verified file: ./data/train_32x32.mat
+  |  Throughput: 247.33 images/sec
+  > Trying Batch Size: 64Using downloaded and verified file: ./data/train_32x32.mat
+  |  Throughput: 272.02 images/sec
+
+--- Analysis Complete ---
+Results for LoRA: [{'batch_size': 16, 'throughput': 168.6241710228565}, {'batch_size': 32, 'throughput': 239.65869734166924}, {'batch_size': 64, 'throughput': 261.762854540501}]
+Results for PaCA: [{'batch_size': 16, 'throughput': 170.80221161172142}, {'batch_size': 32, 'throughput': 247.329133816332}, {'batch_size': 64, 'throughput': 272.01719791192846}]
+
+📈 Plot saved to throughput_gradient_chain_svhn.png
+Job completed at Sat Dec 27 01:59:42 IST 2025

@@ -1,0 +1,2465 @@
+Job started at Fri Oct 17 02:42:20 IST 2025
+no change     /export/home/achyut/miniconda3/condabin/conda
+no change     /export/home/achyut/miniconda3/bin/conda
+no change     /export/home/achyut/miniconda3/bin/conda-env
+no change     /export/home/achyut/miniconda3/bin/activate
+no change     /export/home/achyut/miniconda3/bin/deactivate
+no change     /export/home/achyut/miniconda3/etc/profile.d/conda.sh
+no change     /export/home/achyut/miniconda3/etc/fish/conf.d/conda.fish
+no change     /export/home/achyut/miniconda3/shell/condabin/Conda.psm1
+no change     /export/home/achyut/miniconda3/shell/condabin/conda-hook.ps1
+no change     /export/home/achyut/miniconda3/lib/python3.13/site-packages/xontrib/conda.xsh
+no change     /export/home/achyut/miniconda3/etc/profile.d/conda.csh
+no change     /export/home/achyut/.bashrc
+No action taken.
+Current PyTorch version: 2.6.0.dev20241112
+Torchvision version: 0.20.0.dev20241112+cu121
+Processing /export/home/achyut/sam/paca_rl/paca_modded/peft
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy>=1.17 in /export/home/achyut/.local/lib/python3.10/site-packages (from peft==0.11.2.dev0) (2.1.2)
+Requirement already satisfied: packaging>=20.0 in /export/home/achyut/.local/lib/python3.10/site-packages (from peft==0.11.2.dev0) (23.2)
+Requirement already satisfied: psutil in /export/home/achyut/.local/lib/python3.10/site-packages (from peft==0.11.2.dev0) (5.9.8)
+Requirement already satisfied: pyyaml in /export/home/achyut/.local/lib/python3.10/site-packages (from peft==0.11.2.dev0) (6.0.2)
+Requirement already satisfied: torch>=1.13.0 in /export/home/achyut/.local/lib/python3.10/site-packages (from peft==0.11.2.dev0) (2.6.0.dev20241112+cu121)
+Requirement already satisfied: transformers in /export/home/achyut/.local/lib/python3.10/site-packages (from peft==0.11.2.dev0) (4.52.4)
+Requirement already satisfied: tqdm in /export/home/achyut/.local/lib/python3.10/site-packages (from peft==0.11.2.dev0) (4.67.1)
+Requirement already satisfied: accelerate>=0.21.0 in /export/home/achyut/.local/lib/python3.10/site-packages (from peft==0.11.2.dev0) (1.8.1)
+Requirement already satisfied: safetensors in /export/home/achyut/.local/lib/python3.10/site-packages (from peft==0.11.2.dev0) (0.5.3)
+Requirement already satisfied: huggingface_hub>=0.17.0 in /export/home/achyut/.local/lib/python3.10/site-packages (from peft==0.11.2.dev0) (0.32.4)
+Requirement already satisfied: filelock in /export/home/achyut/.local/lib/python3.10/site-packages (from huggingface_hub>=0.17.0->peft==0.11.2.dev0) (3.19.1)
+Requirement already satisfied: fsspec>=2023.5.0 in /export/home/achyut/.local/lib/python3.10/site-packages (from huggingface_hub>=0.17.0->peft==0.11.2.dev0) (2025.9.0)
+Requirement already satisfied: requests in /export/home/achyut/.local/lib/python3.10/site-packages (from huggingface_hub>=0.17.0->peft==0.11.2.dev0) (2.32.4)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /export/home/achyut/.local/lib/python3.10/site-packages (from huggingface_hub>=0.17.0->peft==0.11.2.dev0) (4.15.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.1.2 in /export/home/achyut/.local/lib/python3.10/site-packages (from huggingface_hub>=0.17.0->peft==0.11.2.dev0) (1.1.3)
+Requirement already satisfied: networkx in /export/home/achyut/.local/lib/python3.10/site-packages (from torch>=1.13.0->peft==0.11.2.dev0) (3.4.2)
+Requirement already satisfied: jinja2 in /export/home/achyut/.local/lib/python3.10/site-packages (from torch>=1.13.0->peft==0.11.2.dev0) (3.1.6)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.1.105 in /export/home/achyut/.local/lib/python3.10/site-packages (from torch>=1.13.0->peft==0.11.2.dev0) (12.1.105)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.1.105 in /export/home/achyut/.local/lib/python3.10/site-packages (from torch>=1.13.0->peft==0.11.2.dev0) (12.1.105)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.1.105 in /export/home/achyut/.local/lib/python3.10/site-packages (from torch>=1.13.0->peft==0.11.2.dev0) (12.1.105)
+Requirement already satisfied: nvidia-cudnn-cu12==9.1.0.70 in /export/home/achyut/.local/lib/python3.10/site-packages (from torch>=1.13.0->peft==0.11.2.dev0) (9.1.0.70)
+Requirement already satisfied: nvidia-cublas-cu12==12.1.3.1 in /export/home/achyut/.local/lib/python3.10/site-packages (from torch>=1.13.0->peft==0.11.2.dev0) (12.1.3.1)
+Requirement already satisfied: nvidia-cufft-cu12==11.0.2.54 in /export/home/achyut/.local/lib/python3.10/site-packages (from torch>=1.13.0->peft==0.11.2.dev0) (11.0.2.54)
+Requirement already satisfied: nvidia-curand-cu12==10.3.2.106 in /export/home/achyut/.local/lib/python3.10/site-packages (from torch>=1.13.0->peft==0.11.2.dev0) (10.3.2.106)
+Requirement already satisfied: nvidia-cusolver-cu12==11.4.5.107 in /export/home/achyut/.local/lib/python3.10/site-packages (from torch>=1.13.0->peft==0.11.2.dev0) (11.4.5.107)
+Requirement already satisfied: nvidia-cusparse-cu12==12.1.0.106 in /export/home/achyut/.local/lib/python3.10/site-packages (from torch>=1.13.0->peft==0.11.2.dev0) (12.1.0.106)
+Requirement already satisfied: nvidia-cusparselt-cu12==0.6.2 in /export/home/achyut/.local/lib/python3.10/site-packages (from torch>=1.13.0->peft==0.11.2.dev0) (0.6.2)
+Requirement already satisfied: nvidia-nccl-cu12==2.21.5 in /export/home/achyut/.local/lib/python3.10/site-packages (from torch>=1.13.0->peft==0.11.2.dev0) (2.21.5)
+Requirement already satisfied: nvidia-nvtx-cu12==12.1.105 in /export/home/achyut/.local/lib/python3.10/site-packages (from torch>=1.13.0->peft==0.11.2.dev0) (12.1.105)
+Requirement already satisfied: pytorch-triton==3.1.0+cf34004b8a in /export/home/achyut/.local/lib/python3.10/site-packages (from torch>=1.13.0->peft==0.11.2.dev0) (3.1.0+cf34004b8a)
+Requirement already satisfied: sympy==1.13.1 in /export/home/achyut/.local/lib/python3.10/site-packages (from torch>=1.13.0->peft==0.11.2.dev0) (1.13.1)
+Requirement already satisfied: nvidia-nvjitlink-cu12 in /export/home/achyut/.local/lib/python3.10/site-packages (from nvidia-cusolver-cu12==11.4.5.107->torch>=1.13.0->peft==0.11.2.dev0) (12.1.105)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /export/home/achyut/.local/lib/python3.10/site-packages (from sympy==1.13.1->torch>=1.13.0->peft==0.11.2.dev0) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /export/home/achyut/.local/lib/python3.10/site-packages (from jinja2->torch>=1.13.0->peft==0.11.2.dev0) (3.0.2)
+Requirement already satisfied: charset_normalizer<4,>=2 in /export/home/achyut/.local/lib/python3.10/site-packages (from requests->huggingface_hub>=0.17.0->peft==0.11.2.dev0) (3.4.2)
+Requirement already satisfied: idna<4,>=2.5 in /export/home/achyut/miniconda3/envs/mamba_paca/lib/python3.10/site-packages (from requests->huggingface_hub>=0.17.0->peft==0.11.2.dev0) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /export/home/achyut/.local/lib/python3.10/site-packages (from requests->huggingface_hub>=0.17.0->peft==0.11.2.dev0) (1.26.20)
+Requirement already satisfied: certifi>=2017.4.17 in /export/home/achyut/miniconda3/envs/mamba_paca/lib/python3.10/site-packages (from requests->huggingface_hub>=0.17.0->peft==0.11.2.dev0) (2025.4.26)
+Requirement already satisfied: regex!=2019.12.17 in /export/home/achyut/.local/lib/python3.10/site-packages (from transformers->peft==0.11.2.dev0) (2024.11.6)
+Requirement already satisfied: tokenizers<0.22,>=0.21 in /export/home/achyut/.local/lib/python3.10/site-packages (from transformers->peft==0.11.2.dev0) (0.21.2)
+Building wheels for collected packages: peft
+  Building wheel for peft (pyproject.toml): started
+  Building wheel for peft (pyproject.toml): finished with status 'done'
+  Created wheel for peft: filename=peft-0.11.2.dev0-py3-none-any.whl size=278909 sha256=74b1ac4a29cff718169cc54df7762d330f8b920a39baf98221c3db24ef91fa7b
+  Stored in directory: /tmp/pip-ephem-wheel-cache-n5gtv1_k/wheels/87/64/54/8dc1ca1c77c7bcbbb6f683171497c691f675113c7bee1893bc
+Successfully built peft
+Installing collected packages: peft
+  Attempting uninstall: peft
+    Found existing installation: peft 0.11.2.dev0
+    Uninstalling peft-0.11.2.dev0:
+      Successfully uninstalled peft-0.11.2.dev0
+Successfully installed peft-0.11.2.dev0
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on CIFAR-100 with Thompson Sampling
+============================================================
+Using random seed: 1170
+Loading dataset...
+Dataset loaded: 50000 train samples, 10000 val samples
+Number of classes: 100
+
+Creating ViT model for 100 classes...
+
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'mlp.3', 'out_proj', 'mlp.0'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=782, arm_distribution='horizontal', num_arms=3, num_arms_to_select=1, ucb_alpha=0.5, use_fixed_indices=False, arm_selection_method='thompson', thompson_alpha_prior=1.0, thompson_beta_prior=1.0)
+Total parameters: 149,653,448
+Trainable parameters: 2,757,320 (1.84%)
+Frozen parameters: 146,896,128 (98.16%)
+
+============================================================
+Fine-tuning ViT using Thompson Sampling-based PaCA:
+============================================================
+Calculating initial validation accuracy...
+Initial Val Acc: 0.99%
+
+Thompson Sampling Reward: 0.00%
+
+Epoch 1 Summary | LR: 0.000100 | Time: 186.00s
+Train Loss: 4.7067 | Train Acc: 1.10%
+Val Loss: 4.7090 | Val Acc: 0.99%
+
+Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Successes (Alpha): [1.0, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 1.0, 1.0]
+  Last Sampled Values: [0.9975178837776184, 0.09987931698560715, 0.12989574670791626]
+  Arm Counts: [3.0, 1.0, 1.0]
+  Value of t: 3
+--------------------------------------------------
+
+Thompson Sampling Reward: 71.58%
+
+Epoch 2 Summary | LR: 0.000200 | Time: 186.05s
+Train Loss: 2.5153 | Train Acc: 50.39%
+Val Loss: 1.4303 | Val Acc: 72.57%
+
+Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Successes (Alpha): [72.58000183105469, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 1.0, 1.0]
+  Last Sampled Values: [0.9998287558555603, 0.42787033319473267, 0.935444712638855]
+  Arm Counts: [4.0, 1.0, 1.0]
+  Value of t: 4
+--------------------------------------------------
+
+Thompson Sampling Reward: 8.05%
+
+Epoch 3 Summary | LR: 0.000300 | Time: 185.68s
+Train Loss: 1.0396 | Train Acc: 78.71%
+Val Loss: 0.8602 | Val Acc: 80.62%
+
+Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Successes (Alpha): [80.6300048828125, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 1.0, 1.0]
+  Last Sampled Values: [0.9976075291633606, 0.8546743392944336, 0.4041818380355835]
+  Arm Counts: [5.0, 1.0, 1.0]
+  Value of t: 5
+--------------------------------------------------
+
+Thompson Sampling Reward: 2.45%
+
+Epoch 4 Summary | LR: 0.000400 | Time: 185.55s
+Train Loss: 0.6514 | Train Acc: 85.31%
+Val Loss: 0.6854 | Val Acc: 83.07%
+
+Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Successes (Alpha): [83.08000183105469, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 1.0, 1.0]
+  Last Sampled Values: [0.9701879024505615, 0.8645972013473511, 0.8792502880096436]
+  Arm Counts: [6.0, 1.0, 1.0]
+  Value of t: 6
+--------------------------------------------------
+
+Thompson Sampling Reward: 0.81%
+
+Epoch 5 Summary | LR: 0.000500 | Time: 185.58s
+Train Loss: 0.4713 | Train Acc: 89.04%
+Val Loss: 0.6264 | Val Acc: 83.88%
+
+Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Successes (Alpha): [83.88999938964844, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 1.0, 1.0]
+  Last Sampled Values: [0.9994264245033264, 0.7748880386352539, 0.937086820602417]
+  Arm Counts: [7.0, 1.0, 1.0]
+  Value of t: 7
+--------------------------------------------------
+
+Thompson Sampling Reward: -0.34%
+
+Epoch 6 Summary | LR: 0.000600 | Time: 185.56s
+Train Loss: 0.3626 | Train Acc: 91.58%
+Val Loss: 0.6434 | Val Acc: 83.54%
+
+Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Successes (Alpha): [83.88999938964844, 1.0, 1.0]
+  Arm Failures (Beta): [1.340000033378601, 1.0, 1.0]
+  Last Sampled Values: [0.9910458326339722, 0.46658727526664734, 0.8974924087524414]
+  Arm Counts: [8.0, 1.0, 1.0]
+  Value of t: 8
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Thompson Sampling Reward: -0.51%
+
+Epoch 7 Summary | LR: 0.000700 | Time: 185.52s
+Train Loss: 0.3175 | Train Acc: 92.71%
+Val Loss: 0.6720 | Val Acc: 83.03%
+
+Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Successes (Alpha): [83.88999938964844, 1.0, 1.0]
+  Arm Failures (Beta): [1.850000023841858, 1.0, 1.0]
+  Last Sampled Values: [0.9934108257293701, 0.5672832727432251, 0.22533780336380005]
+  Arm Counts: [9.0, 1.0, 1.0]
+  Value of t: 9
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Thompson Sampling Reward: 0.61%
+
+Epoch 8 Summary | LR: 0.000800 | Time: 185.58s
+Train Loss: 0.2897 | Train Acc: 93.20%
+Val Loss: 0.6417 | Val Acc: 83.64%
+
+Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Successes (Alpha): [84.5, 1.0, 1.0]
+  Arm Failures (Beta): [1.850000023841858, 1.0, 1.0]
+  Last Sampled Values: [0.9840953350067139, 0.7441927194595337, 0.10975944995880127]
+  Arm Counts: [10.0, 1.0, 1.0]
+  Value of t: 10
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Thompson Sampling Reward: -0.47%
+
+Epoch 9 Summary | LR: 0.000900 | Time: 185.64s
+Train Loss: 0.2806 | Train Acc: 93.22%
+Val Loss: 0.6751 | Val Acc: 83.17%
+
+Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Successes (Alpha): [84.5, 1.0, 1.0]
+  Arm Failures (Beta): [2.319999933242798, 1.0, 1.0]
+  Last Sampled Values: [0.9599892497062683, 0.6688221096992493, 0.2160179764032364]
+  Arm Counts: [11.0, 1.0, 1.0]
+  Value of t: 11
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Thompson Sampling Reward: 0.43%
+
+Epoch 10 Summary | LR: 0.001000 | Time: 185.55s
+Train Loss: 0.2548 | Train Acc: 93.97%
+Val Loss: 0.6537 | Val Acc: 83.60%
+
+Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Successes (Alpha): [84.93000030517578, 1.0, 1.0]
+  Arm Failures (Beta): [2.319999933242798, 1.0, 1.0]
+  Last Sampled Values: [0.9697126150131226, 0.0497521236538887, 0.09101518243551254]
+  Arm Counts: [12.0, 1.0, 1.0]
+  Value of t: 12
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Thompson Sampling Reward: -2.94%
+
+Epoch 11 Summary | LR: 0.001000 | Time: 186.86s
+Train Loss: 0.2760 | Train Acc: 93.38%
+Val Loss: 0.7711 | Val Acc: 80.66%
+
+Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Successes (Alpha): [84.93000030517578, 1.0, 1.0]
+  Arm Failures (Beta): [5.260000228881836, 1.0, 1.0]
+  Last Sampled Values: [0.9390987157821655, 0.600053071975708, 0.3916836678981781]
+  Arm Counts: [13.0, 1.0, 1.0]
+  Value of t: 13
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Thompson Sampling Reward: 2.11%
+
+Epoch 12 Summary | LR: 0.001000 | Time: 186.79s
+Train Loss: 0.2751 | Train Acc: 93.15%
+Val Loss: 0.7002 | Val Acc: 82.77%
+
+Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Successes (Alpha): [87.04000091552734, 1.0, 1.0]
+  Arm Failures (Beta): [5.260000228881836, 1.0, 1.0]
+  Last Sampled Values: [0.9499764442443848, 0.8248650431632996, 0.041593194007873535]
+  Arm Counts: [14.0, 1.0, 1.0]
+  Value of t: 14
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 12 epochs.
+Total training time: 2230.36 seconds
+Average time per epoch: 185.86 seconds
+
+============================================================
+Training completed!
+============================================================
+Job completed at Fri Oct 17 03:20:08 IST 2025
+
+
+WITH 2 EPOCH PAUSE:
+
+Job started at Tue Oct 21 16:44:53 IST 2025
+no change     /export/home/achyut/miniconda3/condabin/conda
+no change     /export/home/achyut/miniconda3/bin/conda
+no change     /export/home/achyut/miniconda3/bin/conda-env
+no change     /export/home/achyut/miniconda3/bin/activate
+no change     /export/home/achyut/miniconda3/bin/deactivate
+no change     /export/home/achyut/miniconda3/etc/profile.d/conda.sh
+no change     /export/home/achyut/miniconda3/etc/fish/conf.d/conda.fish
+no change     /export/home/achyut/miniconda3/shell/condabin/Conda.psm1
+no change     /export/home/achyut/miniconda3/shell/condabin/conda-hook.ps1
+no change     /export/home/achyut/miniconda3/lib/python3.13/site-packages/xontrib/conda.xsh
+no change     /export/home/achyut/miniconda3/etc/profile.d/conda.csh
+no change     /export/home/achyut/.bashrc
+No action taken.
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on CIFAR-100 with Thompson Sampling
+============================================================
+Using random seed: 5542
+Loading dataset...
+Dataset loaded: 50000 train samples, 10000 val samples
+Number of classes: 100
+
+Creating ViT model for 100 classes...
+
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'out_proj', 'mlp.3', 'mlp.0'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=782, arm_distribution='horizontal', num_arms=3, num_arms_to_select=1, ucb_alpha=0.5, use_fixed_indices=False, arm_selection_method='thompson', thompson_alpha_prior=1.0, thompson_beta_prior=1.0)
+Total parameters: 149,653,448
+Trainable parameters: 2,757,320 (1.84%)
+Frozen parameters: 146,896,128 (98.16%)
+
+============================================================
+Fine-tuning ViT using Thompson Sampling-based PaCA:
+============================================================
+Calculating initial validation accuracy...
+Initial Val Acc: 1.01%
+
+Thompson Sampling Reward: 0.00%
+
+Epoch 1 Summary | LR: 0.000100 | Time: 199.15s
+Train Loss: 4.6564 | Train Acc: 1.08%
+Val Loss: 4.6534 | Val Acc: 1.01%
+
+Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Successes (Alpha): [1.0, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 1.0, 1.0]
+  Last Sampled Values: [0.9953747391700745, 0.2569226026535034, 0.4804495573043823]
+  Arm Counts: [2.0, 2.0, 1.0]
+  Value of t: 3
+--------------------------------------------------
+
+Thompson Sampling Reward: 0.00%
+
+Epoch 2 Summary | LR: 0.000200 | Time: 198.59s
+Train Loss: 2.4686 | Train Acc: 51.29%
+Val Loss: 1.3749 | Val Acc: 73.04%
+
+Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Successes (Alpha): [1.0, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 1.0, 1.0]
+  Last Sampled Values: [0.4525984227657318, 0.7150656580924988, 0.9353381395339966]
+  Arm Counts: [2.0, 2.0, 2.0]
+  Value of t: 4
+--------------------------------------------------
+
+Thompson Sampling Reward: 8.41%
+
+Epoch 3 Summary | LR: 0.000300 | Time: 198.70s
+Train Loss: 0.9658 | Train Acc: 79.42%
+Val Loss: 0.7959 | Val Acc: 81.45%
+
+Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Successes (Alpha): [1.0, 1.0, 9.40999984741211]
+  Arm Failures (Beta): [1.0, 1.0, 1.0]
+  Last Sampled Values: [0.43603837490081787, 0.7545506954193115, 0.9928115606307983]
+  Arm Counts: [2.0, 2.0, 3.0]
+  Value of t: 5
+--------------------------------------------------
+
+Thompson Sampling Reward: 1.31%
+
+Epoch 4 Summary | LR: 0.000400 | Time: 198.81s
+Train Loss: 0.6015 | Train Acc: 86.22%
+Val Loss: 0.6721 | Val Acc: 82.76%
+
+Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Successes (Alpha): [1.0, 1.0, 10.719999313354492]
+  Arm Failures (Beta): [1.0, 1.0, 1.0]
+  Last Sampled Values: [0.8200358152389526, 0.471575528383255, 0.9898439049720764]
+  Arm Counts: [2.0, 2.0, 4.0]
+  Value of t: 6
+--------------------------------------------------
+
+Thompson Sampling Reward: 1.95%
+
+Epoch 5 Summary | LR: 0.000500 | Time: 198.79s
+Train Loss: 0.4337 | Train Acc: 89.69%
+Val Loss: 0.5996 | Val Acc: 84.71%
+
+Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Successes (Alpha): [1.0, 1.0, 12.669999122619629]
+  Arm Failures (Beta): [1.0, 1.0, 1.0]
+  Last Sampled Values: [0.6077084541320801, 0.809859037399292, 0.9195314645767212]
+  Arm Counts: [2.0, 2.0, 5.0]
+  Value of t: 7
+--------------------------------------------------
+
+Thompson Sampling Reward: -0.94%
+
+Epoch 6 Summary | LR: 0.000600 | Time: 198.84s
+Train Loss: 0.3504 | Train Acc: 91.57%
+Val Loss: 0.6323 | Val Acc: 83.77%
+
+Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Successes (Alpha): [1.0, 1.0, 12.669999122619629]
+  Arm Failures (Beta): [1.0, 1.0, 1.940000057220459]
+  Last Sampled Values: [0.31829291582107544, 0.4608623683452606, 0.8942908048629761]
+  Arm Counts: [2.0, 2.0, 6.0]
+  Value of t: 8
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Thompson Sampling Reward: -0.22%
+
+Epoch 7 Summary | LR: 0.000700 | Time: 198.84s
+Train Loss: 0.3143 | Train Acc: 92.35%
+Val Loss: 0.6367 | Val Acc: 83.55%
+
+Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Successes (Alpha): [1.0, 1.0, 12.669999122619629]
+  Arm Failures (Beta): [1.0, 1.0, 2.1600000858306885]
+  Last Sampled Values: [0.7763053774833679, 0.2949804961681366, 0.7941063046455383]
+  Arm Counts: [2.0, 2.0, 7.0]
+  Value of t: 9
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Thompson Sampling Reward: -0.29%
+
+Epoch 8 Summary | LR: 0.000800 | Time: 198.90s
+Train Loss: 0.3170 | Train Acc: 91.91%
+Val Loss: 0.6338 | Val Acc: 83.26%
+
+Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Successes (Alpha): [1.0, 1.0, 12.669999122619629]
+  Arm Failures (Beta): [1.0, 1.0, 2.450000047683716]
+  Last Sampled Values: [0.700796365737915, 0.28729262948036194, 0.8845732808113098]
+  Arm Counts: [2.0, 2.0, 8.0]
+  Value of t: 10
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Thompson Sampling Reward: -0.93%
+
+Epoch 9 Summary | LR: 0.000900 | Time: 198.86s
+Train Loss: 0.2853 | Train Acc: 92.69%
+Val Loss: 0.6972 | Val Acc: 82.33%
+
+Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Successes (Alpha): [1.0, 1.0, 12.669999122619629]
+  Arm Failures (Beta): [1.0, 1.0, 3.380000114440918]
+  Last Sampled Values: [0.6848039627075195, 0.23683960735797882, 0.6240538954734802]
+  Arm Counts: [3.0, 2.0, 8.0]
+  Value of t: 11
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Thompson Sampling Reward: 1.67%
+
+Epoch 10 Summary | LR: 0.001000 | Time: 198.83s
+Train Loss: 0.2372 | Train Acc: 93.84%
+Val Loss: 0.6254 | Val Acc: 84.00%
+
+Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Successes (Alpha): [2.6700000762939453, 1.0, 12.669999122619629]
+  Arm Failures (Beta): [1.0, 1.0, 3.380000114440918]
+  Last Sampled Values: [0.8321530818939209, 0.9961613416671753, 0.7715184092521667]
+  Arm Counts: [3.0, 3.0, 8.0]
+  Value of t: 12
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Thompson Sampling Reward: -3.28%
+
+Epoch 11 Summary | LR: 0.001000 | Time: 200.05s
+Train Loss: 0.2792 | Train Acc: 92.74%
+Val Loss: 0.7788 | Val Acc: 80.72%
+
+Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Successes (Alpha): [2.6700000762939453, 1.0, 12.669999122619629]
+  Arm Failures (Beta): [1.0, 4.279999732971191, 3.380000114440918]
+  Last Sampled Values: [0.47870054841041565, 0.4313271641731262, 0.8947024345397949]
+  Arm Counts: [3.0, 3.0, 9.0]
+  Value of t: 13
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Thompson Sampling Reward: -0.49%
+
+Epoch 12 Summary | LR: 0.001000 | Time: 200.00s
+Train Loss: 0.3256 | Train Acc: 91.43%
+Val Loss: 0.7823 | Val Acc: 80.23%
+
+Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Successes (Alpha): [2.6700000762939453, 1.0, 12.669999122619629]
+  Arm Failures (Beta): [1.0, 4.279999732971191, 3.870000123977661]
+  Last Sampled Values: [0.9874628782272339, 0.016398096457123756, 0.8109292387962341]
+  Arm Counts: [4.0, 3.0, 9.0]
+  Value of t: 14
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 12 epochs.
+Total training time: 2388.37 seconds
+Average time per epoch: 199.03 seconds
+
+============================================================
+Training completed!
+============================================================
+Job completed at Tue Oct 21 17:25:09 IST 2025
+
+
+Job started at Tue Oct 21 19:40:16 IST 2025
+no change     /export/home/achyut/miniconda3/condabin/conda
+no change     /export/home/achyut/miniconda3/bin/conda
+no change     /export/home/achyut/miniconda3/bin/conda-env
+no change     /export/home/achyut/miniconda3/bin/activate
+no change     /export/home/achyut/miniconda3/bin/deactivate
+no change     /export/home/achyut/miniconda3/etc/profile.d/conda.sh
+no change     /export/home/achyut/miniconda3/etc/fish/conf.d/conda.fish
+no change     /export/home/achyut/miniconda3/shell/condabin/Conda.psm1
+no change     /export/home/achyut/miniconda3/shell/condabin/conda-hook.ps1
+no change     /export/home/achyut/miniconda3/lib/python3.13/site-packages/xontrib/conda.xsh
+no change     /export/home/achyut/miniconda3/etc/profile.d/conda.csh
+no change     /export/home/achyut/.bashrc
+No action taken.
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on CIFAR-100 with Thompson Sampling
+============================================================
+Using random seed: 7464
+Loading dataset...
+Dataset loaded: 50000 train samples, 10000 val samples
+Number of classes: 100
+
+Creating ViT model for 100 classes...
+
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'mlp.3', 'mlp.0', 'out_proj'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=782, arm_distribution='horizontal', num_arms=4, num_arms_to_select=1, ucb_alpha=0.5, use_fixed_indices=False, arm_selection_method='thompson', thompson_alpha_prior=1.0, thompson_beta_prior=1.0)
+Total parameters: 149,653,448
+Trainable parameters: 2,757,320 (1.84%)
+Frozen parameters: 146,896,128 (98.16%)
+
+============================================================
+Fine-tuning ViT using Thompson Sampling-based PaCA:
+============================================================
+Calculating initial validation accuracy...
+Initial Val Acc: 1.75%
+
+Thompson Sampling Reward: 0.00%
+
+Epoch 1 Summary | LR: 0.000100 | Time: 185.57s
+Train Loss: 4.6980 | Train Acc: 1.57%
+Val Loss: 4.7054 | Val Acc: 1.75%
+
+Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Successes (Alpha): [1.0, 1.0, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 1.0, 1.0, 1.0]
+  Last Sampled Values: [0.058975040912628174, 0.4034018814563751, 0.9185699820518494, 0.2625493109226227]
+  Arm Counts: [1.0, 1.0, 2.0, 2.0]
+  Value of t: 3
+--------------------------------------------------
+
+Thompson Sampling Reward: 0.00%
+
+Epoch 2 Summary | LR: 0.000200 | Time: 185.99s
+Train Loss: 2.3280 | Train Acc: 54.80%
+Val Loss: 1.2674 | Val Acc: 76.26%
+
+Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Successes (Alpha): [1.0, 1.0, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 1.0, 1.0, 1.0]
+  Last Sampled Values: [0.05826743319630623, 0.583716869354248, 0.3235602080821991, 0.18972432613372803]
+  Arm Counts: [1.0, 2.0, 2.0, 2.0]
+  Value of t: 4
+--------------------------------------------------
+
+Thompson Sampling Reward: 6.16%
+
+Epoch 3 Summary | LR: 0.000300 | Time: 186.10s
+Train Loss: 0.9139 | Train Acc: 80.94%
+Val Loss: 0.7540 | Val Acc: 82.42%
+
+Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Successes (Alpha): [1.0, 7.159999847412109, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 1.0, 1.0, 1.0]
+  Last Sampled Values: [0.6649261713027954, 0.9974790811538696, 0.32754001021385193, 0.11295604705810547]
+  Arm Counts: [1.0, 3.0, 2.0, 2.0]
+  Value of t: 5
+--------------------------------------------------
+
+Thompson Sampling Reward: 1.73%
+
+Epoch 4 Summary | LR: 0.000400 | Time: 186.06s
+Train Loss: 0.5647 | Train Acc: 86.50%
+Val Loss: 0.6203 | Val Acc: 84.15%
+
+Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Successes (Alpha): [1.0, 8.889999389648438, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 1.0, 1.0, 1.0]
+  Last Sampled Values: [0.39226624369621277, 0.8203954696655273, 0.48854392766952515, 0.3829796314239502]
+  Arm Counts: [1.0, 4.0, 2.0, 2.0]
+  Value of t: 6
+--------------------------------------------------
+
+Thompson Sampling Reward: 0.62%
+
+Epoch 5 Summary | LR: 0.000500 | Time: 185.67s
+Train Loss: 0.4152 | Train Acc: 89.79%
+Val Loss: 0.5764 | Val Acc: 84.77%
+
+Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Successes (Alpha): [1.0, 9.50999927520752, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 1.0, 1.0, 1.0]
+  Last Sampled Values: [0.7284826040267944, 0.9791209697723389, 0.6866957545280457, 0.12158969789743423]
+  Arm Counts: [1.0, 5.0, 2.0, 2.0]
+  Value of t: 7
+--------------------------------------------------
+
+Thompson Sampling Reward: -0.76%
+
+Epoch 6 Summary | LR: 0.000600 | Time: 185.98s
+Train Loss: 0.3368 | Train Acc: 91.35%
+Val Loss: 0.6109 | Val Acc: 84.01%
+
+Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Successes (Alpha): [1.0, 9.50999927520752, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 1.7599999904632568, 1.0, 1.0]
+  Last Sampled Values: [0.09809588640928268, 0.8644037246704102, 0.6384660005569458, 0.03526463732123375]
+  Arm Counts: [1.0, 6.0, 2.0, 2.0]
+  Value of t: 8
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Thompson Sampling Reward: -0.07%
+
+Epoch 7 Summary | LR: 0.000700 | Time: 186.01s
+Train Loss: 0.2978 | Train Acc: 92.33%
+Val Loss: 0.6226 | Val Acc: 83.94%
+
+Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Successes (Alpha): [1.0, 9.50999927520752, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 1.8300000429153442, 1.0, 1.0]
+  Last Sampled Values: [0.44335368275642395, 0.6784000992774963, 0.9135090112686157, 0.47899988293647766]
+  Arm Counts: [1.0, 6.0, 3.0, 2.0]
+  Value of t: 9
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Thompson Sampling Reward: -0.55%
+
+Epoch 8 Summary | LR: 0.000800 | Time: 186.22s
+Train Loss: 0.3110 | Train Acc: 91.69%
+Val Loss: 0.6357 | Val Acc: 83.39%
+
+Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Successes (Alpha): [1.0, 9.50999927520752, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 1.8300000429153442, 1.5499999523162842, 1.0]
+  Last Sampled Values: [0.19650878012180328, 0.9201881289482117, 0.15237966179847717, 0.7556391954421997]
+  Arm Counts: [1.0, 7.0, 3.0, 2.0]
+  Value of t: 10
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Thompson Sampling Reward: -0.27%
+
+Epoch 9 Summary | LR: 0.000900 | Time: 185.99s
+Train Loss: 0.2476 | Train Acc: 93.46%
+Val Loss: 0.6597 | Val Acc: 83.12%
+
+Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Successes (Alpha): [1.0, 9.50999927520752, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 2.1000001430511475, 1.5499999523162842, 1.0]
+  Last Sampled Values: [0.9972447752952576, 0.6651887893676758, 0.19634613394737244, 0.92937833070755]
+  Arm Counts: [2.0, 7.0, 3.0, 2.0]
+  Value of t: 11
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Thompson Sampling Reward: 0.20%
+
+Epoch 10 Summary | LR: 0.001000 | Time: 186.17s
+Train Loss: 0.2659 | Train Acc: 92.85%
+Val Loss: 0.6664 | Val Acc: 83.32%
+
+Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Successes (Alpha): [1.2000000476837158, 9.50999927520752, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 2.1000001430511475, 1.5499999523162842, 1.0]
+  Last Sampled Values: [0.6814378499984741, 0.9708368182182312, 0.5883827209472656, 0.2262660413980484]
+  Arm Counts: [2.0, 8.0, 3.0, 2.0]
+  Value of t: 12
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Thompson Sampling Reward: -0.70%
+
+Epoch 11 Summary | LR: 0.001000 | Time: 186.99s
+Train Loss: 0.2468 | Train Acc: 93.44%
+Val Loss: 0.6904 | Val Acc: 82.62%
+
+Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Successes (Alpha): [1.2000000476837158, 9.50999927520752, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 2.8000001907348633, 1.5499999523162842, 1.0]
+  Last Sampled Values: [0.8717390298843384, 0.9377376437187195, 0.2313079684972763, 0.6974993348121643]
+  Arm Counts: [2.0, 9.0, 3.0, 2.0]
+  Value of t: 13
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Thompson Sampling Reward: 0.47%
+
+Epoch 12 Summary | LR: 0.001000 | Time: 186.98s
+Train Loss: 0.2896 | Train Acc: 92.22%
+Val Loss: 0.6838 | Val Acc: 83.09%
+
+Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Successes (Alpha): [1.2000000476837158, 9.979999542236328, 1.0, 1.0]
+  Arm Failures (Beta): [1.0, 2.8000001907348633, 1.5499999523162842, 1.0]
+  Last Sampled Values: [0.9938146471977234, 0.8318043947219849, 0.5240978598594666, 0.9385845065116882]
+  Arm Counts: [3.0, 9.0, 3.0, 2.0]
+  Value of t: 14
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 12 epochs.
+Total training time: 2233.73 seconds
+Average time per epoch: 186.14 seconds
+
+============================================================
+Training completed!
+============================================================
+Job completed at Tue Oct 21 20:17:57 IST 2025
+
+
+Job started at Fri Oct 24 00:46:04 IST 2025
+============================================================
+Vision Transformer Fine-tuning on CIFAR-100
+Using Gaussian Thompson Sampling
+============================================================
+Using random seed: 9464
+Loading dataset...
+Files already downloaded and verified
+Files already downloaded and verified
+Dataset loaded: 50000 train samples, 10000 val samples
+Number of classes: 100
+
+Creating ViT model for 100 classes...
+
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'mlp.3', 'mlp.0', 'out_proj'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=782, arm_distribution='horizontal', num_arms=3, num_arms_to_select=1, ucb_alpha=0.5, use_fixed_indices=False, arm_selection_method='thompson', thompson_distribution='gaussian', thompson_alpha_prior=1.0, thompson_beta_prior=1.0, thompson_gaussian_prior_mean=0.0, thompson_gaussian_prior_std=10.0, thompson_gaussian_noise_std=5.0)
+Total parameters: 149,653,448
+Trainable parameters: 2,757,320 (1.84%)
+Frozen parameters: 146,896,128 (98.16%)
+
+============================================================
+Fine-tuning ViT using Gaussian Thompson Sampling-based PaCA:
+============================================================
+Calculating initial validation accuracy...
+Initial Val Acc: 1.29%
+
+Gaussian Thompson Sampling Reward: 0.00% (normalized: 0.00)
+
+Epoch 1 Summary | LR: 0.000100 | Time: 184.98s
+Train Loss: 4.6728 | Train Acc: 1.33%
+Val Loss: 4.6713 | Val Acc: 1.29%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.0, 0.0, 0.0]
+  Arm Stds: [4.4721360206604, 10.0, 10.0]
+  Arm Observation Counts: [1, 0, 0]
+  Last Sampled Values: [-4.361684799194336, 19.80838394165039, -14.501453399658203]
+  Arm Counts: [2.0, 2.0, 1.0]
+  Value of t: 3
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 73.09% (normalized: 7.31)
+
+Epoch 2 Summary | LR: 0.000200 | Time: 186.12s
+Train Loss: 2.4175 | Train Acc: 52.47%
+Val Loss: 1.3298 | Val Acc: 74.38%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Means: [0.0, 5.8471999168396, 0.0]
+  Arm Stds: [4.4721360206604, 4.4721360206604, 10.0]
+  Arm Observation Counts: [1, 1, 0]
+  Last Sampled Values: [-5.198145866394043, 9.669305801391602, 21.850303649902344]
+  Arm Counts: [2.0, 2.0, 2.0]
+  Value of t: 4
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 6.95% (normalized: 0.70)
+
+Epoch 3 Summary | LR: 0.000300 | Time: 186.05s
+Train Loss: 0.9965 | Train Acc: 79.66%
+Val Loss: 0.8228 | Val Acc: 81.33%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.0, 5.8471999168396, 0.5559999942779541]
+  Arm Stds: [4.4721360206604, 4.4721360206604, 4.4721360206604]
+  Arm Observation Counts: [1, 1, 1]
+  Last Sampled Values: [-3.537431478500366, 7.474390983581543, -4.65269660949707]
+  Arm Counts: [2.0, 3.0, 2.0]
+  Value of t: 5
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 1.46% (normalized: 0.15)
+
+Epoch 4 Summary | LR: 0.000400 | Time: 186.08s
+Train Loss: 0.6321 | Train Acc: 85.67%
+Val Loss: 0.6636 | Val Acc: 82.79%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.0, 3.31333327293396, 0.5559999942779541]
+  Arm Stds: [4.4721360206604, 3.3333334922790527, 4.4721360206604]
+  Arm Observation Counts: [1, 2, 1]
+  Last Sampled Values: [-5.739235877990723, 1.187781810760498, -2.3345084190368652]
+  Arm Counts: [2.0, 4.0, 2.0]
+  Value of t: 6
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 1.72% (normalized: 0.17)
+
+Epoch 5 Summary | LR: 0.000500 | Time: 186.08s
+Train Loss: 0.4362 | Train Acc: 89.59%
+Val Loss: 0.5772 | Val Acc: 84.51%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Means: [0.0, 2.346769094467163, 0.5559999942779541]
+  Arm Stds: [4.4721360206604, 2.77350115776062, 4.4721360206604]
+  Arm Observation Counts: [1, 3, 1]
+  Last Sampled Values: [-4.481972694396973, -0.90445876121521, 0.5830636024475098]
+  Arm Counts: [2.0, 4.0, 3.0]
+  Value of t: 7
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: -1.06% (normalized: -0.11)
+
+Epoch 6 Summary | LR: 0.000600 | Time: 187.63s
+Train Loss: 0.3556 | Train Acc: 91.44%
+Val Loss: 0.6270 | Val Acc: 83.45%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.0, 2.346769094467163, 0.26177775859832764]
+  Arm Stds: [4.4721360206604, 2.77350115776062, 3.3333334922790527]
+  Arm Observation Counts: [1, 3, 2]
+  Last Sampled Values: [0.47812169790267944, 1.0092105865478516, -2.0006189346313477]
+  Arm Counts: [2.0, 5.0, 3.0]
+  Value of t: 8
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Gaussian Thompson Sampling Reward: 0.19% (normalized: 0.02)
+
+Epoch 7 Summary | LR: 0.000700 | Time: 186.89s
+Train Loss: 0.3185 | Train Acc: 92.02%
+Val Loss: 0.6374 | Val Acc: 83.64%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Means: [0.0, 1.7990586757659912, 0.26177775859832764]
+  Arm Stds: [4.4721360206604, 2.425356388092041, 3.3333334922790527]
+  Arm Observation Counts: [1, 4, 2]
+  Last Sampled Values: [-0.6178172826766968, -0.4697108268737793, 6.53704309463501]
+  Arm Counts: [2.0, 5.0, 4.0]
+  Value of t: 9
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Gaussian Thompson Sampling Reward: -0.39% (normalized: -0.04)
+
+Epoch 8 Summary | LR: 0.000800 | Time: 186.14s
+Train Loss: 0.2859 | Train Acc: 92.78%
+Val Loss: 0.6463 | Val Acc: 83.25%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.0, 1.7990586757659912, 0.16923074424266815]
+  Arm Stds: [4.4721360206604, 2.425356388092041, 2.77350115776062]
+  Arm Observation Counts: [1, 4, 3]
+  Last Sampled Values: [0.4704761505126953, 1.0509822368621826, -2.967728853225708]
+  Arm Counts: [2.0, 6.0, 4.0]
+  Value of t: 10
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Gaussian Thompson Sampling Reward: -0.60% (normalized: -0.06)
+
+Epoch 9 Summary | LR: 0.000900 | Time: 186.26s
+Train Loss: 0.2740 | Train Acc: 92.93%
+Val Loss: 0.6844 | Val Acc: 82.65%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.0, 1.4449522495269775, 0.16923074424266815]
+  Arm Stds: [4.4721360206604, 2.1821789741516113, 2.77350115776062]
+  Arm Observation Counts: [1, 5, 3]
+  Last Sampled Values: [1.5309319496154785, 3.800297498703003, -1.7603490352630615]
+  Arm Counts: [2.0, 7.0, 4.0]
+  Value of t: 11
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Gaussian Thompson Sampling Reward: 0.88% (normalized: 0.09)
+
+Epoch 10 Summary | LR: 0.001000 | Time: 187.36s
+Train Loss: 0.3009 | Train Acc: 92.30%
+Val Loss: 0.6399 | Val Acc: 83.53%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [0.0, 1.2278398275375366, 0.16923074424266815]
+  Arm Stds: [4.4721360206604, 2.0, 2.77350115776062]
+  Arm Observation Counts: [1, 6, 3]
+  Last Sampled Values: [6.9044952392578125, -0.9766470193862915, -4.670012950897217]
+  Arm Counts: [3.0, 7.0, 4.0]
+  Value of t: 12
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Gaussian Thompson Sampling Reward: -1.55% (normalized: -0.15)
+
+Epoch 11 Summary | LR: 0.001000 | Time: 187.87s
+Train Loss: 0.2617 | Train Acc: 93.19%
+Val Loss: 0.7066 | Val Acc: 81.98%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [-0.06888888776302338, 1.2278398275375366, 0.16923074424266815]
+  Arm Stds: [3.3333334922790527, 2.0, 2.77350115776062]
+  Arm Observation Counts: [2, 6, 3]
+  Last Sampled Values: [-5.830643653869629, 3.1841723918914795, -2.200660467147827]
+  Arm Counts: [3.0, 8.0, 4.0]
+  Value of t: 13
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Gaussian Thompson Sampling Reward: -0.06% (normalized: -0.01)
+
+Epoch 12 Summary | LR: 0.001000 | Time: 186.85s
+Train Loss: 0.2704 | Train Acc: 92.81%
+Val Loss: 0.7205 | Val Acc: 81.92%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [-0.06888888776302338, 1.0576549768447876, 0.16923074424266815]
+  Arm Stds: [3.3333334922790527, 1.8569533824920654, 2.77350115776062]
+  Arm Observation Counts: [2, 7, 3]
+  Last Sampled Values: [4.238250255584717, 5.168464183807373, -0.5314106345176697]
+  Arm Counts: [3.0, 9.0, 4.0]
+  Value of t: 14
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 12 epochs.
+Total training time: 2238.32 seconds
+Average time per epoch: 186.53 seconds
+
+============================================================
+Training completed!
+============================================================
+Job completed at Fri Oct 24 01:26:53 IST 2025
+Job started at Fri Oct 24 02:04:58 IST 2025
+Conda environment: mamba_paca
+Python path: /export/home/achyut/miniconda3/envs/mamba_paca/bin/python
+PyTorch: 2.4.0+cu121
+CUDA available: True
+Torchvision: 0.19.0+cu121
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on CIFAR-100
+Using Gaussian Thompson Sampling
+============================================================
+Using random seed: 7542
+Loading dataset...
+Files already downloaded and verified
+Files already downloaded and verified
+Dataset loaded: 50000 train samples, 10000 val samples
+Number of classes: 100
+
+Creating ViT model for 100 classes...
+
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'out_proj', 'mlp.3', 'mlp.0'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=782, arm_distribution='horizontal', num_arms=3, num_arms_to_select=1, ucb_alpha=0.5, use_fixed_indices=False, arm_selection_method='thompson', thompson_distribution='gaussian', thompson_alpha_prior=1.0, thompson_beta_prior=1.0, thompson_gaussian_prior_mean=0.0, thompson_gaussian_prior_std=5.0, thompson_gaussian_noise_std=5.0)
+Total parameters: 149,653,448
+Trainable parameters: 2,757,320 (1.84%)
+Frozen parameters: 146,896,128 (98.16%)
+
+============================================================
+Fine-tuning ViT using Gaussian Thompson Sampling-based PaCA:
+============================================================
+Calculating initial validation accuracy...
+Initial Val Acc: 1.24%
+
+Gaussian Thompson Sampling Reward: 0.00% (normalized: 0.00)
+
+Epoch 1 Summary | LR: 0.000100 | Time: 185.84s
+Train Loss: 4.6585 | Train Acc: 1.16%
+Val Loss: 4.6575 | Val Acc: 1.24%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.0, 0.0, 0.0]
+  Arm Stds: [5.0, 3.535533905029297, 5.0]
+  Arm Observation Counts: [0, 1, 0]
+  Last Sampled Values: [-7.070028781890869, 4.875851154327393, -3.134050130844116]
+  Arm Counts: [1.0, 3.0, 1.0]
+  Value of t: 3
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 72.04% (normalized: 7.20)
+
+Epoch 2 Summary | LR: 0.000200 | Time: 185.97s
+Train Loss: 2.4230 | Train Acc: 50.88%
+Val Loss: 1.3404 | Val Acc: 73.28%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.0, 2.4013333320617676, 0.0]
+  Arm Stds: [5.0, 2.886751174926758, 5.0]
+  Arm Observation Counts: [0, 2, 0]
+  Last Sampled Values: [-1.8587416410446167, 6.636571407318115, 1.8569706678390503]
+  Arm Counts: [1.0, 4.0, 1.0]
+  Value of t: 4
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 6.54% (normalized: 0.65)
+
+Epoch 3 Summary | LR: 0.000300 | Time: 186.02s
+Train Loss: 0.9966 | Train Acc: 78.81%
+Val Loss: 0.8436 | Val Acc: 79.82%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.0, 1.964500069618225, 0.0]
+  Arm Stds: [5.0, 2.5, 5.0]
+  Arm Observation Counts: [0, 3, 0]
+  Last Sampled Values: [0.5022250413894653, 1.5212821960449219, -3.2514235973358154]
+  Arm Counts: [1.0, 5.0, 1.0]
+  Value of t: 5
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 3.42% (normalized: 0.34)
+
+Epoch 4 Summary | LR: 0.000400 | Time: 186.12s
+Train Loss: 0.6309 | Train Acc: 85.19%
+Val Loss: 0.6484 | Val Acc: 83.24%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.0, 1.6400001049041748, 0.0]
+  Arm Stds: [5.0, 2.2360680103302, 5.0]
+  Arm Observation Counts: [0, 4, 0]
+  Last Sampled Values: [-0.29071375727653503, 2.7575812339782715, -5.813576698303223]
+  Arm Counts: [1.0, 6.0, 1.0]
+  Value of t: 6
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 1.34% (normalized: 0.13)
+
+Epoch 5 Summary | LR: 0.000500 | Time: 186.14s
+Train Loss: 0.4356 | Train Acc: 89.53%
+Val Loss: 0.5936 | Val Acc: 84.58%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [0.0, 1.3890000581741333, 0.0]
+  Arm Stds: [5.0, 2.0412416458129883, 5.0]
+  Arm Observation Counts: [0, 5, 0]
+  Last Sampled Values: [4.86751651763916, -0.7890475988388062, -2.8670504093170166]
+  Arm Counts: [2.0, 6.0, 1.0]
+  Value of t: 7
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: -1.55% (normalized: -0.15)
+
+Epoch 6 Summary | LR: 0.000600 | Time: 185.98s
+Train Loss: 0.3489 | Train Acc: 91.41%
+Val Loss: 0.6570 | Val Acc: 83.03%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Means: [-0.07750000059604645, 1.3890000581741333, 0.0]
+  Arm Stds: [3.535533905029297, 2.0412416458129883, 5.0]
+  Arm Observation Counts: [1, 5, 0]
+  Last Sampled Values: [-0.0698525458574295, 1.174169659614563, 4.309839725494385]
+  Arm Counts: [2.0, 6.0, 2.0]
+  Value of t: 8
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Gaussian Thompson Sampling Reward: 1.56% (normalized: 0.16)
+
+Epoch 7 Summary | LR: 0.000700 | Time: 186.16s
+Train Loss: 0.3099 | Train Acc: 92.10%
+Val Loss: 0.5890 | Val Acc: 84.59%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Means: [-0.07750000059604645, 1.3890000581741333, 0.07800000160932541]
+  Arm Stds: [3.535533905029297, 2.0412416458129883, 3.535533905029297]
+  Arm Observation Counts: [1, 5, 1]
+  Last Sampled Values: [-3.3598437309265137, 0.3448147773742676, 1.3871312141418457]
+  Arm Counts: [2.0, 6.0, 3.0]
+  Value of t: 9
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: -0.94% (normalized: -0.09)
+
+Epoch 8 Summary | LR: 0.000800 | Time: 186.10s
+Train Loss: 0.2765 | Train Acc: 92.83%
+Val Loss: 0.6463 | Val Acc: 83.65%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [-0.07750000059604645, 1.3890000581741333, 0.020666668191552162]
+  Arm Stds: [3.535533905029297, 2.0412416458129883, 2.886751174926758]
+  Arm Observation Counts: [1, 5, 2]
+  Last Sampled Values: [11.961577415466309, 0.7572295069694519, 1.2171436548233032]
+  Arm Counts: [3.0, 6.0, 3.0]
+  Value of t: 10
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Gaussian Thompson Sampling Reward: -0.12% (normalized: -0.01)
+
+Epoch 9 Summary | LR: 0.000900 | Time: 186.14s
+Train Loss: 0.2849 | Train Acc: 92.55%
+Val Loss: 0.6403 | Val Acc: 83.53%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Means: [-0.055666666477918625, 1.3890000581741333, 0.020666668191552162]
+  Arm Stds: [2.886751174926758, 2.0412416458129883, 2.886751174926758]
+  Arm Observation Counts: [2, 5, 2]
+  Last Sampled Values: [-0.24255980551242828, 0.055161118507385254, 1.77421236038208]
+  Arm Counts: [3.0, 6.0, 4.0]
+  Value of t: 11
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Gaussian Thompson Sampling Reward: -0.13% (normalized: -0.01)
+
+Epoch 10 Summary | LR: 0.001000 | Time: 186.16s
+Train Loss: 0.2528 | Train Acc: 93.41%
+Val Loss: 0.6548 | Val Acc: 83.40%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [-0.055666666477918625, 1.3890000581741333, 0.012250001542270184]
+  Arm Stds: [2.886751174926758, 2.0412416458129883, 2.5]
+  Arm Observation Counts: [2, 5, 3]
+  Last Sampled Values: [-0.749090313911438, 0.7284765243530273, -1.655930519104004]
+  Arm Counts: [3.0, 7.0, 4.0]
+  Value of t: 12
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Gaussian Thompson Sampling Reward: -1.55% (normalized: -0.16)
+
+Epoch 11 Summary | LR: 0.001000 | Time: 186.86s
+Train Loss: 0.2987 | Train Acc: 92.16%
+Val Loss: 0.7076 | Val Acc: 81.85%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [-0.055666666477918625, 1.1684285402297974, 0.012250001542270184]
+  Arm Stds: [2.886751174926758, 1.8898226022720337, 2.5]
+  Arm Observation Counts: [2, 6, 3]
+  Last Sampled Values: [-5.321681976318359, 3.0126068592071533, -0.049890853464603424]
+  Arm Counts: [3.0, 8.0, 4.0]
+  Value of t: 13
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Gaussian Thompson Sampling Reward: 0.03% (normalized: 0.00)
+
+Epoch 12 Summary | LR: 0.001000 | Time: 186.76s
+Train Loss: 0.2724 | Train Acc: 92.67%
+Val Loss: 0.7095 | Val Acc: 81.88%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [-0.055666666477918625, 1.022749900817871, 0.012250001542270184]
+  Arm Stds: [2.886751174926758, 1.7677671909332275, 2.5]
+  Arm Observation Counts: [2, 7, 3]
+  Last Sampled Values: [-0.3450300395488739, 1.0864837169647217, -1.0868754386901855]
+  Arm Counts: [3.0, 9.0, 4.0]
+  Value of t: 14
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Gaussian Thompson Sampling Reward: -0.01% (normalized: -0.00)
+
+Epoch 13 Summary | LR: 0.001000 | Time: 186.83s
+Train Loss: 0.2663 | Train Acc: 92.85%
+Val Loss: 0.7238 | Val Acc: 81.87%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [-0.055666666477918625, 0.9089998602867126, 0.012250001542270184]
+  Arm Stds: [2.886751174926758, 1.666666865348816, 2.5]
+  Arm Observation Counts: [2, 8, 3]
+  Last Sampled Values: [5.176678657531738, -1.9391872882843018, 1.997661828994751]
+  Arm Counts: [4.0, 9.0, 4.0]
+  Value of t: 15
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Gaussian Thompson Sampling Reward: 0.13% (normalized: 0.01)
+
+Epoch 14 Summary | LR: 0.001000 | Time: 186.79s
+Train Loss: 0.2297 | Train Acc: 93.86%
+Val Loss: 0.7434 | Val Acc: 82.00%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Means: [-0.03849999979138374, 0.9089998602867126, 0.012250001542270184]
+  Arm Stds: [2.5, 1.666666865348816, 2.5]
+  Arm Observation Counts: [3, 8, 3]
+  Last Sampled Values: [-0.4272916316986084, 0.04679584503173828, 3.6703720092773438]
+  Arm Counts: [4.0, 9.0, 5.0]
+  Value of t: 16
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 14 epochs.
+Total training time: 2607.88 seconds
+Average time per epoch: 186.28 seconds
+
+============================================================
+Training completed!
+============================================================
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on CIFAR-100
+Using Gaussian Thompson Sampling
+============================================================
+Using random seed: 9426
+Loading dataset...
+Files already downloaded and verified
+Files already downloaded and verified
+Dataset loaded: 50000 train samples, 10000 val samples
+Number of classes: 100
+
+Creating ViT model for 100 classes...
+
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'mlp.3', 'out_proj', 'mlp.0'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=782, arm_distribution='horizontal', num_arms=3, num_arms_to_select=1, ucb_alpha=0.5, use_fixed_indices=False, arm_selection_method='thompson', thompson_distribution='gaussian', thompson_alpha_prior=1.0, thompson_beta_prior=1.0, thompson_gaussian_prior_mean=0.0, thompson_gaussian_prior_std=10.0, thompson_gaussian_noise_std=8.0)
+Total parameters: 149,653,448
+Trainable parameters: 2,757,320 (1.84%)
+Frozen parameters: 146,896,128 (98.16%)
+
+============================================================
+Fine-tuning ViT using Gaussian Thompson Sampling-based PaCA:
+============================================================
+Calculating initial validation accuracy...
+Initial Val Acc: 0.84%
+
+Gaussian Thompson Sampling Reward: 0.00% (normalized: 0.00)
+
+Epoch 1 Summary | LR: 0.000100 | Time: 186.18s
+Train Loss: 4.6943 | Train Acc: 0.89%
+Val Loss: 4.6987 | Val Acc: 0.84%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.0, 0.0, 0.0]
+  Arm Stds: [10.0, 10.0, 6.246950626373291]
+  Arm Observation Counts: [0, 0, 1]
+  Last Sampled Values: [-4.813587665557861, 8.663817405700684, 5.43341064453125]
+  Arm Counts: [1.0, 2.0, 2.0]
+  Value of t: 3
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 74.24% (normalized: 7.42)
+
+Epoch 2 Summary | LR: 0.000200 | Time: 186.34s
+Train Loss: 2.3934 | Train Acc: 53.19%
+Val Loss: 1.3395 | Val Acc: 75.08%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.0, 4.526829242706299, 0.0]
+  Arm Stds: [10.0, 6.246950626373291, 6.246950626373291]
+  Arm Observation Counts: [0, 1, 1]
+  Last Sampled Values: [-13.779762268066406, 6.677245616912842, -10.229455947875977]
+  Arm Counts: [1.0, 3.0, 2.0]
+  Value of t: 4
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 6.41% (normalized: 0.64)
+
+Epoch 3 Summary | LR: 0.000300 | Time: 186.38s
+Train Loss: 0.9624 | Train Acc: 79.97%
+Val Loss: 0.7693 | Val Acc: 81.49%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.0, 3.054924249649048, 0.0]
+  Arm Stds: [10.0, 4.923659801483154, 6.246950626373291]
+  Arm Observation Counts: [0, 2, 1]
+  Last Sampled Values: [-0.9491186738014221, 3.132220983505249, -5.670723915100098]
+  Arm Counts: [1.0, 4.0, 2.0]
+  Value of t: 5
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 2.09% (normalized: 0.21)
+
+Epoch 4 Summary | LR: 0.000400 | Time: 186.16s
+Train Loss: 0.5848 | Train Acc: 86.14%
+Val Loss: 0.6390 | Val Acc: 83.58%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.0, 2.2730767726898193, 0.0]
+  Arm Stds: [10.0, 4.193139553070068, 6.246950626373291]
+  Arm Observation Counts: [0, 3, 1]
+  Last Sampled Values: [-14.27258014678955, 1.3316869735717773, -10.273662567138672]
+  Arm Counts: [1.0, 5.0, 2.0]
+  Value of t: 6
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 1.17% (normalized: 0.12)
+
+Epoch 5 Summary | LR: 0.000500 | Time: 186.26s
+Train Loss: 0.4214 | Train Acc: 89.78%
+Val Loss: 0.5828 | Val Acc: 84.75%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Means: [0.0, 1.8084050416946411, 0.0]
+  Arm Stds: [10.0, 3.713906764984131, 6.246950626373291]
+  Arm Observation Counts: [0, 4, 1]
+  Last Sampled Values: [-9.70548152923584, 4.313945770263672, 4.323304653167725]
+  Arm Counts: [1.0, 5.0, 3.0]
+  Value of t: 7
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: -0.28% (normalized: -0.03)
+
+Epoch 6 Summary | LR: 0.000600 | Time: 186.30s
+Train Loss: 0.3405 | Train Acc: 91.57%
+Val Loss: 0.6013 | Val Acc: 84.47%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [0.0, 1.8084050416946411, -0.010606060735881329]
+  Arm Stds: [10.0, 3.713906764984131, 4.923659801483154]
+  Arm Observation Counts: [0, 4, 2]
+  Last Sampled Values: [7.317113876342773, 4.462479591369629, 1.4477514028549194]
+  Arm Counts: [2.0, 5.0, 3.0]
+  Value of t: 8
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Gaussian Thompson Sampling Reward: -0.39% (normalized: -0.04)
+
+Epoch 7 Summary | LR: 0.000700 | Time: 186.29s
+Train Loss: 0.3018 | Train Acc: 92.37%
+Val Loss: 0.6295 | Val Acc: 84.08%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Means: [-0.02378048747777939, 1.8084050416946411, -0.010606060735881329]
+  Arm Stds: [6.246950626373291, 3.713906764984131, 4.923659801483154]
+  Arm Observation Counts: [1, 4, 2]
+  Last Sampled Values: [-2.34151029586792, -3.410651683807373, 1.1693981885910034]
+  Arm Counts: [2.0, 5.0, 4.0]
+  Value of t: 9
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Gaussian Thompson Sampling Reward: -0.54% (normalized: -0.05)
+
+Epoch 8 Summary | LR: 0.000800 | Time: 186.20s
+Train Loss: 0.2811 | Train Acc: 92.73%
+Val Loss: 0.6192 | Val Acc: 83.54%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [-0.02378048747777939, 1.8084050416946411, -0.02252747304737568]
+  Arm Stds: [6.246950626373291, 3.713906764984131, 4.193139553070068]
+  Arm Observation Counts: [1, 4, 3]
+  Last Sampled Values: [2.5654308795928955, 6.511428356170654, -2.451510190963745]
+  Arm Counts: [2.0, 6.0, 4.0]
+  Value of t: 10
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Gaussian Thompson Sampling Reward: 0.21% (normalized: 0.02)
+
+Epoch 9 Summary | LR: 0.000900 | Time: 186.27s
+Train Loss: 0.2873 | Train Acc: 92.62%
+Val Loss: 0.6337 | Val Acc: 83.75%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [-0.02378048747777939, 1.491489291191101, -0.02252747304737568]
+  Arm Stds: [6.246950626373291, 3.368607759475708, 4.193139553070068]
+  Arm Observation Counts: [1, 5, 3]
+  Last Sampled Values: [1.629730224609375, 1.7803220748901367, -6.96737003326416]
+  Arm Counts: [2.0, 7.0, 4.0]
+  Value of t: 11
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Gaussian Thompson Sampling Reward: 0.23% (normalized: 0.02)
+
+Epoch 10 Summary | LR: 0.001000 | Time: 186.29s
+Train Loss: 0.2398 | Train Acc: 93.64%
+Val Loss: 0.6343 | Val Acc: 83.98%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [-0.02378048747777939, 1.2703312635421753, -0.02252747304737568]
+  Arm Stds: [6.246950626373291, 3.104602098464966, 4.193139553070068]
+  Arm Observation Counts: [1, 6, 3]
+  Last Sampled Values: [16.879770278930664, 1.2671681642532349, 0.14300046861171722]
+  Arm Counts: [3.0, 7.0, 4.0]
+  Value of t: 12
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Gaussian Thompson Sampling Reward: -2.04% (normalized: -0.20)
+
+Epoch 11 Summary | LR: 0.001000 | Time: 186.84s
+Train Loss: 0.2828 | Train Acc: 92.54%
+Val Loss: 0.7050 | Val Acc: 81.94%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [-0.09204545617103577, 1.2703312635421753, -0.02252747304737568]
+  Arm Stds: [4.923659801483154, 3.104602098464966, 4.193139553070068]
+  Arm Observation Counts: [2, 6, 3]
+  Last Sampled Values: [-4.2985520362854, -3.914510726928711, -4.7417192459106445]
+  Arm Counts: [3.0, 8.0, 4.0]
+  Value of t: 13
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Gaussian Thompson Sampling Reward: 0.54% (normalized: 0.05)
+
+Epoch 12 Summary | LR: 0.001000 | Time: 186.77s
+Train Loss: 0.2737 | Train Acc: 92.78%
+Val Loss: 0.7123 | Val Acc: 82.48%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [-0.09204545617103577, 1.1111255884170532, -0.02252747304737568]
+  Arm Stds: [4.923659801483154, 2.894298553466797, 4.193139553070068]
+  Arm Observation Counts: [2, 7, 3]
+  Last Sampled Values: [3.432394027709961, 0.840328574180603, 0.10650677978992462]
+  Arm Counts: [4.0, 8.0, 4.0]
+  Value of t: 14
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 12 epochs.
+Total training time: 2236.28 seconds
+Average time per epoch: 186.36 seconds
+
+============================================================
+Training completed!
+============================================================
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on CIFAR-100
+Using Gaussian Thompson Sampling
+============================================================
+Using random seed: 1175
+Loading dataset...
+Files already downloaded and verified
+Files already downloaded and verified
+Dataset loaded: 50000 train samples, 10000 val samples
+Number of classes: 100
+
+Creating ViT model for 100 classes...
+
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'mlp.3', 'mlp.0', 'out_proj'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=782, arm_distribution='horizontal', num_arms=3, num_arms_to_select=1, ucb_alpha=0.5, use_fixed_indices=False, arm_selection_method='thompson', thompson_distribution='gaussian', thompson_alpha_prior=1.0, thompson_beta_prior=1.0, thompson_gaussian_prior_mean=0.0, thompson_gaussian_prior_std=10.0, thompson_gaussian_noise_std=2.0)
+Total parameters: 149,653,448
+Trainable parameters: 2,757,320 (1.84%)
+Frozen parameters: 146,896,128 (98.16%)
+
+============================================================
+Fine-tuning ViT using Gaussian Thompson Sampling-based PaCA:
+============================================================
+Calculating initial validation accuracy...
+Initial Val Acc: 0.97%
+
+Gaussian Thompson Sampling Reward: 0.00% (normalized: 0.00)
+
+Epoch 1 Summary | LR: 0.000100 | Time: 185.91s
+Train Loss: 4.6847 | Train Acc: 0.84%
+Val Loss: 4.6819 | Val Acc: 0.97%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [0.0, 0.0, 0.0]
+  Arm Stds: [10.0, 10.0, 1.9611613750457764]
+  Arm Observation Counts: [0, 0, 1]
+  Last Sampled Values: [11.903428077697754, 6.4171905517578125, -1.4482911825180054]
+  Arm Counts: [2.0, 1.0, 2.0]
+  Value of t: 3
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 72.41% (normalized: 7.24)
+
+Epoch 2 Summary | LR: 0.000200 | Time: 186.03s
+Train Loss: 2.4254 | Train Acc: 51.67%
+Val Loss: 1.3691 | Val Acc: 73.38%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [6.962500095367432, 0.0, 0.0]
+  Arm Stds: [1.9611613750457764, 10.0, 1.9611613750457764]
+  Arm Observation Counts: [1, 0, 1]
+  Last Sampled Values: [9.697932243347168, 7.968279838562012, -0.3450753688812256]
+  Arm Counts: [3.0, 1.0, 2.0]
+  Value of t: 4
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 8.36% (normalized: 0.84)
+
+Epoch 3 Summary | LR: 0.000300 | Time: 186.30s
+Train Loss: 0.9904 | Train Acc: 79.25%
+Val Loss: 0.8160 | Val Acc: 81.74%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Means: [3.9593136310577393, 0.0, 0.0]
+  Arm Stds: [1.4002801179885864, 10.0, 1.9611613750457764]
+  Arm Observation Counts: [2, 0, 1]
+  Last Sampled Values: [1.3257660865783691, -0.45134973526000977, 3.094843626022339]
+  Arm Counts: [3.0, 1.0, 3.0]
+  Value of t: 5
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 1.44% (normalized: 0.14)
+
+Epoch 4 Summary | LR: 0.000400 | Time: 186.24s
+Train Loss: 0.6221 | Train Acc: 85.82%
+Val Loss: 0.6657 | Val Acc: 83.18%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [3.9593136310577393, 0.0, 0.07058823853731155]
+  Arm Stds: [1.4002801179885864, 10.0, 1.4002801179885864]
+  Arm Observation Counts: [2, 0, 2]
+  Last Sampled Values: [2.4711108207702637, 8.021431922912598, -1.1103543043136597]
+  Arm Counts: [3.0, 2.0, 3.0]
+  Value of t: 6
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 1.40% (normalized: 0.14)
+
+Epoch 5 Summary | LR: 0.000500 | Time: 186.22s
+Train Loss: 0.4516 | Train Acc: 89.34%
+Val Loss: 0.5895 | Val Acc: 84.58%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [3.9593136310577393, 0.13461539149284363, 0.07058823853731155]
+  Arm Stds: [1.4002801179885864, 1.9611613750457764, 1.4002801179885864]
+  Arm Observation Counts: [2, 1, 2]
+  Last Sampled Values: [4.863193035125732, 1.0639090538024902, 2.3926103115081787]
+  Arm Counts: [4.0, 2.0, 3.0]
+  Value of t: 7
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: -1.02% (normalized: -0.10)
+
+Epoch 6 Summary | LR: 0.000600 | Time: 186.32s
+Train Loss: 0.3416 | Train Acc: 91.54%
+Val Loss: 0.6281 | Val Acc: 83.56%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Means: [2.6233551502227783, 0.13461539149284363, 0.07058823853731155]
+  Arm Stds: [1.1470786333084106, 1.9611613750457764, 1.4002801179885864]
+  Arm Observation Counts: [3, 1, 2]
+  Last Sampled Values: [2.354271650314331, -2.994401454925537, 2.7593979835510254]
+  Arm Counts: [4.0, 2.0, 4.0]
+  Value of t: 8
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Gaussian Thompson Sampling Reward: 0.19% (normalized: 0.02)
+
+Epoch 7 Summary | LR: 0.000700 | Time: 186.30s
+Train Loss: 0.3065 | Train Acc: 92.28%
+Val Loss: 0.6272 | Val Acc: 83.75%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [2.6233551502227783, 0.13461539149284363, 0.053618423640728]
+  Arm Stds: [1.1470786333084106, 1.9611613750457764, 1.1470786333084106]
+  Arm Observation Counts: [3, 1, 3]
+  Last Sampled Values: [2.584242582321167, -1.3975735902786255, -1.8030908107757568]
+  Arm Counts: [5.0, 2.0, 4.0]
+  Value of t: 9
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Gaussian Thompson Sampling Reward: 0.22% (normalized: 0.02)
+
+Epoch 8 Summary | LR: 0.000800 | Time: 186.21s
+Train Loss: 0.3016 | Train Acc: 92.24%
+Val Loss: 0.6181 | Val Acc: 83.97%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [1.9794553518295288, 0.13461539149284363, 0.053618423640728]
+  Arm Stds: [0.9950371384620667, 1.9611613750457764, 1.1470786333084106]
+  Arm Observation Counts: [4, 1, 3]
+  Last Sampled Values: [1.8083789348602295, -0.00041347742080688477, 0.022817052900791168]
+  Arm Counts: [6.0, 2.0, 4.0]
+  Value of t: 10
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Gaussian Thompson Sampling Reward: -0.20% (normalized: -0.02)
+
+Epoch 9 Summary | LR: 0.000900 | Time: 186.14s
+Train Loss: 0.2769 | Train Acc: 92.82%
+Val Loss: 0.6314 | Val Acc: 83.77%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [1.5827380418777466, 0.13461539149284363, 0.053618423640728]
+  Arm Stds: [0.8908708095550537, 1.9611613750457764, 1.1470786333084106]
+  Arm Observation Counts: [5, 1, 3]
+  Last Sampled Values: [1.9773229360580444, -2.273629903793335, 0.3535499572753906]
+  Arm Counts: [7.0, 2.0, 4.0]
+  Value of t: 11
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Gaussian Thompson Sampling Reward: -0.04% (normalized: -0.00)
+
+Epoch 10 Summary | LR: 0.001000 | Time: 186.07s
+Train Loss: 0.2533 | Train Acc: 93.42%
+Val Loss: 0.6439 | Val Acc: 83.73%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [1.320033073425293, 0.13461539149284363, 0.053618423640728]
+  Arm Stds: [0.8137884736061096, 1.9611613750457764, 1.1470786333084106]
+  Arm Observation Counts: [6, 1, 3]
+  Last Sampled Values: [1.1571753025054932, 2.9480130672454834, 0.31241369247436523]
+  Arm Counts: [7.0, 3.0, 4.0]
+  Value of t: 12
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Gaussian Thompson Sampling Reward: -2.32% (normalized: -0.23)
+
+Epoch 11 Summary | LR: 0.001000 | Time: 186.80s
+Train Loss: 0.2775 | Train Acc: 92.72%
+Val Loss: 0.7303 | Val Acc: 81.41%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [1.320033073425293, -0.04509803652763367, 0.053618423640728]
+  Arm Stds: [0.8137884736061096, 1.4002801179885864, 1.1470786333084106]
+  Arm Observation Counts: [6, 2, 3]
+  Last Sampled Values: [1.6875572204589844, 1.7467472553253174, -0.20201000571250916]
+  Arm Counts: [7.0, 4.0, 4.0]
+  Value of t: 13
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Gaussian Thompson Sampling Reward: 1.82% (normalized: 0.18)
+
+Epoch 12 Summary | LR: 0.001000 | Time: 186.74s
+Train Loss: 0.2747 | Train Acc: 92.74%
+Val Loss: 0.6799 | Val Acc: 83.23%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Means: [1.320033073425293, 0.029605267569422722, 0.053618423640728]
+  Arm Stds: [0.8137884736061096, 1.1470786333084106, 1.1470786333084106]
+  Arm Observation Counts: [6, 3, 3]
+  Last Sampled Values: [-0.6562807559967041, -0.4105224311351776, 0.06405414640903473]
+  Arm Counts: [7.0, 4.0, 5.0]
+  Value of t: 14
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 12 epochs.
+Total training time: 2235.27 seconds
+Average time per epoch: 186.27 seconds
+
+============================================================
+Training completed!
+============================================================
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on CIFAR-100
+Using Gaussian Thompson Sampling
+============================================================
+Using random seed: 5879
+Loading dataset...
+Files already downloaded and verified
+Files already downloaded and verified
+Dataset loaded: 50000 train samples, 10000 val samples
+Number of classes: 100
+
+Creating ViT model for 100 classes...
+
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'mlp.0', 'out_proj', 'mlp.3'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=782, arm_distribution='horizontal', num_arms=4, num_arms_to_select=1, ucb_alpha=0.5, use_fixed_indices=False, arm_selection_method='thompson', thompson_distribution='gaussian', thompson_alpha_prior=1.0, thompson_beta_prior=1.0, thompson_gaussian_prior_mean=0.0, thompson_gaussian_prior_std=10.0, thompson_gaussian_noise_std=5.0)
+Total parameters: 149,653,448
+Trainable parameters: 2,757,320 (1.84%)
+Frozen parameters: 146,896,128 (98.16%)
+
+============================================================
+Fine-tuning ViT using Gaussian Thompson Sampling-based PaCA:
+============================================================
+Calculating initial validation accuracy...
+Initial Val Acc: 0.99%
+
+Gaussian Thompson Sampling Reward: 0.00% (normalized: 0.00)
+
+Epoch 1 Summary | LR: 0.000100 | Time: 185.83s
+Train Loss: 4.6869 | Train Acc: 1.05%
+Val Loss: 4.6910 | Val Acc: 0.99%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [3]
+  Arm Means: [0.0, 0.0, 0.0, 0.0]
+  Arm Stds: [10.0, 10.0, 4.4721360206604, 10.0]
+  Arm Observation Counts: [0, 0, 1, 0]
+  Last Sampled Values: [-13.603660583496094, -14.68127727508545, -1.2005492448806763, -0.7047191858291626]
+  Arm Counts: [1.0, 1.0, 2.0, 2.0]
+  Value of t: 3
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 74.20% (normalized: 7.42)
+
+Epoch 2 Summary | LR: 0.000200 | Time: 186.07s
+Train Loss: 2.3598 | Train Acc: 53.31%
+Val Loss: 1.2505 | Val Acc: 75.19%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [0.0, 0.0, 0.0, 5.935999870300293]
+  Arm Stds: [10.0, 10.0, 4.4721360206604, 4.4721360206604]
+  Arm Observation Counts: [0, 0, 1, 1]
+  Last Sampled Values: [14.875961303710938, 0.5275169610977173, 2.8542873859405518, 6.844966888427734]
+  Arm Counts: [2.0, 1.0, 2.0, 2.0]
+  Value of t: 4
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 6.73% (normalized: 0.67)
+
+Epoch 3 Summary | LR: 0.000300 | Time: 185.97s
+Train Loss: 0.9319 | Train Acc: 80.47%
+Val Loss: 0.7765 | Val Acc: 81.92%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [3]
+  Arm Means: [0.5383999943733215, 0.0, 0.0, 5.935999870300293]
+  Arm Stds: [4.4721360206604, 10.0, 4.4721360206604, 4.4721360206604]
+  Arm Observation Counts: [1, 0, 1, 1]
+  Last Sampled Values: [9.590828895568848, 4.1103315353393555, 4.233214855194092, 13.179022789001465]
+  Arm Counts: [2.0, 1.0, 2.0, 3.0]
+  Value of t: 5
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 1.84% (normalized: 0.18)
+
+Epoch 4 Summary | LR: 0.000400 | Time: 186.17s
+Train Loss: 0.5732 | Train Acc: 86.77%
+Val Loss: 0.6327 | Val Acc: 83.76%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.5383999943733215, 0.0, 0.0, 3.3795554637908936]
+  Arm Stds: [4.4721360206604, 10.0, 4.4721360206604, 3.3333334922790527]
+  Arm Observation Counts: [1, 0, 1, 2]
+  Last Sampled Values: [6.430220127105713, 11.160684585571289, 5.649716377258301, 4.163304805755615]
+  Arm Counts: [2.0, 2.0, 2.0, 3.0]
+  Value of t: 6
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 0.80% (normalized: 0.08)
+
+Epoch 5 Summary | LR: 0.000500 | Time: 186.27s
+Train Loss: 0.4243 | Train Acc: 89.46%
+Val Loss: 0.5746 | Val Acc: 84.56%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Means: [0.5383999943733215, 0.06400000303983688, 0.0, 3.3795554637908936]
+  Arm Stds: [4.4721360206604, 4.4721360206604, 4.4721360206604, 3.3333334922790527]
+  Arm Observation Counts: [1, 1, 1, 2]
+  Last Sampled Values: [-6.104269504547119, 2.0393199920654297, 6.477653980255127, 1.1278111934661865]
+  Arm Counts: [2.0, 2.0, 3.0, 3.0]
+  Value of t: 7
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: -1.24% (normalized: -0.12)
+
+Epoch 6 Summary | LR: 0.000600 | Time: 186.25s
+Train Loss: 0.3257 | Train Acc: 91.71%
+Val Loss: 0.6241 | Val Acc: 83.32%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [0.5383999943733215, 0.06400000303983688, -0.0551111102104187, 3.3795554637908936]
+  Arm Stds: [4.4721360206604, 4.4721360206604, 3.3333334922790527, 3.3333334922790527]
+  Arm Observation Counts: [1, 1, 2, 2]
+  Last Sampled Values: [5.010141372680664, -2.349299430847168, -2.459958076477051, 4.067619800567627]
+  Arm Counts: [3.0, 2.0, 3.0, 3.0]
+  Value of t: 8
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Gaussian Thompson Sampling Reward: 1.35% (normalized: 0.14)
+
+Epoch 7 Summary | LR: 0.000700 | Time: 186.23s
+Train Loss: 0.3030 | Train Acc: 92.18%
+Val Loss: 0.5882 | Val Acc: 84.67%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [3]
+  Arm Means: [0.35911110043525696, 0.06400000303983688, -0.0551111102104187, 3.3795554637908936]
+  Arm Stds: [3.3333334922790527, 4.4721360206604, 3.3333334922790527, 3.3333334922790527]
+  Arm Observation Counts: [2, 1, 2, 2]
+  Last Sampled Values: [-4.919931888580322, -2.137415647506714, -0.756371259689331, 6.3520002365112305]
+  Arm Counts: [3.0, 2.0, 3.0, 4.0]
+  Value of t: 9
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Gaussian Thompson Sampling Reward: 0.29% (normalized: 0.03)
+
+Epoch 8 Summary | LR: 0.000800 | Time: 186.17s
+Train Loss: 0.2684 | Train Acc: 92.90%
+Val Loss: 0.5699 | Val Acc: 84.96%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.35911110043525696, 0.06400000303983688, -0.0551111102104187, 2.3486151695251465]
+  Arm Stds: [3.3333334922790527, 4.4721360206604, 3.3333334922790527, 2.77350115776062]
+  Arm Observation Counts: [2, 1, 2, 3]
+  Last Sampled Values: [4.224390506744385, 5.542686939239502, 5.173198699951172, 2.629183292388916]
+  Arm Counts: [3.0, 3.0, 3.0, 4.0]
+  Value of t: 10
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: -2.07% (normalized: -0.21)
+
+Epoch 9 Summary | LR: 0.000900 | Time: 186.24s
+Train Loss: 0.2608 | Train Acc: 93.05%
+Val Loss: 0.6617 | Val Acc: 82.89%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.35911110043525696, -0.0564444437623024, -0.0551111102104187, 2.3486151695251465]
+  Arm Stds: [3.3333334922790527, 3.3333334922790527, 3.3333334922790527, 2.77350115776062]
+  Arm Observation Counts: [2, 2, 2, 3]
+  Last Sampled Values: [-0.6306867599487305, 3.1094589233398438, 3.08984112739563, 2.5962917804718018]
+  Arm Counts: [3.0, 4.0, 3.0, 4.0]
+  Value of t: 11
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Gaussian Thompson Sampling Reward: 1.08% (normalized: 0.11)
+
+Epoch 10 Summary | LR: 0.001000 | Time: 186.28s
+Train Loss: 0.2512 | Train Acc: 93.30%
+Val Loss: 0.6107 | Val Acc: 83.97%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [0.35911110043525696, -0.00584615021944046, -0.0551111102104187, 2.3486151695251465]
+  Arm Stds: [3.3333334922790527, 2.77350115776062, 3.3333334922790527, 2.77350115776062]
+  Arm Observation Counts: [2, 3, 2, 3]
+  Last Sampled Values: [4.361799716949463, 0.30907198786735535, 2.5433506965637207, 0.02054738998413086]
+  Arm Counts: [4.0, 4.0, 3.0, 4.0]
+  Value of t: 12
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Gaussian Thompson Sampling Reward: -1.84% (normalized: -0.18)
+
+Epoch 11 Summary | LR: 0.001000 | Time: 186.78s
+Train Loss: 0.2418 | Train Acc: 93.54%
+Val Loss: 0.7098 | Val Acc: 82.13%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [3]
+  Arm Means: [0.19199998676776886, -0.00584615021944046, -0.0551111102104187, 2.3486151695251465]
+  Arm Stds: [2.77350115776062, 2.77350115776062, 3.3333334922790527, 2.77350115776062]
+  Arm Observation Counts: [3, 3, 2, 3]
+  Last Sampled Values: [-4.217480659484863, -0.1030808612704277, -3.549546003341675, 5.267347812652588]
+  Arm Counts: [4.0, 4.0, 3.0, 5.0]
+  Value of t: 13
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Gaussian Thompson Sampling Reward: -0.49% (normalized: -0.05)
+
+Epoch 12 Summary | LR: 0.001000 | Time: 186.80s
+Train Loss: 0.2722 | Train Acc: 92.66%
+Val Loss: 0.7250 | Val Acc: 81.64%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.19199998676776886, -0.00584615021944046, -0.0551111102104187, 1.7844703197479248]
+  Arm Stds: [2.77350115776062, 2.77350115776062, 3.3333334922790527, 2.425356388092041]
+  Arm Observation Counts: [3, 3, 2, 4]
+  Last Sampled Values: [-1.4863120317459106, 4.283247947692871, -1.1567974090576172, 1.4113699197769165]
+  Arm Counts: [4.0, 5.0, 3.0, 5.0]
+  Value of t: 14
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Gaussian Thompson Sampling Reward: 0.29% (normalized: 0.03)
+
+Epoch 13 Summary | LR: 0.001000 | Time: 186.87s
+Train Loss: 0.2400 | Train Acc: 93.55%
+Val Loss: 0.7223 | Val Acc: 81.93%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [3]
+  Arm Means: [0.19199998676776886, 0.0023529448080807924, -0.0551111102104187, 1.7844703197479248]
+  Arm Stds: [2.77350115776062, 2.425356388092041, 3.3333334922790527, 2.425356388092041]
+  Arm Observation Counts: [3, 4, 2, 4]
+  Last Sampled Values: [-2.36572265625, -2.700791597366333, -0.9918175935745239, 0.1743694543838501]
+  Arm Counts: [4.0, 5.0, 3.0, 6.0]
+  Value of t: 15
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Gaussian Thompson Sampling Reward: 0.14% (normalized: 0.01)
+
+Epoch 14 Summary | LR: 0.001000 | Time: 186.83s
+Train Loss: 0.2177 | Train Acc: 94.10%
+Val Loss: 0.7296 | Val Acc: 82.07%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [3]
+  Arm Means: [0.19199998676776886, 0.0023529448080807924, -0.0551111102104187, 1.4472378492355347]
+  Arm Stds: [2.77350115776062, 2.425356388092041, 3.3333334922790527, 2.1821789741516113]
+  Arm Observation Counts: [3, 4, 2, 5]
+  Last Sampled Values: [-0.2929724454879761, -2.4902853965759277, -1.684558391571045, 2.1550164222717285]
+  Arm Counts: [4.0, 5.0, 3.0, 7.0]
+  Value of t: 16
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Gaussian Thompson Sampling Reward: -0.64% (normalized: -0.06)
+
+Epoch 15 Summary | LR: 0.001000 | Time: 187.52s
+Train Loss: 0.1836 | Train Acc: 95.03%
+Val Loss: 0.7771 | Val Acc: 81.43%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.19199998676776886, 0.0023529448080807924, -0.0551111102104187, 1.205439805984497]
+  Arm Stds: [2.77350115776062, 2.425356388092041, 3.3333334922790527, 2.0]
+  Arm Observation Counts: [3, 4, 2, 6]
+  Last Sampled Values: [0.12812693417072296, 6.5799102783203125, -4.239587306976318, 4.813193321228027]
+  Arm Counts: [4.0, 6.0, 3.0, 7.0]
+  Value of t: 17
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 15 epochs.
+Total training time: 2796.27 seconds
+Average time per epoch: 186.42 seconds
+
+============================================================
+Training completed!
+============================================================
+
+
+
+
+
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on CIFAR-100
+Using Gaussian Thompson Sampling
+============================================================
+Using random seed: 6220
+Loading dataset...
+Files already downloaded and verified
+Files already downloaded and verified
+Dataset loaded: 50000 train samples, 10000 val samples
+Number of classes: 100
+
+Creating ViT model for 100 classes...
+
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'mlp.3', 'out_proj', 'mlp.0'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=782, arm_distribution='horizontal', num_arms=5, num_arms_to_select=1, ucb_alpha=0.5, use_fixed_indices=False, arm_selection_method='thompson', thompson_distribution='gaussian', thompson_alpha_prior=1.0, thompson_beta_prior=1.0, thompson_gaussian_prior_mean=0.0, thompson_gaussian_prior_std=10.0, thompson_gaussian_noise_std=5.0)
+Total parameters: 149,653,448
+Trainable parameters: 2,757,320 (1.84%)
+Frozen parameters: 146,896,128 (98.16%)
+
+============================================================
+Fine-tuning ViT using Gaussian Thompson Sampling-based PaCA:
+============================================================
+Calculating initial validation accuracy...
+Initial Val Acc: 0.83%
+
+Gaussian Thompson Sampling Reward: 0.00% (normalized: 0.00)
+
+Epoch 1 Summary | LR: 0.000100 | Time: 184.25s
+Train Loss: 4.6826 | Train Acc: 0.98%
+Val Loss: 4.6822 | Val Acc: 0.83%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Means: [0.0, 0.0, 0.0, 0.0, 0.0]
+  Arm Stds: [4.4721360206604, 10.0, 10.0, 10.0, 10.0]
+  Arm Observation Counts: [1, 0, 0, 0, 0]
+  Last Sampled Values: [1.0937753915786743, 8.266590118408203, 16.59330177307129, 0.2593614459037781, 14.057197570800781]
+  Arm Counts: [2.0, 1.0, 2.0, 1.0, 1.0]
+  Value of t: 3
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 73.89% (normalized: 7.39)
+
+Epoch 2 Summary | LR: 0.000200 | Time: 182.77s
+Train Loss: 2.3806 | Train Acc: 52.64%
+Val Loss: 1.2950 | Val Acc: 74.72%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [3]
+  Arm Means: [0.0, 0.0, 5.911200046539307, 0.0, 0.0]
+  Arm Stds: [4.4721360206604, 10.0, 4.4721360206604, 10.0, 10.0]
+  Arm Observation Counts: [1, 0, 1, 0, 0]
+  Last Sampled Values: [-7.714693069458008, 2.790839910507202, 13.194665908813477, 13.426046371459961, 0.27293968200683594]
+  Arm Counts: [2.0, 1.0, 2.0, 2.0, 1.0]
+  Value of t: 4
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 6.89% (normalized: 0.69)
+
+Epoch 3 Summary | LR: 0.000300 | Time: 182.62s
+Train Loss: 0.9419 | Train Acc: 79.72%
+Val Loss: 0.7736 | Val Acc: 81.61%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [4]
+  Arm Means: [0.0, 0.0, 5.911200046539307, 0.5511999726295471, 0.0]
+  Arm Stds: [4.4721360206604, 10.0, 4.4721360206604, 4.4721360206604, 10.0]
+  Arm Observation Counts: [1, 0, 1, 1, 0]
+  Last Sampled Values: [-6.010875701904297, 1.973802089691162, 8.387588500976562, -12.084086418151855, 8.406355857849121]
+  Arm Counts: [2.0, 1.0, 2.0, 2.0, 2.0]
+  Value of t: 5
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 2.36% (normalized: 0.24)
+
+Epoch 4 Summary | LR: 0.000400 | Time: 182.72s
+Train Loss: 0.5865 | Train Acc: 86.36%
+Val Loss: 0.6414 | Val Acc: 83.97%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.0, 0.0, 5.911200046539307, 0.5511999726295471, 0.18880000710487366]
+  Arm Stds: [4.4721360206604, 10.0, 4.4721360206604, 4.4721360206604, 4.4721360206604]
+  Arm Observation Counts: [1, 0, 1, 1, 1]
+  Last Sampled Values: [-0.6773775219917297, 12.701891899108887, -0.41698598861694336, 8.271584510803223, -5.025036334991455]
+  Arm Counts: [2.0, 2.0, 2.0, 2.0, 2.0]
+  Value of t: 6
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 0.72% (normalized: 0.07)
+
+Epoch 5 Summary | LR: 0.000500 | Time: 182.79s
+Train Loss: 0.4198 | Train Acc: 89.68%
+Val Loss: 0.5865 | Val Acc: 84.69%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.0, 0.0575999990105629, 5.911200046539307, 0.5511999726295471, 0.18880000710487366]
+  Arm Stds: [4.4721360206604, 4.4721360206604, 4.4721360206604, 4.4721360206604, 4.4721360206604]
+  Arm Observation Counts: [1, 1, 1, 1, 1]
+  Last Sampled Values: [3.0741920471191406, 6.74966287612915, 3.572402000427246, -2.6977620124816895, -7.577578544616699]
+  Arm Counts: [2.0, 3.0, 2.0, 2.0, 2.0]
+  Value of t: 7
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: -1.26% (normalized: -0.13)
+
+Epoch 6 Summary | LR: 0.000600 | Time: 182.88s
+Train Loss: 0.3332 | Train Acc: 91.57%
+Val Loss: 0.6258 | Val Acc: 83.43%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [0.0, -0.024000002071261406, 5.911200046539307, 0.5511999726295471, 0.18880000710487366]
+  Arm Stds: [4.4721360206604, 3.3333334922790527, 4.4721360206604, 4.4721360206604, 4.4721360206604]
+  Arm Observation Counts: [1, 2, 1, 1, 1]
+  Last Sampled Values: [7.953138828277588, 3.5723986625671387, 5.848874568939209, -1.8483572006225586, 0.5837420225143433]
+  Arm Counts: [3.0, 3.0, 2.0, 2.0, 2.0]
+  Value of t: 8
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Gaussian Thompson Sampling Reward: 1.14% (normalized: 0.11)
+
+Epoch 7 Summary | LR: 0.000700 | Time: 182.94s
+Train Loss: 0.2994 | Train Acc: 92.24%
+Val Loss: 0.6005 | Val Acc: 84.57%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [3]
+  Arm Means: [0.05066666752099991, -0.024000002071261406, 5.911200046539307, 0.5511999726295471, 0.18880000710487366]
+  Arm Stds: [3.3333334922790527, 3.3333334922790527, 4.4721360206604, 4.4721360206604, 4.4721360206604]
+  Arm Observation Counts: [2, 2, 1, 1, 1]
+  Last Sampled Values: [2.8907413482666016, 2.091275453567505, 1.4725079536437988, 3.813145875930786, 2.152398109436035]
+  Arm Counts: [3.0, 3.0, 2.0, 3.0, 2.0]
+  Value of t: 9
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Gaussian Thompson Sampling Reward: -0.80% (normalized: -0.08)
+
+Epoch 8 Summary | LR: 0.000800 | Time: 183.01s
+Train Loss: 0.2919 | Train Acc: 92.26%
+Val Loss: 0.6257 | Val Acc: 83.77%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Means: [0.05066666752099991, -0.024000002071261406, 5.911200046539307, 0.2706666588783264, 0.18880000710487366]
+  Arm Stds: [3.3333334922790527, 3.3333334922790527, 4.4721360206604, 3.3333334922790527, 4.4721360206604]
+  Arm Observation Counts: [2, 2, 1, 2, 1]
+  Last Sampled Values: [-4.827016830444336, -2.073566436767578, 4.895323753356934, -10.241698265075684, -3.642594814300537]
+  Arm Counts: [3.0, 3.0, 3.0, 3.0, 2.0]
+  Value of t: 10
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Gaussian Thompson Sampling Reward: 0.06% (normalized: 0.01)
+
+Epoch 9 Summary | LR: 0.000900 | Time: 183.07s
+Train Loss: 0.2621 | Train Acc: 92.94%
+Val Loss: 0.6304 | Val Acc: 83.83%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [3]
+  Arm Means: [0.05066666752099991, -0.024000002071261406, 3.2866666316986084, 0.2706666588783264, 0.18880000710487366]
+  Arm Stds: [3.3333334922790527, 3.3333334922790527, 3.3333334922790527, 3.3333334922790527, 4.4721360206604]
+  Arm Observation Counts: [2, 2, 2, 2, 1]
+  Last Sampled Values: [1.7692744731903076, 2.7114903926849365, 2.723292350769043, 4.352757453918457, -2.6496098041534424]
+  Arm Counts: [3.0, 3.0, 3.0, 4.0, 2.0]
+  Value of t: 11
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Gaussian Thompson Sampling Reward: -1.05% (normalized: -0.10)
+
+Epoch 10 Summary | LR: 0.001000 | Time: 182.94s
+Train Loss: 0.2728 | Train Acc: 92.59%
+Val Loss: 0.6737 | Val Acc: 82.78%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [3]
+  Arm Means: [0.05066666752099991, -0.024000002071261406, 3.2866666316986084, 0.15507690608501434, 0.18880000710487366]
+  Arm Stds: [3.3333334922790527, 3.3333334922790527, 3.3333334922790527, 2.77350115776062, 4.4721360206604]
+  Arm Observation Counts: [2, 2, 2, 3, 1]
+  Last Sampled Values: [2.2898902893066406, 2.8585164546966553, 4.43494987487793, 8.022852897644043, -4.568521022796631]
+  Arm Counts: [3.0, 3.0, 3.0, 5.0, 2.0]
+  Value of t: 12
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Gaussian Thompson Sampling Reward: -0.10% (normalized: -0.01)
+
+Epoch 11 Summary | LR: 0.001000 | Time: 183.91s
+Train Loss: 0.2763 | Train Acc: 92.53%
+Val Loss: 0.6853 | Val Acc: 82.68%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [4]
+  Arm Means: [0.05066666752099991, -0.024000002071261406, 3.2866666316986084, 0.11623527854681015, 0.18880000710487366]
+  Arm Stds: [3.3333334922790527, 3.3333334922790527, 3.3333334922790527, 2.425356388092041, 4.4721360206604]
+  Arm Observation Counts: [2, 2, 2, 4, 1]
+  Last Sampled Values: [1.468692660331726, -0.09444965422153473, 7.322937965393066, 2.2916030883789062, 8.265416145324707]
+  Arm Counts: [3.0, 3.0, 3.0, 5.0, 3.0]
+  Value of t: 13
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Gaussian Thompson Sampling Reward: 0.32% (normalized: 0.03)
+
+Epoch 12 Summary | LR: 0.001000 | Time: 183.99s
+Train Loss: 0.2694 | Train Acc: 92.73%
+Val Loss: 0.6885 | Val Acc: 83.00%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Means: [0.05066666752099991, -0.024000002071261406, 3.2866666316986084, 0.11623527854681015, 0.11911111325025558]
+  Arm Stds: [3.3333334922790527, 3.3333334922790527, 3.3333334922790527, 2.425356388092041, 3.3333334922790527]
+  Arm Observation Counts: [2, 2, 2, 4, 2]
+  Last Sampled Values: [0.2154744267463684, -0.10785626620054245, 4.966609954833984, 0.8347808718681335, 2.2616283893585205]
+  Arm Counts: [3.0, 3.0, 4.0, 5.0, 3.0]
+  Value of t: 14
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 12 epochs.
+Total training time: 2197.90 seconds
+Average time per epoch: 183.16 seconds
+
+============================================================
+Training completed!
+============================================================
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on CIFAR-100
+Using Gaussian Thompson Sampling
+============================================================
+Using random seed: 1741
+Loading dataset...
+Files already downloaded and verified
+Files already downloaded and verified
+Dataset loaded: 50000 train samples, 10000 val samples
+Number of classes: 100
+
+Creating ViT model for 100 classes...
+
+PEFT config: PacaConfig(peft_type=<PeftType.PACA: 'PACA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.FEATURE_EXTRACTION: 'FEATURE_EXTRACTION'>, inference_mode=False, r=48, target_modules={'mlp.3', 'mlp.0', 'out_proj'}, paca_alpha=96, fan_in_fan_out=False, bias='all', modules_to_save=['head'], layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', layer_replication=None, gradient_accumulation_steps=1, steps_per_epoch=782, arm_distribution='horizontal', num_arms=6, num_arms_to_select=1, ucb_alpha=0.5, use_fixed_indices=False, arm_selection_method='thompson', thompson_distribution='gaussian', thompson_alpha_prior=1.0, thompson_beta_prior=1.0, thompson_gaussian_prior_mean=0.0, thompson_gaussian_prior_std=10.0, thompson_gaussian_noise_std=5.0)
+Total parameters: 149,653,448
+Trainable parameters: 2,757,320 (1.84%)
+Frozen parameters: 146,896,128 (98.16%)
+
+============================================================
+Fine-tuning ViT using Gaussian Thompson Sampling-based PaCA:
+============================================================
+Calculating initial validation accuracy...
+Initial Val Acc: 0.95%
+
+Gaussian Thompson Sampling Reward: 0.00% (normalized: 0.00)
+
+Epoch 1 Summary | LR: 0.000100 | Time: 182.72s
+Train Loss: 4.6729 | Train Acc: 0.95%
+Val Loss: 4.6732 | Val Acc: 0.95%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [3]
+  Arm Means: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  Arm Stds: [10.0, 4.4721360206604, 10.0, 10.0, 10.0, 10.0]
+  Arm Observation Counts: [0, 1, 0, 0, 0, 0]
+  Last Sampled Values: [-0.5687097311019897, -3.5110814571380615, 1.651089072227478, 4.047762870788574, -3.013368844985962, -3.1515798568725586]
+  Arm Counts: [1.0, 2.0, 1.0, 2.0, 1.0, 1.0]
+  Value of t: 3
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 72.78% (normalized: 7.28)
+
+Epoch 2 Summary | LR: 0.000200 | Time: 182.91s
+Train Loss: 2.3786 | Train Acc: 52.82%
+Val Loss: 1.3462 | Val Acc: 73.73%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [0.0, 0.0, 0.0, 5.822400093078613, 0.0, 0.0]
+  Arm Stds: [10.0, 4.4721360206604, 10.0, 4.4721360206604, 10.0, 10.0]
+  Arm Observation Counts: [0, 1, 0, 1, 0, 0]
+  Last Sampled Values: [12.812005043029785, 0.8761112093925476, -3.954522132873535, 4.70832633972168, 8.308981895446777, 9.943984985351562]
+  Arm Counts: [2.0, 2.0, 1.0, 2.0, 1.0, 1.0]
+  Value of t: 4
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 7.55% (normalized: 0.75)
+
+Epoch 3 Summary | LR: 0.000300 | Time: 182.84s
+Train Loss: 0.9780 | Train Acc: 79.38%
+Val Loss: 0.8082 | Val Acc: 81.28%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Means: [0.6039999723434448, 0.0, 0.0, 5.822400093078613, 0.0, 0.0]
+  Arm Stds: [4.4721360206604, 4.4721360206604, 10.0, 4.4721360206604, 10.0, 10.0]
+  Arm Observation Counts: [1, 1, 0, 1, 0, 0]
+  Last Sampled Values: [-0.01940673589706421, -2.2602665424346924, 13.995000839233398, 7.315317153930664, -4.806490421295166, 9.055756568908691]
+  Arm Counts: [2.0, 2.0, 2.0, 2.0, 1.0, 1.0]
+  Value of t: 5
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 2.02% (normalized: 0.20)
+
+Epoch 4 Summary | LR: 0.000400 | Time: 182.84s
+Train Loss: 0.5897 | Train Acc: 86.15%
+Val Loss: 0.6461 | Val Acc: 83.30%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [4]
+  Arm Means: [0.6039999723434448, 0.0, 0.1615999937057495, 5.822400093078613, 0.0, 0.0]
+  Arm Stds: [4.4721360206604, 4.4721360206604, 4.4721360206604, 4.4721360206604, 10.0, 10.0]
+  Arm Observation Counts: [1, 1, 1, 1, 0, 0]
+  Last Sampled Values: [1.4689695835113525, -1.6648043394088745, 0.7037320733070374, 7.424132347106934, 18.628236770629883, 8.67130184173584]
+  Arm Counts: [2.0, 2.0, 2.0, 2.0, 2.0, 1.0]
+  Value of t: 6
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: 1.68% (normalized: 0.17)
+
+Epoch 5 Summary | LR: 0.000500 | Time: 182.94s
+Train Loss: 0.4106 | Train Acc: 90.10%
+Val Loss: 0.5863 | Val Acc: 84.98%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [3]
+  Arm Means: [0.6039999723434448, 0.0, 0.1615999937057495, 5.822400093078613, 0.13439999520778656, 0.0]
+  Arm Stds: [4.4721360206604, 4.4721360206604, 4.4721360206604, 4.4721360206604, 4.4721360206604, 10.0]
+  Arm Observation Counts: [1, 1, 1, 1, 1, 0]
+  Last Sampled Values: [-2.4529056549072266, -0.9996336698532104, -3.4653244018554688, 6.588424205780029, -7.2184014320373535, -9.111956596374512]
+  Arm Counts: [2.0, 2.0, 2.0, 3.0, 2.0, 1.0]
+  Value of t: 7
+--------------------------------------------------
+
+Gaussian Thompson Sampling Reward: -1.04% (normalized: -0.10)
+
+Epoch 6 Summary | LR: 0.000600 | Time: 182.91s
+Train Loss: 0.3258 | Train Acc: 92.04%
+Val Loss: 0.6255 | Val Acc: 83.94%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [3]
+  Arm Means: [0.6039999723434448, 0.0, 0.1615999937057495, 3.1884443759918213, 0.13439999520778656, 0.0]
+  Arm Stds: [4.4721360206604, 4.4721360206604, 4.4721360206604, 3.3333334922790527, 4.4721360206604, 10.0]
+  Arm Observation Counts: [1, 1, 1, 2, 1, 0]
+  Last Sampled Values: [-1.2226303815841675, -7.701443195343018, -2.7739319801330566, 2.750577211380005, -3.323251485824585, -4.949972629547119]
+  Arm Counts: [2.0, 2.0, 2.0, 4.0, 2.0, 1.0]
+  Value of t: 8
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Gaussian Thompson Sampling Reward: -0.47% (normalized: -0.05)
+
+Epoch 7 Summary | LR: 0.000700 | Time: 183.04s
+Train Loss: 0.3167 | Train Acc: 91.96%
+Val Loss: 0.6285 | Val Acc: 83.47%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [5]
+  Arm Means: [0.6039999723434448, 0.0, 0.1615999937057495, 2.192923069000244, 0.13439999520778656, 0.0]
+  Arm Stds: [4.4721360206604, 4.4721360206604, 4.4721360206604, 2.77350115776062, 4.4721360206604, 10.0]
+  Arm Observation Counts: [1, 1, 1, 3, 1, 0]
+  Last Sampled Values: [-2.3536109924316406, -2.9610209465026855, 4.91823148727417, -3.1309638023376465, 6.669180393218994, 10.795636177062988]
+  Arm Counts: [2.0, 2.0, 2.0, 4.0, 2.0, 2.0]
+  Value of t: 9
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Gaussian Thompson Sampling Reward: 0.93% (normalized: 0.09)
+
+Epoch 8 Summary | LR: 0.000800 | Time: 182.97s
+Train Loss: 0.2885 | Train Acc: 92.47%
+Val Loss: 0.6003 | Val Acc: 84.40%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [2]
+  Arm Means: [0.6039999723434448, 0.0, 0.1615999937057495, 2.192923069000244, 0.13439999520778656, 0.07440000027418137]
+  Arm Stds: [4.4721360206604, 4.4721360206604, 4.4721360206604, 2.77350115776062, 4.4721360206604, 4.4721360206604]
+  Arm Observation Counts: [1, 1, 1, 3, 1, 1]
+  Last Sampled Values: [-6.855247974395752, -0.5865340232849121, 6.940528869628906, 2.4473767280578613, 6.934118270874023, 3.0849668979644775]
+  Arm Counts: [2.0, 2.0, 3.0, 4.0, 2.0, 2.0]
+  Value of t: 10
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Gaussian Thompson Sampling Reward: -1.05% (normalized: -0.11)
+
+Epoch 9 Summary | LR: 0.000900 | Time: 182.99s
+Train Loss: 0.2793 | Train Acc: 92.50%
+Val Loss: 0.6349 | Val Acc: 83.35%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [0.6039999723434448, 0.0, 0.043111104518175125, 2.192923069000244, 0.13439999520778656, 0.07440000027418137]
+  Arm Stds: [4.4721360206604, 4.4721360206604, 3.3333334922790527, 2.77350115776062, 4.4721360206604, 4.4721360206604]
+  Arm Observation Counts: [1, 1, 2, 3, 1, 1]
+  Last Sampled Values: [10.545952796936035, 10.078657150268555, -1.4340717792510986, 6.4643754959106445, -4.106217861175537, 1.2250285148620605]
+  Arm Counts: [3.0, 2.0, 3.0, 4.0, 2.0, 2.0]
+  Value of t: 11
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Gaussian Thompson Sampling Reward: 0.55% (normalized: 0.06)
+
+Epoch 10 Summary | LR: 0.001000 | Time: 182.99s
+Train Loss: 0.2519 | Train Acc: 93.35%
+Val Loss: 0.6305 | Val Acc: 83.90%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [3]
+  Arm Means: [0.35999998450279236, 0.0, 0.043111104518175125, 2.192923069000244, 0.13439999520778656, 0.07440000027418137]
+  Arm Stds: [3.3333334922790527, 4.4721360206604, 3.3333334922790527, 2.77350115776062, 4.4721360206604, 4.4721360206604]
+  Arm Observation Counts: [2, 1, 2, 3, 1, 1]
+  Last Sampled Values: [3.017911672592163, 4.74360990524292, -2.552651882171631, 8.758415222167969, 4.450103759765625, -2.739410400390625]
+  Arm Counts: [3.0, 2.0, 3.0, 5.0, 2.0, 2.0]
+  Value of t: 12
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Gaussian Thompson Sampling Reward: -1.80% (normalized: -0.18)
+
+Epoch 11 Summary | LR: 0.001000 | Time: 184.00s
+Train Loss: 0.2725 | Train Acc: 92.72%
+Val Loss: 0.6954 | Val Acc: 82.10%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [1]
+  Arm Means: [0.35999998450279236, 0.0, 0.043111104518175125, 1.6345881223678589, 0.13439999520778656, 0.07440000027418137]
+  Arm Stds: [3.3333334922790527, 4.4721360206604, 3.3333334922790527, 2.425356388092041, 4.4721360206604, 4.4721360206604]
+  Arm Observation Counts: [2, 1, 2, 4, 1, 1]
+  Last Sampled Values: [-1.0355623960494995, 2.9936416149139404, 1.2893402576446533, -3.4533352851867676, -3.616985559463501, -0.24660393595695496]
+  Arm Counts: [3.0, 3.0, 3.0, 5.0, 2.0, 2.0]
+  Value of t: 13
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Gaussian Thompson Sampling Reward: 0.33% (normalized: 0.03)
+
+Epoch 12 Summary | LR: 0.001000 | Time: 184.04s
+Train Loss: 0.2642 | Train Acc: 92.86%
+Val Loss: 0.6953 | Val Acc: 82.43%
+
+Gaussian Thompson Sampling Statistics:
+  Selected Arms: [0]
+  Arm Means: [0.35999998450279236, 0.014666667208075523, 0.043111104518175125, 1.6345881223678589, 0.13439999520778656, 0.07440000027418137]
+  Arm Stds: [3.3333334922790527, 3.3333334922790527, 3.3333334922790527, 2.425356388092041, 4.4721360206604, 4.4721360206604]
+  Arm Observation Counts: [2, 2, 2, 4, 1, 1]
+  Last Sampled Values: [1.417448878288269, 0.32632511854171753, -2.768791675567627, 0.9275878667831421, -11.398253440856934, -1.4473360776901245]
+  Arm Counts: [4.0, 3.0, 3.0, 5.0, 2.0, 2.0]
+  Value of t: 14
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 12 epochs.
+Total training time: 2197.20 seconds
+Average time per epoch: 183.10 seconds
+
+============================================================
+Training completed!
+============================================================
+Job completed at Fri Oct 24 06:05:40 IST 2025

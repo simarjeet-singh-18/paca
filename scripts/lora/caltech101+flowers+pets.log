@@ -1,0 +1,3139 @@
+Job started at Sat Jul 12 15:55:10 IST 2025
+Training on pets
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on Pets
+============================================================
+Loading dataset...
+Dataset loaded: 3680 train samples, 3669 val samples
+Number of classes: 37
+
+Creating ViT model for 37 classes...
+PEFT config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=None, inference_mode=False, r=16, target_modules={'out_proj', 'mlp.3', 'mlp.0'}, lora_alpha=32, lora_dropout=0.0, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=['head'], init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, use_moslora=False, layer_replication=None)
+Fine tuning vit using Lora:
+Calculating initial validation accuracy...
+Initial Val Acc: 2.83%
+
+Epoch 1 Summary | LR: 0.000100 | Time: 31.55
+Train Loss: 3.6613 | Train Acc: 3.18%
+Val Loss: 3.6688 | Val Acc: 2.83%
+--------------------------------------------------
+
+Epoch 2 Summary | LR: 0.000200 | Time: 31.52
+Train Loss: 2.9405 | Train Acc: 36.47%
+Val Loss: 1.9656 | Val Acc: 76.48%
+--------------------------------------------------
+
+Epoch 3 Summary | LR: 0.000300 | Time: 31.56
+Train Loss: 0.8875 | Train Acc: 87.42%
+Val Loss: 0.4240 | Val Acc: 91.11%
+--------------------------------------------------
+
+Epoch 4 Summary | LR: 0.000400 | Time: 31.47
+Train Loss: 0.2501 | Train Acc: 95.14%
+Val Loss: 0.2671 | Val Acc: 92.67%
+--------------------------------------------------
+
+Epoch 5 Summary | LR: 0.000500 | Time: 31.55
+Train Loss: 0.1296 | Train Acc: 97.34%
+Val Loss: 0.2895 | Val Acc: 90.87%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 6 Summary | LR: 0.000600 | Time: 31.66
+Train Loss: 0.0662 | Train Acc: 98.59%
+Val Loss: 0.2716 | Val Acc: 91.74%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 7 Summary | LR: 0.000700 | Time: 31.49
+Train Loss: 0.0459 | Train Acc: 99.05%
+Val Loss: 0.2709 | Val Acc: 92.10%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 8 Summary | LR: 0.000800 | Time: 31.55
+Train Loss: 0.0340 | Train Acc: 99.24%
+Val Loss: 0.3009 | Val Acc: 91.71%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 9 Summary | LR: 0.000900 | Time: 31.75
+Train Loss: 0.0547 | Train Acc: 98.45%
+Val Loss: 0.2762 | Val Acc: 91.69%
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Epoch 10 Summary | LR: 0.001000 | Time: 31.44
+Train Loss: 0.0621 | Train Acc: 98.26%
+Val Loss: 0.3651 | Val Acc: 89.51%
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Epoch 11 Summary | LR: 0.001000 | Time: 31.67
+Train Loss: 0.1014 | Train Acc: 97.04%
+Val Loss: 0.3739 | Val Acc: 89.62%
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 11 epochs.
+Total training time far: 347.22 seconds
+Average time per epoch: 31.57 seconds
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on Pets
+============================================================
+Loading dataset...
+Dataset loaded: 3680 train samples, 3669 val samples
+Number of classes: 37
+
+Creating ViT model for 37 classes...
+PEFT config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=None, inference_mode=False, r=16, target_modules={'mlp.3', 'mlp.0', 'out_proj'}, lora_alpha=32, lora_dropout=0.0, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=['head'], init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, use_moslora=False, layer_replication=None)
+Fine tuning vit using Lora:
+Calculating initial validation accuracy...
+Initial Val Acc: 2.83%
+
+Epoch 1 Summary | LR: 0.000100 | Time: 31.54
+Train Loss: 3.6613 | Train Acc: 3.18%
+Val Loss: 3.6688 | Val Acc: 2.83%
+--------------------------------------------------
+
+Epoch 2 Summary | LR: 0.000200 | Time: 31.47
+Train Loss: 2.9405 | Train Acc: 36.47%
+Val Loss: 1.9656 | Val Acc: 76.48%
+--------------------------------------------------
+
+Epoch 3 Summary | LR: 0.000300 | Time: 31.51
+Train Loss: 0.8875 | Train Acc: 87.42%
+Val Loss: 0.4240 | Val Acc: 91.11%
+--------------------------------------------------
+
+Epoch 4 Summary | LR: 0.000400 | Time: 31.19
+Train Loss: 0.2501 | Train Acc: 95.14%
+Val Loss: 0.2671 | Val Acc: 92.67%
+--------------------------------------------------
+
+Epoch 5 Summary | LR: 0.000500 | Time: 31.14
+Train Loss: 0.1296 | Train Acc: 97.34%
+Val Loss: 0.2895 | Val Acc: 90.87%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 6 Summary | LR: 0.000600 | Time: 31.19
+Train Loss: 0.0662 | Train Acc: 98.59%
+Val Loss: 0.2716 | Val Acc: 91.74%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 7 Summary | LR: 0.000700 | Time: 31.19
+Train Loss: 0.0459 | Train Acc: 99.05%
+Val Loss: 0.2709 | Val Acc: 92.10%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 8 Summary | LR: 0.000800 | Time: 31.16
+Train Loss: 0.0340 | Train Acc: 99.24%
+Val Loss: 0.3010 | Val Acc: 91.71%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 9 Summary | LR: 0.000900 | Time: 31.18
+Train Loss: 0.0547 | Train Acc: 98.48%
+Val Loss: 0.2762 | Val Acc: 91.66%
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Epoch 10 Summary | LR: 0.001000 | Time: 31.15
+Train Loss: 0.0624 | Train Acc: 98.23%
+Val Loss: 0.3685 | Val Acc: 89.42%
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Epoch 11 Summary | LR: 0.001000 | Time: 31.36
+Train Loss: 0.1026 | Train Acc: 96.98%
+Val Loss: 0.3428 | Val Acc: 90.11%
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 11 epochs.
+Total training time far: 344.07 seconds
+Average time per epoch: 31.28 seconds
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on Pets
+============================================================
+Loading dataset...
+Dataset loaded: 3680 train samples, 3669 val samples
+Number of classes: 37
+
+Creating ViT model for 37 classes...
+PEFT config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=None, inference_mode=False, r=16, target_modules={'mlp.3', 'out_proj', 'mlp.0'}, lora_alpha=32, lora_dropout=0.0, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=['head'], init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, use_moslora=False, layer_replication=None)
+Fine tuning vit using Lora:
+Calculating initial validation accuracy...
+Initial Val Acc: 2.83%
+
+Epoch 1 Summary | LR: 0.000100 | Time: 31.15
+Train Loss: 3.6613 | Train Acc: 3.18%
+Val Loss: 3.6688 | Val Acc: 2.83%
+--------------------------------------------------
+
+Epoch 2 Summary | LR: 0.000200 | Time: 31.20
+Train Loss: 2.9405 | Train Acc: 36.47%
+Val Loss: 1.9656 | Val Acc: 76.48%
+--------------------------------------------------
+
+Epoch 3 Summary | LR: 0.000300 | Time: 31.23
+Train Loss: 0.8875 | Train Acc: 87.42%
+Val Loss: 0.4240 | Val Acc: 91.11%
+--------------------------------------------------
+
+Epoch 4 Summary | LR: 0.000400 | Time: 31.16
+Train Loss: 0.2501 | Train Acc: 95.14%
+Val Loss: 0.2671 | Val Acc: 92.67%
+--------------------------------------------------
+
+Epoch 5 Summary | LR: 0.000500 | Time: 31.16
+Train Loss: 0.1296 | Train Acc: 97.34%
+Val Loss: 0.2895 | Val Acc: 90.87%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 6 Summary | LR: 0.000600 | Time: 31.23
+Train Loss: 0.0662 | Train Acc: 98.59%
+Val Loss: 0.2716 | Val Acc: 91.74%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 7 Summary | LR: 0.000700 | Time: 31.17
+Train Loss: 0.0459 | Train Acc: 99.05%
+Val Loss: 0.2709 | Val Acc: 92.10%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 8 Summary | LR: 0.000800 | Time: 31.15
+Train Loss: 0.0340 | Train Acc: 99.24%
+Val Loss: 0.3009 | Val Acc: 91.71%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 9 Summary | LR: 0.000900 | Time: 31.17
+Train Loss: 0.0547 | Train Acc: 98.45%
+Val Loss: 0.2762 | Val Acc: 91.69%
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Epoch 10 Summary | LR: 0.001000 | Time: 31.12
+Train Loss: 0.0610 | Train Acc: 98.32%
+Val Loss: 0.3657 | Val Acc: 89.37%
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Epoch 11 Summary | LR: 0.001000 | Time: 31.34
+Train Loss: 0.0956 | Train Acc: 97.39%
+Val Loss: 0.3624 | Val Acc: 90.38%
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 11 epochs.
+Total training time far: 343.07 seconds
+Average time per epoch: 31.19 seconds
+Training on flowers102
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on Flowers102
+============================================================
+Loading dataset...
+Dataset loaded: 1020 train samples, 1020 val samples
+Number of classes: 102
+
+Creating ViT model for 102 classes...
+PEFT config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=None, inference_mode=False, r=16, target_modules={'out_proj', 'mlp.3', 'mlp.0'}, lora_alpha=32, lora_dropout=0.0, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=['head'], init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, use_moslora=False, layer_replication=None)
+Fine-tuning ViT using LoRA:
+Calculating initial validation accuracy...
+Initial Val Acc: 1.18%
+
+Epoch 1 Summary | LR: 0.000100 | Time: 9.25
+Train Loss: 4.7215 | Train Acc: 0.78%
+Val Loss: 4.6954 | Val Acc: 1.18%
+--------------------------------------------------
+
+Epoch 2 Summary | LR: 0.000200 | Time: 9.32
+Train Loss: 4.6436 | Train Acc: 1.18%
+Val Loss: 4.5303 | Val Acc: 3.82%
+--------------------------------------------------
+
+Epoch 3 Summary | LR: 0.000300 | Time: 9.38
+Train Loss: 4.3243 | Train Acc: 8.43%
+Val Loss: 4.0907 | Val Acc: 17.55%
+--------------------------------------------------
+
+Epoch 4 Summary | LR: 0.000400 | Time: 9.37
+Train Loss: 3.5796 | Train Acc: 44.02%
+Val Loss: 3.1702 | Val Acc: 58.73%
+--------------------------------------------------
+
+Epoch 5 Summary | LR: 0.000500 | Time: 9.22
+Train Loss: 2.4137 | Train Acc: 77.25%
+Val Loss: 2.1383 | Val Acc: 75.20%
+--------------------------------------------------
+
+Epoch 6 Summary | LR: 0.000600 | Time: 9.22
+Train Loss: 1.3796 | Train Acc: 90.00%
+Val Loss: 1.4420 | Val Acc: 83.33%
+--------------------------------------------------
+
+Epoch 7 Summary | LR: 0.000700 | Time: 9.12
+Train Loss: 0.6948 | Train Acc: 97.06%
+Val Loss: 0.9950 | Val Acc: 87.35%
+--------------------------------------------------
+
+Epoch 8 Summary | LR: 0.000800 | Time: 9.15
+Train Loss: 0.3145 | Train Acc: 99.41%
+Val Loss: 0.7193 | Val Acc: 90.29%
+--------------------------------------------------
+
+Epoch 9 Summary | LR: 0.000900 | Time: 9.17
+Train Loss: 0.1321 | Train Acc: 100.00%
+Val Loss: 0.5969 | Val Acc: 90.69%
+--------------------------------------------------
+
+Epoch 10 Summary | LR: 0.001000 | Time: 9.21
+Train Loss: 0.0628 | Train Acc: 100.00%
+Val Loss: 0.5114 | Val Acc: 91.37%
+--------------------------------------------------
+
+Epoch 11 Summary | LR: 0.001000 | Time: 9.60
+Train Loss: 0.0365 | Train Acc: 100.00%
+Val Loss: 0.4671 | Val Acc: 90.98%
+--------------------------------------------------
+
+Epoch 12 Summary | LR: 0.001000 | Time: 9.57
+Train Loss: 0.0248 | Train Acc: 100.00%
+Val Loss: 0.4438 | Val Acc: 91.27%
+--------------------------------------------------
+
+Epoch 13 Summary | LR: 0.001000 | Time: 9.55
+Train Loss: 0.0188 | Train Acc: 100.00%
+Val Loss: 0.4249 | Val Acc: 91.27%
+--------------------------------------------------
+
+Epoch 14 Summary | LR: 0.001000 | Time: 9.54
+Train Loss: 0.0151 | Train Acc: 100.00%
+Val Loss: 0.4141 | Val Acc: 91.76%
+--------------------------------------------------
+
+Epoch 15 Summary | LR: 0.001000 | Time: 9.63
+Train Loss: 0.0127 | Train Acc: 100.00%
+Val Loss: 0.4077 | Val Acc: 91.27%
+--------------------------------------------------
+
+Epoch 16 Summary | LR: 0.001000 | Time: 9.47
+Train Loss: 0.0110 | Train Acc: 100.00%
+Val Loss: 0.4022 | Val Acc: 91.18%
+--------------------------------------------------
+
+Epoch 17 Summary | LR: 0.001000 | Time: 9.57
+Train Loss: 0.0095 | Train Acc: 100.00%
+Val Loss: 0.3943 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 18 Summary | LR: 0.001000 | Time: 9.36
+Train Loss: 0.0084 | Train Acc: 100.00%
+Val Loss: 0.3864 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 19 Summary | LR: 0.001000 | Time: 9.69
+Train Loss: 0.0075 | Train Acc: 100.00%
+Val Loss: 0.3838 | Val Acc: 91.27%
+--------------------------------------------------
+
+Epoch 20 Summary | LR: 0.001000 | Time: 9.76
+Train Loss: 0.0068 | Train Acc: 100.00%
+Val Loss: 0.3821 | Val Acc: 91.27%
+--------------------------------------------------
+
+Epoch 21 Summary | LR: 0.001000 | Time: 9.55
+Train Loss: 0.0062 | Train Acc: 100.00%
+Val Loss: 0.3800 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 22 Summary | LR: 0.001000 | Time: 9.38
+Train Loss: 0.0056 | Train Acc: 100.00%
+Val Loss: 0.3757 | Val Acc: 91.37%
+--------------------------------------------------
+
+Epoch 23 Summary | LR: 0.001000 | Time: 9.64
+Train Loss: 0.0051 | Train Acc: 100.00%
+Val Loss: 0.3721 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 24 Summary | LR: 0.001000 | Time: 9.75
+Train Loss: 0.0047 | Train Acc: 100.00%
+Val Loss: 0.3697 | Val Acc: 91.47%
+--------------------------------------------------
+
+Epoch 25 Summary | LR: 0.000999 | Time: 9.70
+Train Loss: 0.0044 | Train Acc: 100.00%
+Val Loss: 0.3696 | Val Acc: 91.18%
+--------------------------------------------------
+
+Epoch 26 Summary | LR: 0.000999 | Time: 9.47
+Train Loss: 0.0041 | Train Acc: 100.00%
+Val Loss: 0.3643 | Val Acc: 91.86%
+--------------------------------------------------
+
+Epoch 27 Summary | LR: 0.000999 | Time: 9.51
+Train Loss: 0.0038 | Train Acc: 100.00%
+Val Loss: 0.3654 | Val Acc: 91.37%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 28 Summary | LR: 0.000999 | Time: 9.68
+Train Loss: 0.0035 | Train Acc: 100.00%
+Val Loss: 0.3611 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 29 Summary | LR: 0.000999 | Time: 9.59
+Train Loss: 0.0033 | Train Acc: 100.00%
+Val Loss: 0.3620 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 30 Summary | LR: 0.000999 | Time: 9.74
+Train Loss: 0.0031 | Train Acc: 100.00%
+Val Loss: 0.3614 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 31 Summary | LR: 0.000999 | Time: 9.55
+Train Loss: 0.0029 | Train Acc: 100.00%
+Val Loss: 0.3589 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 32 Summary | LR: 0.000999 | Time: 9.60
+Train Loss: 0.0028 | Train Acc: 100.00%
+Val Loss: 0.3554 | Val Acc: 91.76%
+--------------------------------------------------
+
+Epoch 33 Summary | LR: 0.000999 | Time: 9.50
+Train Loss: 0.0026 | Train Acc: 100.00%
+Val Loss: 0.3559 | Val Acc: 91.27%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 34 Summary | LR: 0.000999 | Time: 9.36
+Train Loss: 0.0025 | Train Acc: 100.00%
+Val Loss: 0.3542 | Val Acc: 91.47%
+--------------------------------------------------
+
+Epoch 35 Summary | LR: 0.000998 | Time: 9.29
+Train Loss: 0.0023 | Train Acc: 100.00%
+Val Loss: 0.3519 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 36 Summary | LR: 0.000998 | Time: 9.23
+Train Loss: 0.0022 | Train Acc: 100.00%
+Val Loss: 0.3531 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 37 Summary | LR: 0.000998 | Time: 9.21
+Train Loss: 0.0021 | Train Acc: 100.00%
+Val Loss: 0.3513 | Val Acc: 91.76%
+--------------------------------------------------
+
+Epoch 38 Summary | LR: 0.000998 | Time: 9.24
+Train Loss: 0.0020 | Train Acc: 100.00%
+Val Loss: 0.3499 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 39 Summary | LR: 0.000998 | Time: 9.26
+Train Loss: 0.0019 | Train Acc: 100.00%
+Val Loss: 0.3512 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 40 Summary | LR: 0.000998 | Time: 9.21
+Train Loss: 0.0018 | Train Acc: 100.00%
+Val Loss: 0.3503 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 41 Summary | LR: 0.000998 | Time: 9.20
+Train Loss: 0.0018 | Train Acc: 100.00%
+Val Loss: 0.3494 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 42 Summary | LR: 0.000997 | Time: 9.32
+Train Loss: 0.0017 | Train Acc: 100.00%
+Val Loss: 0.3480 | Val Acc: 91.96%
+--------------------------------------------------
+
+Epoch 43 Summary | LR: 0.000997 | Time: 9.20
+Train Loss: 0.0016 | Train Acc: 100.00%
+Val Loss: 0.3473 | Val Acc: 91.86%
+--------------------------------------------------
+
+Epoch 44 Summary | LR: 0.000997 | Time: 9.26
+Train Loss: 0.0015 | Train Acc: 100.00%
+Val Loss: 0.3475 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 45 Summary | LR: 0.000997 | Time: 9.24
+Train Loss: 0.0015 | Train Acc: 100.00%
+Val Loss: 0.3467 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 46 Summary | LR: 0.000997 | Time: 9.19
+Train Loss: 0.0014 | Train Acc: 100.00%
+Val Loss: 0.3458 | Val Acc: 91.86%
+--------------------------------------------------
+
+Epoch 47 Summary | LR: 0.000997 | Time: 9.24
+Train Loss: 0.0014 | Train Acc: 100.00%
+Val Loss: 0.3455 | Val Acc: 91.76%
+--------------------------------------------------
+
+Epoch 48 Summary | LR: 0.000996 | Time: 9.30
+Train Loss: 0.0013 | Train Acc: 100.00%
+Val Loss: 0.3457 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 49 Summary | LR: 0.000996 | Time: 9.28
+Train Loss: 0.0013 | Train Acc: 100.00%
+Val Loss: 0.3451 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 50 Summary | LR: 0.000996 | Time: 9.24
+Train Loss: 0.0012 | Train Acc: 100.00%
+Val Loss: 0.3445 | Val Acc: 91.76%
+--------------------------------------------------
+
+Epoch 51 Summary | LR: 0.000996 | Time: 9.19
+Train Loss: 0.0012 | Train Acc: 100.00%
+Val Loss: 0.3444 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 52 Summary | LR: 0.000996 | Time: 9.21
+Train Loss: 0.0011 | Train Acc: 100.00%
+Val Loss: 0.3426 | Val Acc: 91.76%
+--------------------------------------------------
+
+Epoch 53 Summary | LR: 0.000995 | Time: 9.23
+Train Loss: 0.0011 | Train Acc: 100.00%
+Val Loss: 0.3442 | Val Acc: 91.86%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 54 Summary | LR: 0.000995 | Time: 9.26
+Train Loss: 0.0011 | Train Acc: 100.00%
+Val Loss: 0.3433 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 55 Summary | LR: 0.000995 | Time: 9.25
+Train Loss: 0.0010 | Train Acc: 100.00%
+Val Loss: 0.3418 | Val Acc: 91.86%
+--------------------------------------------------
+
+Epoch 56 Summary | LR: 0.000995 | Time: 9.30
+Train Loss: 0.0010 | Train Acc: 100.00%
+Val Loss: 0.3422 | Val Acc: 92.06%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 57 Summary | LR: 0.000994 | Time: 9.24
+Train Loss: 0.0010 | Train Acc: 100.00%
+Val Loss: 0.3411 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 58 Summary | LR: 0.000994 | Time: 9.29
+Train Loss: 0.0009 | Train Acc: 100.00%
+Val Loss: 0.3420 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 59 Summary | LR: 0.000994 | Time: 9.24
+Train Loss: 0.0009 | Train Acc: 100.00%
+Val Loss: 0.3405 | Val Acc: 92.16%
+--------------------------------------------------
+
+Epoch 60 Summary | LR: 0.000994 | Time: 9.26
+Train Loss: 0.0009 | Train Acc: 100.00%
+Val Loss: 0.3428 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 61 Summary | LR: 0.000993 | Time: 9.26
+Train Loss: 0.0009 | Train Acc: 100.00%
+Val Loss: 0.3412 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 62 Summary | LR: 0.000993 | Time: 9.23
+Train Loss: 0.0008 | Train Acc: 100.00%
+Val Loss: 0.3413 | Val Acc: 91.86%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 63 Summary | LR: 0.000993 | Time: 9.19
+Train Loss: 0.0008 | Train Acc: 100.00%
+Val Loss: 0.3403 | Val Acc: 91.86%
+--------------------------------------------------
+
+Epoch 64 Summary | LR: 0.000993 | Time: 9.18
+Train Loss: 0.0008 | Train Acc: 100.00%
+Val Loss: 0.3404 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 65 Summary | LR: 0.000992 | Time: 9.31
+Train Loss: 0.0008 | Train Acc: 100.00%
+Val Loss: 0.3404 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 66 Summary | LR: 0.000992 | Time: 9.26
+Train Loss: 0.0007 | Train Acc: 100.00%
+Val Loss: 0.3388 | Val Acc: 92.16%
+--------------------------------------------------
+
+Epoch 67 Summary | LR: 0.000992 | Time: 9.29
+Train Loss: 0.0007 | Train Acc: 100.00%
+Val Loss: 0.3392 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 68 Summary | LR: 0.000992 | Time: 9.32
+Train Loss: 0.0007 | Train Acc: 100.00%
+Val Loss: 0.3397 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 69 Summary | LR: 0.000991 | Time: 9.29
+Train Loss: 0.0007 | Train Acc: 100.00%
+Val Loss: 0.3406 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 70 Summary | LR: 0.000991 | Time: 9.19
+Train Loss: 0.0007 | Train Acc: 100.00%
+Val Loss: 0.3384 | Val Acc: 91.96%
+--------------------------------------------------
+
+Epoch 71 Summary | LR: 0.000991 | Time: 9.25
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3397 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 72 Summary | LR: 0.000990 | Time: 9.22
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3388 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 73 Summary | LR: 0.000990 | Time: 9.28
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3390 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 74 Summary | LR: 0.000990 | Time: 9.25
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3395 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 75 Summary | LR: 0.000989 | Time: 9.20
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3383 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 76 Summary | LR: 0.000989 | Time: 9.24
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3392 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 77 Summary | LR: 0.000989 | Time: 9.25
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3382 | Val Acc: 91.37%
+--------------------------------------------------
+
+Epoch 78 Summary | LR: 0.000988 | Time: 9.23
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3385 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 79 Summary | LR: 0.000988 | Time: 9.25
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3376 | Val Acc: 91.47%
+--------------------------------------------------
+
+Epoch 80 Summary | LR: 0.000988 | Time: 9.23
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3384 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 81 Summary | LR: 0.000987 | Time: 9.28
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3388 | Val Acc: 91.37%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 82 Summary | LR: 0.000987 | Time: 9.27
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3378 | Val Acc: 91.37%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 83 Summary | LR: 0.000987 | Time: 9.27
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3379 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 84 Summary | LR: 0.000986 | Time: 9.26
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3375 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 85 Summary | LR: 0.000986 | Time: 9.31
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3372 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 86 Summary | LR: 0.000986 | Time: 9.23
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3385 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 87 Summary | LR: 0.000985 | Time: 9.24
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3377 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 88 Summary | LR: 0.000985 | Time: 9.23
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3374 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 89 Summary | LR: 0.000984 | Time: 9.27
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3383 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 90 Summary | LR: 0.000984 | Time: 9.24
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3373 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Epoch 91 Summary | LR: 0.000984 | Time: 9.22
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3380 | Val Acc: 91.37%
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Epoch 92 Summary | LR: 0.000983 | Time: 9.23
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3368 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 93 Summary | LR: 0.000983 | Time: 9.22
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3376 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 94 Summary | LR: 0.000982 | Time: 9.28
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3376 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 95 Summary | LR: 0.000982 | Time: 9.25
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3384 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 96 Summary | LR: 0.000981 | Time: 9.25
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3366 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 97 Summary | LR: 0.000981 | Time: 9.27
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3376 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 98 Summary | LR: 0.000981 | Time: 9.26
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3379 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 99 Summary | LR: 0.000980 | Time: 9.24
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3375 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 100 Summary | LR: 0.000980 | Time: 9.25
+Train Loss: 0.0003 | Train Acc: 100.00%
+Val Loss: 0.3369 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 101 Summary | LR: 0.000979 | Time: 9.20
+Train Loss: 0.0003 | Train Acc: 100.00%
+Val Loss: 0.3369 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Epoch 102 Summary | LR: 0.000979 | Time: 9.25
+Train Loss: 0.0003 | Train Acc: 100.00%
+Val Loss: 0.3377 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Epoch 103 Summary | LR: 0.000978 | Time: 9.28
+Train Loss: 0.0003 | Train Acc: 100.00%
+Val Loss: 0.3381 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 103 epochs.
+Total training time so far: 960.22 seconds
+Average time per epoch: 9.32 seconds
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on Flowers102
+============================================================
+Loading dataset...
+Dataset loaded: 1020 train samples, 1020 val samples
+Number of classes: 102
+
+Creating ViT model for 102 classes...
+PEFT config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=None, inference_mode=False, r=16, target_modules={'mlp.3', 'mlp.0', 'out_proj'}, lora_alpha=32, lora_dropout=0.0, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=['head'], init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, use_moslora=False, layer_replication=None)
+Fine-tuning ViT using LoRA:
+Calculating initial validation accuracy...
+Initial Val Acc: 1.18%
+
+Epoch 1 Summary | LR: 0.000100 | Time: 9.17
+Train Loss: 4.7215 | Train Acc: 0.78%
+Val Loss: 4.6954 | Val Acc: 1.18%
+--------------------------------------------------
+
+Epoch 2 Summary | LR: 0.000200 | Time: 9.24
+Train Loss: 4.6436 | Train Acc: 1.18%
+Val Loss: 4.5303 | Val Acc: 3.82%
+--------------------------------------------------
+
+Epoch 3 Summary | LR: 0.000300 | Time: 9.18
+Train Loss: 4.3243 | Train Acc: 8.43%
+Val Loss: 4.0907 | Val Acc: 17.55%
+--------------------------------------------------
+
+Epoch 4 Summary | LR: 0.000400 | Time: 9.22
+Train Loss: 3.5796 | Train Acc: 44.02%
+Val Loss: 3.1702 | Val Acc: 58.73%
+--------------------------------------------------
+
+Epoch 5 Summary | LR: 0.000500 | Time: 9.24
+Train Loss: 2.4137 | Train Acc: 77.25%
+Val Loss: 2.1383 | Val Acc: 75.20%
+--------------------------------------------------
+
+Epoch 6 Summary | LR: 0.000600 | Time: 9.28
+Train Loss: 1.3796 | Train Acc: 90.00%
+Val Loss: 1.4420 | Val Acc: 83.33%
+--------------------------------------------------
+
+Epoch 7 Summary | LR: 0.000700 | Time: 9.23
+Train Loss: 0.6948 | Train Acc: 97.06%
+Val Loss: 0.9950 | Val Acc: 87.35%
+--------------------------------------------------
+
+Epoch 8 Summary | LR: 0.000800 | Time: 9.30
+Train Loss: 0.3145 | Train Acc: 99.41%
+Val Loss: 0.7193 | Val Acc: 90.29%
+--------------------------------------------------
+
+Epoch 9 Summary | LR: 0.000900 | Time: 9.28
+Train Loss: 0.1321 | Train Acc: 100.00%
+Val Loss: 0.5969 | Val Acc: 90.69%
+--------------------------------------------------
+
+Epoch 10 Summary | LR: 0.001000 | Time: 9.22
+Train Loss: 0.0628 | Train Acc: 100.00%
+Val Loss: 0.5114 | Val Acc: 91.37%
+--------------------------------------------------
+
+Epoch 11 Summary | LR: 0.001000 | Time: 9.34
+Train Loss: 0.0365 | Train Acc: 100.00%
+Val Loss: 0.4671 | Val Acc: 90.98%
+--------------------------------------------------
+
+Epoch 12 Summary | LR: 0.001000 | Time: 9.27
+Train Loss: 0.0248 | Train Acc: 100.00%
+Val Loss: 0.4438 | Val Acc: 91.27%
+--------------------------------------------------
+
+Epoch 13 Summary | LR: 0.001000 | Time: 9.29
+Train Loss: 0.0188 | Train Acc: 100.00%
+Val Loss: 0.4249 | Val Acc: 91.27%
+--------------------------------------------------
+
+Epoch 14 Summary | LR: 0.001000 | Time: 9.25
+Train Loss: 0.0151 | Train Acc: 100.00%
+Val Loss: 0.4141 | Val Acc: 91.76%
+--------------------------------------------------
+
+Epoch 15 Summary | LR: 0.001000 | Time: 9.23
+Train Loss: 0.0127 | Train Acc: 100.00%
+Val Loss: 0.4077 | Val Acc: 91.27%
+--------------------------------------------------
+
+Epoch 16 Summary | LR: 0.001000 | Time: 9.25
+Train Loss: 0.0110 | Train Acc: 100.00%
+Val Loss: 0.4022 | Val Acc: 91.18%
+--------------------------------------------------
+
+Epoch 17 Summary | LR: 0.001000 | Time: 9.18
+Train Loss: 0.0095 | Train Acc: 100.00%
+Val Loss: 0.3943 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 18 Summary | LR: 0.001000 | Time: 9.18
+Train Loss: 0.0084 | Train Acc: 100.00%
+Val Loss: 0.3864 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 19 Summary | LR: 0.001000 | Time: 9.26
+Train Loss: 0.0075 | Train Acc: 100.00%
+Val Loss: 0.3838 | Val Acc: 91.27%
+--------------------------------------------------
+
+Epoch 20 Summary | LR: 0.001000 | Time: 9.31
+Train Loss: 0.0068 | Train Acc: 100.00%
+Val Loss: 0.3821 | Val Acc: 91.27%
+--------------------------------------------------
+
+Epoch 21 Summary | LR: 0.001000 | Time: 9.27
+Train Loss: 0.0062 | Train Acc: 100.00%
+Val Loss: 0.3800 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 22 Summary | LR: 0.001000 | Time: 9.23
+Train Loss: 0.0056 | Train Acc: 100.00%
+Val Loss: 0.3757 | Val Acc: 91.37%
+--------------------------------------------------
+
+Epoch 23 Summary | LR: 0.001000 | Time: 9.23
+Train Loss: 0.0051 | Train Acc: 100.00%
+Val Loss: 0.3721 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 24 Summary | LR: 0.001000 | Time: 9.25
+Train Loss: 0.0047 | Train Acc: 100.00%
+Val Loss: 0.3697 | Val Acc: 91.47%
+--------------------------------------------------
+
+Epoch 25 Summary | LR: 0.000999 | Time: 9.23
+Train Loss: 0.0044 | Train Acc: 100.00%
+Val Loss: 0.3696 | Val Acc: 91.18%
+--------------------------------------------------
+
+Epoch 26 Summary | LR: 0.000999 | Time: 9.20
+Train Loss: 0.0041 | Train Acc: 100.00%
+Val Loss: 0.3643 | Val Acc: 91.86%
+--------------------------------------------------
+
+Epoch 27 Summary | LR: 0.000999 | Time: 9.20
+Train Loss: 0.0038 | Train Acc: 100.00%
+Val Loss: 0.3654 | Val Acc: 91.37%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 28 Summary | LR: 0.000999 | Time: 9.26
+Train Loss: 0.0035 | Train Acc: 100.00%
+Val Loss: 0.3611 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 29 Summary | LR: 0.000999 | Time: 9.21
+Train Loss: 0.0033 | Train Acc: 100.00%
+Val Loss: 0.3620 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 30 Summary | LR: 0.000999 | Time: 9.25
+Train Loss: 0.0031 | Train Acc: 100.00%
+Val Loss: 0.3614 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 31 Summary | LR: 0.000999 | Time: 9.23
+Train Loss: 0.0029 | Train Acc: 100.00%
+Val Loss: 0.3589 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 32 Summary | LR: 0.000999 | Time: 9.25
+Train Loss: 0.0028 | Train Acc: 100.00%
+Val Loss: 0.3554 | Val Acc: 91.76%
+--------------------------------------------------
+
+Epoch 33 Summary | LR: 0.000999 | Time: 9.25
+Train Loss: 0.0026 | Train Acc: 100.00%
+Val Loss: 0.3559 | Val Acc: 91.27%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 34 Summary | LR: 0.000999 | Time: 9.28
+Train Loss: 0.0025 | Train Acc: 100.00%
+Val Loss: 0.3542 | Val Acc: 91.47%
+--------------------------------------------------
+
+Epoch 35 Summary | LR: 0.000998 | Time: 9.28
+Train Loss: 0.0023 | Train Acc: 100.00%
+Val Loss: 0.3519 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 36 Summary | LR: 0.000998 | Time: 9.28
+Train Loss: 0.0022 | Train Acc: 100.00%
+Val Loss: 0.3531 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 37 Summary | LR: 0.000998 | Time: 9.27
+Train Loss: 0.0021 | Train Acc: 100.00%
+Val Loss: 0.3513 | Val Acc: 91.76%
+--------------------------------------------------
+
+Epoch 38 Summary | LR: 0.000998 | Time: 9.30
+Train Loss: 0.0020 | Train Acc: 100.00%
+Val Loss: 0.3499 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 39 Summary | LR: 0.000998 | Time: 9.25
+Train Loss: 0.0019 | Train Acc: 100.00%
+Val Loss: 0.3512 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 40 Summary | LR: 0.000998 | Time: 9.18
+Train Loss: 0.0018 | Train Acc: 100.00%
+Val Loss: 0.3503 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 41 Summary | LR: 0.000998 | Time: 9.19
+Train Loss: 0.0018 | Train Acc: 100.00%
+Val Loss: 0.3494 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 42 Summary | LR: 0.000997 | Time: 9.21
+Train Loss: 0.0017 | Train Acc: 100.00%
+Val Loss: 0.3480 | Val Acc: 91.96%
+--------------------------------------------------
+
+Epoch 43 Summary | LR: 0.000997 | Time: 9.26
+Train Loss: 0.0016 | Train Acc: 100.00%
+Val Loss: 0.3473 | Val Acc: 91.86%
+--------------------------------------------------
+
+Epoch 44 Summary | LR: 0.000997 | Time: 9.23
+Train Loss: 0.0015 | Train Acc: 100.00%
+Val Loss: 0.3475 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 45 Summary | LR: 0.000997 | Time: 9.24
+Train Loss: 0.0015 | Train Acc: 100.00%
+Val Loss: 0.3467 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 46 Summary | LR: 0.000997 | Time: 9.28
+Train Loss: 0.0014 | Train Acc: 100.00%
+Val Loss: 0.3458 | Val Acc: 91.86%
+--------------------------------------------------
+
+Epoch 47 Summary | LR: 0.000997 | Time: 9.29
+Train Loss: 0.0014 | Train Acc: 100.00%
+Val Loss: 0.3455 | Val Acc: 91.76%
+--------------------------------------------------
+
+Epoch 48 Summary | LR: 0.000996 | Time: 9.29
+Train Loss: 0.0013 | Train Acc: 100.00%
+Val Loss: 0.3457 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 49 Summary | LR: 0.000996 | Time: 9.23
+Train Loss: 0.0013 | Train Acc: 100.00%
+Val Loss: 0.3451 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 50 Summary | LR: 0.000996 | Time: 9.25
+Train Loss: 0.0012 | Train Acc: 100.00%
+Val Loss: 0.3445 | Val Acc: 91.76%
+--------------------------------------------------
+
+Epoch 51 Summary | LR: 0.000996 | Time: 9.21
+Train Loss: 0.0012 | Train Acc: 100.00%
+Val Loss: 0.3444 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 52 Summary | LR: 0.000996 | Time: 9.22
+Train Loss: 0.0011 | Train Acc: 100.00%
+Val Loss: 0.3426 | Val Acc: 91.76%
+--------------------------------------------------
+
+Epoch 53 Summary | LR: 0.000995 | Time: 9.21
+Train Loss: 0.0011 | Train Acc: 100.00%
+Val Loss: 0.3442 | Val Acc: 91.86%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 54 Summary | LR: 0.000995 | Time: 9.26
+Train Loss: 0.0011 | Train Acc: 100.00%
+Val Loss: 0.3433 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 55 Summary | LR: 0.000995 | Time: 9.25
+Train Loss: 0.0010 | Train Acc: 100.00%
+Val Loss: 0.3418 | Val Acc: 91.86%
+--------------------------------------------------
+
+Epoch 56 Summary | LR: 0.000995 | Time: 9.30
+Train Loss: 0.0010 | Train Acc: 100.00%
+Val Loss: 0.3422 | Val Acc: 92.06%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 57 Summary | LR: 0.000994 | Time: 9.29
+Train Loss: 0.0010 | Train Acc: 100.00%
+Val Loss: 0.3411 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 58 Summary | LR: 0.000994 | Time: 9.27
+Train Loss: 0.0009 | Train Acc: 100.00%
+Val Loss: 0.3420 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 59 Summary | LR: 0.000994 | Time: 9.22
+Train Loss: 0.0009 | Train Acc: 100.00%
+Val Loss: 0.3405 | Val Acc: 92.16%
+--------------------------------------------------
+
+Epoch 60 Summary | LR: 0.000994 | Time: 9.23
+Train Loss: 0.0009 | Train Acc: 100.00%
+Val Loss: 0.3428 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 61 Summary | LR: 0.000993 | Time: 9.32
+Train Loss: 0.0009 | Train Acc: 100.00%
+Val Loss: 0.3412 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 62 Summary | LR: 0.000993 | Time: 9.25
+Train Loss: 0.0008 | Train Acc: 100.00%
+Val Loss: 0.3413 | Val Acc: 91.86%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 63 Summary | LR: 0.000993 | Time: 9.26
+Train Loss: 0.0008 | Train Acc: 100.00%
+Val Loss: 0.3403 | Val Acc: 91.86%
+--------------------------------------------------
+
+Epoch 64 Summary | LR: 0.000993 | Time: 9.20
+Train Loss: 0.0008 | Train Acc: 100.00%
+Val Loss: 0.3404 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 65 Summary | LR: 0.000992 | Time: 9.29
+Train Loss: 0.0008 | Train Acc: 100.00%
+Val Loss: 0.3404 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 66 Summary | LR: 0.000992 | Time: 9.30
+Train Loss: 0.0007 | Train Acc: 100.00%
+Val Loss: 0.3388 | Val Acc: 92.16%
+--------------------------------------------------
+
+Epoch 67 Summary | LR: 0.000992 | Time: 9.29
+Train Loss: 0.0007 | Train Acc: 100.00%
+Val Loss: 0.3392 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 68 Summary | LR: 0.000992 | Time: 9.25
+Train Loss: 0.0007 | Train Acc: 100.00%
+Val Loss: 0.3397 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 69 Summary | LR: 0.000991 | Time: 9.25
+Train Loss: 0.0007 | Train Acc: 100.00%
+Val Loss: 0.3406 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 70 Summary | LR: 0.000991 | Time: 9.23
+Train Loss: 0.0007 | Train Acc: 100.00%
+Val Loss: 0.3384 | Val Acc: 91.96%
+--------------------------------------------------
+
+Epoch 71 Summary | LR: 0.000991 | Time: 9.26
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3397 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 72 Summary | LR: 0.000990 | Time: 9.29
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3388 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 73 Summary | LR: 0.000990 | Time: 9.26
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3390 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 74 Summary | LR: 0.000990 | Time: 9.28
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3395 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 75 Summary | LR: 0.000989 | Time: 9.26
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3383 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 76 Summary | LR: 0.000989 | Time: 9.22
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3392 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 77 Summary | LR: 0.000989 | Time: 9.25
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3382 | Val Acc: 91.37%
+--------------------------------------------------
+
+Epoch 78 Summary | LR: 0.000988 | Time: 9.23
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3385 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 79 Summary | LR: 0.000988 | Time: 9.28
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3376 | Val Acc: 91.47%
+--------------------------------------------------
+
+Epoch 80 Summary | LR: 0.000988 | Time: 9.29
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3384 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 81 Summary | LR: 0.000987 | Time: 9.25
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3388 | Val Acc: 91.37%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 82 Summary | LR: 0.000987 | Time: 9.19
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3378 | Val Acc: 91.37%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 83 Summary | LR: 0.000987 | Time: 9.24
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3379 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 84 Summary | LR: 0.000986 | Time: 9.21
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3375 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 85 Summary | LR: 0.000986 | Time: 9.25
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3372 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 86 Summary | LR: 0.000986 | Time: 9.23
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3385 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 87 Summary | LR: 0.000985 | Time: 9.21
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3377 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 88 Summary | LR: 0.000985 | Time: 9.26
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3374 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 89 Summary | LR: 0.000984 | Time: 9.25
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3383 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 90 Summary | LR: 0.000984 | Time: 9.25
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3373 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Epoch 91 Summary | LR: 0.000984 | Time: 9.21
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3380 | Val Acc: 91.37%
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Epoch 92 Summary | LR: 0.000983 | Time: 9.20
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3368 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 93 Summary | LR: 0.000983 | Time: 9.25
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3376 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 94 Summary | LR: 0.000982 | Time: 9.26
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3376 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 95 Summary | LR: 0.000982 | Time: 9.28
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3384 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 96 Summary | LR: 0.000981 | Time: 9.25
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3366 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 97 Summary | LR: 0.000981 | Time: 9.28
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3376 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 98 Summary | LR: 0.000981 | Time: 9.30
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3379 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 99 Summary | LR: 0.000980 | Time: 9.21
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3375 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 100 Summary | LR: 0.000980 | Time: 9.26
+Train Loss: 0.0003 | Train Acc: 100.00%
+Val Loss: 0.3369 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 101 Summary | LR: 0.000979 | Time: 9.28
+Train Loss: 0.0003 | Train Acc: 100.00%
+Val Loss: 0.3369 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Epoch 102 Summary | LR: 0.000979 | Time: 9.27
+Train Loss: 0.0003 | Train Acc: 100.00%
+Val Loss: 0.3377 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Epoch 103 Summary | LR: 0.000978 | Time: 9.22
+Train Loss: 0.0003 | Train Acc: 100.00%
+Val Loss: 0.3381 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 103 epochs.
+Total training time so far: 952.58 seconds
+Average time per epoch: 9.25 seconds
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on Flowers102
+============================================================
+Loading dataset...
+Dataset loaded: 1020 train samples, 1020 val samples
+Number of classes: 102
+
+Creating ViT model for 102 classes...
+PEFT config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=None, inference_mode=False, r=16, target_modules={'mlp.0', 'mlp.3', 'out_proj'}, lora_alpha=32, lora_dropout=0.0, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=['head'], init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, use_moslora=False, layer_replication=None)
+LoRA model summary: PeftModel(
+  (base_model): LoraModel(
+    (model): VisionTransformer(
+      (conv_proj): Conv2d(3, 768, kernel_size=(16, 16), stride=(16, 16))
+      (encoder): Encoder(
+        (dropout): Dropout(p=0.0, inplace=False)
+        (layers): Sequential(
+          (encoder_layer_0): EncoderBlock(
+            (ln_1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (self_attention): MultiheadAttention(
+              (out_proj): lora.Linear(
+                (base_layer): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+            )
+            (dropout): Dropout(p=0.0, inplace=False)
+            (ln_2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): MLPBlock(
+              (0): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=3072, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=3072, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (1): GELU(approximate='none')
+              (2): Dropout(p=0.0, inplace=False)
+              (3): lora.Linear(
+                (base_layer): Linear(in_features=3072, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=3072, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (4): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (encoder_layer_1): EncoderBlock(
+            (ln_1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (self_attention): MultiheadAttention(
+              (out_proj): lora.Linear(
+                (base_layer): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+            )
+            (dropout): Dropout(p=0.0, inplace=False)
+            (ln_2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): MLPBlock(
+              (0): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=3072, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=3072, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (1): GELU(approximate='none')
+              (2): Dropout(p=0.0, inplace=False)
+              (3): lora.Linear(
+                (base_layer): Linear(in_features=3072, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=3072, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (4): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (encoder_layer_2): EncoderBlock(
+            (ln_1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (self_attention): MultiheadAttention(
+              (out_proj): lora.Linear(
+                (base_layer): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+            )
+            (dropout): Dropout(p=0.0, inplace=False)
+            (ln_2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): MLPBlock(
+              (0): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=3072, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=3072, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (1): GELU(approximate='none')
+              (2): Dropout(p=0.0, inplace=False)
+              (3): lora.Linear(
+                (base_layer): Linear(in_features=3072, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=3072, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (4): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (encoder_layer_3): EncoderBlock(
+            (ln_1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (self_attention): MultiheadAttention(
+              (out_proj): lora.Linear(
+                (base_layer): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+            )
+            (dropout): Dropout(p=0.0, inplace=False)
+            (ln_2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): MLPBlock(
+              (0): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=3072, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=3072, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (1): GELU(approximate='none')
+              (2): Dropout(p=0.0, inplace=False)
+              (3): lora.Linear(
+                (base_layer): Linear(in_features=3072, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=3072, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (4): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (encoder_layer_4): EncoderBlock(
+            (ln_1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (self_attention): MultiheadAttention(
+              (out_proj): lora.Linear(
+                (base_layer): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+            )
+            (dropout): Dropout(p=0.0, inplace=False)
+            (ln_2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): MLPBlock(
+              (0): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=3072, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=3072, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (1): GELU(approximate='none')
+              (2): Dropout(p=0.0, inplace=False)
+              (3): lora.Linear(
+                (base_layer): Linear(in_features=3072, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=3072, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (4): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (encoder_layer_5): EncoderBlock(
+            (ln_1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (self_attention): MultiheadAttention(
+              (out_proj): lora.Linear(
+                (base_layer): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+            )
+            (dropout): Dropout(p=0.0, inplace=False)
+            (ln_2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): MLPBlock(
+              (0): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=3072, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=3072, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (1): GELU(approximate='none')
+              (2): Dropout(p=0.0, inplace=False)
+              (3): lora.Linear(
+                (base_layer): Linear(in_features=3072, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=3072, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (4): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (encoder_layer_6): EncoderBlock(
+            (ln_1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (self_attention): MultiheadAttention(
+              (out_proj): lora.Linear(
+                (base_layer): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+            )
+            (dropout): Dropout(p=0.0, inplace=False)
+            (ln_2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): MLPBlock(
+              (0): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=3072, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=3072, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (1): GELU(approximate='none')
+              (2): Dropout(p=0.0, inplace=False)
+              (3): lora.Linear(
+                (base_layer): Linear(in_features=3072, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=3072, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (4): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (encoder_layer_7): EncoderBlock(
+            (ln_1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (self_attention): MultiheadAttention(
+              (out_proj): lora.Linear(
+                (base_layer): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+            )
+            (dropout): Dropout(p=0.0, inplace=False)
+            (ln_2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): MLPBlock(
+              (0): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=3072, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=3072, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (1): GELU(approximate='none')
+              (2): Dropout(p=0.0, inplace=False)
+              (3): lora.Linear(
+                (base_layer): Linear(in_features=3072, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=3072, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (4): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (encoder_layer_8): EncoderBlock(
+            (ln_1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (self_attention): MultiheadAttention(
+              (out_proj): lora.Linear(
+                (base_layer): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+            )
+            (dropout): Dropout(p=0.0, inplace=False)
+            (ln_2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): MLPBlock(
+              (0): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=3072, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=3072, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (1): GELU(approximate='none')
+              (2): Dropout(p=0.0, inplace=False)
+              (3): lora.Linear(
+                (base_layer): Linear(in_features=3072, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=3072, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (4): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (encoder_layer_9): EncoderBlock(
+            (ln_1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (self_attention): MultiheadAttention(
+              (out_proj): lora.Linear(
+                (base_layer): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+            )
+            (dropout): Dropout(p=0.0, inplace=False)
+            (ln_2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): MLPBlock(
+              (0): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=3072, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=3072, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (1): GELU(approximate='none')
+              (2): Dropout(p=0.0, inplace=False)
+              (3): lora.Linear(
+                (base_layer): Linear(in_features=3072, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=3072, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (4): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (encoder_layer_10): EncoderBlock(
+            (ln_1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (self_attention): MultiheadAttention(
+              (out_proj): lora.Linear(
+                (base_layer): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+            )
+            (dropout): Dropout(p=0.0, inplace=False)
+            (ln_2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): MLPBlock(
+              (0): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=3072, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=3072, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (1): GELU(approximate='none')
+              (2): Dropout(p=0.0, inplace=False)
+              (3): lora.Linear(
+                (base_layer): Linear(in_features=3072, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=3072, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (4): Dropout(p=0.0, inplace=False)
+            )
+          )
+          (encoder_layer_11): EncoderBlock(
+            (ln_1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (self_attention): MultiheadAttention(
+              (out_proj): lora.Linear(
+                (base_layer): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+            )
+            (dropout): Dropout(p=0.0, inplace=False)
+            (ln_2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): MLPBlock(
+              (0): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=3072, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=3072, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (1): GELU(approximate='none')
+              (2): Dropout(p=0.0, inplace=False)
+              (3): lora.Linear(
+                (base_layer): Linear(in_features=3072, out_features=768, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Identity()
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=3072, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=768, bias=False)
+                )
+                (moslora_layer): ModuleDict()
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (4): Dropout(p=0.0, inplace=False)
+            )
+          )
+        )
+        (ln): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+      )
+      (heads): Sequential(
+        (head): ModulesToSaveWrapper(
+          (original_module): Linear(in_features=768, out_features=102, bias=True)
+          (modules_to_save): ModuleDict(
+            (default): Linear(in_features=768, out_features=102, bias=True)
+          )
+        )
+      )
+    )
+  )
+)
+Fine-tuning ViT using LoRA:
+Calculating initial validation accuracy...
+Initial Val Acc: 1.18%
+
+Epoch 1 Summary | LR: 0.000100 | Time: 9.15
+Train Loss: 4.7215 | Train Acc: 0.78%
+Val Loss: 4.6954 | Val Acc: 1.18%
+--------------------------------------------------
+
+Epoch 2 Summary | LR: 0.000200 | Time: 9.21
+Train Loss: 4.6436 | Train Acc: 1.18%
+Val Loss: 4.5303 | Val Acc: 3.82%
+--------------------------------------------------
+
+Epoch 3 Summary | LR: 0.000300 | Time: 9.22
+Train Loss: 4.3243 | Train Acc: 8.43%
+Val Loss: 4.0907 | Val Acc: 17.55%
+--------------------------------------------------
+
+Epoch 4 Summary | LR: 0.000400 | Time: 9.16
+Train Loss: 3.5796 | Train Acc: 44.02%
+Val Loss: 3.1702 | Val Acc: 58.73%
+--------------------------------------------------
+
+Epoch 5 Summary | LR: 0.000500 | Time: 9.22
+Train Loss: 2.4137 | Train Acc: 77.25%
+Val Loss: 2.1383 | Val Acc: 75.20%
+--------------------------------------------------
+
+Epoch 6 Summary | LR: 0.000600 | Time: 9.26
+Train Loss: 1.3796 | Train Acc: 90.00%
+Val Loss: 1.4420 | Val Acc: 83.33%
+--------------------------------------------------
+
+Epoch 7 Summary | LR: 0.000700 | Time: 9.21
+Train Loss: 0.6948 | Train Acc: 97.06%
+Val Loss: 0.9950 | Val Acc: 87.35%
+--------------------------------------------------
+
+Epoch 8 Summary | LR: 0.000800 | Time: 9.18
+Train Loss: 0.3145 | Train Acc: 99.41%
+Val Loss: 0.7193 | Val Acc: 90.29%
+--------------------------------------------------
+
+Epoch 9 Summary | LR: 0.000900 | Time: 9.21
+Train Loss: 0.1321 | Train Acc: 100.00%
+Val Loss: 0.5969 | Val Acc: 90.69%
+--------------------------------------------------
+
+Epoch 10 Summary | LR: 0.001000 | Time: 9.23
+Train Loss: 0.0628 | Train Acc: 100.00%
+Val Loss: 0.5114 | Val Acc: 91.37%
+--------------------------------------------------
+
+Epoch 11 Summary | LR: 0.001000 | Time: 9.26
+Train Loss: 0.0365 | Train Acc: 100.00%
+Val Loss: 0.4671 | Val Acc: 90.98%
+--------------------------------------------------
+
+Epoch 12 Summary | LR: 0.001000 | Time: 9.28
+Train Loss: 0.0248 | Train Acc: 100.00%
+Val Loss: 0.4438 | Val Acc: 91.27%
+--------------------------------------------------
+
+Epoch 13 Summary | LR: 0.001000 | Time: 9.25
+Train Loss: 0.0188 | Train Acc: 100.00%
+Val Loss: 0.4249 | Val Acc: 91.27%
+--------------------------------------------------
+
+Epoch 14 Summary | LR: 0.001000 | Time: 9.21
+Train Loss: 0.0151 | Train Acc: 100.00%
+Val Loss: 0.4141 | Val Acc: 91.76%
+--------------------------------------------------
+
+Epoch 15 Summary | LR: 0.001000 | Time: 9.29
+Train Loss: 0.0127 | Train Acc: 100.00%
+Val Loss: 0.4077 | Val Acc: 91.27%
+--------------------------------------------------
+
+Epoch 16 Summary | LR: 0.001000 | Time: 9.23
+Train Loss: 0.0110 | Train Acc: 100.00%
+Val Loss: 0.4022 | Val Acc: 91.18%
+--------------------------------------------------
+
+Epoch 17 Summary | LR: 0.001000 | Time: 9.22
+Train Loss: 0.0095 | Train Acc: 100.00%
+Val Loss: 0.3943 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 18 Summary | LR: 0.001000 | Time: 9.20
+Train Loss: 0.0084 | Train Acc: 100.00%
+Val Loss: 0.3864 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 19 Summary | LR: 0.001000 | Time: 9.19
+Train Loss: 0.0075 | Train Acc: 100.00%
+Val Loss: 0.3838 | Val Acc: 91.27%
+--------------------------------------------------
+
+Epoch 20 Summary | LR: 0.001000 | Time: 9.17
+Train Loss: 0.0068 | Train Acc: 100.00%
+Val Loss: 0.3821 | Val Acc: 91.27%
+--------------------------------------------------
+
+Epoch 21 Summary | LR: 0.001000 | Time: 9.25
+Train Loss: 0.0062 | Train Acc: 100.00%
+Val Loss: 0.3800 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 22 Summary | LR: 0.001000 | Time: 9.22
+Train Loss: 0.0056 | Train Acc: 100.00%
+Val Loss: 0.3757 | Val Acc: 91.37%
+--------------------------------------------------
+
+Epoch 23 Summary | LR: 0.001000 | Time: 9.25
+Train Loss: 0.0051 | Train Acc: 100.00%
+Val Loss: 0.3721 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 24 Summary | LR: 0.001000 | Time: 9.29
+Train Loss: 0.0047 | Train Acc: 100.00%
+Val Loss: 0.3697 | Val Acc: 91.47%
+--------------------------------------------------
+
+Epoch 25 Summary | LR: 0.000999 | Time: 9.29
+Train Loss: 0.0044 | Train Acc: 100.00%
+Val Loss: 0.3696 | Val Acc: 91.18%
+--------------------------------------------------
+
+Epoch 26 Summary | LR: 0.000999 | Time: 9.20
+Train Loss: 0.0041 | Train Acc: 100.00%
+Val Loss: 0.3643 | Val Acc: 91.86%
+--------------------------------------------------
+
+Epoch 27 Summary | LR: 0.000999 | Time: 9.22
+Train Loss: 0.0038 | Train Acc: 100.00%
+Val Loss: 0.3654 | Val Acc: 91.37%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 28 Summary | LR: 0.000999 | Time: 9.17
+Train Loss: 0.0035 | Train Acc: 100.00%
+Val Loss: 0.3611 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 29 Summary | LR: 0.000999 | Time: 9.23
+Train Loss: 0.0033 | Train Acc: 100.00%
+Val Loss: 0.3620 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 30 Summary | LR: 0.000999 | Time: 9.25
+Train Loss: 0.0031 | Train Acc: 100.00%
+Val Loss: 0.3614 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 31 Summary | LR: 0.000999 | Time: 9.26
+Train Loss: 0.0029 | Train Acc: 100.00%
+Val Loss: 0.3589 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 32 Summary | LR: 0.000999 | Time: 9.27
+Train Loss: 0.0028 | Train Acc: 100.00%
+Val Loss: 0.3554 | Val Acc: 91.76%
+--------------------------------------------------
+
+Epoch 33 Summary | LR: 0.000999 | Time: 9.29
+Train Loss: 0.0026 | Train Acc: 100.00%
+Val Loss: 0.3559 | Val Acc: 91.27%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 34 Summary | LR: 0.000999 | Time: 9.22
+Train Loss: 0.0025 | Train Acc: 100.00%
+Val Loss: 0.3542 | Val Acc: 91.47%
+--------------------------------------------------
+
+Epoch 35 Summary | LR: 0.000998 | Time: 9.23
+Train Loss: 0.0023 | Train Acc: 100.00%
+Val Loss: 0.3519 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 36 Summary | LR: 0.000998 | Time: 9.26
+Train Loss: 0.0022 | Train Acc: 100.00%
+Val Loss: 0.3531 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 37 Summary | LR: 0.000998 | Time: 9.25
+Train Loss: 0.0021 | Train Acc: 100.00%
+Val Loss: 0.3513 | Val Acc: 91.76%
+--------------------------------------------------
+
+Epoch 38 Summary | LR: 0.000998 | Time: 9.24
+Train Loss: 0.0020 | Train Acc: 100.00%
+Val Loss: 0.3499 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 39 Summary | LR: 0.000998 | Time: 9.38
+Train Loss: 0.0019 | Train Acc: 100.00%
+Val Loss: 0.3512 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 40 Summary | LR: 0.000998 | Time: 9.28
+Train Loss: 0.0018 | Train Acc: 100.00%
+Val Loss: 0.3503 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 41 Summary | LR: 0.000998 | Time: 9.31
+Train Loss: 0.0018 | Train Acc: 100.00%
+Val Loss: 0.3494 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 42 Summary | LR: 0.000997 | Time: 9.24
+Train Loss: 0.0017 | Train Acc: 100.00%
+Val Loss: 0.3480 | Val Acc: 91.96%
+--------------------------------------------------
+
+Epoch 43 Summary | LR: 0.000997 | Time: 9.25
+Train Loss: 0.0016 | Train Acc: 100.00%
+Val Loss: 0.3473 | Val Acc: 91.86%
+--------------------------------------------------
+
+Epoch 44 Summary | LR: 0.000997 | Time: 9.28
+Train Loss: 0.0015 | Train Acc: 100.00%
+Val Loss: 0.3475 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 45 Summary | LR: 0.000997 | Time: 9.24
+Train Loss: 0.0015 | Train Acc: 100.00%
+Val Loss: 0.3467 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 46 Summary | LR: 0.000997 | Time: 9.24
+Train Loss: 0.0014 | Train Acc: 100.00%
+Val Loss: 0.3458 | Val Acc: 91.86%
+--------------------------------------------------
+
+Epoch 47 Summary | LR: 0.000997 | Time: 9.21
+Train Loss: 0.0014 | Train Acc: 100.00%
+Val Loss: 0.3455 | Val Acc: 91.76%
+--------------------------------------------------
+
+Epoch 48 Summary | LR: 0.000996 | Time: 9.20
+Train Loss: 0.0013 | Train Acc: 100.00%
+Val Loss: 0.3457 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 49 Summary | LR: 0.000996 | Time: 9.23
+Train Loss: 0.0013 | Train Acc: 100.00%
+Val Loss: 0.3451 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 50 Summary | LR: 0.000996 | Time: 9.30
+Train Loss: 0.0012 | Train Acc: 100.00%
+Val Loss: 0.3445 | Val Acc: 91.76%
+--------------------------------------------------
+
+Epoch 51 Summary | LR: 0.000996 | Time: 9.22
+Train Loss: 0.0012 | Train Acc: 100.00%
+Val Loss: 0.3444 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 52 Summary | LR: 0.000996 | Time: 9.20
+Train Loss: 0.0011 | Train Acc: 100.00%
+Val Loss: 0.3426 | Val Acc: 91.76%
+--------------------------------------------------
+
+Epoch 53 Summary | LR: 0.000995 | Time: 9.22
+Train Loss: 0.0011 | Train Acc: 100.00%
+Val Loss: 0.3442 | Val Acc: 91.86%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 54 Summary | LR: 0.000995 | Time: 9.25
+Train Loss: 0.0011 | Train Acc: 100.00%
+Val Loss: 0.3433 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 55 Summary | LR: 0.000995 | Time: 9.28
+Train Loss: 0.0010 | Train Acc: 100.00%
+Val Loss: 0.3418 | Val Acc: 91.86%
+--------------------------------------------------
+
+Epoch 56 Summary | LR: 0.000995 | Time: 9.30
+Train Loss: 0.0010 | Train Acc: 100.00%
+Val Loss: 0.3422 | Val Acc: 92.06%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 57 Summary | LR: 0.000994 | Time: 9.24
+Train Loss: 0.0010 | Train Acc: 100.00%
+Val Loss: 0.3411 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 58 Summary | LR: 0.000994 | Time: 9.26
+Train Loss: 0.0009 | Train Acc: 100.00%
+Val Loss: 0.3420 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 59 Summary | LR: 0.000994 | Time: 9.20
+Train Loss: 0.0009 | Train Acc: 100.00%
+Val Loss: 0.3405 | Val Acc: 92.16%
+--------------------------------------------------
+
+Epoch 60 Summary | LR: 0.000994 | Time: 9.21
+Train Loss: 0.0009 | Train Acc: 100.00%
+Val Loss: 0.3428 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 61 Summary | LR: 0.000993 | Time: 9.20
+Train Loss: 0.0009 | Train Acc: 100.00%
+Val Loss: 0.3412 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 62 Summary | LR: 0.000993 | Time: 9.28
+Train Loss: 0.0008 | Train Acc: 100.00%
+Val Loss: 0.3413 | Val Acc: 91.86%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 63 Summary | LR: 0.000993 | Time: 9.21
+Train Loss: 0.0008 | Train Acc: 100.00%
+Val Loss: 0.3403 | Val Acc: 91.86%
+--------------------------------------------------
+
+Epoch 64 Summary | LR: 0.000993 | Time: 9.22
+Train Loss: 0.0008 | Train Acc: 100.00%
+Val Loss: 0.3404 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 65 Summary | LR: 0.000992 | Time: 9.17
+Train Loss: 0.0008 | Train Acc: 100.00%
+Val Loss: 0.3404 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 66 Summary | LR: 0.000992 | Time: 9.23
+Train Loss: 0.0007 | Train Acc: 100.00%
+Val Loss: 0.3388 | Val Acc: 92.16%
+--------------------------------------------------
+
+Epoch 67 Summary | LR: 0.000992 | Time: 9.28
+Train Loss: 0.0007 | Train Acc: 100.00%
+Val Loss: 0.3392 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 68 Summary | LR: 0.000992 | Time: 9.25
+Train Loss: 0.0007 | Train Acc: 100.00%
+Val Loss: 0.3397 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 69 Summary | LR: 0.000991 | Time: 9.23
+Train Loss: 0.0007 | Train Acc: 100.00%
+Val Loss: 0.3406 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 70 Summary | LR: 0.000991 | Time: 9.25
+Train Loss: 0.0007 | Train Acc: 100.00%
+Val Loss: 0.3384 | Val Acc: 91.96%
+--------------------------------------------------
+
+Epoch 71 Summary | LR: 0.000991 | Time: 9.28
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3397 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 72 Summary | LR: 0.000990 | Time: 9.22
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3388 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 73 Summary | LR: 0.000990 | Time: 9.19
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3390 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 74 Summary | LR: 0.000990 | Time: 9.24
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3395 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 75 Summary | LR: 0.000989 | Time: 9.22
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3383 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 76 Summary | LR: 0.000989 | Time: 9.28
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3392 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 77 Summary | LR: 0.000989 | Time: 9.32
+Train Loss: 0.0006 | Train Acc: 100.00%
+Val Loss: 0.3382 | Val Acc: 91.37%
+--------------------------------------------------
+
+Epoch 78 Summary | LR: 0.000988 | Time: 9.27
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3385 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 79 Summary | LR: 0.000988 | Time: 9.27
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3376 | Val Acc: 91.47%
+--------------------------------------------------
+
+Epoch 80 Summary | LR: 0.000988 | Time: 9.32
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3384 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 81 Summary | LR: 0.000987 | Time: 9.26
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3388 | Val Acc: 91.37%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 82 Summary | LR: 0.000987 | Time: 9.30
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3378 | Val Acc: 91.37%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 83 Summary | LR: 0.000987 | Time: 9.24
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3379 | Val Acc: 91.76%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 84 Summary | LR: 0.000986 | Time: 9.28
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3375 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 85 Summary | LR: 0.000986 | Time: 9.25
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3372 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 86 Summary | LR: 0.000986 | Time: 9.30
+Train Loss: 0.0005 | Train Acc: 100.00%
+Val Loss: 0.3385 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 87 Summary | LR: 0.000985 | Time: 9.27
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3377 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 88 Summary | LR: 0.000985 | Time: 9.28
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3374 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 89 Summary | LR: 0.000984 | Time: 9.27
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3383 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 90 Summary | LR: 0.000984 | Time: 9.25
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3373 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Epoch 91 Summary | LR: 0.000984 | Time: 9.27
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3380 | Val Acc: 91.37%
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Epoch 92 Summary | LR: 0.000983 | Time: 9.26
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3368 | Val Acc: 91.67%
+--------------------------------------------------
+
+Epoch 93 Summary | LR: 0.000983 | Time: 9.21
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3376 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 94 Summary | LR: 0.000982 | Time: 9.24
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3376 | Val Acc: 91.67%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 95 Summary | LR: 0.000982 | Time: 9.22
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3384 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 96 Summary | LR: 0.000981 | Time: 9.23
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3366 | Val Acc: 91.57%
+--------------------------------------------------
+
+Epoch 97 Summary | LR: 0.000981 | Time: 9.23
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3376 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 98 Summary | LR: 0.000981 | Time: 9.22
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3379 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 99 Summary | LR: 0.000980 | Time: 9.23
+Train Loss: 0.0004 | Train Acc: 100.00%
+Val Loss: 0.3375 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 100 Summary | LR: 0.000980 | Time: 9.24
+Train Loss: 0.0003 | Train Acc: 100.00%
+Val Loss: 0.3369 | Val Acc: 91.57%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 101 Summary | LR: 0.000979 | Time: 9.22
+Train Loss: 0.0003 | Train Acc: 100.00%
+Val Loss: 0.3369 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Epoch 102 Summary | LR: 0.000979 | Time: 9.18
+Train Loss: 0.0003 | Train Acc: 100.00%
+Val Loss: 0.3377 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Epoch 103 Summary | LR: 0.000978 | Time: 9.26
+Train Loss: 0.0003 | Train Acc: 100.00%
+Val Loss: 0.3381 | Val Acc: 91.47%
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 103 epochs.
+Total training time so far: 951.90 seconds
+Average time per epoch: 9.24 seconds
+Training on caltech
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on caltech102
+============================================================
+Loading dataset...
+Extracting ZIP to ./data/caltech-101 ...
+ZIP extraction complete.
+Extracting ./data/caltech-101/caltech-101/101_ObjectCategories.tar.gz ...
+Images extracted to ./data/caltech-101/caltech-101/101_ObjectCategories
+Dataset loaded: 7315 train samples, 1829 val samples
+Number of classes: 102
+
+Creating ViT model for 102 classes...
+PEFT config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=None, inference_mode=False, r=16, target_modules={'out_proj', 'mlp.0', 'mlp.3'}, lora_alpha=32, lora_dropout=0.0, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=['head'], init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, use_moslora=False, layer_replication=None)
+Fine tuning vit using Lora:
+Calculating initial validation accuracy...
+Initial Val Acc: 0.82%
+
+Epoch 1 Summary | LR: 0.000100 | Time: 48.41
+Train Loss: 4.7097 | Train Acc: 1.01%
+Val Loss: 4.7112 | Val Acc: 0.82%
+--------------------------------------------------
+
+Epoch 2 Summary | LR: 0.000200 | Time: 48.86
+Train Loss: 3.0243 | Train Acc: 40.11%
+Val Loss: 1.7743 | Val Acc: 74.41%
+--------------------------------------------------
+
+Epoch 3 Summary | LR: 0.000300 | Time: 48.40
+Train Loss: 0.9242 | Train Acc: 87.90%
+Val Loss: 0.5076 | Val Acc: 91.85%
+--------------------------------------------------
+
+Epoch 4 Summary | LR: 0.000400 | Time: 48.30
+Train Loss: 0.2767 | Train Acc: 95.95%
+Val Loss: 0.2933 | Val Acc: 94.04%
+--------------------------------------------------
+
+Epoch 5 Summary | LR: 0.000500 | Time: 48.22
+Train Loss: 0.1298 | Train Acc: 97.70%
+Val Loss: 0.2150 | Val Acc: 94.26%
+--------------------------------------------------
+
+Epoch 6 Summary | LR: 0.000600 | Time: 48.37
+Train Loss: 0.0628 | Train Acc: 98.92%
+Val Loss: 0.2065 | Val Acc: 94.81%
+--------------------------------------------------
+
+Epoch 7 Summary | LR: 0.000700 | Time: 48.16
+Train Loss: 0.0531 | Train Acc: 98.92%
+Val Loss: 0.2368 | Val Acc: 93.93%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 8 Summary | LR: 0.000800 | Time: 48.26
+Train Loss: 0.0539 | Train Acc: 98.80%
+Val Loss: 0.2732 | Val Acc: 92.51%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 9 Summary | LR: 0.000900 | Time: 48.31
+Train Loss: 0.0529 | Train Acc: 98.67%
+Val Loss: 0.2397 | Val Acc: 94.04%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 10 Summary | LR: 0.001000 | Time: 48.25
+Train Loss: 0.0532 | Train Acc: 98.65%
+Val Loss: 0.2330 | Val Acc: 93.71%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 11 Summary | LR: 0.001000 | Time: 48.43
+Train Loss: 0.0578 | Train Acc: 98.52%
+Val Loss: 0.2200 | Val Acc: 93.93%
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Epoch 12 Summary | LR: 0.001000 | Time: 48.46
+Train Loss: 0.0477 | Train Acc: 98.88%
+Val Loss: 0.2159 | Val Acc: 94.31%
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Epoch 13 Summary | LR: 0.001000 | Time: 48.41
+Train Loss: 0.0323 | Train Acc: 98.99%
+Val Loss: 0.1998 | Val Acc: 94.70%
+--------------------------------------------------
+
+Epoch 14 Summary | LR: 0.001000 | Time: 48.50
+Train Loss: 0.0263 | Train Acc: 99.26%
+Val Loss: 0.2026 | Val Acc: 94.86%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 15 Summary | LR: 0.001000 | Time: 48.28
+Train Loss: 0.0178 | Train Acc: 99.66%
+Val Loss: 0.1997 | Val Acc: 94.81%
+--------------------------------------------------
+
+Epoch 16 Summary | LR: 0.001000 | Time: 48.37
+Train Loss: 0.0092 | Train Acc: 99.84%
+Val Loss: 0.1888 | Val Acc: 95.24%
+--------------------------------------------------
+
+Epoch 17 Summary | LR: 0.001000 | Time: 48.25
+Train Loss: 0.0066 | Train Acc: 99.88%
+Val Loss: 0.1950 | Val Acc: 95.19%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 18 Summary | LR: 0.001000 | Time: 48.45
+Train Loss: 0.0147 | Train Acc: 99.63%
+Val Loss: 0.2422 | Val Acc: 94.10%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 19 Summary | LR: 0.001000 | Time: 48.38
+Train Loss: 0.0352 | Train Acc: 99.13%
+Val Loss: 0.2751 | Val Acc: 93.22%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 20 Summary | LR: 0.001000 | Time: 48.37
+Train Loss: 0.0741 | Train Acc: 97.94%
+Val Loss: 0.3052 | Val Acc: 92.56%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 21 Summary | LR: 0.001000 | Time: 48.37
+Train Loss: 0.0355 | Train Acc: 99.03%
+Val Loss: 0.2681 | Val Acc: 93.22%
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Epoch 22 Summary | LR: 0.001000 | Time: 48.43
+Train Loss: 0.0268 | Train Acc: 99.32%
+Val Loss: 0.2554 | Val Acc: 93.82%
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Epoch 23 Summary | LR: 0.001000 | Time: 48.44
+Train Loss: 0.0221 | Train Acc: 99.41%
+Val Loss: 0.1940 | Val Acc: 94.92%
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 23 epochs.
+Total training time far: 1112.69 seconds
+Average time per epoch: 48.38 seconds
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on caltech102
+============================================================
+Loading dataset...
+Extracting ./data/caltech-101/caltech-101/101_ObjectCategories.tar.gz ...
+Images extracted to ./data/caltech-101/caltech-101/101_ObjectCategories
+Dataset loaded: 7315 train samples, 1829 val samples
+Number of classes: 102
+
+Creating ViT model for 102 classes...
+PEFT config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=None, inference_mode=False, r=16, target_modules={'out_proj', 'mlp.3', 'mlp.0'}, lora_alpha=32, lora_dropout=0.0, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=['head'], init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, use_moslora=False, layer_replication=None)
+Fine tuning vit using Lora:
+Calculating initial validation accuracy...
+Initial Val Acc: 0.82%
+
+Epoch 1 Summary | LR: 0.000100 | Time: 48.00
+Train Loss: 4.7097 | Train Acc: 1.01%
+Val Loss: 4.7112 | Val Acc: 0.82%
+--------------------------------------------------
+
+Epoch 2 Summary | LR: 0.000200 | Time: 48.30
+Train Loss: 3.0243 | Train Acc: 40.11%
+Val Loss: 1.7743 | Val Acc: 74.41%
+--------------------------------------------------
+
+Epoch 3 Summary | LR: 0.000300 | Time: 48.28
+Train Loss: 0.9242 | Train Acc: 87.90%
+Val Loss: 0.5076 | Val Acc: 91.85%
+--------------------------------------------------
+
+Epoch 4 Summary | LR: 0.000400 | Time: 48.33
+Train Loss: 0.2767 | Train Acc: 95.95%
+Val Loss: 0.2933 | Val Acc: 94.04%
+--------------------------------------------------
+
+Epoch 5 Summary | LR: 0.000500 | Time: 48.31
+Train Loss: 0.1298 | Train Acc: 97.72%
+Val Loss: 0.2150 | Val Acc: 94.26%
+--------------------------------------------------
+
+Epoch 6 Summary | LR: 0.000600 | Time: 48.28
+Train Loss: 0.0628 | Train Acc: 98.92%
+Val Loss: 0.2065 | Val Acc: 94.81%
+--------------------------------------------------
+
+Epoch 7 Summary | LR: 0.000700 | Time: 48.26
+Train Loss: 0.0531 | Train Acc: 98.92%
+Val Loss: 0.2372 | Val Acc: 93.93%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 8 Summary | LR: 0.000800 | Time: 48.23
+Train Loss: 0.0541 | Train Acc: 98.77%
+Val Loss: 0.2758 | Val Acc: 92.35%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 9 Summary | LR: 0.000900 | Time: 48.21
+Train Loss: 0.0541 | Train Acc: 98.69%
+Val Loss: 0.2221 | Val Acc: 94.48%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 10 Summary | LR: 0.001000 | Time: 48.23
+Train Loss: 0.0482 | Train Acc: 98.88%
+Val Loss: 0.2627 | Val Acc: 93.55%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 11 Summary | LR: 0.001000 | Time: 48.42
+Train Loss: 0.0681 | Train Acc: 98.11%
+Val Loss: 0.2345 | Val Acc: 93.33%
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Epoch 12 Summary | LR: 0.001000 | Time: 48.42
+Train Loss: 0.0504 | Train Acc: 98.63%
+Val Loss: 0.2549 | Val Acc: 93.49%
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Epoch 13 Summary | LR: 0.001000 | Time: 48.38
+Train Loss: 0.0334 | Train Acc: 99.08%
+Val Loss: 0.2193 | Val Acc: 94.53%
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 13 epochs.
+Total training time far: 627.64 seconds
+Average time per epoch: 48.28 seconds
+Using device: cuda
+============================================================
+Vision Transformer Fine-tuning on caltech102
+============================================================
+Loading dataset...
+Extracting ./data/caltech-101/caltech-101/101_ObjectCategories.tar.gz ...
+Images extracted to ./data/caltech-101/caltech-101/101_ObjectCategories
+Dataset loaded: 7315 train samples, 1829 val samples
+Number of classes: 102
+
+Creating ViT model for 102 classes...
+PEFT config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=None, inference_mode=False, r=16, target_modules={'mlp.0', 'out_proj', 'mlp.3'}, lora_alpha=32, lora_dropout=0.0, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=['head'], init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, use_moslora=False, layer_replication=None)
+Fine tuning vit using Lora:
+Calculating initial validation accuracy...
+Initial Val Acc: 0.82%
+
+Epoch 1 Summary | LR: 0.000100 | Time: 47.96
+Train Loss: 4.7097 | Train Acc: 1.01%
+Val Loss: 4.7112 | Val Acc: 0.82%
+--------------------------------------------------
+
+Epoch 2 Summary | LR: 0.000200 | Time: 48.33
+Train Loss: 3.0243 | Train Acc: 40.11%
+Val Loss: 1.7743 | Val Acc: 74.41%
+--------------------------------------------------
+
+Epoch 3 Summary | LR: 0.000300 | Time: 48.40
+Train Loss: 0.9242 | Train Acc: 87.90%
+Val Loss: 0.5076 | Val Acc: 91.85%
+--------------------------------------------------
+
+Epoch 4 Summary | LR: 0.000400 | Time: 48.32
+Train Loss: 0.2767 | Train Acc: 95.95%
+Val Loss: 0.2933 | Val Acc: 94.04%
+--------------------------------------------------
+
+Epoch 5 Summary | LR: 0.000500 | Time: 48.29
+Train Loss: 0.1298 | Train Acc: 97.72%
+Val Loss: 0.2150 | Val Acc: 94.26%
+--------------------------------------------------
+
+Epoch 6 Summary | LR: 0.000600 | Time: 48.24
+Train Loss: 0.0628 | Train Acc: 98.92%
+Val Loss: 0.2065 | Val Acc: 94.81%
+--------------------------------------------------
+
+Epoch 7 Summary | LR: 0.000700 | Time: 48.32
+Train Loss: 0.0531 | Train Acc: 98.92%
+Val Loss: 0.2369 | Val Acc: 93.93%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 8 Summary | LR: 0.000800 | Time: 48.38
+Train Loss: 0.0543 | Train Acc: 98.77%
+Val Loss: 0.2842 | Val Acc: 92.45%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 9 Summary | LR: 0.000900 | Time: 48.34
+Train Loss: 0.0466 | Train Acc: 99.03%
+Val Loss: 0.2058 | Val Acc: 94.75%
+--------------------------------------------------
+
+Epoch 10 Summary | LR: 0.001000 | Time: 48.37
+Train Loss: 0.0513 | Train Acc: 98.76%
+Val Loss: 0.1971 | Val Acc: 94.81%
+--------------------------------------------------
+
+Epoch 11 Summary | LR: 0.001000 | Time: 48.45
+Train Loss: 0.0596 | Train Acc: 98.54%
+Val Loss: 0.2365 | Val Acc: 93.66%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 12 Summary | LR: 0.001000 | Time: 48.45
+Train Loss: 0.0622 | Train Acc: 98.33%
+Val Loss: 0.2517 | Val Acc: 93.17%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 13 Summary | LR: 0.001000 | Time: 48.42
+Train Loss: 0.0407 | Train Acc: 98.88%
+Val Loss: 0.2333 | Val Acc: 93.71%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 14 Summary | LR: 0.001000 | Time: 48.54
+Train Loss: 0.0461 | Train Acc: 98.91%
+Val Loss: 0.2388 | Val Acc: 93.99%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 15 Summary | LR: 0.001000 | Time: 48.46
+Train Loss: 0.0149 | Train Acc: 99.64%
+Val Loss: 0.1930 | Val Acc: 95.30%
+--------------------------------------------------
+
+Epoch 16 Summary | LR: 0.001000 | Time: 48.45
+Train Loss: 0.0103 | Train Acc: 99.75%
+Val Loss: 0.2395 | Val Acc: 94.75%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 17 Summary | LR: 0.001000 | Time: 48.51
+Train Loss: 0.0189 | Train Acc: 99.59%
+Val Loss: 0.2595 | Val Acc: 93.93%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 18 Summary | LR: 0.001000 | Time: 48.46
+Train Loss: 0.0092 | Train Acc: 99.81%
+Val Loss: 0.2365 | Val Acc: 94.53%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 19 Summary | LR: 0.001000 | Time: 48.51
+Train Loss: 0.0129 | Train Acc: 99.70%
+Val Loss: 0.1735 | Val Acc: 95.63%
+--------------------------------------------------
+
+Epoch 20 Summary | LR: 0.001000 | Time: 48.47
+Train Loss: 0.0028 | Train Acc: 99.96%
+Val Loss: 0.1804 | Val Acc: 95.90%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 21 Summary | LR: 0.001000 | Time: 48.46
+Train Loss: 0.0019 | Train Acc: 99.97%
+Val Loss: 0.1696 | Val Acc: 95.90%
+--------------------------------------------------
+
+Epoch 22 Summary | LR: 0.001000 | Time: 48.52
+Train Loss: 0.0026 | Train Acc: 99.90%
+Val Loss: 0.1710 | Val Acc: 95.74%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 23 Summary | LR: 0.001000 | Time: 48.47
+Train Loss: 0.0017 | Train Acc: 99.93%
+Val Loss: 0.1694 | Val Acc: 96.12%
+--------------------------------------------------
+
+Epoch 24 Summary | LR: 0.001000 | Time: 48.42
+Train Loss: 0.0028 | Train Acc: 99.88%
+Val Loss: 0.2051 | Val Acc: 94.92%
+--------------------------------------------------
+No improvement for 1 epoch(s)
+
+Epoch 25 Summary | LR: 0.000999 | Time: 48.53
+Train Loss: 0.0037 | Train Acc: 99.89%
+Val Loss: 0.2205 | Val Acc: 94.53%
+--------------------------------------------------
+No improvement for 2 epoch(s)
+
+Epoch 26 Summary | LR: 0.000999 | Time: 48.51
+Train Loss: 0.0780 | Train Acc: 97.99%
+Val Loss: 0.4661 | Val Acc: 88.52%
+--------------------------------------------------
+No improvement for 3 epoch(s)
+
+Epoch 27 Summary | LR: 0.000999 | Time: 48.45
+Train Loss: 0.1682 | Train Acc: 95.31%
+Val Loss: 0.3156 | Val Acc: 91.80%
+--------------------------------------------------
+No improvement for 4 epoch(s)
+
+Epoch 28 Summary | LR: 0.000999 | Time: 48.48
+Train Loss: 0.0841 | Train Acc: 97.40%
+Val Loss: 0.2706 | Val Acc: 93.11%
+--------------------------------------------------
+No improvement for 5 epoch(s)
+
+Epoch 29 Summary | LR: 0.000999 | Time: 48.47
+Train Loss: 0.0333 | Train Acc: 99.02%
+Val Loss: 0.2702 | Val Acc: 93.71%
+--------------------------------------------------
+No improvement for 6 epoch(s)
+
+Epoch 30 Summary | LR: 0.000999 | Time: 48.52
+Train Loss: 0.0179 | Train Acc: 99.56%
+Val Loss: 0.2204 | Val Acc: 94.97%
+--------------------------------------------------
+No improvement for 7 epoch(s)
+Early stopping triggered after 30 epochs.
+Total training time far: 1452.51 seconds
+Average time per epoch: 48.42 seconds
+Job completed at Sat Jul 12 17:56:33 IST 2025
